@@ -39,8 +39,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 59.0, 119.0, 1000.0, 780.0 ],
-                        "visible": 1,
+                        "rect": [ 59.0, 119.0, 384.0, 373.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -312,7 +311,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 101.0, 530.0, 59.0, 22.0 ],
+                    "patching_rect": [ 113.0, 530.0, 59.0, 22.0 ],
                     "text": "r midiport"
                 }
             },
@@ -322,7 +321,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 101.0, 559.0, 47.0, 22.0 ],
+                    "patching_rect": [ 101.0, 560.0, 47.0, 22.0 ],
                     "text": "midiout"
                 }
             },
@@ -365,29 +364,28 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 169.0, 322.0, 163.0, 20.0 ],
-                    "text": "clock tempo 94"
+                    "text": "midi channel 1"
                 }
             },
             {
                 "box": {
                     "color": [ 0.01680417731, 0.1983509958, 1.0, 1.0 ],
-                    "filename": "none",
+                    "filename": "parser.js",
                     "fontsize": 24.0,
                     "id": "obj-144",
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 31.0, 478.0, 108.0, 35.0 ],
+                    "patching_rect": [ 31.0, 478.0, 162.0, 35.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0
                     },
-                    "text": "v8",
+                    "text": "v8 parser.js",
                     "textfile": {
-                        "text": "// MIDI parameter -> speech interface\r\n// rld, 2025\n\noutlets = 3;\r\n\nvar thestuff = {}; // main data structure\nvar fload = 0; // is the file loaded\nvar prevparam = -1; // most recent param\nvar chan = 1; // MIDI channel\n\nfunction fread(_s) // read a JSON file\n{\n    var f = new File(_s, \"read\"); // open file\n    if(f.isopen)\n    {\n        let s = \"\";\n        while(f.position<f.eof) s+=f.readline(); // ingest file\n        thestuff = JSON.parse(s); // parse and stash the data\n        f.close(); // close file\n        fload = 1; // file is loaded\n        prevparam = -1; // reset params\n    }  \n}\n\nfunction cc(_val, _param, _c) // continuous controller\n{\n    if(fload==1) {\n        let plist = thestuff.device.CC;\n        if(_c==chan) parseSpeak(plist, _param, _val);\n    } \n}\n\nfunction nrpn(_val, _param, _c) // non-registered parameter number\n{\n    if(fload==1) {\n        let plist = thestuff.device.NRPN;\n        if(_c==chan) parseSpeak(plist, _param, _val);\n    }\n}\n\nfunction keypress(_val) // keypress\n{\n    if(fload==1) {\n        let plist = thestuff.device.keypress;\n        parseMIDIout(plist, _val);\n    }\n}\n\nfunction program(_val, _c) // program change\n{\n    if(fload==1) {\n        let plist = thestuff.device.program_change;\n        if(_c==chan) parseSpeak(plist, 0, _val);\n    }\n}\n\nfunction channel(_c) // change active MIDI channel\n{\n    chan = _c;\n}\n\nfunction parseMIDIout(_plist, _param)\n{\n    let l;\n    outlet(2, \"bang\"); // turn off MIDI receiver\n    let speakstring = \"\";\n    if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists\n    {\n        speakstring+=_plist[_param].label; // speechify parameter\n        switch(_plist[_param].data) // speechify data byte\n        {\n            case \"enum\": // enumerator (value=index)\n                let ptr = _plist[_param].ptr;\n                let databyte = _plist[_param].vals[ptr];\n                speakstring+=\" \" + _plist[_param].enum[ptr];\n                for(let i = 0;i<_plist[_param].byteprefix.length;i++)\n                {\n                    outlet(1, _plist[_param].byteprefix[i]);\n                }\n                outlet(1, databyte);\n                _plist[_param].ptr = (_plist[_param].ptr+1)%_plist[_param].vals.length;\n                break;\n            case \"countup\": // counter with internal\n                l = _plist[_param].label;\n                if(typeof(_plist[l])==='undefined') _plist[l] = _plist[_param].min;\n                _plist[l] = (_plist[l] + 1) % _plist[_param].max;\n                speakstring+=\" \" + (_plist[l]+1);\n                for(let i = 0;i<_plist[_param].byteprefix.length;i++)\n                {\n                    outlet(1, _plist[_param].byteprefix[i]);\n                }\n                outlet(1, _plist[l]);\n                break;\n            case \"countdown\": // counter with internal\n                l = _plist[_param].label;\n                if(typeof(_plist[l])==='undefined') _plist[l] = _plist[_param].max;\n                _plist[l] = (_plist[l] - 1 + _plist[_param].max) % _plist[_param].max;\n                speakstring+=\" \" + (_plist[l]+1);\n                for(let i = 0;i<_plist[_param].byteprefix.length;i++)\n                {\n                    outlet(1, _plist[_param].byteprefix[i]);\n                }\n                outlet(1, _plist[l]);\n                break;\n            case \"none\": // read just the parameter\n                break;\n            default:\n                break;\n        }\n        outlet(0, speakstring); // send to synthesizer\n    }\n}\n\nfunction parseSpeak(_plist, _param, _val)\n{\n    let speakstring = \"\";\n    let dospeak = 1; // default to speaking\n    if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists\n    {\n        speakstring+=_plist[_param].label; // speechify parameter\n        switch(_plist[_param].data) // speechify data byte\n        {\n            case \"value\": // read the numeric value of the parameter\n                speakstring+=\" \" + _val.toString();\n                break;\n            case \"offon\": // 0=\"off\", 1=\"on\"\n                speakstring+=\". \" + (_val==0?\"off\":\"on\");\n                break;\n            case \"onoff\": // 0=\"on\", 2=\"off\"\n                speakstring+=\". \" + (_val==0?\"on\":\"off\");\n                break;\n            case \"onetwo64\": // one/two switch at halfway point\n                speakstring+=\". \" + (_val>64?\"two\":\"one\");\n                break;\n            case \"note\": // interpret value as MIDI pitch\n                speakstring+=\" \" + mtos(_val);\n                break;\n            case \"enum\": // enumerator (value=index)\n                speakstring+=\" \" + _plist[_param].enum[_val];\n                break;\n            case \"enumsplit\": // enumerator (value split up across range)\n                let idx = 0;\n                for(let i=0;i<_plist[_param].split.length;i++)\n                {\n                    if(_val<_plist[_param].split[i]) break;\n                    idx = i;\n                }\n                speakstring+=\" \" + _plist[_param].enum[idx];\n                break;\n            case \"none\": // read just the parameter\n                if(prevparam == _param) dospeak = 0; // skip repeats\n                break;\n            default:\n                break;\n        }\n        if(dospeak) outlet(0, speakstring); // send to synthesizer\n        prevparam = _param; // save for next time\n    }\n}\n\nfunction mtos(_i) // MIDI note number to name\n{\n    let pitches = [\"C\", \"C sharp\", \"D\", \"D sharp\", \"E\", \"F\", \"F sharp\", \"G\", \"G sharp\", \"A\", \"A sharp\", \"B\"];\n    let pc = _i%12; // pitch class\n    let oct = Math.floor(_i/12); // octave\n    let outstr = pitches[pc] + \" \" + oct.toString();\n    return(outstr);      \n}",
-                        "filename": "none",
+                        "filename": "parser.js",
                         "flags": 0,
-                        "embed": 1,
+                        "embed": 0,
                         "autowatch": 1
                     }
                 }
@@ -1156,7 +1154,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 142.0, 488.0, 67.0, 20.0 ],
+                    "patching_rect": [ 200.5, 485.5, 67.0, 20.0 ],
                     "text": "main script"
                 }
             },
@@ -1634,12 +1632,12 @@
             {
                 "box": {
                     "id": "obj-95",
-                    "linecount": 10,
+                    "linecount": 9,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 686.0, 435.0, 156.0, 141.0 ],
-                    "text": "ESC = reload MIDI ports\nup/down = cycle file list\nleft/right = cycle MIDI inputs\nc = cycle MIDI channel\nr = voiceover rate\nTAB = toggle speech\nv = voiceover spead\nj = JSON load\n\nrld, 2025"
+                    "patching_rect": [ 686.0, 435.0, 156.0, 127.0 ],
+                    "text": "ESC = reload MIDI ports\nup/down = cycle file list\nleft/right = cycle MIDI inputs\nc = cycle MIDI channel\nr = voiceover rate\nTAB = toggle speech\nj = JSON load\n\nrld, 2025"
                 }
             },
             {
@@ -1962,7 +1960,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-2",
-                    "items": [ "Prophet 6 Module", ",", "virtual1", ",", "virtual2", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "virtual1", ",", "virtual2", ",", "to Max 1", ",", "to Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -2014,7 +2012,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 377.0, 323.0, 182.0, 35.0 ],
-                    "text": "Prophet6"
+                    "text": "."
                 }
             },
             {
