@@ -1,0 +1,365 @@
+{
+	"device" : {
+		"name" : "Deckard's Dream",
+		"manufacturer" : "Black Corporation",
+		"version" : 1,
+		"program_change" : {
+			"0" : {
+				"label" : "program",
+				"data" : "value"				
+			}
+		},
+		"keypress" : {
+			"p" : {
+				"label" : "panel",
+				"data" : "enum",
+				"byteprefix" : [176, 3],
+				"enum" : ["on", "off"],
+				"vals" : [0, 127],
+				"ptr" : 0
+			},
+			"b" : {
+				"label" : "bank",
+				"data" : "enum",
+				"byteprefix" : [176, 0],
+				"enum" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "factory"],
+				"vals" : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+				"ptr" : 0
+			},
+			"w" : {
+				"label" : "preset",
+				"data" : "countup",
+				"byteprefix" : [192],
+				"min" : 0,
+				"max" : 127
+			},
+			"s" : {
+				"label" : "preset",
+				"data" : "countdown",
+				"byteprefix" : [192],
+				"min" : 0,
+				"max" : 127
+			}
+		},
+		"CC" : {
+			"0" : {
+				"label" : "bank",
+				"data" : "none"
+			},
+			"3" : {
+				"label" : "panel",
+				"data" : "offon"
+			},
+			"5" : {
+				"label" : "portamento glissando",
+				"data" : "none"
+			},
+			"8" : {
+				"label" : "layer mix",
+				"data" : "none"
+			},
+			"9" : {
+				"label" : "sustain type",
+				"data" : "onetwo64"
+			},
+			"10" : {
+				"label" : "sustain amount",
+				"data" : "none"
+			},
+			"32" : {
+				"label" : "detune",
+				"data" : "none"
+			},
+			"40" : {
+				"label" : "pwm speed A.",
+				"data" : "none"
+			},
+			"41" : {
+				"label" : "pwm depth A.",
+				"data" : "none"
+			},
+			"42" : {
+				"label" : "pulse width A.",
+				"data" : "none"
+			},
+			"43" : {
+				"label" : "square A.",
+				"data" : "onoff"
+			},
+			"44" : {
+				"label" : "sawtooth A.",
+				"data" : "onoff"
+			},
+			"45" : {
+				"label" : "noise A.",
+				"data" : "none"
+			},
+			"46" : {
+				"label" : "high pass filter A.",
+				"data" : "none"
+			},
+			"47" : {
+				"label" : "high pass resonance A.",
+				"data" : "none"
+			},
+			"48" : {
+				"label" : "low pass filter A.",
+				"data" : "none"
+			},
+			"49" : {
+				"label" : "low pass resonance A.",
+				"data" : "none"
+			},
+			"50" : {
+				"label" : "filter initial level A.",
+				"data" : "none"
+			},
+			"51" : {
+				"label" : "filter attack level A.",
+				"data" : "none"
+			},
+			"52" : {
+				"label" : "filter envelope attack A.",
+				"data" : "none"
+			},
+			"53" : {
+				"label" : "filter envelope decay A.",
+				"data" : "none"
+			},
+			"54" : {
+				"label" : "filter envelope release A.",
+				"data" : "none"
+			},
+			"55" : {
+				"label" : "filter level A.",
+				"data" : "none"
+			},
+			"56" : {
+				"label" : "sine level A.",
+				"data" : "none"
+			},
+			"57" : {
+				"label" : "envelope attack A.",
+				"data" : "none"
+			},
+			"58" : {
+				"label" : "envelope decay A.",
+				"data" : "none"
+			},
+			"59" : {
+				"label" : "envelope sustain A.",
+				"data" : "none"
+			},
+			"60" : {
+				"label" : "envelope release A.",
+				"data" : "none"
+			},
+			"61" : {
+				"label" : "envelope level A.",
+				"data" : "none"
+			},
+			"62" : {
+				"label" : "initial brightness A.",
+				"data" : "none"
+			},
+			"63" : {
+				"label" : "initial level A.",
+				"data" : "none"
+			},
+			"65" : {
+				"label" : "aftertouch brightness A.",
+				"data" : "none"
+			},
+			"66" : {
+				"label" : "aftertouch level A.",
+				"data" : "none"
+			},
+			"67" : {
+				"label" : "pwm speed B.",
+				"data" : "none"
+			},
+			"68" : {
+				"label" : "pwm depth B.",
+				"data" : "none"
+			},
+			"69" : {
+				"label" : "pulse width B.",
+				"data" : "none"
+			},
+			"70" : {
+				"label" : "square B.",
+				"data" : "onoff"
+			},
+			"71" : {
+				"label" : "sawtooth B.",
+				"data" : "onoff"
+			},
+			"72" : {
+				"label" : "noise B.",
+				"data" : "none"
+			},
+			"73" : {
+				"label" : "high pass filter B.",
+				"data" : "none"
+			},
+			"119" : {
+				"label" : "high pass resonance B.",
+				"data" : "none"
+			},
+			"75" : {
+				"label" : "low pass filter B.",
+				"data" : "none"
+			},
+			"76" : {
+				"label" : "low pass resonance B.",
+				"data" : "none"
+			},
+			"77" : {
+				"label" : "filter initial level B.",
+				"data" : "none"
+			},
+			"78" : {
+				"label" : "filter attack level B.",
+				"data" : "none"
+			},
+			"79" : {
+				"label" : "filter envelope attack B.",
+				"data" : "none"
+			},
+			"80" : {
+				"label" : "filter envelope decay B.",
+				"data" : "none"
+			},
+			"81" : {
+				"label" : "filter envelope release B.",
+				"data" : "none"
+			},
+			"82" : {
+				"label" : "filter level B.",
+				"data" : "none"
+			},
+			"83" : {
+				"label" : "sine level B.",
+				"data" : "none"
+			},
+			"84" : {
+				"label" : "envelope attack B.",
+				"data" : "none"
+			},
+			"85" : {
+				"label" : "envelope decay B.",
+				"data" : "none"
+			},
+			"86" : {
+				"label" : "envelope sustain B.",
+				"data" : "none"
+			},
+			"87" : {
+				"label" : "envelope release B.",
+				"data" : "none"
+			},
+			"88" : {
+				"label" : "envelope level B.",
+				"data" : "none"
+			},
+			"89" : {
+				"label" : "initial brightness B.",
+				"data" : "none"
+			},
+			"90" : {
+				"label" : "initial level B.",
+				"data" : "none"
+			},
+			"91" : {
+				"label" : "aftertouch brightness B.",
+				"data" : "none"
+			},
+			"92" : {
+				"label" : "aftertouch level B.",
+				"data" : "none"
+			},
+			"93" : {
+				"label" : "coarse tuning",
+				"data" : "none"
+			},
+			"94" : {
+				"label" : "fine tuning",
+				"data" : "none"
+			},
+			"102" : {
+				"label" : "feet A.",
+				"data" : "enumsplit",
+				"enum" : ["16 feet", "8 feet", "5 and a third feet", "4 feet", "2 and a third feet", "2 feet"],
+				"split" : [0, 22, 43, 64, 85, 106]
+			},
+			"103" : {
+				"label" : "feet B.",
+				"data" : "enumsplit",
+				"enum" : ["16 feet", "8 feet", "5 and a third feet", "4 feet", "2 and a third feet", "2 feet"],
+				"split" : [0, 22, 43, 64, 85, 106]
+			},
+			"104" : {
+				"label" : "suboscillator function",
+				"data" : "enumsplit",
+				"enum" : ["sine", "rising saw", "falling saw", "square", "random", "sample and hold"],
+				"split" : [0, 22, 43, 64, 85, 106]
+			},
+			"105" : {
+				"label" : "suboscillator speed",
+				"data" : "none"
+			},
+			"106" : {
+				"label" : "suboscillator VCO amount",
+				"data" : "none"
+			},
+			"107" : {
+				"label" : "suboscillator VCF amount",
+				"data" : "none"
+			},
+			"108" : {
+				"label" : "suboscillator VCA amount",
+				"data" : "none"
+			},
+			"109" : {
+				"label" : "brilliance",
+				"data" : "none"
+			},
+			"110" : {
+				"label" : "resonance",
+				"data" : "none"
+			},
+			"111" : {
+				"label" : "aftertouch pitchbend",
+				"data" : "none"
+			},
+			"112" : {
+				"label" : "aftertouch suboscillator speed",
+				"data" : "none"
+			},
+			"113" : {
+				"label" : "aftertouch VCO",
+				"data" : "none"
+			},
+			"114" : {
+				"label" : "aftertouch VCF",
+				"data" : "none"
+			},
+			"115" : {
+				"label" : "keyboard brilliance low",
+				"data" : "none"
+			},
+			"116" : {
+				"label" : "keyboard brilliance high",
+				"data" : "none"
+			},
+			"117" : {
+				"label" : "keyboard level low",
+				"data" : "none"
+			},
+			"118" : {
+				"label" : "keyboard level high",
+				"data" : "none"
+			}
+		}
+	}	
+}

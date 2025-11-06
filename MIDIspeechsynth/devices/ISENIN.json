@@ -1,0 +1,399 @@
+{
+	"device" : {
+		"name" : "ISE-NIN",
+		"manufacturer" : "Black Corporation",
+		"version" : 1,
+		"program_change" : {
+			"0" : {
+				"label" : "program",
+				"data" : "value"				
+			}
+		},
+		"CC" : {
+			"0" : {
+				"label" : "bank",
+				"data" : "none"
+			},
+			"3" : {
+				"label" : "panel",
+				"data" : "offon"
+			},
+			"5" : {
+				"label" : "portamento",
+				"data" : "none"
+			},
+			"8" : {
+				"label" : "balance",
+				"data" : "none"
+			},
+			"9" : {
+				"label" : "lower lfo waveform",
+				"data" : "none"
+			},
+			"10" : {
+				"label" : "upper lfo waveform",
+				"data" : "none"
+			},
+			"11" : {
+				"label" : "lower vco mod",
+				"data" : "none"
+			},
+			"12" : {
+				"label" : "upper vco mod",
+				"data" : "none"
+			},
+			"13" : {
+				"label" : "lower pwm mod",
+				"data" : "none"
+			},
+			"14" : {
+				"label" : "upper pwm mod",
+				"data" : "none"
+			},
+			"15" : {
+				"label" : "upper vco mod env",
+				"data" : "none"
+			},
+			"16" : {
+				"label" : "upper vco mod pwm",
+				"data" : "none"
+			},
+			"17" : {
+				"label" : "upper vco1 crossmod",
+				"data" : "none"
+			},
+			"18" : {
+				"label" : "upper vco2 range",
+				"data" : "none"
+			},
+			"19" : {
+				"label" : "lower portamento",
+				"data" : "none"
+			},
+			"20" : {
+				"label" : "key mode",
+				"data" : "none"
+			},
+			"21" : {
+				"label" : "lower vco mod env",
+				"data" : "none"
+			},
+			"22" : {
+				"label" : "lower vco mod pwm",
+				"data" : "none"
+			},
+			"23" : {
+				"label" : "lower vco1 crossmod",
+				"data" : "none"
+			},
+			"24" : {
+				"label" : "lower vco2 range",
+				"data" : "none"
+			},
+			"25" : {
+				"label" : "lower vco2 fine tune",
+				"data" : "none"
+			},
+			"26" : {
+				"label" : "lower hpf cutoff",
+				"data" : "none"
+			},
+			"27" : {
+				"label" : "lower vcf cutoff",
+				"data" : "none"
+			},
+			"28" : {
+				"label" : "lower vcf reso",
+				"data" : "none"
+			},
+			"29" : {
+				"label" : "lower mix",
+				"data" : "none"
+			},
+			"30" : {
+				"label" : "lower vcf a",
+				"data" : "none"
+			},
+			"31" : {
+				"label" : "lower vcf b",
+				"data" : "none"
+			},
+			"32" : {
+				"label" : "lower vco1 range",
+				"data" : "none"
+			},
+			"33" : {
+				"label" : "upper vco1 range",
+				"data" : "none"
+			},
+			"34" : {
+				"label" : "lower vco1 waveform",
+				"data" : "none"
+			},
+			"35" : {
+				"label" : "upper vco1 waveform",
+				"data" : "none"
+			},
+			"36" : {
+				"label" : "lower vco2 sync",
+				"data" : "none"
+			},
+			"37" : {
+				"label" : "upper vco2 sync",
+				"data" : "none"
+			},
+			"38" : {
+				"label" : "vco2 vco/lfo lower",
+				"data" : "none"
+			},
+			"39" : {
+				"label" : "vco2 vco/lfo upper",
+				"data" : "none"
+			},
+			"40" : {
+				"label" : "upper vco2 fine tune",
+				"data" : "none"
+			},
+			"41" : {
+				"label" : "upper hpf cutoff",
+				"data" : "none"
+			},
+			"42" : {
+				"label" : "upper vcf cutoff",
+				"data" : "none"
+			},
+			"43" : {
+				"label" : "upper vcf reso",
+				"data" : "none"
+			},
+			"44" : {
+				"label" : "upper mix",
+				"data" : "none"
+			},
+			"47" : {
+				"label" : "upper vcf env mod",
+				"data" : "none"
+			},
+			"48" : {
+				"label" : "upper vcf lfo mod",
+				"data" : "none"
+			},
+			"49" : {
+				"label" : "lower vco2 waveform",
+				"data" : "none"
+			},
+			"52" : {
+				"label" : "lower vcf env mod",
+				"data" : "none"
+			},
+			"53" : {
+				"label" : "lower vcf lfo mod",
+				"data" : "none"
+			},
+			"55" : {
+				"label" : "upper env1 sustain",
+				"data" : "none"
+			},
+			"56" : {
+				"label" : "upper env1 release",
+				"data" : "none"
+			},
+			"59" : {
+				"label" : "upper vcf key follow",
+				"data" : "none"
+			},
+			"60" : {
+				"label" : "upper vca level",
+				"data" : "none"
+			},
+			"61" : {
+				"label" : "upper env1 attack",
+				"data" : "none"
+			},
+			"62" : {
+				"label" : "upper env1 decay",
+				"data" : "none"
+			},
+			"65" : {
+				"label" : "upper arpeggio rate",
+				"data" : "none"
+			},
+			"66" : {
+				"label" : "u l",
+				"data" : "none"
+			},
+			"68" : {
+				"label" : "lower arp clock",
+				"data" : "none"
+			},
+			"71" : {
+				"label" : "upper env2 sustain",
+				"data" : "none"
+			},
+			"72" : {
+				"label" : "upper env2 release",
+				"data" : "none"
+			},
+			"73" : {
+				"label" : "upper env2 attack",
+				"data" : "none"
+			},
+			"74" : {
+				"label" : "replace (mpe)",
+				"data" : "none"
+			},
+			"75" : {
+				"label" : "upper env2 decay",
+				"data" : "none"
+			},
+			"76" : {
+				"label" : "upper lfo rate",
+				"data" : "none"
+			},
+			"77" : {
+				"label" : "upper vco mod lfo",
+				"data" : "none"
+			},
+			"78" : {
+				"label" : "upper lfo delay",
+				"data" : "none"
+			},
+			"80" : {
+				"label" : "lower env1 release",
+				"data" : "none"
+			},
+			"83" : {
+				"label" : "lower vcf key follow",
+				"data" : "none"
+			},
+			"84" : {
+				"label" : "lower vca level",
+				"data" : "none"
+			},
+			"85" : {
+				"label" : "lower env1 attack",
+				"data" : "none"
+			},
+			"86" : {
+				"label" : "lower env1 decay",
+				"data" : "none"
+			},
+			"87" : {
+				"label" : "lower arpeggio rate",
+				"data" : "none"
+			},
+			"88" : {
+				"label" : "lower master tune",
+				"data" : "none"
+			},
+			"89" : {
+				"label" : "lower env2 sustain",
+				"data" : "none"
+			},
+			"90" : {
+				"label" : "lower env2 release",
+				"data" : "none"
+			},
+			"91" : {
+				"label" : "lower arp range",
+				"data" : "none"
+			},
+			"92" : {
+				"label" : "upper arp range",
+				"data" : "none"
+			},
+			"93" : {
+				"label" : "lower arp mode",
+				"data" : "none"
+			},
+			"94" : {
+				"label" : "upper arp mode",
+				"data" : "none"
+			},
+			"95" : {
+				"label" : "lower portamento",
+				"data" : "none"
+			},
+			"96" : {
+				"label" : "upper portamento",
+				"data" : "none"
+			},
+			"97" : {
+				"label" : "lower vcf slope",
+				"data" : "none"
+			},
+			"98" : {
+				"label" : "upper vcf slope",
+				"data" : "none"
+			},
+			"99" : {
+				"label" : "lower vcf env",
+				"data" : "none"
+			},
+			"100" : {
+				"label" : "upper vcf env",
+				"data" : "none"
+			},
+			"102" : {
+				"label" : "lower env2 attack",
+				"data" : "none"
+			},
+			"103" : {
+				"label" : "lower env2 decay",
+				"data" : "none"
+			},
+			"104" : {
+				"label" : "lower lfo rate",
+				"data" : "none"
+			},
+			"105" : {
+				"label" : "lower vco mod lfo",
+				"data" : "none"
+			},
+			"106" : {
+				"label" : "lower lfo delay",
+				"data" : "none"
+			},
+			"107" : {
+				"label" : "lower vca lfo",
+				"data" : "none"
+			},
+			"108" : {
+				"label" : "upper vca lfo",
+				"data" : "none"
+			},
+			"109" : {
+				"label" : "lower env1 kf",
+				"data" : "none"
+			},
+			"110" : {
+				"label" : "upper env1 kf",
+				"data" : "none"
+			},
+			"111" : {
+				"label" : "lower env1 inv",
+				"data" : "none"
+			},
+			"112" : {
+				"label" : "upper env1 inv",
+				"data" : "none"
+			},
+			"113" : {
+				"label" : "lower env2 kf",
+				"data" : "none"
+			},
+			"114" : {
+				"label" : "upper env2 kf",
+				"data" : "none"
+			},
+			"115" : {
+				"label" : "upper vco2 waveform",
+				"data" : "none"
+			},
+			"116" : {
+				"label" : "assign mode",
+				"data" : "none"
+			}
+		}
+	}	
+}
