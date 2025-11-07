@@ -42,8 +42,11 @@ function nrpn(_val, _param, _c) // non-registered parameter number
 function keypress(_val) // keypress
 {
     if(fload==1) {
-        let plist = thestuff.device.keypress;
-        parseMIDIout(plist, _val);
+        if(Object.hasOwn(thestuff.device, keypress))
+        {
+            let plist = thestuff.device.keypress;
+            parseMIDIout(plist, _val);
+        }
     }
 }
 
