@@ -1,11 +1,11 @@
 # MIDI speech synth
 
 Files:
-README.md - this file
-LICENSE - MIT license
-MaxMSP - folder containing the Max patcher version
-WebMIDI - folder containing the web version
-devices - folder of JSON device files
+- README.md - this file
+- LICENSE - MIT license
+- MaxMSP - folder containing the Max patcher version
+- WebMIDI - folder containing the web version
+- devices - folder of JSON device files
 
 JSON format:
 
