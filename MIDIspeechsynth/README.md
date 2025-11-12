@@ -1,5 +1,8 @@
 # MIDI speech synth
 
+Part of synthaccess
+NYU Ability Project
+
 Files:
 - README.md - this file
 - LICENSE - MIT license
