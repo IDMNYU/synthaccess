@@ -39,7 +39,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - for "enumsplit" data, the *value* is checked against the **split** array, and...
          - the highest index that the *value* is greater than or equal to is the index for the **enum**
       - **suffix** - for all "data" modes, a label to be appended to the readout e.g. to specify a unit
-   - **keypress** : MIDI messages to be sent when receiving keyboard events on the computer; these also have speech labels attached
+- **keypress** : MIDI messages to be sent when receiving keyboard events on the computer; these also have speech labels attached
    - the encapsulated object contains enumerable keys defining the alphanumeric key that will trigger the event; the properties of these keys are:
       - **label** : the speakable label for the keypress (e.g. "panel" for "p")
       - **data** : how the MIDI parameter's *value* is to be parsed; options are:
