@@ -38,9 +38,20 @@ The JSON file root element is a "device", which has the following top-level para
       - for "enumsplit" data, the *value* is checked against the *split* array, and...
       - the highest index that the *value* is greater than or equal to is the index for the *enum*
    - suffix - for all "data" modes, a label to be appended to the readout
-- keypress
-- CC
-- NRPN
+- keypress : MIDI messages to be sent when receiving keyboard events on the computer; these also have speech labels attached, and the encapsulated object contains enumerable keys defining the alphanumeric key that will trigger the event; the properties of these keys are:
+   - label : the speakable label for the keypress (e.g. "panel" for "p")
+   - data : how the MIDI parameter's *value* is to be parsed; options are:
+      - "none" - read the label and send the *byteprefix* data only; use this for a fixed MIDI message
+      - "enum" - with each keypress, enumerate through an array of labels (*enum*) and MIDI data bytes (*vals*)
+      - "countup" - add one to an internal variable (named after *label*) and send it as MIDI data byte
+         - values larger than *max* will wrap to *min*
+      - "countdown" subtract one from an internal variable (named after *label*) and send it as MIDI data byte
+         - values smaller than *min* will wrap to *max*
+   - byteprefix - an array of MIDI bytes to begin the MIDI message with (e.g. [176, 0] for a MIDI CC0 on channel 1)
+   - enum - for *enum* data, an array of speakable labels that will be cycled through
+   - vals - an array of integers in the MIDI data range (0-127) that will be transmitted in step with the *enum* array
+   - min - for "countup" and "countdown" data, the minimum value
+   - max - for "countup" and "countdown" data, the maximum value
   
 
 Example:
