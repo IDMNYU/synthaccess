@@ -12,7 +12,7 @@ JSON format:
 The JSON root element is a **device**, which has the following top-level properties:
 - **name** : the name of the device
 - **manufacturer** : who made it
-- **version** : version of the *parser* to be used (this is in anticipation of a versioned release
+- **version** : version of the *parser* to be used (this is in anticipation of a versioned release)
 - **program_change**, **CC**, **NRPN** : speech interactions to occur on receiving MIDI program changes, continuous controller, or non-registered parameter number data; the encapsulated object contains enumerable string keys defining the *controller number* that dictates which CC or NRPN to respond; for program changes this is always *0*; the properties of these keys are:
    - **label** : the speakable label for the key (e.g. "modulation" for CC0)
    - **data** : how the MIDI parameter's *value* is to be parsed; options are:
