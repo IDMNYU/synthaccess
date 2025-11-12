@@ -156,8 +156,11 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
             case "onetwo64": // one/two switch at halfway point
                 speakstring+=". " + (_val>64?"two":"one");
                 break;
-            case "note": // interpret value as MIDI pitch
+            case "note": // interpret value as MIDI pitch (60=C3)
                 speakstring+=" " + mtos(_val);
+                break;
+            case "noteC4": // interpret value as MIDI pitch (60=C4)
+                speakstring+=" " + mtos(_val+12);
                 break;
             case "enum": // enumerator (value=index)
                 speakstring+=" " + _plist[_param].enum[_val];
@@ -188,7 +191,7 @@ function mtos(_i) // MIDI note number to name
 {
     let pitches = ["C", "C sharp", "D", "D sharp", "E", "F", "F sharp", "G", "G sharp", "A", "A sharp", "B"];
     let pc = _i%12; // pitch class
-    let oct = Math.floor(_i/12); // octave
+    let oct = Math.floor(_i/12)-2; // octave
     let outstr = pitches[pc] + " " + oct.toString();
     return(outstr);      
 }
