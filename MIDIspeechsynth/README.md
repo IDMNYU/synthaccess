@@ -56,7 +56,7 @@ The JSON root element is a **device**, which has the following top-level propert
       - **byteprefix** - an array of MIDI bytes to begin the MIDI message with (e.g. [176, 0] for a MIDI CC0 on channel 1).
       - **enum** - for "enum" data, an array of speakable labels that will be cycled through.
       - **vals** - for "enum" data, an array of integers in the MIDI data range (0-127) that will be transmitted in step with the **enum** array.
-      - **ptr** - for "enum" data, the starting index of the **enum* and **vals** arrays.
+      - **ptr** - for "enum" data, the starting index of the **enum** and **vals** arrays.
       - **min** - for "countup" and "countdown" data, the minimum value.
       - **max** - for "countup" and "countdown" data, the maximum value.
   
