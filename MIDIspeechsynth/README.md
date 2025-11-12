@@ -9,7 +9,7 @@ Files:
 
 JSON format:
 
-The JSON root element is a **"device"**, which has the following top-level parameters:
+The JSON root element is a **device**, which has the following top-level parameters:
 - **name** : the name of the device
 - **manufacturer** : who made it
 - **version** : version of the *parser* to be used (this is in anticipation of a versioned release
