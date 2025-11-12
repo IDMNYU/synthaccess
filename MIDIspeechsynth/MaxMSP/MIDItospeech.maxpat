@@ -364,7 +364,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 169.0, 322.0, 163.0, 20.0 ],
-                    "text": "midi channel 1"
+                    "text": "upper LFO rate  "
                 }
             },
             {
@@ -392,7 +392,8 @@
             },
             {
                 "box": {
-                    "fontsize": 14.0,
+                    "color": [ 0.0, 0.5603182912, 0.0, 1.0 ],
+                    "fontsize": 24.0,
                     "id": "obj-142",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -1144,8 +1145,8 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 174.0, 529.0, 72.0, 24.0 ],
-                    "text": "p MIDIshit"
+                    "patching_rect": [ 174.0, 529.0, 124.0, 35.0 ],
+                    "text": "p MIDIstuff"
                 }
             },
             {
@@ -1960,7 +1961,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-2",
-                    "items": [ "virtual1", ",", "virtual2", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "ISENIN", ",", "virtual1", ",", "virtual2", ",", "to Max 1", ",", "to Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -2012,7 +2013,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 377.0, 323.0, 182.0, 35.0 ],
-                    "text": "."
+                    "text": "ISENIN"
                 }
             },
             {

@@ -22,33 +22,51 @@
 				"label" : "portamento",
 				"data" : "none"
 			},
+			"7" : {
+				"label" : "main volume",
+				"data" : "intrange",
+				"range" : [0, 100],
+				"suffix" : "percent"
+			},
 			"8" : {
 				"label" : "balance",
-				"data" : "none"
+				"data" : "bifloat"
 			},
 			"9" : {
 				"label" : "lower LFO waveform",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["sine", "sawtooth", "square", "random"],
+				"split" : [0, 42, 84, 127]
 			},
 			"10" : {
 				"label" : "upper LFO waveform",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["sine", "sawtooth", "square", "random"],
+				"split" : [0, 42, 84, 127]
 			},
 			"11" : {
 				"label" : "lower V C O mod",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["none", "V C O 1", "both", "V C O 2"],
+				"split" : [0, 42, 84, 127]				
 			},
 			"12" : {
 				"label" : "upper V C O mod",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["none", "V C O 1", "both", "V C O 2"],
+				"split" : [0, 42, 84, 127]				
 			},
 			"13" : {
 				"label" : "lower PWM mod",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["none", "L F O", "manual", "envelope 1"],
+				"split" : [0, 42, 84, 127]				
 			},
 			"14" : {
 				"label" : "upper PWM mod",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["none", "L F O", "manual", "envelope 1"],
+				"split" : [0, 42, 84, 127]				
 			},
 			"15" : {
 				"label" : "upper V C O mod envelope",
@@ -71,8 +89,11 @@
 				"data" : "none"
 			},
 			"20" : {
-				"label" : "key mode",
-				"data" : "none"
+				"label" : "layer mode",
+				"data" : "enumsplit",
+				"enum" : ["dual", "split", "whole"],
+				"split" : [0, 63, 127]
+
 			},
 			"21" : {
 				"label" : "lower V C O mod envelope",
@@ -107,7 +128,7 @@
 				"data" : "none"
 			},
 			"29" : {
-				"label" : "lower mix",
+				"label" : "lower oscillator mix",
 				"data" : "none"
 			},
 			"30" : {
@@ -120,27 +141,39 @@
 			},
 			"32" : {
 				"label" : "lower V C O 1 range",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["16 feet", "8 feet", "4 feet", "2 feet"],
+				"split" : [0, 42, 84, 127]
 			},
 			"33" : {
 				"label" : "upper V C O 1 range",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["16 feet", "8 feet", "4 feet", "2 feet"],
+				"split" : [0, 42, 84, 127]
 			},
 			"34" : {
 				"label" : "lower V C O 1 waveform",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["triangle", "ramp", "pulse", "square"],
+				"split" : [0, 42, 84, 127]
 			},
 			"35" : {
 				"label" : "upper V C O 1 waveform",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["triangle", "ramp", "pulse", "square"],
+				"split" : [0, 42, 84, 127]
 			},
 			"36" : {
 				"label" : "lower V C O 2 sync",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["off", "on"],
+				"split" : [0, 127]
 			},
 			"37" : {
 				"label" : "upper V C O 2 sync",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["off", "on"],
+				"split" : [0, 127]
 			},
 			"38" : {
 				"label" : "V C O 2 V C O / LFO lower",
@@ -167,7 +200,15 @@
 				"data" : "none"
 			},
 			"44" : {
-				"label" : "upper mix",
+				"label" : "upper oscillator mix",
+				"data" : "none"
+			},
+			"45" : {
+				"label" : "lower velocity filter scaling",
+				"data" : "none"
+			},
+			"46" : {
+				"label" : "upper velocity filter scaling",
 				"data" : "none"
 			},
 			"47" : {
@@ -180,7 +221,9 @@
 			},
 			"49" : {
 				"label" : "lower V C O 2 waveform",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["sine", "ramp", "pulse", "noise"],
+				"split" : [0, 42, 84, 127]
 			},
 			"52" : {
 				"label" : "lower VCF envelope mod",
@@ -196,6 +239,14 @@
 			},
 			"56" : {
 				"label" : "upper envelope 1 release",
+				"data" : "none"
+			},
+			"57" : {
+				"label" : "lower aftertouch envelope scaling",
+				"data" : "none"
+			},
+			"58" : {
+				"label" : "upper aftertouch envelope scaling",
 				"data" : "none"
 			},
 			"59" : {
@@ -219,8 +270,16 @@
 				"data" : "none"
 			},
 			"66" : {
-				"label" : "u l",
-				"data" : "none"
+				"label" : "",
+				"data" : "enumsplit",
+				"enum" : ["lower layer selected", "upper layer selected"],
+				"split" : [0, 127]
+			},
+			"67" : {
+				"label" : "upper master tune",
+				"data" : "floatrange",
+				"range" : [-0.5, 0.5],
+				"suffix" : "semi tones"
 			},
 			"68" : {
 				"label" : "lower arpeggio clock",
@@ -284,7 +343,9 @@
 			},
 			"88" : {
 				"label" : "lower master tune",
-				"data" : "none"
+				"data" : "floatrange",
+				"range" : [-0.5, 0.5],
+				"suffix" : "semi tones"
 			},
 			"89" : {
 				"label" : "lower envelope 2 sustain",
@@ -296,43 +357,63 @@
 			},
 			"91" : {
 				"label" : "lower arpeggio range",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["one octave", "two octaves", "three octaves", "four octaves"],
+				"split" : [0, 42, 84, 127]
 			},
 			"92" : {
 				"label" : "upper arpeggio range",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["one octave", "two octaves", "three octaves", "four octaves"],
+				"split" : [0, 42, 84, 127]
 			},
 			"93" : {
 				"label" : "lower arpeggio mode",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["up", "down", "up down", "random"],
+				"split" : [0, 42, 84, 127]
 			},
 			"94" : {
 				"label" : "upper arpeggio mode",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["up", "down", "up down", "random"],
+				"split" : [0, 42, 84, 127]
 			},
 			"95" : {
-				"label" : "lower portamento",
-				"data" : "none"
+				"label" : "lower slide mode",
+				"data" : "enumsplit",
+				"enum" : ["none", "portamento", "glissando"],
+				"split" : [0, 63, 127]
 			},
 			"96" : {
-				"label" : "upper portamento",
-				"data" : "none"
+				"label" : "upper slide mode",
+				"data" : "enumsplit",
+				"enum" : ["none", "portamento", "glissando"],
+				"split" : [0, 63, 127]
 			},
 			"97" : {
 				"label" : "lower VCF slope",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["12 d b", "24 d b"],
+				"split" : [0, 127]
 			},
 			"98" : {
 				"label" : "upper VCF slope",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["12 d b", "24 d b"],
+				"split" : [0, 127]
 			},
 			"99" : {
-				"label" : "lower VCF envelope",
-				"data" : "none"
+				"label" : "lower VCF envelope mod",
+				"data" : "enumsplit",
+				"enum" : ["none", "envelope 1", "envelope 2"],
+				"split" : [0, 63, 127]
 			},
 			"100" : {
-				"label" : "upper VCF envelope",
-				"data" : "none"
+				"label" : "upper VCF envelope mod",
+				"data" : "enumsplit",
+				"enum" : ["none", "envelope 1", "envelope 2"],
+				"split" : [0, 63, 127]
 			},
 			"102" : {
 				"label" : "lower envelope 2 attack",
@@ -355,44 +436,64 @@
 				"data" : "none"
 			},
 			"107" : {
-				"label" : "lower VCA LFO",
-				"data" : "none"
+				"label" : "lower VCA LFO level",
+				"data" : "enumsplit",
+				"enum" : ["zero", "one", "two", "three"],
+				"split" : [0, 42, 84, 127]
 			},
 			"108" : {
-				"label" : "upper VCA LFO",
-				"data" : "none"
+				"label" : "upper VCA LFO level",
+				"data" : "enumsplit",
+				"enum" : ["zero", "one", "two", "three"],
+				"split" : [0, 42, 84, 127]
 			},
 			"109" : {
 				"label" : "lower envelope 1 key follow",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["off", "on"],
+				"split" : [0, 127]
 			},
 			"110" : {
 				"label" : "upper envelope 1 key follow",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["off", "on"],
+				"split" : [0, 127]
 			},
 			"111" : {
-				"label" : "lower envelope 1 invert",
-				"data" : "none"
+				"label" : "lower envelope 1 polarity",
+				"data" : "enumsplit",
+				"enum" : ["off", "on"],
+				"split" : [0, 127]
 			},
 			"112" : {
-				"label" : "upper envelope 1 invert",
-				"data" : "none"
+				"label" : "upper envelope 1 polarity",
+				"data" : "enumsplit",
+				"enum" : ["off", "on"],
+				"split" : [0, 127]
 			},
 			"113" : {
 				"label" : "lower envelope 2 key follow",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["off", "on"],
+				"split" : [0, 127]
 			},
 			"114" : {
 				"label" : "upper envelope 2 key follow",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["off", "on"],
+				"split" : [0, 127]
 			},
 			"115" : {
 				"label" : "upper V C O 2 waveform",
-				"data" : "none"
+				"data" : "enumsplit",
+				"enum" : ["sine", "ramp", "pulse", "noise"],
+				"split" : [0, 42, 84, 127]
 			},
 			"116" : {
-				"label" : "assign mode",
-				"data" : "none"
+				"label" : "",
+				"data" : "enumsplit",
+				"enum" : ["solo", "unison", "poly mode 1", "poly mode 2"],
+				"split" : [0, 42, 84, 127]
 			}
 		}
 	}	

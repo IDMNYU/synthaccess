@@ -118,6 +118,7 @@ function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pi
 function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
+    let a, b, s;
     let dospeak = 1; // default to speaking
     if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
     {
@@ -135,6 +136,16 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 break;
             case "bifloat": // read the parameter as a float -1.0 to 1.0
                 speakstring+=" " + ((_val/127)*2.0-1.0).toFixed(2);
+                break;
+            case "intrange": // read the parameter as a int a to b
+                a = _plist[_param].range[0];
+                b = _plist[_param].range[1];
+                speakstring+=" " + Math.round((_val/127)*(b-a)+a);
+                break;
+            case "floatrange": // read the parameter as a float a to b
+                a = _plist[_param].range[0];
+                b = _plist[_param].range[1];
+                speakstring+=" " + ((_val/127)*(b-a)+a).toFixed(2);
                 break;
             case "offon": // 0="off", 1="on"
                 speakstring+=". " + (_val==0?"off":"on");
@@ -166,6 +177,8 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
             default:
                 break;
         }
+        s = ("suffix" in _plist[_param]) ? _plist[_param].suffix : " ";
+        speakstring+=" " + s;
         if(dospeak) outlet(0, speakstring); // send to synthesizer
         prevparam = _param; // save for next time
     }
