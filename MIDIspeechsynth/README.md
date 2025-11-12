@@ -2,7 +2,7 @@
 
 Part of synthaccess
 
-NYU Ability Project
+NYU Ability Project / NYU IDM
 
 Files:
 - README.md - this file
