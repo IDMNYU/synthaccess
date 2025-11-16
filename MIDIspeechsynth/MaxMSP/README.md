@@ -1,8 +1,7 @@
 ## MIDItospeech (MAX PATCH VERSION)
 
-This software requires the MaxEss objects:
-
-https://www.if-tah.com/devices/maxess
+This software requires [Max 9](https://cycling74.com/) and the the [MaxEss objects](https://www.if-tah.com/devices/maxess
+).
 
 The devices folder symlinks to the JSON files one level above in the repository (shared with the Web version).
 
