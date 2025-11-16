@@ -118,7 +118,7 @@ function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pi
 function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
-    let a, b, s;
+    let a, b, s, cl;
     let dospeak = 1; // default to speaking
     if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
     {
@@ -146,6 +146,16 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 a = _plist[_param].range[0];
                 b = _plist[_param].range[1];
                 speakstring+=" " + ((_val/127)*(b-a)+a).toFixed(2);
+                break;
+            case "intmap": // 4-point scale the parameter (sim. to Max [scale]), output int
+                if(typeof(_plist[_param].clamp)!=='undefined') cl = _plist[_param].clamp; else cl = false;
+                s = vmap(_val, _plist[_param].map, cl)
+                speakstring+=" " + Math.round(s);
+                break;
+            case "floatmap": // 4-point scale the parameter (sim. to Max [scale]), output float
+                if(typeof(_plist[_param].clamp)!=='undefined') cl = _plist[_param].clamp; else cl = false;
+                s = vmap(_val, _plist[_param].map, cl)
+                speakstring+=" " + s.toFixed(2);
                 break;
             case "offon": // 0="off", 1="on"
                 speakstring+=". " + (_val==0?"off":"on");
@@ -194,4 +204,21 @@ function mtos(_i) // MIDI note number to name
     let oct = Math.floor(_i/12)-2; // octave
     let outstr = pitches[pc] + " " + oct.toString();
     return(outstr);      
+}
+
+function vmap(_i, _m, _cl) // arbitrary value mapping
+{
+    let v;
+    a = _m[0];
+    b = _m[1];
+    c = _m[2];
+    d = _m[3];
+    if(_cl=='true') // clamp
+    {
+        if(_i<a) _i=a;
+        if(_i>b) _i=b;
+    }
+    if(c<d) v = (_i/(b-a))*(d-c)+c;
+    else v = (1.0-_i/(b-a))*(c-d)+d;
+    return(v);    
 }

@@ -1,0 +1,27 @@
+{
+	"device" : {
+		"name" : "Luke's test synth",
+		"manufacturer" : "Luke",
+		"version" : 1,
+		"program_change" : {
+			"0" : {
+				"label" : "program",
+				"data" : "value"				
+			}
+		},
+		"CC" : {
+			"100" : {
+				"label" : "foo",
+				"data" : "intmap",
+				"map" : [0, 64, -31, 32],
+				"clamp" : "true"
+			},
+			"101" : {
+				"label" : "bar",
+				"data" : "floatmap",
+				"map" : [0, 10, 0.0, 1.0],
+				"clamp" : "false"
+			}
+		}
+	}	
+}
