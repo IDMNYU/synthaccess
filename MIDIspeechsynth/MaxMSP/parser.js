@@ -120,32 +120,41 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
     let speakstring = "";
     let a, b, s, cl;
     let dospeak = 1; // default to speaking
+    let mval = 127; // assume 7-bit
+    let hval = 64; // 7-bit half value
     if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
     {
         speakstring+=_plist[_param].label; // speechify parameter
+        if(typeof(_plist[_param].hires)!=='undefined') {
+            if(_plist[_param].hires=='true') 
+            {
+                mval = 16383; // 14-bit value
+                hval = 8192; // half value
+            }
+        }
         switch(_plist[_param].data) // speechify data byte
         {
             case "value": // read the numeric value of the parameter
                 speakstring+=" " + _val.toString();
                 break;
             case "bivalue": // read the numeric value of the parameter (bipolar -64 to 63)
-                speakstring+=" " + (_val-64).toString();
+                speakstring+=" " + (_val-hval).toString();
                 break;
             case "float": // read the parameter as a float 0.0 to 1.0
-                speakstring+=" " + (_val/127).toFixed(2);
+                speakstring+=" " + (_val/mval).toFixed(2);
                 break;
             case "bifloat": // read the parameter as a float -1.0 to 1.0
-                speakstring+=" " + ((_val/127)*2.0-1.0).toFixed(2);
+                speakstring+=" " + ((_val/mval)*2.0-1.0).toFixed(2);
                 break;
             case "intrange": // read the parameter as a int a to b
                 a = _plist[_param].range[0];
                 b = _plist[_param].range[1];
-                speakstring+=" " + Math.round((_val/127)*(b-a)+a);
+                speakstring+=" " + Math.round((_val/mval)*(b-a)+a);
                 break;
             case "floatrange": // read the parameter as a float a to b
                 a = _plist[_param].range[0];
                 b = _plist[_param].range[1];
-                speakstring+=" " + ((_val/127)*(b-a)+a).toFixed(2);
+                speakstring+=" " + ((_val/mval)*(b-a)+a).toFixed(2);
                 break;
             case "intmap": // 4-point scale the parameter (sim. to Max [scale]), output int
                 if(typeof(_plist[_param].clamp)!=='undefined') cl = _plist[_param].clamp; else cl = false;
@@ -164,7 +173,7 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 speakstring+=". " + (_val==0?"on":"off");
                 break;
             case "onetwo64": // one/two switch at halfway point
-                speakstring+=". " + (_val>64?"two":"one");
+                speakstring+=". " + (_val>hval?"two":"one");
                 break;
             case "note": // interpret value as MIDI pitch (60=C3)
                 speakstring+=" " + mtos(_val);
