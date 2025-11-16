@@ -27,8 +27,10 @@ The JSON root element is a **device**, which has the following top-level propert
          - "bivalue" - read out a signed (bipolar) value (-64 to 63).
          - "float" - read out an unsigned floating point value (0.0 to 1.0).
          - "bifloat" - read out a signed floating point value (-1.0 to 1.0).
-         - "intrange" - read out an integer value specified by **range**.
-         - "floatrange" - read out a floating-point value specified by **range**.
+         - "intrange" - read out an integer value specified by mapping 0-127 to **range**.
+         - "floatrange" - read out a floating-point value specified by 0-127 to **range**.
+         - "intmap" - read out an integer value specified by a 4-value **map**.
+         - "floatmap" - read out an float value specified by a 4-value **map**.
          - "offon" - read out "off" if the *value* is 0 and "on" if it's anything else.
          - "onoff" - read out "on" if the *value* is 0 and "off" if it's anything else.
          - "onetwo64" - read out "one" or "two" if the *value* is below or above 64, respectively.
@@ -36,7 +38,9 @@ The JSON root element is a **device**, which has the following top-level propert
          - "noteC4" - read out the *value* as a MIDI pitch (60 = C4).
          - "enum" - read labels from an enumerating array using the *value* as the index.
          - "enumsplit" - read labels from an enumerating array using split points. 
-      - **range** - array for "intrange" and "floatrange" data; index 0 is the minimum; 1 is the maximum.
+      - **range** - array for "intrange", "floatrange" data; index 0 is the minimum output value; 1 is the maximum output value.
+      - **map** - array for "intmap", and "floatmap" data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
+      - **clamp** - boolean ("true" / "false") value for "intmap" and "floatmap" data to specify whether the mapping will be constrained within the output values specified by **range**.
       - **enum** - array of labels for "enum" and "enumsplit" data.
          - for "enum", the *value* serves as the literal index to the array.
       - **split** - array of splitpoints for "enumsplit" data.
