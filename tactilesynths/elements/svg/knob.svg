@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.12 32.12">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #231f20;
+        stroke-width: 3.6px;
+      }
+
+      .cls-4 {
+        fill: url(#_10_lpi_50_);
+        fill-rule: evenodd;
+      }
+    </style>
+    <pattern id="_10_lpi_50_" data-name="10 lpi 50%" x="0" y="0" width="72" height="72" patternTransform="translate(-1291.56 -522.51) scale(1.08)" patternUnits="userSpaceOnUse" viewBox="0 0 72 72">
+      <g>
+        <rect class="cls-1" width="72" height="72"/>
+        <g>
+          <line class="cls-3" x1="71.75" y1="68.4" x2="144.25" y2="68.4"/>
+          <line class="cls-3" x1="71.75" y1="54" x2="144.25" y2="54"/>
+          <line class="cls-3" x1="71.75" y1="39.6" x2="144.25" y2="39.6"/>
+          <line class="cls-3" x1="71.75" y1="25.2" x2="144.25" y2="25.2"/>
+          <line class="cls-3" x1="71.75" y1="10.8" x2="144.25" y2="10.8"/>
+          <line class="cls-3" x1="71.75" y1="61.2" x2="144.25" y2="61.2"/>
+          <line class="cls-3" x1="71.75" y1="46.8" x2="144.25" y2="46.8"/>
+          <line class="cls-3" x1="71.75" y1="32.4" x2="144.25" y2="32.4"/>
+          <line class="cls-3" x1="71.75" y1="18" x2="144.25" y2="18"/>
+          <line class="cls-3" x1="71.75" y1="3.6" x2="144.25" y2="3.6"/>
+        </g>
+        <g>
+          <line class="cls-3" x1="-.25" y1="68.4" x2="72.25" y2="68.4"/>
+          <line class="cls-3" x1="-.25" y1="54" x2="72.25" y2="54"/>
+          <line class="cls-3" x1="-.25" y1="39.6" x2="72.25" y2="39.6"/>
+          <line class="cls-3" x1="-.25" y1="25.2" x2="72.25" y2="25.2"/>
+          <line class="cls-3" x1="-.25" y1="10.8" x2="72.25" y2="10.8"/>
+          <line class="cls-3" x1="-.25" y1="61.2" x2="72.25" y2="61.2"/>
+          <line class="cls-3" x1="-.25" y1="46.8" x2="72.25" y2="46.8"/>
+          <line class="cls-3" x1="-.25" y1="32.4" x2="72.25" y2="32.4"/>
+          <line class="cls-3" x1="-.25" y1="18" x2="72.25" y2="18"/>
+          <line class="cls-3" x1="-.25" y1="3.6" x2="72.25" y2="3.6"/>
+        </g>
+        <g>
+          <line class="cls-3" x1="-72.25" y1="68.4" x2=".25" y2="68.4"/>
+          <line class="cls-3" x1="-72.25" y1="54" x2=".25" y2="54"/>
+          <line class="cls-3" x1="-72.25" y1="39.6" x2=".25" y2="39.6"/>
+          <line class="cls-3" x1="-72.25" y1="25.2" x2=".25" y2="25.2"/>
+          <line class="cls-3" x1="-72.25" y1="10.8" x2=".25" y2="10.8"/>
+          <line class="cls-3" x1="-72.25" y1="61.2" x2=".25" y2="61.2"/>
+          <line class="cls-3" x1="-72.25" y1="46.8" x2=".25" y2="46.8"/>
+          <line class="cls-3" x1="-72.25" y1="32.4" x2=".25" y2="32.4"/>
+          <line class="cls-3" x1="-72.25" y1="18" x2=".25" y2="18"/>
+          <line class="cls-3" x1="-72.25" y1="3.6" x2=".25" y2="3.6"/>
+        </g>
+      </g>
+    </pattern>
+  </defs>
+  <g id="knob">
+    <g>
+      <path class="cls-4" d="M16.06.5c8.59,0,15.56,6.97,15.56,15.56s-6.97,15.56-15.56,15.56S.5,24.66.5,16.06,7.47.5,16.06.5ZM17.19,25.84c5.34-.62,9.15-5.45,8.54-10.77-.62-5.34-5.45-9.16-10.78-8.55-5.33.63-9.15,5.45-8.54,10.78s5.45,9.16,10.78,8.54Z"/>
+      <path class="cls-2" d="M25.73,15.06c.62,5.33-3.2,10.16-8.54,10.77-5.34.63-10.17-3.2-10.78-8.54s3.21-10.16,8.54-10.78c5.34-.62,10.17,3.21,10.78,8.55Z"/>
+    </g>
+  </g>
+</svg>

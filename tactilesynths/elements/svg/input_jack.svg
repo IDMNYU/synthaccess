@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.13 31.43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #010101;
+        stroke-miterlimit: 2.32;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <polygon id="key_input" data-name="key input" class="cls-1" points="13.56 1.16 26.13 8.45 26.13 22.98 13.56 30.28 1 22.98 1 8.45 13.56 1.16"/>
+</svg>
