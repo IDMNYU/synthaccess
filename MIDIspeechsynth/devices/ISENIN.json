@@ -2,6 +2,7 @@
 	"device" : {
 		"name" : "ISE-NIN",
 		"manufacturer" : "Black Corporation",
+		"language" : "en-US",
 		"version" : 1,
 		"program_change" : {
 			"0" : {

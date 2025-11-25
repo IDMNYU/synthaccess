@@ -2,6 +2,7 @@
 	"device" : {
 		"name" : "Prophet 6",
 		"manufacturer" : "Sequential",
+		"language" : "en-US",
 		"version" : 1,
 		"program_change" : {
 			"0" : {

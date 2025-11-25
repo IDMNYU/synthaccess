@@ -2,6 +2,7 @@
 	"device" : {
 		"name" : "Luke's test synth",
 		"manufacturer" : "Luke",
+		"language" : "en-US",
 		"version" : 1,
 		"program_change" : {
 			"0" : {

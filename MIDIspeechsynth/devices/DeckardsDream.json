@@ -2,6 +2,7 @@
 	"device" : {
 		"name" : "Deckard's Dream",
 		"manufacturer" : "Black Corporation",
+		"language" : "en-US",
 		"version" : 1,
 		"program_change" : {
 			"0" : {
