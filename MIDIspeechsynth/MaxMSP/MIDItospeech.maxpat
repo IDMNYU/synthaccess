@@ -320,7 +320,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 533.0, 602.0, 86.0, 20.0 ],
-                    "presentation_linecount": 2,
                     "text": "MIDI OUTPUT"
                 }
             },
@@ -335,7 +334,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-51",
-                    "items": [ "AU DLS Synth 1", ",", "virtual1", ",", "virtual2", ",", "from Max 1", ",", "from Max 2" ],
+                    "items": [ "AU DLS Synth 1", ",", "Deckard's Dream", ",", "virtual1", ",", "virtual2", ",", "from Max 1", ",", "from Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -367,14 +366,25 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-12",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "readkeymap" ],
+                                    "patching_rect": [ 523.0, 104.0, 81.0, 22.0 ],
+                                    "text": "t readkeymap"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-18",
                                     "linecount": 6,
                                     "maxclass": "message",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 404.0, 200.0, 579.0, 89.0 ],
-                                    "text": "\"MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. The tab key turns on and off the speech. Other keys can be mapped in the device file. The i key will reread these instructions.\""
+                                    "patching_rect": [ 404.0, 200.0, 595.0, 89.0 ],
+                                    "text": "\"MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. The tab key turns on and off the speech. Other keys can be mapped in the device file. The capital I key will read any device-specific key mappings. The lowercase i key will reread these instructions. \""
                                 }
                             },
                             {
@@ -754,11 +764,11 @@
                                 "box": {
                                     "id": "obj-44",
                                     "maxclass": "newobj",
-                                    "numinlets": 11,
-                                    "numoutlets": 11,
-                                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-                                    "patching_rect": [ 26.0, 62.0, 438.99999999999994, 22.0 ],
-                                    "text": "sel 30 31 28 29 27 114 99 9 106 105"
+                                    "numinlets": 12,
+                                    "numoutlets": 12,
+                                    "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
+                                    "patching_rect": [ 26.0, 62.0, 565.0, 22.0 ],
+                                    "text": "sel 30 31 28 29 27 114 99 9 106 105 73"
                                 }
                             },
                             {
@@ -795,6 +805,12 @@
                                 "patchline": {
                                     "destination": [ "obj-18", 0 ],
                                     "source": [ "obj-11", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-4", 0 ],
+                                    "source": [ "obj-12", 0 ]
                                 }
                             },
                             {
@@ -859,6 +875,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-12", 0 ],
+                                    "source": [ "obj-44", 10 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-131", 0 ],
                                     "source": [ "obj-44", 6 ]
                                 }
@@ -866,7 +888,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-16", 0 ],
-                                    "source": [ "obj-44", 10 ]
+                                    "source": [ "obj-44", 11 ]
                                 }
                             },
                             {
@@ -1120,12 +1142,12 @@
             {
                 "box": {
                     "id": "obj-5",
-                    "linecount": 14,
+                    "linecount": 16,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 256.0, 174.0, 245.0, 194.0 ],
-                    "text": "MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. The tab key turns on and off the speech. Other keys can be mapped in the device file. The i key will reread these instructions."
+                    "patching_rect": [ 256.0, 174.0, 245.0, 221.0 ],
+                    "text": "MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. The tab key turns on and off the speech. Other keys can be mapped in the device file. The capital I key will read any device-specific key mappings. The lowercase i key will reread these instructions. "
                 }
             },
             {
@@ -2482,12 +2504,12 @@
             {
                 "box": {
                     "id": "obj-95",
-                    "linecount": 15,
+                    "linecount": 16,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 17.0, 455.0, 234.0, 208.0 ],
-                    "text": "MIDI to speech translator\n\nESC = reload MIDI ports\nup/down = cycle file list\nleft/right = cycle MIDI input port\nshift-left/shift-right = cycle MIDI output port\nc = cycle MIDI channel\nr = voiceover rate\nj = JSON load\nTAB = toggle speech\ni = instructions\n\nother keys can be mapped in the JSON\n\nrld, 2025"
+                    "patching_rect": [ 17.0, 455.0, 234.0, 221.0 ],
+                    "text": "MIDI to speech translator\n\nESC = reload MIDI ports\nup/down = cycle file list\nleft/right = cycle MIDI input port\nshift-left/shift-right = cycle MIDI output port\nc = cycle MIDI channel\nr = voiceover rate\nj = JSON load\nTAB = toggle speech\ni = instructions\nI = specific instructions\n\nother keys can be mapped in the JSON\n\nrld, 2025"
                 }
             },
             {
@@ -2617,7 +2639,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-2",
-                    "items": [ "virtual1", ",", "virtual2", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "Deckard's Dream", ",", "virtual1", ",", "virtual2", ",", "to Max 1", ",", "to Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -2656,7 +2678,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 639.0, 349.5, 182.0, 35.0 ],
-                    "text": "Prophet6"
+                    "text": "DeckardsDream"
                 }
             },
             {

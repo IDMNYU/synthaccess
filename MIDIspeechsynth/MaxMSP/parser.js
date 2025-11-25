@@ -39,13 +39,29 @@ function nrpn(_val, _param, _c) // non-registered parameter number
     }
 }
 
+function readkeymap() // read the device keymap, if it exists
+{
+    if(fload==1) {
+        let speakstring = "";
+        for(var i in thestuff.device.keypress)
+        {
+            speakstring+="press " + i + " for " + thestuff.device.keypress[i].label + ". ";
+        }        
+        if(speakstring.length>0) outlet(0, speakstring); // send to synthesizer
+    }
+}
+
 function keypress(_val) // keypress
 {
     if(fload==1) {
-        if(Object.hasOwn(thestuff.device, keypress))
+        for(var i in thestuff.device.keypress)
         {
-            let plist = thestuff.device.keypress;
-            parseMIDIout(plist, _val);
+                if(i==_val)
+                {
+                  let plist = thestuff.device.keypress;
+                  parseMIDIout(plist, _val);  
+                  break;
+                }
         }
     }
 }
