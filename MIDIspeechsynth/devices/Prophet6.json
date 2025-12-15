@@ -1,355 +1,399 @@
 {
-	"device" : {
-		"name" : "Prophet 6",
-		"manufacturer" : "Sequential",
-		"language" : "en-US",
-		"version" : 1,
-		"program_change" : {
-			"0" : {
-				"label" : "program",
-				"data" : "value"				
-			}
-		},
-		"CC" : {
-			"32" : {
-				"label" : "bank",
-				"data" : "value"
-			}
-		},
-		"NRPN" : {
-			"67" : {
-				"label" : "amplifier attack",
-				"data" : "none"
-			},
-			"68" : {
-				"label" : "amplifier decay",
-				"data" : "none"
-			},
-			"69" : {
-				"label" : "amplifier sustain",
-				"data" : "none"
-			},
-			"70" : {
-				"label" : "amplifier release",
-				"data" : "none"
-			},
-			"78" : {
-				"label" : "filter attack",
-				"data" : "none"
-			},
-			"79" : {
-				"label" : "filter decay",
-				"data" : "none"
-			},
-			"80" : {
-				"label" : "filter sustain",
-				"data" : "none"
-			},
-			"81" : {
-				"label" : "filter release",
-				"data" : "none"
-			},
-			"62" : {
-				"label" : "program volume",
-				"data" : "none"
-			},
-			"63" : {
-				"label" : "pan spread",
-				"data" : "none"
-			},
-			"66" : {
-				"label" : "amplifer envelope amount",
-				"data" : "none"
-			},
-			"45" : {
-				"label" : "low pass filter cutoff",
-				"data" : "none"
-			},
-			"46" : {
-				"label" : "low pass filter resonance",
-				"data" : "none"
-			},
-			"77" : {
-				"label" : "low pass filter envelope amount",
-				"data" : "none"
-			},
-			"49" : {
-				"label" : "high pass filter cutoff",
-				"data" : "none"
-			},
-			"50" : {
-				"label" : "high pass filter resonance",
-				"data" : "none"
-			},
-			"82" : {
-				"label" : "high pass filter envelope amount",
-				"data" : "none"
-			},
-			"2" : {
-				"label" : "oscillator one level",
-				"data" : "none"
-			},
-			"7" : {
-				"label" : "oscillator two level",
-				"data" : "none"
-			},
-			"27" : {
-				"label" : "sub octave level",
-				"data" : "none"
-			},
-			"32" : {
-				"label" : "noise level",
-				"data" : "none"
-			},
-			"33" : {
-				"label" : "oscillator slop",
-				"data" : "none"
-			},
-			"5" : {
-				"label" : "oscillator two pitch",
-				"data" : "note"
-			},
-			"6" : {
-				"label" : "oscillator two fine pitch",
-				"data" : "notename"
-			},
-			"8" : {
-				"label" : "oscillator two shape",
-				"data" : "none"
-			},
-			"9" : {
-				"label" : "oscillator two pulse width",
-				"data" : "none"
-			},
-			"0" : {
-				"label" : "oscillator one pitch",
-				"data" : "note"
-			},
-			"3" : {
-				"label" : "oscillator one shape",
-				"data" : "none"
-			},
-			"4" : {
-				"label" : "oscillator one pulse width",
-				"data" : "none"
-			},
-			"109" : {
-				"label" : "aftertouch amount",
-				"data" : "none"
-			},
-			"143" : {
-				"label" : "poly mod filter envelope",
-				"data" : "none"
-			},
-			"144" : {
-				"label" : "poly mod oscillator two envelope",
-				"data" : "none"
-			},
-			"89" : {
-				"label" : "LFO amount",
-				"data" : "none"
-			},
-			"88" : {
-				"label" : "LFO frequency",
-				"data" : "none"
-			},
-			"64" : {
-				"label" : "distortion amount",
-				"data" : "none"
-			},
-			"30" : {
-				"label" : "glide rate",
-				"data" : "none"
-			},
-			"128" : {
-				"label" : "effect B. mix",
-				"data" : "none"
-			},
-			"120" : {
-				"label" : "effect A. mix",
-				"data" : "none"
-			},
-			"121" : {
-				"label" : "effect A. parameter one",
-				"data" : "none"
-			},
-			"122" : {
-				"label" : "effect A. parameter two",
-				"data" : "none"
-			},
-			"129" : {
-				"label" : "effect B. parameter one",
-				"data" : "none"
-			},
-			"130" : {
-				"label" : "effect B. parameter two",
-				"data" : "none"
-			},
-			"167" : {
-				"label" : "clock tempo",
-				"data" : "value"
-			},
-			"47" : {
-				"label" : "low pass filter keyboard tracking",
-				"data" : "enum",
-				"enum" : ["off", "half", "full"]
-			},
-			"51" : {
-				"label" : "high pass filter keyboard tracking",
-				"data" : "enum",
-				"enum" : ["off", "half", "full"]
-			},
-			"90" : {
-				"label" : "LFO shape",
-				"data" : "enum",
-				"enum" : ["triangle", "sawtooth", "reverse saw", "square", "random"]
-			},
-			"71" : {
-				"label" : "amplifier envelope velocity",
-				"data" : "offon"
-			},
-			"52" : {
-				"label" : "high pass filter velocity",
-				"data" : "offon"
-			},
-			"48" : {
-				"label" : "low pass filter velocity",
-				"data" : "offon"
-			},
-			"91" : {
-				"label" : "LFO sync",
-				"data" : "offon"
-			},
-			"1" : {
-				"label" : "oscillator one sync",
-				"data" : "offon"
-			},
-			"10" : {
-				"label" : "oscillator two low frequency",
-				"data" : "offon"
-			},
-			"11" : {
-				"label" : "oscillator two keyboard tracking",
-				"data" : "offon"
-			},
-			"93" : {
-				"label" : "LFO to frequency one",
-				"data" : "offon"
-			},
-			"94" : {
-				"label" : "LFO to frequency two",
-				"data" : "offon"
-			},
-			"95" : {
-				"label" : "LFO to pulse width",
-				"data" : "offon"
-			},
-			"96" : {
-				"label" : "LFO to amplitude",
-				"data" : "offon"
-			},
-			"97" : {
-				"label" : "LFO to low pass",
-				"data" : "offon"
-			},
-			"98" : {
-				"label" : "LFO to high pass",
-				"data" : "offon"
-			},
-			"145" : {
-				"label" : "poly mod to frequency one",
-				"data" : "offon"
-			},
-			"146" : {
-				"label" : "poly mod to shape one",
-				"data" : "offon"
-			},
-			"147" : {
-				"label" : "poly mod to pulse width",
-				"data" : "offon"
-			},
-			"148" : {
-				"label" : "poly mod to low pass",
-				"data" : "offon"
-			},
-			"149" : {
-				"label" : "poly mod to high pass",
-				"data" : "offon"
-			},
-			"110" : {
-				"label" : "aftertouch to frequency one",
-				"data" : "offon"
-			},
-			"111" : {
-				"label" : "aftertouch to frequency two",
-				"data" : "offon"
-			},
-			"115" : {
-				"label" : "aftertouch to LFO amount",
-				"data" : "offon"
-			},
-			"114" : {
-				"label" : "aftertouch to amplitude",
-				"data" : "offon"
-			},
-			"112" : {
-				"label" : "aftertouch to low pass",
-				"data" : "offon"
-			},
-			"113" : {
-				"label" : "aftertouch to high pass",
-				"data" : "offon"
-			},
-			"29" : {
-				"label" : "glide",
-				"data" : "offon"
-			},
-			"156" : {
-				"label" : "unison",
-				"data" : "offon"
-			},
-			"135" : {
-				"label" : "effects",
-				"data" : "offon"
-
-			},
-			"119" : {
-				"label" : "effect A.",
-				"data" : "enum",
-				"enum" : ["off", "bucket brigade delay", "digital delay", "chorus", "phaser 1", "phaser 2", "phaser 3", "ring", "flanger 1", "flanger 2"]
-			},
-			"127" : {
-				"label" : "effect B.",
-				"data" : "enum",
-				"enum" : ["off", "bucket brigade delay", "digital delay", "chorus", "phaser 1", "phaser 2", "phaser 3", "ring", "flanger 1", "flanger 2", "hall", "room", "plate", "spring"]
-			},
-			"131" : {
-				"label" : "effect clock sync",
-				"data" : "offon"
-			},
-			"163" : {
-				"label" : "clock multiplier",
-				"data" : "enum",
-				"enum" : ["half", "quarter", "dotted eighth", "eighth", "eighth swing", "eighth triplet", "sixteenth", "sixteenth swing", "sixteenth triple", "thirty-second"]
-			},
-			"160" : {
-				"label" : "arpeggiator",
-				"data" : "offon"
-			},
-			"162" : {
-				"label" : "arpeggiator octave spread",
-				"data" : "enum",
-				"enum" : ["one", "two", "three"]
-			},
-			"161" : {
-				"label" : "arpeggiator mode",
-				"data" : "enum",
-				"enum" : ["up", "down", "up down", "random", "assign"]
-			},
-			"172" : {
-				"label" : "record",
-				"data" : "offon"
-			}
-		}
-	}	
+  "device": {
+    "name": "Prophet 6",
+    "manufacturer": "Sequential",
+    "language": "en-US",
+    "version": 1,
+    "globals": {
+      "pgm": {
+        "value": 50,
+        "offset": -1
+      }
+    },
+    "program_change": {
+      "0": {
+        "label": "program",
+        "data": "global1",
+        "global": "pgm"
+      }
+    },
+    "CC": {
+      "32": {
+        "label": "program",
+        "data": "global100",
+        "global": "pgm"
+      }
+    },
+    "NRPN": {
+      "67": {
+        "label": "amplifier attack",
+        "data": "none"
+      },
+      "68": {
+        "label": "amplifier decay",
+        "data": "none"
+      },
+      "69": {
+        "label": "amplifier sustain",
+        "data": "none"
+      },
+      "70": {
+        "label": "amplifier release",
+        "data": "none"
+      },
+      "78": {
+        "label": "filter attack",
+        "data": "none"
+      },
+      "79": {
+        "label": "filter decay",
+        "data": "none"
+      },
+      "80": {
+        "label": "filter sustain",
+        "data": "none"
+      },
+      "81": {
+        "label": "filter release",
+        "data": "none"
+      },
+      "62": {
+        "label": "program volume",
+        "data": "none"
+      },
+      "63": {
+        "label": "pan spread",
+        "data": "none"
+      },
+      "66": {
+        "label": "amplifer envelope amount",
+        "data": "none"
+      },
+      "45": {
+        "label": "low pass filter cutoff",
+        "data": "none"
+      },
+      "46": {
+        "label": "low pass filter resonance",
+        "data": "none"
+      },
+      "77": {
+        "label": "low pass filter envelope amount",
+        "data": "none"
+      },
+      "49": {
+        "label": "high pass filter cutoff",
+        "data": "none"
+      },
+      "50": {
+        "label": "high pass filter resonance",
+        "data": "none"
+      },
+      "82": {
+        "label": "high pass filter envelope amount",
+        "data": "none"
+      },
+      "2": {
+        "label": "oscillator one level",
+        "data": "none"
+      },
+      "7": {
+        "label": "oscillator two level",
+        "data": "none"
+      },
+      "27": {
+        "label": "sub octave level",
+        "data": "none"
+      },
+      "32": {
+        "label": "noise level",
+        "data": "none"
+      },
+      "33": {
+        "label": "oscillator slop",
+        "data": "none"
+      },
+      "5": {
+        "label": "oscillator two pitch",
+        "data": "note"
+      },
+      "6": {
+        "label": "oscillator two fine pitch",
+        "data": "notename"
+      },
+      "8": {
+        "label": "oscillator two shape",
+        "data": "none"
+      },
+      "9": {
+        "label": "oscillator two pulse width",
+        "data": "none"
+      },
+      "0": {
+        "label": "oscillator one pitch",
+        "data": "note"
+      },
+      "3": {
+        "label": "oscillator one shape",
+        "data": "none"
+      },
+      "4": {
+        "label": "oscillator one pulse width",
+        "data": "none"
+      },
+      "109": {
+        "label": "aftertouch amount",
+        "data": "none"
+      },
+      "143": {
+        "label": "poly mod filter envelope",
+        "data": "none"
+      },
+      "144": {
+        "label": "poly mod oscillator two envelope",
+        "data": "none"
+      },
+      "89": {
+        "label": "LFO amount",
+        "data": "none"
+      },
+      "88": {
+        "label": "LFO frequency",
+        "data": "none"
+      },
+      "64": {
+        "label": "distortion amount",
+        "data": "none"
+      },
+      "30": {
+        "label": "glide rate",
+        "data": "none"
+      },
+      "128": {
+        "label": "effect B. mix",
+        "data": "none"
+      },
+      "120": {
+        "label": "effect A. mix",
+        "data": "none"
+      },
+      "121": {
+        "label": "effect A. parameter one",
+        "data": "none"
+      },
+      "122": {
+        "label": "effect A. parameter two",
+        "data": "none"
+      },
+      "129": {
+        "label": "effect B. parameter one",
+        "data": "none"
+      },
+      "130": {
+        "label": "effect B. parameter two",
+        "data": "none"
+      },
+      "167": {
+        "label": "clock tempo",
+        "data": "value"
+      },
+      "47": {
+        "label": "low pass filter keyboard tracking",
+        "data": "enum",
+        "enum": ["off", "half", "full"]
+      },
+      "51": {
+        "label": "high pass filter keyboard tracking",
+        "data": "enum",
+        "enum": ["off", "half", "full"]
+      },
+      "90": {
+        "label": "LFO shape",
+        "data": "enum",
+        "enum": ["triangle", "sawtooth", "reverse saw", "square", "random"]
+      },
+      "71": {
+        "label": "amplifier envelope velocity",
+        "data": "offon"
+      },
+      "52": {
+        "label": "high pass filter velocity",
+        "data": "offon"
+      },
+      "48": {
+        "label": "low pass filter velocity",
+        "data": "offon"
+      },
+      "91": {
+        "label": "LFO sync",
+        "data": "offon"
+      },
+      "1": {
+        "label": "oscillator one sync",
+        "data": "offon"
+      },
+      "10": {
+        "label": "oscillator two low frequency",
+        "data": "offon"
+      },
+      "11": {
+        "label": "oscillator two keyboard tracking",
+        "data": "offon"
+      },
+      "93": {
+        "label": "LFO to frequency one",
+        "data": "offon"
+      },
+      "94": {
+        "label": "LFO to frequency two",
+        "data": "offon"
+      },
+      "95": {
+        "label": "LFO to pulse width",
+        "data": "offon"
+      },
+      "96": {
+        "label": "LFO to amplitude",
+        "data": "offon"
+      },
+      "97": {
+        "label": "LFO to low pass",
+        "data": "offon"
+      },
+      "98": {
+        "label": "LFO to high pass",
+        "data": "offon"
+      },
+      "145": {
+        "label": "poly mod to frequency one",
+        "data": "offon"
+      },
+      "146": {
+        "label": "poly mod to shape one",
+        "data": "offon"
+      },
+      "147": {
+        "label": "poly mod to pulse width",
+        "data": "offon"
+      },
+      "148": {
+        "label": "poly mod to low pass",
+        "data": "offon"
+      },
+      "149": {
+        "label": "poly mod to high pass",
+        "data": "offon"
+      },
+      "110": {
+        "label": "aftertouch to frequency one",
+        "data": "offon"
+      },
+      "111": {
+        "label": "aftertouch to frequency two",
+        "data": "offon"
+      },
+      "115": {
+        "label": "aftertouch to LFO amount",
+        "data": "offon"
+      },
+      "114": {
+        "label": "aftertouch to amplitude",
+        "data": "offon"
+      },
+      "112": {
+        "label": "aftertouch to low pass",
+        "data": "offon"
+      },
+      "113": {
+        "label": "aftertouch to high pass",
+        "data": "offon"
+      },
+      "29": {
+        "label": "glide",
+        "data": "offon"
+      },
+      "156": {
+        "label": "unison",
+        "data": "offon"
+      },
+      "135": {
+        "label": "effects",
+        "data": "offon"
+      },
+      "119": {
+        "label": "effect A.",
+        "data": "enum",
+        "enum": [
+          "off",
+          "bucket brigade delay",
+          "digital delay",
+          "chorus",
+          "phaser 1",
+          "phaser 2",
+          "phaser 3",
+          "ring",
+          "flanger 1",
+          "flanger 2"
+        ]
+      },
+      "127": {
+        "label": "effect B.",
+        "data": "enum",
+        "enum": [
+          "off",
+          "bucket brigade delay",
+          "digital delay",
+          "chorus",
+          "phaser 1",
+          "phaser 2",
+          "phaser 3",
+          "ring",
+          "flanger 1",
+          "flanger 2",
+          "hall",
+          "room",
+          "plate",
+          "spring"
+        ]
+      },
+      "131": {
+        "label": "effect clock sync",
+        "data": "offon"
+      },
+      "163": {
+        "label": "clock multiplier",
+        "data": "enum",
+        "enum": [
+          "half",
+          "quarter",
+          "dotted eighth",
+          "eighth",
+          "eighth swing",
+          "eighth triplet",
+          "sixteenth",
+          "sixteenth swing",
+          "sixteenth triple",
+          "thirty-second"
+        ]
+      },
+      "160": {
+        "label": "arpeggiator",
+        "data": "offon"
+      },
+      "162": {
+        "label": "arpeggiator octave spread",
+        "data": "enum",
+        "enum": ["one", "two", "three"]
+      },
+      "161": {
+        "label": "arpeggiator mode",
+        "data": "enum",
+        "enum": ["up", "down", "up down", "random", "assign"]
+      },
+      "172": {
+        "label": "record",
+        "data": "offon"
+      }
+    }
+  }
 }

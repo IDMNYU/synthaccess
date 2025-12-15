@@ -11,6 +11,7 @@ var chan = 1; // MIDI channel
 
 function fread(_s) // read a JSON file
 {
+    thestuff = {}; // blow everyting away
     var f = new File(_s, "read"); // open file
     if(f.isopen)
     {
@@ -20,7 +21,7 @@ function fread(_s) // read a JSON file
         f.close(); // close file
         fload = 1; // file is loaded
         prevparam = -1; // reset params
-    }  
+    }
 }
 
 function cc(_val, _param, _c) // continuous controller
@@ -81,7 +82,7 @@ function channel(_c) // change active MIDI channel
 
 function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pings the receiving synth
 {
-    let l;
+    let l, o;
     outlet(2, "bang"); // turn off MIDI receiver
     let speakstring = "";
     if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
@@ -134,7 +135,7 @@ function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pi
 function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
-    let a, b, s, cl;
+    let a, b, s, cl, l, o, v;
     let dospeak = 1; // default to speaking
     let mval = 127; // assume 7-bit
     let hval = 64; // 7-bit half value
@@ -208,6 +209,30 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                     idx = i;
                 }
                 speakstring+=" " + _plist[_param].enum[idx];
+                break;
+            case "global": // modify a global value directly
+                l = _plist[_param].global;
+                v = parseInt(thestuff.device.globals[l].value);
+                o = parseInt(thestuff.device.globals[l].offset);
+                v = _val;
+                thestuff.device.globals[l].value = v;
+                speakstring+=" " + (v+o);
+                break;
+            case "global1": // modify the first two digits of a global value and preserve the third
+                l = _plist[_param].global;
+                v = parseInt(thestuff.device.globals[l].value);
+                o = parseInt(thestuff.device.globals[l].offset);
+                v = (Math.floor(v/100)*100) + _val;
+                thestuff.device.globals[l].value = v;
+                speakstring+=" " + (v+o);
+                break;
+            case "global100": // modify the third digit of a global value and preserve the first two
+                l = _plist[_param].global;
+                v = parseInt(thestuff.device.globals[l].value);
+                o = parseInt(thestuff.device.globals[l].offset);
+                v = (_val*100) + v%100;
+                thestuff.device.globals[l].value = v;
+                speakstring+=" " + (v+o);
                 break;
             case "none": // read just the parameter
                 if(prevparam == _param) dospeak = 0; // skip repeats
