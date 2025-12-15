@@ -142,6 +142,9 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
     if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
     {
         speakstring+=_plist[_param].label; // speechify parameter
+        if(typeof(_plist[_param].silent)!=='undefined') {
+            dospeak = 0;
+        }
         if(typeof(_plist[_param].hires)!=='undefined') {
             if(_plist[_param].hires=='true') 
             {

@@ -21,7 +21,8 @@
       "32": {
         "label": "program",
         "data": "global100",
-        "global": "pgm"
+        "global": "pgm",
+        "silent": "yes"
       }
     },
     "NRPN": {
