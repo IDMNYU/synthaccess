@@ -16,8 +16,9 @@ JSON format:
 The JSON root element is a **device**, which has the following top-level properties:
 - **name** : the name of the device.
 - **manufacturer** : who made it.
+- **language** : a [BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag) code representing the language used for the labels, e.g. 'en-US'.
 - **version** : version of the *parser* to be used (this is in anticipation of a versioned release).
-- **program_change**, **CC**, **NRPN** : these define speech interactions that occur upon receiving MIDI program change, continuous controller, or non-registered parameter number messages.
+- **program_change**, **CC**, **NRPN** : these define speech interactions that occur upon receiving [MIDI](https://en.wikipedia.org/wiki/MIDI) program change, continuous controller, or [non-registered parameter number](https://en.wikipedia.org/wiki/NRPN) messages.
    - the encapsulated object contains enumerable string keys defining the *controller number* that dictates which CC or NRPN to respond; for program changes this is always *0*; the properties of these keys are:
       - **label** : the speakable label for the key (e.g. "modulation" for CC0).
       - **data** : how the MIDI parameter's *value* is to be parsed; options are:
@@ -72,6 +73,7 @@ Example:
    "device": {
       "name": "Luke's Hypothetical Synthesizer",
       "manufacturer": "Luke's Hypothetical Company",
+      "language": "en-US",
       "version": 1,
       "program_change": {
          "0": {
