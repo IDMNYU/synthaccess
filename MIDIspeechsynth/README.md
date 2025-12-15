@@ -18,6 +18,9 @@ The JSON root element is a **device**, which has the following top-level propert
 - **manufacturer** : who made it.
 - **language** : a [BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag) code representing the language used for the labels, e.g. 'en-US'.
 - **version** : version of the *parser* to be used (this is in anticipation of a versioned release).
+- **globals** : global variables to be maintained by the parameter structure, e.g. patch numbers combined by more than one parameter, etc.; each *key* is a paraemter name that can be called by different mappings; the properties of these keys are:
+   -  **value** : the initial value of the parameter
+   -  **offset** : a numeric offset for the parameter when used when speaking (e.g. 0-99 for a value that's internally represented as 1-100)
 - **program_change**, **CC**, **NRPN** : these define speech interactions that occur upon receiving [MIDI](https://en.wikipedia.org/wiki/MIDI) program change, continuous controller, or [non-registered parameter number](https://en.wikipedia.org/wiki/NRPN) messages.
    - the encapsulated object contains enumerable string keys defining the *controller number* that dictates which CC or NRPN to respond; for program changes this is always *0*; the properties of these keys are:
       - **label** : the speakable label for the key (e.g. "modulation" for CC0).
@@ -38,7 +41,10 @@ The JSON root element is a **device**, which has the following top-level propert
          - "note" : read out the *value* as a MIDI pitch (60 = C3).
          - "noteC4" : read out the *value* as a MIDI pitch (60 = C4).
          - "enum" : read labels from an enumerating array using the *value* as the index.
-         - "enumsplit" : read labels from an enumerating array using split points. 
+         - "enumsplit" : read labels from an enumerating array using split points.
+         - "global" : modify a global variable
+         - "global1" : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
+         - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for program numbers)
       - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default | "false") or 14-bit 0-16363 ("true")
       - **range** : array for "intrange", "floatrange" data; index 0 is the minimum output value; 1 is the maximum output value.
       - **map** : array for "intmap", and "floatmap" data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
