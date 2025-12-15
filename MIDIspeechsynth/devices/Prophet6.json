@@ -6,7 +6,7 @@
     "version": 1,
     "globals": {
       "pgm": {
-        "value": 50,
+        "value": 0,
         "offset": -1
       }
     },
