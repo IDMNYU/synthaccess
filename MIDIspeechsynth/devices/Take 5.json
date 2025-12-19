@@ -1,0 +1,1228 @@
+{
+  "device": {
+    "name": "Take 5",
+    "manufacturer": "Sequential",
+    "version": 0.11,
+    "program_change": {
+      "0": {
+        "label": "program",
+        "data": "value"
+      }
+    },
+    "CC": {
+        "0": {
+          "label": "bank",
+          "data": "value"
+        },
+        "1": {
+          "label": "mod wheel",
+          "data": "value"
+        },
+      "7": {
+        "label": "master volume",
+        "data": "value"
+      },
+      "32": {
+        "label": "bank",
+        "data": "value"
+      }
+    },
+		"NRPN" : {
+			"0" : {
+				"label" : "BPM",
+				"data" : "value"
+			},
+			"1" : {
+				"label" : "program volume",
+				"data" : "value"
+			},
+			"2" : {
+				"label" : "oscillator one glide rate",
+				"data" : "value"
+			},
+			"3" : {
+				"label" : "oscillator two glide rate",
+				"data" : "value"
+			},
+			"4" : {
+				"label" : "glide",
+				"data" : "enum",
+				"enum" : ["off", "on"]
+			},
+			"5" : {
+				"label" : "glide mode",
+				"data" : "enum",
+              "enum" : ["fixed rate", "fixed rate A","fixed time","fixed time A"]
+			},
+			"6" : {
+				"label" : "oscillator sync",
+				"data" : "enum",
+              "enum" : ["off", "on"]
+			},
+			"7" : {
+				"label" : "oscillator one key tracking",
+				"data" : "enum",
+              "enum" : ["off", "on"]
+			},
+			"8" : {
+				"label" : "oscillator one octave",
+			    "data": "intmap",
+		        "map": [
+		          0,
+		          4,
+		          -2,
+		          2
+		        ]
+			},
+			"9" : {
+				"label" : "oscillator one fine frequency",
+			    "data": "intmap",
+		        "map": [
+		          0,
+		          1400,
+		          -700,
+		          700
+		        ],
+		        "clamp": "true",
+				"suffix": "cents"
+			},
+			"10" : {
+				"label" : "oscillator one shape",
+				"data" : "value"
+			},
+			"11" : {
+				"label" : "FM",
+				"data" : "enum",
+              "enum" : ["off", "on"]
+			},
+			"12" : {
+				"label" : "oscillator two key tracking",
+				"data" : "enum",
+              "enum" : ["off", "on"]
+			},
+			"13" : {
+				"label" : "oscillator two octave",
+			    "data": "intmap",
+		        "map": [
+		          0,
+		          4,
+		          -2,
+		          2
+		        ]
+			},
+			"14" : {
+				"label" : "oscillator two fine frequency",
+				"data": "intmap",
+		        "map": [
+		          0,
+		          1400,
+		          -700,
+		          700
+		        ],
+		        "clamp": "true",
+				"suffix": "cents"
+			},
+			"15" : {
+				"label" : "oscillator two shape",
+				"data" : "value"
+			},
+			"16" : {
+				"label" : "Effects",
+				"data" : "enum",
+              "enum" : ["off", "on"]
+			},
+			"17" : {
+				"label" : "effects type",
+				"data" : "enum",
+              "enum" : ["off", "stereo delay","bucket brigade delay","tape delay one","tape delay two","chorus","flanger","phaser","high pass filter","distortion","ring modulation","rotating speaker","low fidelity"]
+			},
+			"18" : {
+				"label" : "effects time",
+				"data" : "value"
+			},
+			"19" : {
+				"label" : "effects depth or mix",
+				"data" : "value"
+			},
+			"20" : {
+				"label" : "effects miscellaneous",
+				"data" : "value"
+			},
+			"21" : {
+				"label" : "effects sync",
+				"data" : "enum",
+              "enum" : ["off", "on"]
+			},
+			"22" : {
+				"label" : "effects sync rate",
+				"data" : "enum",
+              "enum" : ["half note", "quarter note","eighth note","eighth note triplets","sixteenth note triplets","thirty second note","sixty fourth note"]
+			},
+			"23" : {
+				"label" : "reverb",
+				"data" : "enum",
+              "enum" : ["off", "on"]
+			},
+			"24" : {
+				"label" : "reverb mix",
+				"data" : "value"
+			},
+			"25" : {
+				"label" : "reverb damping",
+				"data" : "value"
+			},
+			"26" : {
+				"label" : "reverb pre delay",
+				"data" : "value"
+			},
+			"27" : {
+				"label" : "reverb decay",
+				"data" : "value"
+			},
+			"28" : {
+				"label" : "reverb tone",
+				"data" : "value"
+			},
+			"29" : {
+				"label" : "filter frequency",
+				"data" : "value"
+			},
+			"31" : {
+				"label" : "filter resonance",
+				"data" : "value"
+			},
+			"32" : {
+				"label" : "filter drive",
+				"data" : "value"
+			},
+			"33" : {
+				"label" : "filter key amount",
+				"data" : "value"
+			},
+			"34" : {
+				"label" : "vintage",
+				"data" : "value"
+			},
+			"35" : {
+				"label" : "overdrive",
+				"data" : "value"
+			},
+			"36" : {
+				"label" : "oscillator one level",
+				"data" : "value"
+			},
+			"37" : {
+				"label" : "oscillator two level",
+				"data" : "value"
+			},
+			"38" : {
+				"label" : "sub oscillator level",
+				"data" : "value"
+			},
+			"39" : {
+				"label" : "noise level",
+			    "data": "intmap",
+		        "map": [
+		          0,
+		          127,
+		          -64,
+		          63
+		        ],
+		        "clamp": "true"	
+			},
+			"40" : {
+				"label" : "envelope one auxillary destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+			"41" : {
+				"label" : "envelope one delay",
+				"data" : "value"
+			},
+			"42" : {
+				"label" : "envelope one attack",
+				"data" : "value"
+			},
+			"43" : {
+				"label" : "envelope one decay",
+				"data" : "value"
+			},
+			"44" : {
+				"label" : "envelope one sustain",
+				"data" : "value"
+			},
+			"45" : {
+				"label" : "envelope one release",
+				"data" : "value"
+			},
+			"46" : {
+				"label" : "envelope one amount",
+				"data": "intmap",
+              "hires": "true",
+              "map": [0,255,-127,128],
+              "clamp": "true"
+			},
+			"47" : {
+				"label" : "envelope one velocity",
+				"data" : "offon"
+			},
+			"48" : {
+				"label" : "envelope two delay",
+				"data" : "value"
+			},
+			"49" : {
+				"label" : "envelope two attack",
+				"data" : "value"
+			},
+			"50" : {
+				"label" : "envelope two decay",
+				"data" : "value"
+			},
+			"51" : {
+				"label" : "envelope two sustain",
+				"data" : "value"
+			},
+			"52" : {
+				"label" : "envelope two release",
+				"data" : "value"
+			},
+			"53" : {
+				"label" : "envelope two amount",
+				"data" : "value"
+			},
+			"54" : {
+				"label" : "envelope two velocity",
+				"data" : "offon"
+			},
+			"55" : {
+				"label" : "envelope routing",
+				"data" : "enum",
+              "enum" : ["envelope one filter and envelope two amp", "envelope one auxillary and envelope two filter plus amp","envelope one auxillary and envelope two filter plus gate"]
+			},
+			"56" : {
+				"label" : "unison",
+				"data" : "offon"
+			},
+			"57" : {
+				"label" : "unison voices",
+		        "data": "enum",
+		        "enum": [
+		          "one voice",
+		          "two voices",
+		          "three voices",
+		          "four voices",
+		          "five voices",
+		          "chord"
+		        ]
+			},
+			"58" : {
+				"label" : "unison deetune",
+				"data" : "value"
+			},
+			"59" : {
+				"label" : "unison keymode",
+				"data" : "enum",
+              "enum" : ["low","high","last"]
+			},
+			"60" : {
+				"label" : "unison envelope retrigger",
+				"data" : "offon"
+			},
+			"61" : {
+				"label" : "L F O one frequency",
+				"data" : "value"
+			},
+			"62" : {
+				"label" : "L F O one amount",
+			    "data": "intmap",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          127
+		        ]
+			},
+			"63" : {
+				"label" : "L F O one shape",
+				"data" : "enum",
+              "enum" : ["triangle","saw","reverse saw","square","sample and hold"]
+			},
+			"64" : {
+				"label" : "L F O one sync",
+				"data" : "offon"
+			},
+			"65" : {
+				"label" : "L F O one sync frequency",
+				"data" : "enum",
+              "enum" : ["thirty two steps","sixteen steps","eight steps","six steps","four steps","three steps","two steps","one point five steps","one step","two third step","on half step","one third step","one fourth step","one sixth step","one eight step","one sixteenth step"]
+			},
+			"66" : {
+				"label" : "L F O one note reset",
+				"data" : "offon"
+			},
+			"67" : {
+				"label" : "L F O 1 mod destination",				
+				"data" : "enum",
+              	"enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+			"68" : {
+				"label" : "L F O two frequency",
+			    "data": "value"
+			},
+			"69" : {
+				"label" : "L F O two amount",
+			    "data": "intmap",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          127
+		        ]
+			},
+			"70" : {
+				"label" : "L F O two shape",
+				"data" : "enum",
+              "enum" : ["triangle","saw","reverse saw","square","sample and hold"]
+			},
+			"71" : {
+				"label" : "L F O two sync",
+				"data" : "offon"
+			},
+			"72" : {
+				"label" : "L F O two sync frequency",
+				"data" : "enum",
+              "enum" : ["thirty two steps","sixteen steps","eight steps","six steps","four steps","three steps","two steps","one point five steps","one step","two third step","on half step","one third step","one fourth step","one sixth step","one eight step","one sixteenth step"]
+			},
+			"73" : {
+				"label" : "L F O two note reset",
+				"data" : "offon"
+			},
+			"74" : {
+				"label" : "L F O 2 mod destination",				
+				"data" : "enum",
+              	"enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},			
+			"75" : {
+				"label" : "pitch bend range up",
+				"data" : "value"
+			},
+			"76" : {
+				"label" : "pitch bend range down",
+				"data" : "value"
+			},
+			"77" : {
+				"label" : "mod one source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+			"78" : {
+				"label" : "mod two source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+			"79" : {
+				"label" : "mod three source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+			"80" : {
+				"label" : "mod four source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+			"81" : {
+				"label" : "mod five source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+			"82" : {
+				"label" : "mod six source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+			"83" : {
+				"label" : "mod seven source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "84" : {
+				"label" : "mod eight source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "85" : {
+				"label" : "mod nine source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "86" : {
+				"label" : "mod ten source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "87" : {
+				"label" : "mod eleven source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "88" : {
+				"label" : "mod twelve source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "89" : {
+				"label" : "mod thirteen source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "90" : {
+				"label" : "mod fourteen source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "91" : {
+				"label" : "mod fifteen source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "92" : {
+				"label" : "mod sixteen source",
+				"data" : "enum",
+				"enum" : ["no source","oscillator two","noise","L F O one","L F O two","envelope one","envelope two","voice spread","pitch bend","mod wheel","pressure","breath","foot","expression","velocity","note number","filter output","random","DC","audio out"]
+			},
+          "93" : {
+				"label" : "mod one amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "94" : {
+				"label" : "mod two amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "95" : {
+				"label" : "mod three amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "96" : {
+				"label" : "mod four amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "97" : {
+				"label" : "mod five amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "98" : {
+				"label" : "mod six amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "99" : {
+				"label" : "mod seven amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "100" : {
+				"label" : "mod eight amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "101" : {
+				"label" : "mod nine amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "102" : {
+				"label" : "mod ten amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "103" : {
+				"label" : "mod eleven amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "104" : {
+				"label" : "mod twelve amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "105" : {
+				"label" : "mod thirteen amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "106" : {
+				"label" : "mod fourteen amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "107" : {
+				"label" : "mod fifteen amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "108" : {
+				"label" : "mod sixteen amount",
+		        "data": "intmap",
+		        "hires": "true",
+		        "map": [
+		          0,
+		          255,
+		          -127,
+		          128
+		        ],
+		        "clamp": "true"
+			},
+          "109" : {
+				"label" : "mod one destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "110" : {
+				"label" : "mod two destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "111" : {
+				"label" : "mod three destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "112" : {
+				"label" : "mod four destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "113" : {
+				"label" : "mod five destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "114" : {
+				"label" : "mod six destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "115" : {
+				"label" : "mod seven destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "116" : {
+				"label" : "mod eight destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "117" : {
+				"label" : "mod nine destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "118" : {
+				"label" : "mod ten destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "119" : {
+				"label" : "mod eleven destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "120" : {
+				"label" : "mod twelve destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "121" : {
+				"label" : "mod thirteen destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "122" : {
+				"label" : "mod fourteen destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "123" : {
+				"label" : "mod fifteen destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+          "124" : {
+				"label" : "mod sixteen destination",
+				"data" : "enum",
+              "enum" : ["no destination","oscillator one octave","oscillator two octave","oscillator one fine tune","oscilator two fine tune","oscillator all fine tune","oscillator one shape","oscillator two shape","oscillator all shape","oscillator one level","oscillator two level","oscillator FM level","sub oscillator level","noise","drive","cutoff","resonance","overdrive","panning","FX mix","FX time","FX miscellaneous","reverb mix","reverb size","reverb predelay","reverb decay","reverb tone","L F O one frequency","L F O two frequency","L F O one amount","L F O two amount","envelope one amount","envelope two amount","envelope one attach","envelope two attack","envelope one decay","envelope two decay","envelope one release","envelope two release","mod one amount","mod two amount","mod three amount","mod four amount","mod five amount","mod six amount","mod seven amount","mod eight amount","mod nine amount","mod ten amount","mod eleven amount","mod twelve amount","mod thirteen amount","mod fourteen amount","mod fifteen amount","mod sixteen amount","vintage amount"]
+			},
+           "125" : {
+	           "label": "envelope repeat",
+	           "data": "enum",
+	           "enum": [
+	             "none",
+	             "envelope one",
+	             "envelope two",
+	             "envelope one and two"
+	           ]
+	         },
+           "126" : {
+   				"label" : "oscillator 2 filter bypass",
+   				"data" : "offon"
+			},
+		  "127" : {
+				"label" : "L F O 1 slew",
+				"data": "value"
+			},
+  		  "128" : {
+  				"label" : "L F O 2 slew",
+  				"data": "value"
+  			},
+	        "129": {
+	          "label": "scale tuning",
+	          "data": "enum",
+	          "enum": [
+	            "Use Global",
+	            "Equal Temperament",
+	            "Harmonic Series",
+	            "Carlos Harmonic Twelve Tone",
+	            "Meantone Temperament",
+	            "1/4 Tone Equal Temperament",
+	            "19 Tone Equal Temperament",
+	            "31 Tone Equal Temperament",
+	            "Pythagorean C",
+	            "Just Intonation in A with 7-Limit Tritone at D#",
+	            "3-5 Lattice in A",
+	            "3-7 Lattice in A",
+	            "Other Music 7-Limit Black Keys in C",
+	            "Dan Schmidt Pelog/Slendro",
+	            "Yamaha Just Major C",
+	            "Yamaha Just Minor C",
+	            "Harry Partch 11-Limit 43 Note Just Intonation",
+	            "Arabic 12-Tone",
+	            "12 Out of 19-tET Scale from Mandelbaum’s Dissertation",
+	            "12 Out of 31-tET, Meantone Eb-G#",
+	            "Terry Riley’s Harp of New Albion scale, Inverse Malcolm’s Monochord",
+	            "Lute tuning of Giovanni Maria Artusi (1603)",
+	            "J.S. Bach “well temperament”",
+	            "Bulgarian Bagpipe tuning",
+	            "Wendy Carlos’ Alpha Scale",
+	            "Wendy Carlos’ Beta Scale",
+	            "Wendy Carlos’ Gamma Scale",
+	            "Carlos Super Just",
+	            "Jon Catler 24-tone",
+	            "John Chalmers JI-1",
+	            "John Chalmers JI-3J",
+	            "John Chalmers JI-4",
+	            "Chinese scale, 4th century",
+	            "Chinese Lu scale by Huai Nan Zi",
+	            "Colonna 1",
+	            "Colonna 2",
+	            "Ivor Darreg’s",
+	            "Dorian Diatonic Tonos",
+	            "Almost Equal 12-tone Subset of Duodenarium",
+	            "Ellis’s Just Harmonium",
+	            "Bali/Java Slendro",
+	            "Tibetian Ceremonial",
+	            "Erlangen revised",
+	            "Euler - Monochord",
+	            "Fokker’s 12-tone",
+	            "Bagpipe tuning from Fortuna",
+	            "Gamelan Udan Mas",
+	            "Kraig Grady’s",
+	            "Harmonics 1 to 12 and Subharmonics Mixed",
+	            "Michael Harrison",
+	            "Helmholtz’s two-keyboard Harmonium Tuning Untempered",
+	            "North Indian Gamut",
+	            "Carnatic Gamut",
+	            "Observed South Indian Tuning",
+	            "7-limit 12-tone Scale",
+	            "Alternate 7-limit 12-tone Scale",
+	            "Kurzweil “Just with Natural flat 7th”",
+	            "3 and 7 prime",
+	            "Ben Johnston’s",
+	            "Harrison’s comma mean-tone",
+	            "Rousseau’s Monochord",
+	            "Persian santur tuning",
+	            "Vallotti & Young",
+	            "LaMonte Young for guitar",
+	            "LaMonte Young’s Well-Tuned Piano",
+	            "Thomas Young"
+	          ]
+	        },
+	       "130": {
+	          "label": "overdrive mix",
+	          "data": "enum",
+	          "enum": [
+	            "Take five style",
+	            "T O five style"
+	          ]
+	        },
+	        "131": {
+	          "label": "noise type",
+	          "data": "enum",
+	          "enum": [
+	            "pink to white",
+	            "pink to violet"
+	          ]
+	        },
+            "161" : {
+   				"label" : "arpedgiator timing",
+		        "data": "enum",
+		        "enum": [
+		          "normal",
+		          "whiplash"
+		        ]
+		      },
+           "162" : {
+  				"label" : "arp",
+  				"data" : "offon"
+  			},
+
+          "163" : {
+	          "label": "arpedgiator mode",
+	          "data": "enum",
+	          "enum": [
+	            "up",
+	            "down",
+	            "up and down",
+	            "random",
+	            "assign",
+	            "pinky up",
+	            "pinky down",
+	            "thumb up",
+	            "thumb down",
+	            "spiral",
+	            "leapfrog",
+	            "shuffle",
+	            "shuffle once",
+	            "random walk",
+	            "chord"
+	          ]
+			},
+            "164" : {			
+ 	        	"label": "arpedgiator range",
+ 	        	"data": "enum",
+ 	        	"enum": [
+ 	          	  "one octave",
+ 	          	"two octaves",
+ 	          	"three octaves"
+ 	        ]
+ 			},
+          "165" : {
+	          "label": "arpedgiator repeats",
+	          "data": "value"
+			},
+          "166" : {
+				"label" : "arpedgiator repeats",
+				"data" : "value"
+			},
+          "167" : {
+  				"label" : "arp relatch",
+  				"data" : "offon"
+  			},
+          "168" : {
+				"label" : "clock division",
+				"data" : "enum",
+              "enum" : ["half note","quarter note","eight note","eight triplet","sixteenth note","sixteenth triplet","thirty second note","sixty fourth note"]
+			},
+          "169" : {
+				"label" : "key split minus one octave",
+				"data" : "offon"
+			},
+            "170" : {
+				"label" : "key split note",
+				"data" : "note"
+			},
+          "171" : {
+				"label" : "key split minus two octaves",
+				"data" : "offon"
+			},
+			"4096": {
+        "label": "master coarse tune",
+        "data": "intmap",
+        "map": [
+          0,
+          24,
+          -12,
+          12
+        ],
+		"suffix": "semi tones"
+      },
+      "4097": {
+        "label": "master fine tune",
+        "data": "intmap",
+        "map": [
+          0,
+          100,
+          -50,
+          50
+        ],
+		"suffix": "cents"
+      },
+	  "4098": {
+	    "label": "midi channel",
+	    "data": "value"
+	  },
+	  "4099": {
+	    "label": "midi clock mode",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"output",
+			"output, no start and stop",
+			"in",
+			"in, and through",
+			"in, no start and stop"
+        ]
+	  },
+	  "4100": {
+	    "label": "midi clock in port,",
+	    "data": "enum",
+        "enum": [
+			"midi",
+			"usb"
+        ]
+	  },
+	  "4101": {
+	    "label": "midi clock out port,",
+	    "data": "enum",
+        "enum": [
+			"midi",
+			"usb",
+			"all"
+        ]
+	  },
+	  "4102": {
+	    "label": "midi parameter send",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"control changes",
+			"N R P Ns"
+        ]
+	  },
+	  "4103": {
+	    "label": "midi parameter receive",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"control changes",
+			"N R P Ns"
+        ]
+	  },
+	  "4104": {
+	    "label": "midi control",
+	    "data": "offon"
+	  },
+	  "4105": {
+	    "label": "system exclusive",
+	    "data": "offon"
+	  },
+	  "4106": {
+	    "label": "system exclusive port",
+	    "data": "enum",
+        "enum": [
+			"midi",
+			"usb"
+        ]
+	  },
+	  "4107": {
+	    "label": "midi output",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"midi",
+			"usb",
+			"all",
+			"poly chain"
+        ]
+	  },
+	  "4108": {
+	    "label": "midi program send",
+	    "data": "offon"
+	  },
+	  "4109": {
+	    "label": "midi program receive",
+	    "data": "offon"
+	  },
+	  "4110": {
+	    "label": "arpedgiator notes output",
+	    "data": "offon"
+	  },	  
+      "4111": {
+        "label": "local control",
+        "data": "enum",
+        "enum": [
+			"all off",
+			"Keys and wheels off",
+			"on"
+        ]
+      },
+      "4112": {
+        "label": "audio output",
+        "data": "enum",
+        "enum": [
+			"mono",
+			"stereo"
+        ]
+      },
+	  "4113": {
+	    "label": "pot mode",
+	    "data": "enum",
+        "enum": [
+			"relative",
+			"pass through",
+			"jump"
+        ]
+	  },
+	  "4114": {
+	    "label": "pedal function",
+	    "data": "enum",
+        "enum": [
+			"breath CC 2",
+			"foot CC 4",
+			"expression CC 11",
+			"LPF full range",
+			"LPF half range"
+        ]
+	  },
+	  "4115": {
+	    "label": "pedal polarity",
+	    "data": "enum",
+        "enum": [
+			"normal",
+			"reversed"
+        ]
+	  },
+	  "4116": {
+	    "label": "foot switch function",
+	    "data": "enum",
+        "enum": [
+			"sustain",
+			"arpedgiator hold",
+			"arpedgiator hold momentary",
+			"sequencer start and stop"
+        ]
+	  },
+	  "4117": {
+	    "label": "global scale tuning",
+	    "data": "enum",
+        "enum": [
+          "Equal Temperament",
+          "Harmonic Series",
+          "Carlos Harmonic Twelve Tone",
+          "Meantone Temperament",
+          "1/4 Tone Equal Temperament",
+          "19 Tone Equal Temperament",
+          "31 Tone Equal Temperament",
+          "Pythagorean C",
+          "Just Intonation in A with 7-Limit Tritone at D#",
+          "3-5 Lattice in A",
+          "3-7 Lattice in A",
+          "Other Music 7-Limit Black Keys in C",
+          "Dan Schmidt Pelog/Slendro",
+          "Yamaha Just Major C",
+          "Yamaha Just Minor C",
+          "Harry Partch 11-Limit 43 Note Just Intonation",
+          "Arabic 12-Tone",
+          "12 Out of 19-tET Scale from Mandelbaum’s Dissertation",
+          "12 Out of 31-tET, Meantone Eb-G#",
+          "Terry Riley’s Harp of New Albion scale, Inverse Malcolm’s Monochord",
+          "Lute tuning of Giovanni Maria Artusi (1603)",
+          "J.S. Bach “well temperament”",
+          "Bulgarian Bagpipe tuning",
+          "Wendy Carlos’ Alpha Scale",
+          "Wendy Carlos’ Beta Scale",
+          "Wendy Carlos’ Gamma Scale",
+          "Carlos Super Just",
+          "Jon Catler 24-tone",
+          "John Chalmers JI-1",
+          "John Chalmers JI-3J",
+          "John Chalmers JI-4",
+          "Chinese scale, 4th century",
+          "Chinese Lu scale by Huai Nan Zi",
+          "Colonna 1",
+          "Colonna 2",
+          "Ivor Darreg’s",
+          "Dorian Diatonic Tonos",
+          "Almost Equal 12-tone Subset of Duodenarium",
+          "Ellis’s Just Harmonium",
+          "Bali/Java Slendro",
+          "Tibetian Ceremonial",
+          "Erlangen revised",
+          "Euler - Monochord",
+          "Fokker’s 12-tone",
+          "Bagpipe tuning from Fortuna",
+          "Gamelan Udan Mas",
+          "Kraig Grady’s",
+          "Harmonics 1 to 12 and Subharmonics Mixed",
+          "Michael Harrison",
+          "Helmholtz’s two-keyboard Harmonium Tuning Untempered",
+          "North Indian Gamut",
+          "Carnatic Gamut",
+          "Observed South Indian Tuning",
+          "7-limit 12-tone Scale",
+          "Alternate 7-limit 12-tone Scale",
+          "Kurzweil “Just with Natural flat 7th”",
+          "3 and 7 prime",
+          "Ben Johnston’s",
+          "Harrison’s comma mean-tone",
+          "Rousseau’s Monochord",
+          "Persian santur tuning",
+          "Vallotti & Young",
+          "LaMonte Young for guitar",
+          "LaMonte Young’s Well-Tuned Piano",
+          "Thomas Young"
+        ]
+	  },
+	  "4118": {
+	    "label": "aftertouch",
+	    "data": "offon"
+	  },
+	  "4119": {
+	    "label": "aftertouch curve",
+        "data": "intmap",
+        "map": [
+          0,
+          7,
+          1,
+          8
+        ]
+	  },
+	  "4120": {
+	    "label": "velocity curve",
+        "data": "intmap",
+        "map": [
+          0,
+          6,
+          1,
+          7
+        ]
+	  },
+	  "4121": {
+	    "label": "screen saver",
+	    "data": "offon"
+	  },
+	  "4122": {
+	    "label": "arpedgiator beat sync",
+	    "data": "offon"
+	  },	  
+      "4198": {
+        "label": "sequencer play",
+        "data": "offon"
+      },
+      "4199": {
+        "label": "sequencer record",
+        "data": "offon"
+      }
+    }
+  }
+}
+

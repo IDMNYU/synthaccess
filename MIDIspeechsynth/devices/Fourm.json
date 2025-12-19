@@ -1,0 +1,1174 @@
+{
+  "device": {
+    "name": "Form",
+    "manufacturer": "Sequential",
+    "version": 0.1,
+    "program_change": {
+      "0": {
+        "label": "program",
+        "data": "value"
+	  }
+    },
+    "CC": {
+        "0": {
+          "label": "bank",
+          "data": "enum",
+		  "enum": [
+			  "User 1",
+			  "User 2",
+			  "Factory 1",
+			  "Factory 2"
+		  ]
+        },
+        "1": {
+          "label": "mod wheel",
+          "data": "value"
+        },
+        "7": {
+        	"label": "master volume",
+        	"data": "value"
+      },
+      	"32": {
+        	"label": "bank",
+        	"data": "value"
+      }
+    },	
+    "NRPN": {
+	  "1": {
+	    "label": "oscillator a, octave",
+	    "data": "intmap",
+        "map": [
+          0,
+          4,
+          -2,
+          2
+        ],
+        "clamp": "true"	
+	  },
+	  "2": {
+	    "label": "oscillator b, octave",
+	    "data": "enum",
+        "enum": [
+          "low 2",
+		  "low 1",
+		  "-2",
+		  "-1",
+		  "0",
+		  "1",
+		  "2"
+        ],
+        "clamp": "true"	
+	  },
+	  "3": {
+	    "label": "oscillator a, fine pitch",
+	    "data": "intmap",
+        "map": [
+          0,
+          1400,
+          -700,
+          700
+        ],
+        "clamp": "true",
+		"suffix": "cents"
+	  },
+	  "4": {
+	    "label": "oscillator a, pitch coarse",
+	    "data": "value"
+	  },
+	  "5": {
+	    "label": "oscillator b, pitch",
+	    "data": "intmap",
+        "map": [
+          0,
+          1400,
+          -700,
+          700
+        ],
+        "clamp": "true",
+		"suffix": "cents"
+	  },
+	  "6": {
+	    "label": "oscillator b, pitch coarse",
+	    "data": "note"
+	  },
+	  "7": {
+	    "label": "oscillator sync",
+	    "data": "offon"
+	  },
+	  "8": {
+	    "label": "oscillator b, triangle",
+	    "data": "offon"
+	  },
+	  "9": {
+	    "label": "oscillator a, sawtooth",
+	    "data": "offon"
+	  },
+	  "10": {
+	    "label": "oscillator b, sawtooth",
+	    "data": "offon"
+	  },
+	  "11": {
+	    "label": "oscillator a, pulse",
+	    "data": "offon"
+	  },
+	  "12": {
+	    "label": "oscillator b, pulse",
+	    "data": "offon"
+	  },
+	  "13": {
+	    "label": "oscillator a, pulse width",
+	    "data": "intmap",
+        "map": [
+          0,
+          127,
+          -63,
+          64
+        ],
+        "clamp": "true"	
+	  },
+	  "14": {
+	    "label": "oscillator b, pulse width",
+	    "data": "intmap",
+        "map": [
+          0,
+          127,
+          -63,
+          64
+        ],
+        "clamp": "true"	
+	  },
+	  "15": {
+	    "label": "oscillator a, level",
+	    "data": "value"
+	  },
+	  "16": {
+	    "label": "oscillator b, level",
+	    "data": "value"
+	  },
+	  "17": {
+	    "label": "feedback",
+	    "data": "offon"
+	  },
+	  "18": {
+	    "label": "feedback amount",
+	    "data": "value"
+	  },
+	  "19": {
+	    "label": "noise",
+	    "data": "offon"
+	  },
+	  "20": {
+	    "label": "noise level",
+	    "data": "value"
+	  },
+	  "21": {
+	    "label": "noise type",
+	    "data": "enum",
+        "enum": [
+          "white",
+          "pink",
+          "violet"
+        ]
+	  },
+	  "22": {
+	    "label": "glide",
+	    "data": "offon"
+	  },
+	  "23": {
+	    "label": "glide",
+	    "data": "offon"
+	  },
+	  "24": {
+	    "label": "glide mode",
+	    "data": "enum",
+        "enum": [
+          "fixed rate",
+          "fixed rate a,",
+          "fixed time",
+		  "fixed time a,"
+        ]
+	  },
+	  "25": {
+	    "label": "glide rate",
+	    "data": "value"
+	  },
+	  "26": {
+	    "label": "pitch bend range",
+	    "data": "value"
+	  },
+	  "27": {
+	    "label": "filter cutoff",
+	    "data": "value"
+	  },
+	  "28": {
+	    "label": "filter cutoff coarse",
+	    "data": "value"
+	  },
+	  "29": {
+	    "label": "resonance",
+	    "data": "value"
+	  },
+	  "30": {
+	    "label": "filter key tracking",
+	    "data": "offon"
+	  },
+	  "31": {
+	    "label": "filter key tracking",
+	    "data": "enum",
+		"enum": [
+			"qaurter",
+			"half",
+			"full"
+		]
+	  },
+	  "32": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "33": {
+	    "label": "L F O sync",
+	    "data": "offon"
+	  },
+	  "34": {
+	    "label": "L F O frequency",
+	    "data": "value"
+	  },
+	  "35": {
+	    "label": "L F O frequency coarse",
+        "data": "enum",
+        "enum": [
+          "thirty two steps",
+          "sixteen steps",
+          "eight steps",
+          "six steps",
+          "four steps",
+          "three steps",
+          "two steps",
+          "one and a half steps",
+          "one step",
+          "two thirds step",
+          "one half step",
+          "one third step",
+          "one fourth step",
+          "one sixth step",
+          "one eighth step",
+          "one sixteenth step"
+        ]
+	  },
+	  "36": {
+	    "label": "L F O shape",
+	    "data": "enum",
+        "enum": [
+          "",
+		  "triangle",
+		  "saw",
+          "saw and triangle",
+          "square",
+          "triangle and square",
+		  "saw and square",
+		  "saw and triangle and square",
+          "sample and hold",
+		  "triangle and, sample and hold",
+		  "saw and, sample and hold",
+		  "saw and triangle and, sample and hold",
+		  "square and, sample and hold",
+		  "triangle and square and, sample and hold",
+		  "saw and square and, sample and hold",
+		  "saw and triangle and square and, sample and hold"
+        ]
+	  },
+	  "37": {
+	    "label": "L F O reverse saw",
+	    "data": "offon"
+	  },
+	  "38": {
+	    "label": "L F O sample and hold type",
+	    "data": "enum",
+		"enum": [
+			"sample and hold",
+			"random",
+			"pink",
+			"white",
+			"violet",
+			"D C"
+		]
+	  },
+	  "39": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "40": {
+	    "label": "filter envelope attack",
+	    "data": "value"
+	  },
+	  "41": {
+	    "label": "amp envelope attack",
+	    "data": "value"
+	  },
+	  "42": {
+	    "label": "filter envelope decay",
+	    "data": "value"
+	  },
+	  "43": {
+	    "label": "amp envelope decay",
+	    "data": "value"
+	  },
+	  "44": {
+	    "label": "filter envelope sustain",
+	    "data": "value"
+	  },
+	  "45": {
+	    "label": "amp envelope sustain",
+	    "data": "value"
+	  },
+	  "46": {
+	    "label": "filter envelope release",
+	    "data": "value"
+	  },
+	  "47": {
+	    "label": "amp envelope release",
+	    "data": "value"
+	  },
+	  "48": {
+	    "label": "filter envelope velocity",
+	    "data": "offon"
+	  },
+	  "49": {
+	    "label": "amp envelope velocity",
+	    "data": "offon"
+	  },
+	  "50": {
+	    "label": "filter envelope velocity amount",
+	    "data": "value"
+	  },
+	  "51": {
+	    "label": "amp envelope velocity amount",
+	    "data": "value"
+	  },
+	  "52": {
+	    "label": "envelope retrigger",
+	    "data": "offon"
+	  },
+	  "53": {
+	    "label": "filter envelope amount",
+	    "data": "intmap",
+        "map": [
+          0,
+          127,
+          -63,
+          64
+        ]
+	  },
+	  "54": {
+	    "label": "amp envelope amount",
+	    "data": "value"
+	  },
+	  "55": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "56": {
+	    "label": "program volume",
+	    "data": "value"
+	  },
+	  "57": {
+	    "label": "vintage",
+	    "data": "value"
+	  },
+	  "58": {
+	    "label": "unison",
+	    "data": "offon"
+	  },
+	  "59": {
+	    "label": "unison uses",
+        "data": "enum",
+        "enum": [
+          "one voice",
+          "two voices",
+          "three voices",
+          "four voices",
+          "chord"
+        ]
+	  },
+	  "60": {
+	    "label": "unison deetune",
+	    "data": "value"
+	  },
+	  "61": {
+	    "label": "unison note 1",
+	    "data": ""
+	  },
+	  "62": {
+	    "label": "unison note 2",
+	    "data": ""
+	  },
+	  "63": {
+	    "label": "unison note 3",
+	    "data": ""
+	  },
+	  "64": {
+	    "label": "unison note 4",
+	    "data": ""
+	  },
+	  "65": {
+	    "label": "filter envelope modulation",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel"
+		]
+	  },
+	  "66": {
+	    "label": "oscillator B modulation",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel"
+		]
+	  },
+	  "67": {
+	    "label": "L F O modulation",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel"
+		]
+	  },
+	  "68": {
+	    "label": "filter envelope mod amount",
+	    "data": "intmap",
+        "map": [
+          0,
+          255,
+          -127,
+          127
+        ],
+        "clamp": "true"	
+	  },
+	  "69": {
+	    "label": "oscillator b mod amount",
+	    "data": "intmap",
+        "map": [
+          0,
+          255,
+          -127,
+          127
+        ],
+        "clamp": "true"	
+	  },
+	  "70": {
+	    "label": "L F O mod amount",
+	    "data": "intmap",
+        "map": [
+          0,
+          255,
+          -127,
+          127
+        ],
+        "clamp": "true"	
+	  },
+	  "71": {
+	    "label": "aftertouch mod amount",
+	    "data": "intmap",
+        "map": [
+          0,
+          255,
+          -127,
+          127
+        ],
+        "clamp": "true"	
+	  },
+	  "72": {
+	    "label": "modulations to oscillator A frequency,",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel",
+			"direct and also via mod wheel"
+		]
+	  },
+	  "73": {
+	    "label": "modulations to oscillator B frequency,",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel",
+			"direct and also via mod wheel"
+		]
+	  },
+	  "74": {
+	    "label": "modulations to pulse width A,",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel",
+			"direct and also via mod wheel"
+		]
+	  },
+	  "75": {
+	    "label": "modulations to pulse width B,",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel",
+			"direct and also via mod wheel"
+		]
+	  },
+	  "76": {
+	    "label": "modulations to filter cut off,",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel",
+			"direct and also via mod wheel"
+		]
+	  },
+	  "77": {
+	    "label": "modulations to amp,",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel",
+			"direct and also via mod wheel"
+		]
+	  },
+	  "78": {
+	    "label": "modulations to L F O frequency,",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel",
+			"direct and also via mod wheel"
+		]
+	  },
+	  "79": {
+	    "label": "modulations to L F O amount,",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"direct",
+			"via mod wheel",
+			"direct and also via mod wheel"
+		]
+	  },
+	  "80": {
+	    "label": "aftertouch ",
+	    "data": "enum",
+		"enum": [
+			"unrouted on destination pair 1",
+			"routed to frequency a,",
+			"routed to frequency b,",
+			"routed to frequency a, and b"
+		]
+	  },
+	  "81": {
+	    "label": "aftertouch ",
+	    "data": "enum",
+		"enum": [
+			"unrouted on destination pair 2",
+			"routed to filter cut off",
+			"routed to amplifier",
+			"routed to filter cut off, and amplifier"
+		]
+	  },
+	  "82": {
+	    "label": "aftertouch ",
+	    "data": "enum",
+		"enum": [
+			"unrouted on destination pair 3",
+			"routed to L F O frequency",
+			"routed to L F O amount",
+			"routed to L F O frequency, and L F O amount"
+		]
+	  },
+	  "83": {
+	    "label": "unison key priority",
+	    "data": "enum",
+        "enum": [
+          "lowest",
+          "highest",
+          "last"
+        ]
+	  },
+	  "84": {
+	    "label": "scale tuning",
+	    "data": "enum",
+        "enum": [
+          "Use Global",
+          "Equal Temperament",
+          "Harmonic Series",
+          "Carlos Harmonic Twelve Tone",
+          "Meantone Temperament",
+          "1/4 Tone Equal Temperament",
+          "19 Tone Equal Temperament",
+          "31 Tone Equal Temperament",
+          "Pythagorean C",
+          "Just Intonation in A with 7-Limit Tritone at D#",
+          "3-5 Lattice in A",
+          "3-7 Lattice in A",
+          "Other Music 7-Limit Black Keys in C",
+          "Dan Schmidt Pelog/Slendro",
+          "Yamaha Just Major C",
+          "Yamaha Just Minor C",
+          "Harry Partch 11-Limit 43 Note Just Intonation",
+          "Arabic 12-Tone",
+          "12 Out of 19-tET Scale from Mandelbaum’s Dissertation",
+          "12 Out of 31-tET, Meantone Eb-G#",
+          "Terry Riley’s Harp of New Albion scale, Inverse Malcolm’s Monochord",
+          "Lute tuning of Giovanni Maria Artusi (1603)",
+          "J.S. Bach “well temperament”",
+          "Bulgarian Bagpipe tuning",
+          "Wendy Carlos’ Alpha Scale",
+          "Wendy Carlos’ Beta Scale",
+          "Wendy Carlos’ Gamma Scale",
+          "Carlos Super Just",
+          "Jon Catler 24-tone",
+          "John Chalmers JI-1",
+          "John Chalmers JI-3J",
+          "John Chalmers JI-4",
+          "Chinese scale, 4th century",
+          "Chinese Lu scale by Huai Nan Zi",
+          "Colonna 1",
+          "Colonna 2",
+          "Ivor Darreg’s",
+          "Dorian Diatonic Tonos",
+          "Almost Equal 12-tone Subset of Duodenarium",
+          "Ellis’s Just Harmonium",
+          "Bali/Java Slendro",
+          "Tibetian Ceremonial",
+          "Erlangen revised",
+          "Euler - Monochord",
+          "Fokker’s 12-tone",
+          "Bagpipe tuning from Fortuna",
+          "Gamelan Udan Mas",
+          "Kraig Grady’s",
+          "Harmonics 1 to 12 and Subharmonics Mixed",
+          "Michael Harrison",
+          "Helmholtz’s two-keyboard Harmonium Tuning Untempered",
+          "North Indian Gamut",
+          "Carnatic Gamut",
+          "Observed South Indian Tuning",
+          "7-limit 12-tone Scale",
+          "Alternate 7-limit 12-tone Scale",
+          "Kurzweil “Just with Natural flat 7th”",
+          "3 and 7 prime",
+          "Ben Johnston’s",
+          "Harrison’s comma mean-tone",
+          "Rousseau’s Monochord",
+          "Persian santur tuning",
+          "Vallotti & Young",
+          "LaMonte Young for guitar",
+          "LaMonte Young’s Well-Tuned Piano",
+          "Thomas Young"
+        ]
+	  },
+	  "85": {
+          "label": "octave transpose",
+          "data": "intmap",
+          "map": [
+            0,
+            4,
+            -2,
+            2
+          ],
+          "clamp": "true"
+        },
+	  "86": {
+	    "label": "category",
+	    "data": "enum",
+		"enum": [
+			"favorites", 
+			"miscellaneous", 
+			"pad", 
+			"leed", 
+			"bass", 
+			"poly", 
+			"keys", 
+			"string", 
+			"pluck", 
+			"bell", 
+			"arpedgiator", 
+			"brass", 
+			"voice", 
+			"organ", 
+			"percussion", 
+			"tuned percussion", 
+			"sound effect"
+		]
+	  },
+	  "87": {
+	    "label": "clock beats per minute",
+	    "data": "value"
+	  },
+	  "88": {
+	    "label": "clock divider",
+        "data": "enum",
+        "enum": [
+          "half",
+          "quarter",
+          "eighth note",
+          "eighth note dotted",
+          "eighth note swung",
+          "eighth note triplet",
+          "sixteenth",
+          "sixteenth note swung",
+          "sixteenth triplet",
+          "thirty-second",
+          "sixty-fourth"
+        ]
+	  },
+	  "89": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "90": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "91": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "92": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "93": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "94": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "95": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "96": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "97": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "98": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "99": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "100": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "101": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "102": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "103": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "104": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "105": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "106": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "107": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "108": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "109": {
+	    "label": "",
+	    "data": ""
+	  },
+	  "110": {
+	    "label": "arpedgiator",
+	    "data": "offon"
+	  },
+	  "111": {
+	    "label": "arpedgiator mode",
+	    "data": "enum",
+        "enum": [
+          "up",
+          "down",
+          "up and down 1",
+		  "up and down 2",
+          "random",
+          "assign",
+          "sequencer note",
+          "sequencer modulation"
+        ]
+	  },
+	  "112": {
+	    "label": "arpedgiator range",
+        "data": "enum",
+        "enum": [
+          "one octave",
+          "two octaves",
+          "three octaves"
+        ]
+	  },
+	  "113": {
+	    "label": "arpedgiator repeats",
+	    "data": "value"
+	  },
+	  "114": {
+	    "label": "arpedgiator relatching",
+	    "data": "offon"
+	  },
+	  "115": {
+	    "label": "arpedgiator beat sync",
+	    "data": "offon"
+	  },
+	  "116": {
+	    "label": "sequencer reset",
+	    "data": "offon"
+	  },
+	  "117": {
+	    "label": "sequencer play mode",
+	    "data": "enum",
+        "enum": [
+          "retrigger",
+          "continue",
+          "one shot",
+		  "step"
+        ]
+	  },
+	  "118": {
+	    "label": "sequencer mod destination",
+	    "data": "enum",
+		"enum": [
+			"frequency a,",
+			"frequency b,",
+			"filter cut off",
+			"mod 1 amount",
+			"mod 2 amount",
+			"mod 3 amount",
+			"L F O frequency",
+			"pulse width a,",
+			"pulse width b,",
+			"pulse width all",
+			"feedback"
+		]
+	  },
+      "4096": {
+        "label": "master coarse tune",
+        "data": "intmap",
+        "map": [
+          0,
+          24,
+          -12,
+          12
+        ],
+		"suffix": "semi tones"
+      },
+      "4097": {
+        "label": "master fine tune",
+        "data": "intmap",
+        "map": [
+          0,
+          100,
+          -50,
+          50
+        ],
+		"suffix": "cents"
+	  },
+	  "4098": {
+	    "label": "midi channel",
+	    "data": "value"
+	  },
+	  "4099": {
+	    "label": "midi clock mode",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"output",
+			"in",
+			"in, and through"
+        ]
+	  },
+	  "4100": {
+	    "label": "midi clock in port,",
+	    "data": "enum",
+        "enum": [
+			"midi",
+			"usb"
+        ]
+	  },
+	  "4101": {
+	    "label": "midi clock out port",
+	    "data": "enum",
+        "enum": [
+			"none",
+			"midi",
+			"usb",
+			"all"
+        ]
+	  },
+	  "4102": {
+	    "label": "midi parameter send",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"control changes",
+			"N R P Ns"
+        ]
+	  },
+	  "4103": {
+	    "label": "midi parameter receive",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"control changes",
+			"N R P Ns"
+        ]
+	  },
+	  "4104": {
+	    "label": "midi control",
+	    "data": "offon"
+	  },
+	  "4105": {
+	    "label": "system exclusive",
+	    "data": "offon"
+	  },
+	  "4106": {
+	    "label": "system exclusive port",
+	    "data": "enum",
+        "enum": [
+			"midi",
+			"usb"
+        ]
+	  },
+	  "4107": {
+	    "label": "midi output port",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"midi",
+			"usb",
+			"all",
+			"poly chain"
+        ]
+	  },
+	  "4108": {
+	    "label": "midi program send",
+	    "data": "offon"
+	  },
+	  "4109": {
+	    "label": "midi program receive",
+	    "data": "offon"
+	  },
+	  "4110": {
+	    "label": "arpedgiator notes output via midi",
+	    "data": "offon"
+	  },
+	  "4111": {
+	    "label": "local control",
+	    "data": "enum",
+        "enum": [
+			"all off",
+			"Keys and wheels off",
+			"on"
+        ]
+	  },
+	  "4112": {
+	    "label": "pot mode",
+	    "data": "enum",
+        "enum": [
+			"relative",
+			"pass through",
+			"jump"
+        ]
+	  },
+	  "4113": {
+	    "label": "preset mode",
+	    "data": "offon"
+	  },
+	  "4114": {
+	    "label": "pedal function",
+	    "data": "enum",
+        "enum": [
+			"filter full",
+			"filter half",
+			"filter envelope mod amount",
+			"oscillator b mod amount",
+			"L F O mod amount",
+			"volume"
+        ]
+	  },
+	  "4115": {
+	    "label": "footswitch polarity",
+	    "data": "enum",
+        "enum": [
+			"normal",
+			"reversed"
+        ]
+	  },
+	  "4116": {
+	    "label": "foot switch function",
+	    "data": "enum",
+        "enum": [
+			"sustain",
+			"arpedgiator hold",
+			"arpedgiator hold momentary",
+			"sequencer start and stop",
+			"trigger",
+			"gate,",
+			"trigger and gate"
+        ]
+	  },
+	  "4117": {
+	    "label": "global scale tuning",
+	    "data": "enum",
+        "enum": [
+          "Equal Temperament",
+          "Harmonic Series",
+          "Carlos Harmonic Twelve Tone",
+          "Meantone Temperament",
+          "1/4 Tone Equal Temperament",
+          "19 Tone Equal Temperament",
+          "31 Tone Equal Temperament",
+          "Pythagorean C",
+          "Just Intonation in A with 7-Limit Tritone at D#",
+          "3-5 Lattice in A",
+          "3-7 Lattice in A",
+          "Other Music 7-Limit Black Keys in C",
+          "Dan Schmidt Pelog/Slendro",
+          "Yamaha Just Major C",
+          "Yamaha Just Minor C",
+          "Harry Partch 11-Limit 43 Note Just Intonation",
+          "Arabic 12-Tone",
+          "12 Out of 19-tET Scale from Mandelbaum’s Dissertation",
+          "12 Out of 31-tET, Meantone Eb-G#",
+          "Terry Riley’s Harp of New Albion scale, Inverse Malcolm’s Monochord",
+          "Lute tuning of Giovanni Maria Artusi (1603)",
+          "J.S. Bach “well temperament”",
+          "Bulgarian Bagpipe tuning",
+          "Wendy Carlos’ Alpha Scale",
+          "Wendy Carlos’ Beta Scale",
+          "Wendy Carlos’ Gamma Scale",
+          "Carlos Super Just",
+          "Jon Catler 24-tone",
+          "John Chalmers JI-1",
+          "John Chalmers JI-3J",
+          "John Chalmers JI-4",
+          "Chinese scale, 4th century",
+          "Chinese Lu scale by Huai Nan Zi",
+          "Colonna 1",
+          "Colonna 2",
+          "Ivor Darreg’s",
+          "Dorian Diatonic Tonos",
+          "Almost Equal 12-tone Subset of Duodenarium",
+          "Ellis’s Just Harmonium",
+          "Bali/Java Slendro",
+          "Tibetian Ceremonial",
+          "Erlangen revised",
+          "Euler - Monochord",
+          "Fokker’s 12-tone",
+          "Bagpipe tuning from Fortuna",
+          "Gamelan Udan Mas",
+          "Kraig Grady’s",
+          "Harmonics 1 to 12 and Subharmonics Mixed",
+          "Michael Harrison",
+          "Helmholtz’s two-keyboard Harmonium Tuning Untempered",
+          "North Indian Gamut",
+          "Carnatic Gamut",
+          "Observed South Indian Tuning",
+          "7-limit 12-tone Scale",
+          "Alternate 7-limit 12-tone Scale",
+          "Kurzweil “Just with Natural flat 7th”",
+          "3 and 7 prime",
+          "Ben Johnston’s",
+          "Harrison’s comma mean-tone",
+          "Rousseau’s Monochord",
+          "Persian santur tuning",
+          "Vallotti & Young",
+          "LaMonte Young for guitar",
+          "LaMonte Young’s Well-Tuned Piano",
+          "Thomas Young"
+        ]
+	  },
+	  "4118": {
+	    "label": "aftertouch",
+	    "data": "enum",
+		"enum": [
+			"off",
+			"mono",
+			"polyphonic"
+		]
+	  },
+	  "4119": {
+	    "label": "aftertouch curve",
+        "data": "enum",
+        "enum": [
+          "hard 2",
+          "hard 1",
+		  "medium",
+		  "soft 1",
+		  "soft 2"
+        ]
+	  },
+	  "4120": {
+	    "label": "velocity curve",
+        "data": "enum",
+        "enum": [
+          "hard plus",
+          "hard",
+		  "medium",
+		  "soft",
+		  "soft +"
+        ]
+	  },
+	  "4121": {
+	    "label": "screen saver",
+	    "data": "offon"
+	  },
+	  "4122": {
+	    "label": "category",
+	    "data": "offon"
+	  },
+	  "4123": {
+	    "label": "foot control",
+	    "data": "enum",
+		"enum": [
+			"expression pedal",
+			"foot switch"
+		]
+	  },
+	  "4124": {
+	    "label": "sequencer review",
+	    "data": "offon"
+	  }
+	}
+}	
+}

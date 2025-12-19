@@ -1,0 +1,3088 @@
+{
+  "device": {
+    "name": "TEO-5",
+    "manufacturer": "Oberheim",
+    "version": 0.1,
+    "program_change": {
+      "0": {
+        "label": "program",
+        "data": "value"
+      }
+    },
+    "CC": {
+        "0": {
+          "label": "bank",
+          "data": "value"
+        },
+        "1": {
+          "label": "mod wheel",
+          "data": "value"
+        },
+      "7": {
+        "label": "master volume",
+        "data": "value"
+      },
+      "32": {
+        "label": "bank",
+        "data": "value"
+      }
+    },
+    "NRPN": {
+      "1": {
+        "label": "oscillator one pitch",
+        "data": "note"
+      },
+      "2": {
+        "label": "oscillator two pitch",
+        "data": "note"
+      },
+      "3": {
+        "label": "oscillator one deetune",
+        "data": "intmap",
+        "map": [
+          0,
+          63,
+          -31,
+          31
+        ],
+        "clamp": "true",
+        "suffix": "semi tones"
+      },
+      "4": {
+        "label": "oscillator two deetune",
+        "data": "intmap",
+        "map": [
+          0,
+          63,
+          -31,
+          31
+        ],
+        "clamp": "true"
+      },
+      "5": {
+        "label": "oscillator one pulse width",
+        "data": "value"
+      },
+      "6": {
+        "label": "oscillator two pulse width",
+        "data": "value"
+      },
+      "7": {
+        "label": "oscillator one triangle",
+        "data": "offon"
+      },
+      "8": {
+        "label": "oscillator two triangle",
+        "data": "offon"
+      },
+      "9": {
+        "label": "oscillator one sawtooth",
+        "data": "offon"
+      },
+      "10": {
+        "label": "oscillator two sawtooth",
+        "data": "offon"
+      },
+      "11": {
+        "label": "oscillator one pulse",
+        "data": "offon"
+      },
+      "12": {
+        "label": "oscillator two pulse",
+        "data": "offon"
+      },
+      "13": {
+        "label": "oscillator one",
+        "data": "offon"
+      },
+      "14": {
+        "label": "oscillator two",
+        "data": "offon"
+      },
+      "15": {
+        "label": "oscillator one level",
+        "data": "value"
+      },
+      "16": {
+        "label": "oscillator two level",
+        "data": "value"
+      },
+      "17": {
+        "label": "sub oscillator",
+        "data": "offon"
+      },
+      "18": {
+        "label": "sub oscillator level",
+        "data": "value"
+      },
+      "19": {
+        "label": "noise",
+        "data": "offon"
+      },
+      "20": {
+        "label": "noise type",
+        "data": "enum",
+        "enum": [
+          "white",
+          "pink",
+          "violet"
+        ]
+      },
+      "21": {
+        "label": "noise level",
+        "data": "value"
+      },
+      "22": {
+        "label": "oscillator one glide",
+        "data": "value"
+      },
+      "23": {
+        "label": "oscillator two glide",
+        "data": "value"
+      },
+      "24": {
+        "label": "oscillator one key tracking",
+        "data": "offon"
+      },
+      "25": {
+        "label": "oscillator two key tracking",
+        "data": "offon"
+      },
+      "26": {
+        "label": "oscillator cross mod",
+        "data": "value"
+      },
+      "27": {
+        "label": "oscillator sync",
+        "data": "offon"
+      },
+      "28": {
+        "label": "oscillator two filter bypass",
+        "data": "offon"
+      },
+      "29": {
+        "label": "eV_Osc_Unused",
+        "data": "none"
+      },
+      "30": {
+        "label": "glide mode",
+        "data": "enum",
+        "enum": [
+          "fixed rate",
+          "fixed rate A",
+          "fixed time",
+          "fixed time A"
+        ]
+      },
+      "31": {
+        "label": "glide mode portamento",
+        "data": "offon"
+      },
+      "32": {
+        "label": "pitch bend range up",
+        "data": "value"
+      },
+      "33": {
+        "label": "pitch bend range down",
+        "data": "value"
+      },
+      "34": {
+        "label": "filter cutoff",
+        "data": "value"
+      },
+      "35": {
+        "label": "filter cutoff coarse",
+        "data": "value"
+      },
+      "36": {
+        "label": "resonance",
+        "data": "value"
+      },
+      "37": {
+        "label": "band pass",
+        "data": "offon"
+      },
+      "38": {
+        "label": "filter state",
+        "data": "value"
+      },
+      "39": {
+        "label": "filter state coarse",
+        "data": "value"
+      },
+      "40": {
+        "label": "filter key tracking",
+        "data": "value"
+      },
+      "41": {
+        "label": "",
+        "data": "none"
+      },
+      "42": {
+        "label": "effect",
+        "data": "offon"
+      },
+      "43": {
+        "label": "effect type",
+        "data": "enum",
+        "enum": [
+          "off",
+          "digital delay",
+          "bucket brigade delay",
+          "tape 1",
+          "tape 2",
+          "chorus",
+          "flanger",
+          "phaser",
+          "high pass filter",
+          "distortion",
+          "ring modulator",
+          "rotary speaker",
+          "low fie"
+        ]
+      },
+      "44": {
+        "label": "effect mix",
+        "data": "value"
+      },
+      "45": {
+        "label": "effect time",
+        "data": "value"
+      },
+      "46": {
+        "label": "effect feedback or misc",
+        "data": "value"
+      },
+      "47": {
+        "label": "effect clock sync",
+        "data": "offon"
+      },
+      "48": {
+        "label": "effect time rate",
+        "data": "value"
+      },
+      "49": {
+        "label": "overdrive mix",
+        "data": "enum",
+        "enum": [
+          "Take five style",
+          "T O five style"
+        ]
+      },
+      "50": {
+        "label": "reverb",
+        "data": "offon"
+      },
+      "51": {
+        "label": "?",
+        "data": "none"
+      },
+      "52": {
+        "label": "reverb mix",
+        "data": "value"
+      },
+      "53": {
+        "label": "reverb size",
+        "data": "value"
+      },
+      "54": {
+        "label": "reverb pre delay",
+        "data": "value"
+      },
+      "55": {
+        "label": "reverb decay",
+        "data": "value"
+      },
+      "56": {
+        "label": "reverb tone",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "57": {
+        "label": "?",
+        "data": "none"
+      },
+      "58": {
+        "label": "L F O one frequency",
+        "data": "value"
+      },
+      "59": {
+        "label": "L F O two frequency",
+        "data": "value"
+      },
+      "60": {
+        "label": "L F O one amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "61": {
+        "label": "L F O two amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "62": {
+        "label": "L F O one shape",
+        "data": "enum",
+        "enum": [
+          "triangle",
+          "saw",
+          "reverse saw",
+          "pulse",
+          "sample and hold"
+        ]
+      },
+      "63": {
+        "label": "L F O two shape",
+        "data": "enum",
+        "enum": [
+          "triangle",
+          "saw",
+          "reverse saw",
+          "pulse",
+          "sample and hold"
+        ]
+      },
+      "64": {
+        "label": "L F O one sync",
+        "data": "offon"
+      },
+      "65": {
+        "label": "L F O two sync",
+        "data": "offon"
+      },
+      "66": {
+        "label": "L F O one destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "67": {
+        "label": "L F O two destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "68": {
+        "label": "L F O one frequency sync",
+        "data": "enum",
+        "enum": [
+          "thirty two steps",
+          "sixteen steps",
+          "eight steps",
+          "six steps",
+          "four steps",
+          "three steps",
+          "two steps",
+          "one and a half steps",
+          "one step",
+          "two thirds step",
+          "one half step",
+          "one third step",
+          "one fourth step",
+          "one sixth step",
+          "one eighth step",
+          "one sixteenth step"
+        ]
+      },
+      "69": {
+        "label": "L F O two frequency sync",
+        "data": "enum",
+        "enum": [
+          "thirty two steps",
+          "sixteen steps",
+          "eight steps",
+          "six steps",
+          "four steps",
+          "three steps",
+          "two steps",
+          "one and a half steps",
+          "one step",
+          "two thirds step",
+          "one half step",
+          "one third step",
+          "one fourth step",
+          "one sixth step",
+          "one eighth step",
+          "one sixteenth step"
+        ]
+      },
+      "70": {
+        "label": "L F O one note reset",
+        "data": "offon"
+      },
+      "71": {
+        "label": "L F O two note reset",
+        "data": "offon"
+      },
+      "72": {
+        "label": "L F O one slew",
+        "data": "value"
+      },
+      "73": {
+        "label": "L F O two slew",
+        "data": "value"
+      },
+      "74": {
+        "label": "?",
+        "data": "none"
+      },
+      "75": {
+        "label": "envelope 1 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          127
+        ],
+        "clamp": "true"
+      },
+      "76": {
+        "label": "envelope 2 amount",
+        "data": "value"
+      },
+      "77": {
+        "label": "envelope 1 velocity",
+        "data": "offon"
+      },
+      "78": {
+        "label": "envelope 2 velocity",
+        "data": "offon"
+      },
+      "79": {
+        "label": "envelope 1 delay",
+        "data": "value"
+      },
+      "80": {
+        "label": "envelope 2 delay",
+        "data": "value"
+      },
+      "81": {
+        "label": "envelope 1 attack",
+        "data": "value"
+      },
+      "82": {
+        "label": "envelope 2 attack",
+        "data": "value"
+      },
+      "83": {
+        "label": "envelope 1 decay",
+        "data": "value"
+      },
+      "84": {
+        "label": "envelope 2 decay",
+        "data": "value"
+      },
+      "85": {
+        "label": "envelope 1 sustain",
+        "data": "value"
+      },
+      "86": {
+        "label": "envelope 2 sustain",
+        "data": "value"
+      },
+      "87": {
+        "label": "envelope 1 release",
+        "data": "value"
+      },
+      "88": {
+        "label": "envelope 2 release",
+        "data": "value"
+      },
+      "89": {
+        "label": "envelopes routing",
+        "data": "enum",
+        "enum": [
+          "one to filter, two to amp",
+          "one to aux, two to filter and amp",
+          "one to aux, two to filter and gate"
+        ]
+      },
+      "90": {
+        "label": "auxiliary envelope destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "91": {
+        "label": "envelope repeat",
+        "data": "enum",
+        "enum": [
+          "none",
+          "envelope one",
+          "envelope two",
+          "envelope one and two"
+        ]
+      },
+      "92": {
+        "label": "",
+        "data": ""
+      },
+      "93": {
+        "label": "voice volume",
+        "data": "value"
+      },
+      "94": {
+        "label": "pan",
+        "data": "bipolar",
+        "range": 64
+      },
+      "95": {
+        "label": "overdrive",
+        "data": "value"
+      },
+      "96": {
+        "label": "vintage",
+        "data": "value"
+      },
+      "97": {
+        "label": "unison",
+        "data": "offon"
+      },
+      "98": {
+        "label": "unison voices",
+        "data": "enum",
+        "enum": [
+          "one voice",
+          "two voices",
+          "three voices",
+          "four voices",
+          "five voices",
+          "chord"
+        ]
+      },
+      "99": {
+        "label": "unison deetune",
+        "data": "value"
+      },
+      "100": {
+        "label": "unison note 1",
+        "data": "note"
+      },
+      "101": {
+        "label": "unison note 2",
+        "data": "note"
+      },
+      "102": {
+        "label": "unison note 3",
+        "data": "note"
+      },
+      "103": {
+        "label": "unison note 4",
+        "data": "note"
+      },
+      "104": {
+        "label": "unison note 5",
+        "data": "note"
+      },
+      "105": {
+        "label": "modulation slot 1 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "106": {
+        "label": "modulation slot 2 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "107": {
+        "label": "modulation slot 3 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "108": {
+        "label": "modulation slot 4 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "109": {
+        "label": "modulation slot 5 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "110": {
+        "label": "modulation slot 6 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "111": {
+        "label": "modulation slot 7 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "112": {
+        "label": "modulation slot 8 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "113": {
+        "label": "modulation slot 9 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "114": {
+        "label": "modulation slot 10 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "115": {
+        "label": "modulation slot 11 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "116": {
+        "label": "modulation slot 12 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "117": {
+        "label": "modulation slot 13 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "118": {
+        "label": "modulation slot 14 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "119": {
+        "label": "modulation slot 15 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "120": {
+        "label": "modulation slot 16 source",
+        "data": "enum",
+        "enum": [
+          "Off",
+          "oscillator 2",
+          "Noise",
+          "LFO 1",
+          "LFO 2",
+          "Envelope 1",
+          "Envelope 2",
+          "Voice Spread",
+          "Pitch Bend",
+          "Mod Wheel",
+          "Pressure",
+          "Breath",
+          "Foot Pedal",
+          "Expression Pedal",
+          "Velocity",
+          "Note Number",
+          "Filter Out",
+          "Random",
+          "DC",
+          "Audio Out"
+        ]
+      },
+      "121": {
+        "label": "modulation slot 1 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "122": {
+        "label": "modulation slot 2 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "123": {
+        "label": "modulation slot 3 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "124": {
+        "label": "modulation slot 4 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "125": {
+        "label": "modulation slot 5 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "126": {
+        "label": "modulation slot 6 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "127": {
+        "label": "modulation slot 7 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "128": {
+        "label": "modulation slot 8 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "129": {
+        "label": "modulation slot 9 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "130": {
+        "label": "modulation slot 10 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "131": {
+        "label": "modulation slot 11 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "132": {
+        "label": "modulation slot 12 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "133": {
+        "label": "modulation slot 13 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "134": {
+        "label": "modulation slot 14 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "135": {
+        "label": "modulation slot 15 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "136": {
+        "label": "modulation slot 16 amount",
+        "data": "intmap",
+        "hires": "true",
+        "map": [
+          0,
+          255,
+          -127,
+          128
+        ],
+        "clamp": "true"
+      },
+      "137": {
+        "label": "modulation slot 1 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "138": {
+        "label": "modulation slot 2 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "139": {
+        "label": "modulation slot 3 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "140": {
+        "label": "modulation slot 4 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "141": {
+        "label": "modulation slot 5 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "142": {
+        "label": "modulation slot 6 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "143": {
+        "label": "modulation slot 7 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "144": {
+        "label": "modulation slot 8 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "145": {
+        "label": "modulation slot 9 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "146": {
+        "label": "modulation slot 10 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "147": {
+        "label": "modulation slot 11 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "148": {
+        "label": "modulation slot 12 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "149": {
+        "label": "modulation slot 13 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "150": {
+        "label": "modulation slot 14 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "151": {
+        "label": "modulation slot 15 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "152": {
+        "label": "modulation slot 16 destination",
+        "data": "enum",
+        "enum": [
+          "No Destination",
+          "Oscillator 1 Frequency",
+          "Oscillator 2 Frequency",
+          "Oscillator All Frequency",
+          "Oscillator 1 Deetune",
+          "Oscillator 2 Deetune",
+          "Oscillator All Deetune",
+          "Oscillator 1 Pulse Width",
+          "Oscillator 2 Pulse Width",
+          "Oscillator All Pulse Width",
+          "Oscillator 1 Level",
+          "Oscillator 2 Level",
+          "Sub Level",
+          "Noise",
+          "X-Mod Level",
+          "Cutoff",
+          "Resonance",
+          "Filter State",
+          "Effects Mix",
+          "Effects Time",
+          "Effects Misc",
+          "Reverb Mix",
+          "Reverb Size",
+          "Reverb PreDelay",
+          "Reverb Decay",
+          "Reverb Tone",
+          "LFO 1 Frequency",
+          "LFO 2 Frequency",
+          "LFO All Frequency",
+          "LFO 1 Amount",
+          "LFO 2 Amount",
+          "LFO All Amount",
+          "Envelope 1 Amount",
+          "Envelope 2 Amount",
+          "Envelope 1 Delay",
+          "Envelope 2 Delay",
+          "Envelope 1 Attack",
+          "Envelope 2 Attack",
+          "Envelope 1 Decay",
+          "Envelope 2 Decay",
+          "Envelope 1 Sustain",
+          "Envelope 2 Sustain",
+          "Envelope 1 Release",
+          "Envelope 2 Release",
+          "Voice Volume",
+          "Panning",
+          "Overdrive",
+          "Vintage Amount",
+          "Unison Deetune",
+          "Modulation 1 Amount",
+          "Modulation 2 Amount",
+          "Modulation 3 Amount",
+          "Modulation 4 Amount",
+          "Modulation 5 Amount",
+          "Modulation 6 Amount",
+          "Modulation 7 Amount",
+          "Modulation 8 Amount",
+          "Modulation 9 Amount",
+          "Modulation 10 Amount",
+          "Modulation 11 Amount",
+          "Modulation 12 Amount",
+          "Modulation 13 Amount",
+          "Modulation 14 Amount",
+          "Modulation 15 Amount",
+          "Modulation 16 Amount"
+        ]
+      },
+      "153": {
+        "label": "unison key mode",
+        "data": "enum",
+        "enum": [
+          "lowest key priority",
+          "highest key priority",
+          "last note priority"
+        ]
+      },
+      "154": {
+        "label": "envelope retrigger",
+        "data": "offon"
+      },
+      "155": {
+        "label": "scale tuning",
+        "data": "enum",
+        "enum": [
+          "Use Global",
+          "Equal Temperament",
+          "Harmonic Series",
+          "Carlos Harmonic Twelve Tone",
+          "Meantone Temperament",
+          "1/4 Tone Equal Temperament",
+          "19 Tone Equal Temperament",
+          "31 Tone Equal Temperament",
+          "Pythagorean C",
+          "Just Intonation in A with 7-Limit Tritone at D#",
+          "3-5 Lattice in A",
+          "3-7 Lattice in A",
+          "Other Music 7-Limit Black Keys in C",
+          "Dan Schmidt Pelog/Slendro",
+          "Yamaha Just Major C",
+          "Yamaha Just Minor C",
+          "Harry Partch 11-Limit 43 Note Just Intonation",
+          "Arabic 12-Tone",
+          "12 Out of 19-tET Scale from Mandelbaum’s Dissertation",
+          "12 Out of 31-tET, Meantone Eb-G#",
+          "Terry Riley’s Harp of New Albion scale, Inverse Malcolm’s Monochord",
+          "Lute tuning of Giovanni Maria Artusi (1603)",
+          "J.S. Bach “well temperament”",
+          "Bulgarian Bagpipe tuning",
+          "Wendy Carlos’ Alpha Scale",
+          "Wendy Carlos’ Beta Scale",
+          "Wendy Carlos’ Gamma Scale",
+          "Carlos Super Just",
+          "Jon Catler 24-tone",
+          "John Chalmers JI-1",
+          "John Chalmers JI-3J",
+          "John Chalmers JI-4",
+          "Chinese scale, 4th century",
+          "Chinese Lu scale by Huai Nan Zi",
+          "Colonna 1",
+          "Colonna 2",
+          "Ivor Darreg’s",
+          "Dorian Diatonic Tonos",
+          "Almost Equal 12-tone Subset of Duodenarium",
+          "Ellis’s Just Harmonium",
+          "Bali/Java Slendro",
+          "Tibetian Ceremonial",
+          "Erlangen revised",
+          "Euler - Monochord",
+          "Fokker’s 12-tone",
+          "Bagpipe tuning from Fortuna",
+          "Gamelan Udan Mas",
+          "Kraig Grady’s",
+          "Harmonics 1 to 12 and Subharmonics Mixed",
+          "Michael Harrison",
+          "Helmholtz’s two-keyboard Harmonium Tuning Untempered",
+          "North Indian Gamut",
+          "Carnatic Gamut",
+          "Observed South Indian Tuning",
+          "7-limit 12-tone Scale",
+          "Alternate 7-limit 12-tone Scale",
+          "Kurzweil “Just with Natural flat 7th”",
+          "3 and 7 prime",
+          "Ben Johnston’s",
+          "Harrison’s comma mean-tone",
+          "Rousseau’s Monochord",
+          "Persian santur tuning",
+          "Vallotti & Young",
+          "LaMonte Young for guitar",
+          "LaMonte Young’s Well-Tuned Piano",
+          "Thomas Young"
+        ]
+      },
+      "156": {
+        "label": "octave transpose",
+        "data": "intmap",
+        "map": [
+          0,
+          4,
+          -2,
+          2
+        ],
+        "clamp": "true"
+      },
+      "157": {
+        "label": "clock beats per minute",
+        "data": "value"
+      },
+      "158": {
+        "label": "clock divider",
+        "data": "enum",
+        "enum": [
+          "half",
+          "quarter",
+          "eighth",
+          "eighth triplet",
+          "sixteenth",
+          "sixteenth triplet",
+          "thirty-second",
+          "sixty-fourth"
+        ]
+      },
+      "159": {
+        "label": "",
+        "data": "none"
+      },
+      "160": {
+        "label": "",
+        "data": "none"
+      },
+      "161": {
+        "label": "",
+        "data": "none"
+      },
+      "162": {
+        "label": "",
+        "data": "none"
+      },
+      "163": {
+        "label": "",
+        "data": "none"
+      },
+      "164": {
+        "label": "",
+        "data": "none"
+      },
+      "165": {
+        "label": "",
+        "data": "none"
+      },
+      "166": {
+        "label": "",
+        "data": "none"
+      },
+      "167": {
+        "label": "",
+        "data": "none"
+      },
+      "168": {
+        "label": "",
+        "data": "none"
+      },
+      "169": {
+        "label": "",
+        "data": "none"
+      },
+      "170": {
+        "label": "",
+        "data": "none"
+      },
+      "171": {
+        "label": "",
+        "data": "none"
+      },
+      "172": {
+        "label": "",
+        "data": "none"
+      },
+      "173": {
+        "label": "",
+        "data": "none"
+      },
+      "174": {
+        "label": "",
+        "data": "none"
+      },
+      "175": {
+        "label": "",
+        "data": "none"
+      },
+      "176": {
+        "label": "",
+        "data": "none"
+      },
+      "177": {
+        "label": "",
+        "data": "none"
+      },
+      "178": {
+        "label": "",
+        "data": "none"
+      },
+      "179": {
+        "label": "",
+        "data": "none"
+      },
+      "180": {
+        "label": "low split one octave",
+        "data": "offon"
+      },
+      "181": {
+        "label": "low split two octaves",
+        "data": "offon"
+      },
+      "182": {
+        "label": "low split at key",
+        "data": "value"
+      },
+      "183": {
+        "label": "arpedgiator",
+        "data": "offon"
+      },
+      "184": {
+        "label": "arpedgiator mode",
+        "data": "enum",
+        "enum": [
+          "up",
+          "down",
+          "up and down",
+          "random",
+          "assign",
+          "pinky up",
+          "pinky down",
+          "thumb up",
+          "thumb down",
+          "spiral",
+          "leapfrog",
+          "shuffle",
+          "shuffle once",
+          "random walk",
+          "chord"
+        ]
+      },
+      "185": {
+        "label": "arpedgiator range",
+        "data": "enum",
+        "enum": [
+          "one octave",
+          "two octaves",
+          "three octaves"
+        ]
+      },
+      "186": {
+        "label": "arpedgiator repeats",
+        "data": "value"
+      },
+      "187": {
+        "label": "arpedgiator relatching",
+        "data": "offon"
+      },
+      "188": {
+        "label": "sequencer",
+        "data": "none"
+      },
+      "189": {
+        "label": "",
+        "data": "none"
+      },
+      "910": {
+        "label": "arpedgiator timing",
+        "data": "enum",
+        "enum": [
+          "normal",
+          "whiplash"
+        ]
+      },
+      "4096": {
+        "label": "master coarse tune",
+        "data": "intmap",
+        "map": [
+          0,
+          24,
+          -12,
+          12
+        ],
+		"suffix": "semi tones"
+      },
+      "4097": {
+        "label": "master fine tune",
+        "data": "intmap",
+        "map": [
+          0,
+          100,
+          -50,
+          50
+        ],
+		"suffix": "cents"
+      },
+	  "4098": {
+	    "label": "midi channel",
+	    "data": "value"
+	  },
+	  "4099": {
+	    "label": "midi clock mode",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"output",
+			"output, no start and stop",
+			"in",
+			"in, and through",
+			"in, no start and stop"
+        ]
+	  },
+	  "4100": {
+	    "label": "midi clock in port,",
+	    "data": "enum",
+        "enum": [
+			"midi",
+			"usb"
+        ]
+	  },
+	  "4101": {
+	    "label": "midi clock out port,",
+	    "data": "enum",
+        "enum": [
+			"none",
+			"midi",
+			"usb",
+			"all"
+        ]
+	  },
+	  "4102": {
+	    "label": "midi parameter send",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"control changes",
+			"N R P Ns"
+        ]
+	  },
+	  "4103": {
+	    "label": "midi parameter receive",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"control changes",
+			"N R P Ns"
+        ]
+	  },
+	  "4104": {
+	    "label": "midi control",
+	    "data": "offon"
+	  },
+	  "4105": {
+	    "label": "system exclusive",
+	    "data": "offon"
+	  },
+	  "4106": {
+	    "label": "system exclusive port",
+	    "data": "enum",
+        "enum": [
+			"midi",
+			"usb"
+        ]
+	  },
+	  "4107": {
+	    "label": "midi output",
+	    "data": "enum",
+        "enum": [
+			"off",
+			"midi",
+			"usb",
+			"all",
+			"poly chain"
+        ]
+	  },
+	  "4108": {
+	    "label": "midi program send",
+	    "data": "offon"
+	  },
+	  "4109": {
+	    "label": "midi program receive",
+	    "data": "offon"
+	  },
+	  "4110": {
+	    "label": "arpedgiator notes output",
+	    "data": "offon"
+	  },	  
+      "4111": {
+        "label": "local control",
+        "data": "enum",
+        "enum": [
+			"all off",
+			"Keys and wheels off",
+			"on"
+        ]
+      },
+      "4112": {
+        "label": "audio output",
+        "data": "enum",
+        "enum": [
+			"mono",
+			"stereo"
+        ]
+      },
+	  "4113": {
+	    "label": "pot mode",
+	    "data": "enum",
+        "enum": [
+			"relative",
+			"pass through",
+			"jump"
+        ]
+	  },
+	  "4114": {
+	    "label": "pedal function",
+	    "data": "enum",
+        "enum": [
+			"breath CC 2",
+			"foot CC 4",
+			"expression CC 11",
+			"LPF full range",
+			"LPF half range"
+        ]
+	  },
+	  "4115": {
+	    "label": "pedal polarity",
+	    "data": "enum",
+        "enum": [
+			"normal",
+			"reversed"
+        ]
+	  },
+	  "4116": {
+	    "label": "foot switch function",
+	    "data": "enum",
+        "enum": [
+			"sustain",
+			"arpedgiator hold",
+			"arpedgiator hold momentary",
+			"sequencer start and stop"
+        ]
+	  },
+	  "4117": {
+	    "label": "global scale tuning",
+	    "data": "enum",
+        "enum": [
+          "Equal Temperament",
+          "Harmonic Series",
+          "Carlos Harmonic Twelve Tone",
+          "Meantone Temperament",
+          "1/4 Tone Equal Temperament",
+          "19 Tone Equal Temperament",
+          "31 Tone Equal Temperament",
+          "Pythagorean C",
+          "Just Intonation in A with 7-Limit Tritone at D#",
+          "3-5 Lattice in A",
+          "3-7 Lattice in A",
+          "Other Music 7-Limit Black Keys in C",
+          "Dan Schmidt Pelog/Slendro",
+          "Yamaha Just Major C",
+          "Yamaha Just Minor C",
+          "Harry Partch 11-Limit 43 Note Just Intonation",
+          "Arabic 12-Tone",
+          "12 Out of 19-tET Scale from Mandelbaum’s Dissertation",
+          "12 Out of 31-tET, Meantone Eb-G#",
+          "Terry Riley’s Harp of New Albion scale, Inverse Malcolm’s Monochord",
+          "Lute tuning of Giovanni Maria Artusi (1603)",
+          "J.S. Bach “well temperament”",
+          "Bulgarian Bagpipe tuning",
+          "Wendy Carlos’ Alpha Scale",
+          "Wendy Carlos’ Beta Scale",
+          "Wendy Carlos’ Gamma Scale",
+          "Carlos Super Just",
+          "Jon Catler 24-tone",
+          "John Chalmers JI-1",
+          "John Chalmers JI-3J",
+          "John Chalmers JI-4",
+          "Chinese scale, 4th century",
+          "Chinese Lu scale by Huai Nan Zi",
+          "Colonna 1",
+          "Colonna 2",
+          "Ivor Darreg’s",
+          "Dorian Diatonic Tonos",
+          "Almost Equal 12-tone Subset of Duodenarium",
+          "Ellis’s Just Harmonium",
+          "Bali/Java Slendro",
+          "Tibetian Ceremonial",
+          "Erlangen revised",
+          "Euler - Monochord",
+          "Fokker’s 12-tone",
+          "Bagpipe tuning from Fortuna",
+          "Gamelan Udan Mas",
+          "Kraig Grady’s",
+          "Harmonics 1 to 12 and Subharmonics Mixed",
+          "Michael Harrison",
+          "Helmholtz’s two-keyboard Harmonium Tuning Untempered",
+          "North Indian Gamut",
+          "Carnatic Gamut",
+          "Observed South Indian Tuning",
+          "7-limit 12-tone Scale",
+          "Alternate 7-limit 12-tone Scale",
+          "Kurzweil “Just with Natural flat 7th”",
+          "3 and 7 prime",
+          "Ben Johnston’s",
+          "Harrison’s comma mean-tone",
+          "Rousseau’s Monochord",
+          "Persian santur tuning",
+          "Vallotti & Young",
+          "LaMonte Young for guitar",
+          "LaMonte Young’s Well-Tuned Piano",
+          "Thomas Young"
+        ]
+	  },
+	  "4118": {
+	    "label": "aftertouch",
+	    "data": "offon"
+	  },
+	  "4119": {
+	    "label": "aftertouch curve",
+        "data": "intmap",
+        "map": [
+          0,
+          7,
+          1,
+          8
+        ]
+	  },
+	  "4120": {
+	    "label": "velocity curve",
+        "data": "intmap",
+        "map": [
+          0,
+          6,
+          1,
+          7
+        ]
+	  },
+	  "4121": {
+	    "label": "screen saver",
+	    "data": "offon"
+	  },
+	  "4122": {
+	    "label": "arpedgiator beat sync",
+	    "data": "offon"
+	  },	  
+      "4198": {
+        "label": "sequencer play",
+        "data": "offon"
+      },
+      "4199": {
+        "label": "sequencer record",
+        "data": "offon"
+      }
+    }
+  }
+}
