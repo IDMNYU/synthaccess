@@ -2,29 +2,35 @@
   "device": {
     "name": "TEO-5",
     "manufacturer": "Oberheim",
-    "version": 0.1,
+    "version": 0.2,
+	
+    "globals": {
+      "pgm": {
+        "value": 0,
+        "offset": 100
+      }
+    },	
     "program_change": {
       "0": {
         "label": "program",
-        "data": "value"
+        "data": "global1",
+		"global" : "pgm"
       }
     },
     "CC": {
-        "0": {
-          "label": "bank",
-          "data": "value"
-        },
-        "1": {
-          "label": "mod wheel",
-          "data": "value"
-        },
+      "1": {
+        "label": "mod wheel",
+        "data": "value"
+      },
       "7": {
         "label": "master volume",
         "data": "value"
       },
       "32": {
-        "label": "bank",
-        "data": "value"
+          "label": "bank",
+          "data": "global100",
+          "global": "pgm",
+		  "silent" : "yes"
       }
     },
     "NRPN": {
