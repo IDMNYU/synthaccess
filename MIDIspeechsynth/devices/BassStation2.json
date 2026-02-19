@@ -1,0 +1,534 @@
+{
+  "device": {
+    "name": "Bass Station 2",
+    "manufacturer": "Novation",
+    "version": 1,
+    "program_change": {
+      "0": {
+        "label": "program",
+        "data": "value"
+      }
+    },
+    "CC": {
+      "16": {
+        "label": "filter frequency",
+        "data": "none"
+      },
+      "82": {
+        "label": "filter resonance",
+        "data": "none"
+      },
+      "83": {
+        "label": "filter type",
+        "data": "enum",
+        "enum": [
+          "classic",
+          "acid"
+        ]
+      },
+      "106": {
+        "label": "filter slope",
+        "data": "enum",
+        "enum": [
+          "12 DB",
+          "24 DB"
+        ]
+      },
+      "84": {
+        "label": "filter shape",
+        "data": "enum",
+        "enum": [
+          "low pass",
+          "band pass",
+          "high pass"
+        ]
+      },
+      "114": {
+        "label": "filter overdrive",
+        "data": "none"
+      },
+      "85": {
+        "label": "modulation envelope to filter depth",
+        "data": "none"
+      },
+      "17": {
+        "label": "LFO 2 to filter depth",
+        "data": "none"
+      },
+      "90": {
+        "label": "amplifier attack",
+        "data": "none"
+      },
+      "91": {
+        "label": "amplifier decay",
+        "data": "none"
+      },
+      "92": {
+        "label": "amplifier sustain",
+        "data": "none"
+      },
+      "93": {
+        "label": "amplifier release",
+        "data": "none"
+      },
+      "102": {
+        "label": "modulation attack",
+        "data": "none"
+      },
+      "103": {
+        "label": "modulation decay",
+        "data": "none"
+      },
+      "104": {
+        "label": "modulation sustain",
+        "data": "none"
+      },
+      "105": {
+        "label": "modulation release",
+        "data": "none"
+      },
+      "94": {
+        "label": "distortion",
+        "data": "none"
+      },
+      "115": {
+        "label": "oscillator filter modulation",
+        "data": "none"
+      },
+      "20": {
+        "label": "oscillator 1 level",
+        "data": "none"
+      },
+      "21": {
+        "label": "oscillator 2 level",
+        "data": "none"
+      },
+      "22": {
+        "label": "sub oscillator level",
+        "data": "none"
+      },
+      "23": {
+        "label": "noise level",
+        "data": "none"
+      },
+      "24": {
+        "label": "ring modulation level",
+        "data": "none"
+      },
+      "25": {
+        "label": "external audio level",
+        "data": "none"
+      },
+      "81": {
+        "label": "sub oscillator octave",
+        "data": "enumsplit",
+        "enum": [
+          "minus 2",
+          "minus 1"
+        ],
+        "split": [
+          62,
+          63
+        ]
+      },
+      "80": {
+        "label": "sub oscillator shape",
+        "data": "enum",
+        "enum": [
+          "sine",
+          "narrow pulse",
+          "square"
+        ]
+      },
+      "27": {
+        "label": "oscillator one coarse tuning",
+        "data": "none"
+      },
+      "26": {
+        "label": "oscillator one fine tuning",
+        "data": "none"
+      },
+      "71": {
+        "label": "modulation envelope to oscillator one depth",
+        "data": "none"
+      },
+      "28": {
+        "label": "LFO 1 to oscillator one depth",
+        "data": "none"
+      },
+      "72": {
+        "label": "modulation envelope to oscillator one pulse width depth",
+        "data": "none"
+      },
+      "74": {
+        "label": "oscillator one pulse width",
+        "data": "none"
+      },
+      "73": {
+        "label": "LFO 2 to oscillator one pulse width depth",
+        "data": "none"
+      },
+      "70": {
+        "label": "oscillator 1 range",
+        "data": "enumsplit",
+        "enum": [
+          "16 feet",
+          "8 feet",
+          "4 feet",
+          "2 feet"
+        ],
+        "split": [
+          63,
+          64,
+          65,
+          66
+        ]
+      },
+      "30": {
+        "label": "oscillator two coarse tuning",
+        "data": "none"
+      },
+      "29": {
+        "label": "oscillator two fine tuning",
+        "data": "none"
+      },
+      "76": {
+        "label": "modulation envelope to oscillator two depth",
+        "data": "none"
+      },
+      "31": {
+        "label": "LFO 1 to oscillator two depth",
+        "data": "none"
+      },
+      "77": {
+        "label": "modulation envelope to oscillator two pulse width depth",
+        "data": "none"
+      },
+      "79": {
+        "label": "oscillator two pulse width",
+        "data": "none"
+      },
+      "78": {
+        "label": "LFO 2 to oscillator two pulse width depth",
+        "data": "none"
+      },
+      "75": {
+        "label": "oscillator two range",
+        "data": "enumsplit",
+        "enum": [
+          "16 feet",
+          "8 feet",
+          "4 feet",
+          "2 feet"
+        ],
+        "split": [
+          63,
+          64,
+          65,
+          66
+        ]
+      },
+      "88": {
+        "label": "LFO 1 shape",
+        "data": "enum",
+        "enum": [
+          "triangle",
+          "saw",
+          "pulse",
+          "sample and hold"
+        ]
+      },
+      "89": {
+        "label": "LFO 2 shape",
+        "data": "enum",
+        "enum": [
+          "triangle",
+          "saw",
+          "pulse",
+          "sample and hold"
+        ]
+      },
+      "18": {
+        "label": "LFO 1 speed",
+        "data": "none"
+      },
+      "19": {
+        "label": "LFO 2 speed",
+        "data": "none"
+      },
+      "86": {
+        "label": "LFO 1 delay",
+        "data": "none"
+      },
+      "87": {
+        "label": "LFO 2 delay",
+        "data": "none"
+      },
+      "5": {
+        "label": "glide time",
+        "data": "none"
+      },
+      "119": {
+        "label": "arpeggiator rhythm",
+        "data": "none"
+      },
+      "118": {
+        "label": "arpeggiator pattern",
+        "data": "enumsplit",
+        "enum": [
+          "up",
+          "down",
+          "up down 1",
+          "up down 2",
+          "played",
+          "random",
+          "play",
+          "record"
+        ],
+        "split": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "111": {
+        "label": "arpeggiator octave range",
+        "data": "enumsplit",
+        "enum": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "split": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "108": {
+        "label": "arpeggiator",
+        "data": "offon"
+      },
+      "109": {
+        "label": "arpeggiator latch",
+        "data": "offon"
+      },
+      "107": {
+        "label": "pitch bend range",
+        "data": "bivalue"
+      },
+      "110": {
+        "label": "oscillator sync",
+        "data": "offon"
+      },
+      "112": {
+        "label": "velocity to amplifier envelope",
+        "data": "bivalue"
+      },
+      "113": {
+        "label": "velocity to modulation envelope",
+        "data": "bivalue"
+      },
+      "95": {
+        "label": "V C A limiter amount",
+        "data": "value"
+      },
+      "116": {
+        "label": "arpeggiator swing amount",
+        "data": "value"
+      }
+    },
+    "NRPN": {
+      "73": {
+        "label": "envelope triggering",
+        "data": "enumsplit",
+        "enum": [
+          "multi",
+          "single",
+          "auto glide"
+        ],
+        "split": [
+          0,
+          128,
+          256
+        ]
+      },
+      "72": {
+        "label": "oscillator 1 shape",
+        "data": "enumsplit",
+        "enum": [
+          "sine",
+          "triangle",
+          "sawtooth",
+          "pulse"
+        ],
+        "split": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "82": {
+        "label": "oscillator 2 shape",
+        "data": "enumsplit",
+        "enum": [
+          "sine",
+          "triangle",
+          "sawtooth",
+          "pulse"
+        ],
+        "split": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "94": {
+        "label": "mod wheel to filter frequency depth",
+        "data": "value",
+        "hires": "false"
+      },
+      "108": {
+        "label": "mod wheel to filter tracking",
+        "data": "value"
+      },
+      "70": {
+        "label": "mod wheel LFO1 to oscillator pitch",
+        "data": "bivalue"
+      },
+      "71": {
+        "label": "mod wheel LFO2 to filter frequency",
+        "data": "bivalue"
+      },
+      "78": {
+        "label": "mod wheel LFO2 to oscillator 2 pitch",
+        "data": "bivalue"
+      },
+      "74": {
+        "label": "aftertouch to filter frequency",
+        "data": "value"
+      },
+      "75": {
+        "label": "aftertouch LFO 1 to oscillator pitch",
+        "data": "bivalue"
+      },
+      "76": {
+        "label": "aftertouch LFO2 speed",
+        "data": "bivalue"
+      },
+      "89": {
+        "label": "LFO 1 key sync",
+        "data": "onoff"
+      },
+      "93": {
+        "label": "LFO 2 key sync",
+        "data": "onoff"
+      },
+      "88": {
+        "label": "LFO 1 speed sync",
+        "data": "enumsplit",
+        "enum": [
+          "sync",
+          "speed"
+        ],
+        "split": [
+          0,
+          128
+        ]
+      },
+      "92": {
+        "label": "LFO 2 speed sync",
+        "data": "enumsplit",
+        "enum": [
+          "sync",
+          "speed"
+        ],
+        "split": [
+          0,
+          128
+        ]
+      },
+      "86": {
+        "label": "LFO 1 slew",
+        "data": "value"
+      },
+      "90": {
+        "label": "LFO 2 slew",
+        "data": "value"
+      },
+      "111": {
+        "label": "oscillator error",
+        "data": "value"
+      },
+      "107": {
+        "label": "paraphonic mode",
+        "data": "onoff"
+      },
+      "109": {
+        "label": "amplifier envelope loop",
+        "data": "onoff"
+      },
+      "117": {
+        "label": "amplifier envelope number of loops",
+        "data": "value"
+      },
+      "114": {
+        "label": "amplifier fixed sustain",
+        "data": "onoff"
+      },
+      "110": {
+        "label": "modulation envelope loop",
+        "data": "onoff"
+      },
+      "118": {
+        "label": "modulation envelope number of loops",
+        "data": "value"
+      },
+      "115": {
+        "label": "modulation fixed sustain",
+        "data": "onoff"
+      },
+      "112": {
+        "label": "overlay",
+        "data": "value"
+      },
+      "106": {
+        "label": "sequencer retrigger",
+        "data": "onoff"
+      },
+      "116": {
+        "label": "A F X mode",
+        "data": "onoff"
+      },
+      "4": {
+        "label": "MIDI channel",
+        "data": "value"
+      },
+      "6": {
+        "label": "global tuning",
+        "data": "bivalue"
+      },
+      "0": {
+        "label": "micro tuning",
+        "data": "value"
+      },
+      "28": {
+        "label": "external input gain",
+        "data": "value"
+      },
+      "113": {
+        "label": "glide diverge",
+        "data": "value"
+      }
+    }
+  }
+}
