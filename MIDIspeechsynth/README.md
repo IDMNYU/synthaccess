@@ -45,7 +45,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - "global" : modify a global variable
          - "global1" : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
          - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for program numbers)
-      - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default | "false") or 14-bit 0-16363 ("true")
+      - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default | "false"), 14-bit 0-16363 ("true"), or 14-bit interpreted as 0-127 ("MSBonly")
       - **range** : array for "intrange", "floatrange" data; index 0 is the minimum output value; 1 is the maximum output value.
       - **map** : array for "intmap", and "floatmap" data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
       - **clamp** : boolean ("true" / "false") value for "intmap" and "floatmap" data to specify whether the mapping will be constrained within the output values specified by **range**.
