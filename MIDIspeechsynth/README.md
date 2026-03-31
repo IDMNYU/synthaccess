@@ -28,6 +28,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - "none" - read the label only.
             - n.b. this mode will *not* read multiple changes to the same parameter in direct succession.
          - "value" : read out its raw numeric value (0 to 127 or 0-16383).
+         - "plusone" : add one to its raw numeric value (1 to 128 or 1-16384); good for program changes.
          - "bivalue" : read out a signed (bipolar) value (-64 to 63 or -8192 to 8191).
          - "float" : read out an unsigned floating point value (0.0 to 1.0).
          - "bifloat" : read out a signed floating point value (-1.0 to 1.0).
