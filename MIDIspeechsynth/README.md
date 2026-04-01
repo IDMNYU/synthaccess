@@ -26,7 +26,7 @@ The JSON root element is a **device**, which has the following top-level propert
       - **label** : the speakable label for the key (e.g. "modulation" for CC0).
       - **data** : how the MIDI parameter's *value* is to be parsed; options are:
          - "none" - read the label only.
-            - n.b. this mode will *not* read multiple changes to the same parameter in direct succession.
+            - n.b. in verbose mode 0, all values are read label only, and this mode will *not* read multiple changes to the same parameter in direct succession.
          - "value" : read out its raw numeric value (0 to 127 or 0-16383).
          - "plusone" : add one to its raw numeric value (1 to 128 or 1-16384); good for program changes.
          - "bivalue" : read out a signed (bipolar) value (-64 to 63 or -8192 to 8191).
