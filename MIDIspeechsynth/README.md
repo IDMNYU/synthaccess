@@ -18,7 +18,7 @@ The JSON root element is a **device**, which has the following top-level propert
 - **manufacturer** : who made it.
 - **language** : a [BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag) code representing the language used for the labels, e.g. 'en-US'.
 - **version** : version of the *parser* to be used (this is in anticipation of a versioned release).
-- **globals** : global variables to be maintained by the parameter structure, e.g. patch numbers combined by more than one parameter, etc.; each *key* is a paraemter name that can be called by different mappings; the properties of these keys are:
+- **globals** : global variables to be maintained by the parameter structure, e.g. patch numbers combined by more than one parameter, etc.; each *key* is a parameter name that can be called by different mappings; the properties of these keys are:
    -  **value** : the initial value of the parameter
    -  **offset** : a numeric offset for the parameter when used when speaking (e.g. 0-99 for a value that's internally represented as 1-100)
 - **program_change**, **CC**, **NRPN** : these define speech interactions that occur upon receiving [MIDI](https://en.wikipedia.org/wiki/MIDI) program change, continuous controller, or [non-registered parameter number](https://en.wikipedia.org/wiki/NRPN) messages.
