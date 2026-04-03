@@ -1,0 +1,631 @@
+{
+  "device": {
+    "name": "Summmit",
+    "manufacturer": "Novation",
+    "version": 1,
+    "program_change": {
+      "0": {
+        "label": "patch",
+        "data": "value"
+      }
+    },
+    "CC": {
+      "0": {
+        "label": "bank",
+        "data": "none"
+      },
+      "3": {
+        "label": "os one range",
+        "data": "enumsplit",
+        "enum": ["16 feet", "8 feet", "4 feet", "2 feet"],
+        "split": [63, 64, 65, 66]
+      },
+      "5": {
+        "label": "glide time",
+        "data": "value"
+      },
+      "9": {
+        "label": "os one pitch envelope",
+        "data": "value"
+      },
+      "11": {
+        "label": "expression",
+        "data": "value"
+      },
+      "12": {
+        "label": "os one amount",
+        "data": "value"
+      },
+      "14": {
+        "label": "oscillator one deetune",
+        "data": "intmap",
+        "map": [0, 127, -63, 64]
+      },
+      "15": {
+        "label": "os one fine tune",
+        "data": "value"
+      },
+      "16": {
+        "label": "os one pitch LFO",
+        "data": "value"
+      },
+      "17": {
+        "label": "os two coarse tune",
+        "data": "value"
+      },
+      "18": {
+        "label": "os two fine tune",
+        "data": "value"
+      },
+      "19": {
+        "label": "os two pitch LFO",
+        "data": "value"
+      },
+      "20": {
+        "label": "os 3 coarse tune",
+        "data": "value"
+      },
+      "21": {
+        "label": "os 3 fine tune",
+        "data": "value"
+      },
+      "22": {
+        "label": "os 3 pitch LFO",
+        "data": "value"
+      },
+      "23": {
+        "label": "os 1 level",
+        "data": "none"
+      },
+      "24": {
+        "label": "os 2 level",
+        "data": "none"
+      },
+      "25": {
+        "label": "os 3 level",
+        "data": "none"
+      },
+      "26": {
+        "label": "ring mod amount",
+        "data": "value"
+      },
+      "27": {
+        "label": "noise level",
+        "data": "none"
+      },
+      "28": {
+        "label": "filter LFO depth",
+        "data": "value"
+      },
+      "29": {
+        "label": "filter cut off",
+        "data": "value"
+      },
+      "30": {
+        "label": "LFO 1 rate",
+        "data": "none"
+      },
+      "31": {
+        "label": "LFO 2 rate",
+        "data": "intrange",
+        "range": [0, 255]
+      },
+      "33": {
+        "label": "os 1 LFO amount",
+        "data": "value"
+      },
+      "35": {
+        "label": "glide",
+        "data": "offon"
+      },
+      "37": {
+        "label": "os 2 range",
+        "data": "enumsplit",
+        "enum": ["16 feet", "8 feet", "4 feet", "2 feet"],
+        "split": [63, 64, 65, 66]
+      },
+      "38": {
+        "label": "os 2 pitch envelope",
+        "data": "value"
+      },
+      "39": {
+        "label": "os 2 amount",
+        "data": "value"
+      },
+      "40": {
+        "label": "os 2 envelope amount",
+        "data": "value"
+      },
+      "41": {
+        "label": "os 2 LFO amount",
+        "data": "value"
+      },
+      "43": {
+        "label": "os 3 pitch envelope",
+        "data": "value"
+      },
+      "64": {
+        "label": "sustain",
+        "data": "offon"
+      },
+      "65": {
+        "label": "os 3 range",
+        "data": "enumsplit",
+        "enum": ["16 feet", "8 feet", "4 feet", "2 feet"],
+        "split": [63, 64, 65, 66]
+      },
+      "71": {
+        "label": "os 3 amount",
+        "data": "value"
+      },
+      "72": {
+        "label": "os 3 envelope amount",
+        "data": "value"
+      },
+      "73": {
+        "label": "os 3 LFO amount",
+        "data": "value"
+      },
+      "75": {
+        "label": "filter key tracking",
+        "data": "value"
+      },
+      "76": {
+        "label": "os 3 filter mod",
+        "data": "value"
+      },
+      "77": {
+        "label": "filter envelope depth",
+        "data": "value"
+      },
+      "78": {
+        "label": "filter envelope depth",
+        "data": "value"
+      },
+      "79": {
+        "label": "resonance",
+        "data": "value"
+      },
+      "80": {
+        "label": "filter overdrive",
+        "data": "value"
+      },
+      "81": {
+        "label": "LFO 1 rate",
+        "data": "none"
+      },
+      "82": {
+        "label": "LFO 1 fade time",
+        "data": "value"
+      },
+      "83": {
+        "label": "LFO 2 range",
+        "data": "enumsplit",
+        "enum": ["Low", "High", "Sync"],
+        "split": [0, 1, 2]
+      },
+      "84": {
+        "label": "LFO 2 rate",
+        "data": "none"
+      },
+      "85": {
+        "label": "LFO 2 fade time",
+        "data": "value"
+      },
+      "86": {
+        "label": "amp attack",
+        "data": "value"
+      },
+      "87": {
+        "label": "amp decay",
+        "data": "value"
+      },
+      "88": {
+        "label": "amp sustain",
+        "data": "value"
+      },
+      "89": {
+        "label": "amp release",
+        "data": "value"
+      },
+      "90": {
+        "label": "mod 1 attack",
+        "data": "value"
+      },
+      "91": {
+        "label": "mod 1 decay",
+        "data": "value"
+      },
+      "92": {
+        "label": "mod 1 sustain",
+        "data": "value"
+      },
+      "93": {
+        "label": "mod 1 release",
+        "data": "value"
+      },
+      "94": {
+        "label": "mod 2 attack",
+        "data": "value"
+      },
+      "95": {
+        "label": "mod 2 decay",
+        "data": "value"
+      },
+      "103": {
+        "label": "mod 2 release",
+        "data": "value"
+      },
+      "104": {
+        "label": "distortion",
+        "data": "value"
+      },
+      "105": {
+        "label": "chorus level",
+        "data": "value"
+      },
+      "108": {
+        "label": "delay level",
+        "data": "value"
+      },
+      "109": {
+        "label": "delay time",
+        "data": "value"
+      },
+      "110": {
+        "label": "delay feedback",
+        "data": "value"
+      },
+      "112": {
+        "label": "reverb level",
+        "data": "value"
+      },
+      "113": {
+        "label": "reverb time",
+        "data": "value"
+      },
+      "114": {
+        "label": "animate one",
+        "data": "none"
+      },
+      "115": {
+        "label": "animate two",
+        "data": "none"
+      },
+      "117": {
+        "label": "mod 2 sustain",
+        "data": "value"
+      },
+      "118": {
+        "label": "chorus rate",
+        "data": "value"
+      },
+      "119": {
+        "label": "os 1 envelope amount",
+        "data": "value"
+      },
+      "116": {
+        "label": "arp gate",
+        "data": "value"
+      }
+    },
+    "NRPN": {
+      "2": {
+        "label": "voice mode",
+        "data": "enumsplit",
+        "enum": ["mono", "legato glide", "mono two", "poly", "poly two"],
+        "split": [0, 128, 256, 384, 512]
+      },
+      "6": {
+        "label": "Octave bank",
+        "data": "none"
+      },
+      "14": {
+        "label": "os 1 waveform",
+        "data": "enumsplit",
+        "enum": ["Sine", "Triangle", "Saw", "Pulse"],
+        "split": [0, 128, 256, 384]
+      },
+      "16": {
+        "label": "os 1 shape source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod envelope 1", "LFO 1"],
+        "split": [0, 128, 256]
+      },
+      "23": {
+        "label": "os 2 waveform",
+        "data": "enumsplit",
+        "enum": ["Sine", "Triangle", "Saw", "Pulse"],
+        "split": [0, 128, 256, 384]
+      },
+      "25": {
+        "label": "os 2 shape source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod envelope 1", "LFO 1"],
+        "split": [0, 128, 256]
+      },
+      "32": {
+        "label": "os 3 waveform",
+        "data": "enumsplit",
+        "enum": ["Sine", "Triangle", "Saw", "Pulse"],
+        "split": [0, 128, 256, 384]
+      },
+      "34": {
+        "label": "os 3 shape source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod envelope 1", "LFO 1"],
+        "split": [0, 128, 256]
+      },
+      "42": {
+        "label": "VCA gain",
+        "data": "none"
+      },
+      "45": {
+        "label": "filter slope",
+        "data": "enumsplit",
+        "enum": ["12 d b", "24 d b"],
+        "split": [0, 128]
+      },
+      "46": {
+        "label": "filter shape",
+        "data": "enumsplit",
+        "enum": ["low pass", "band pass", "high pass"],
+        "split": [0, 128, 256]
+      },
+      "47": {
+        "label": "filter source",
+        "data": "enumsplit",
+        "enum": ["amp envelope", "mod envelope 1"],
+        "split": [128, 0]
+      },
+      "59": {
+        "label": "mod envelope",
+        "data": "enumsplit",
+        "enum": ["2", "1"],
+        "split": [0, 128]
+      },
+      "68": {
+        "label": "LFO 1 range",
+        "data": "enumsplit",
+        "enum": ["Low", "High", "Sync"],
+        "split": [0, 128, 256]
+      },
+      "69": {
+        "label": "LFO 1 shape",
+        "data": "enumsplit",
+        "enum": ["triangle", "saw", "square", "sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "78": {
+        "label": "LFO 2 shape",
+        "data": "enumsplit",
+        "enum": ["triangle", "saw", "square", "sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "88": {
+        "label": "fx bypass",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "93": {
+        "label": "delay sync",
+        "data": "offon"
+      },
+      "94": {
+        "label": "delay time",
+        "data": "none"
+      },
+      "101": {
+        "label": "reverb type",
+        "data": "enumsplit",
+        "enum": ["1", "2", "3"],
+        "split": [0, 128, 256]
+      },
+      "111": {
+        "label": "chorus type",
+        "data": "enumsplit",
+        "enum": ["2 Tap", "4 Tap", "Ensemble"],
+        "split": [0, 128, 256]
+      },
+      "117": {
+        "label": "arpeggiator type",
+        "data": "enumsplit",
+        "enum": [
+          "Up",
+          "Down",
+          "Up and Down",
+          "Up and Down two",
+          "As Played",
+          "Random",
+          "Chord"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768]
+      },
+      "118": {
+        "label": "arpeggiator rhythm",
+        "data": "value"
+      },
+      "119": {
+        "label": "arpeggiator octave",
+        "data": "enumsplit",
+        "enum": ["1", "2", "3", "4", "5", "6", "7"],
+        "split": [0, 128, 256, 384, 512, 640, 768]
+      },
+      "121": {
+        "label": "arpeggiator",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "122": {
+        "label": "latch",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "125": {
+        "label": "modulation slot",
+        "data": "enumsplit",
+        "enum": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16"
+        ],
+        "split": [
+          0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536,
+          1664, 1792, 1920
+        ]
+      },
+      "3200": {
+        "label": "LFO 3 type",
+        "data": "enumsplit",
+        "enum": ["Triangle", "Saw", "Pulse", "Sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "3201": {
+        "label": "LFO 3 rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3202": {
+        "label": "LFO 3 sync rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3203": {
+        "label": "LFO 4 type",
+        "data": "enumsplit",
+        "enum": ["Triangle", "Saw", "Pulse", "Sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "3204": {
+        "label": "LFO 4 rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3212": {
+        "label": "Oss 1 F M Source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod Envelope two", "LFO two"],
+        "split": [0, 128, 256]
+      },
+      "3213": {
+        "label": "Oss 3 to Oss 1 F M amount",
+        "data": "none"
+      },
+      "3214": {
+        "label": "Oss 3 to Oss 1 F M amount",
+        "data": "none"
+      },
+      "3215": {
+        "label": "Oss 3 to Oss 1 F M amount",
+        "data": "none"
+      },
+      "3216": {
+        "label": "Oss 2 F M Source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod Envelope two", "LFO 2"],
+        "split": [0, 128, 256]
+      },
+      "3217": {
+        "label": "Oss 1 to Oss 2 F M amount",
+        "data": "none"
+      },
+      "3218": {
+        "label": "Oss 1 to Oss 2 F M amount",
+        "data": "none"
+      },
+      "3219": {
+        "label": "Oss 1 to Oss 2 F M amount",
+        "data": "none"
+      },
+      "3220": {
+        "label": "Oss 3 F M Source",
+        "data": "enumsplit",
+        "enum": ["LFO two", "Manual", "Mod Envelope two"],
+        "split": [0, 128, 256]
+      },
+      "3221": {
+        "label": "Oss 2 to Oss 3 F M amount",
+        "data": "none"
+      },
+      "3222": {
+        "label": "Oss 2 to Oss 3 F M amount",
+        "data": "none"
+      },
+      "3223": {
+        "label": "Oss 2 to Oss 3 F M amount",
+        "data": "none"
+      },
+      "3224": {
+        "label": "Global",
+        "data": "enumsplit",
+        "enum": ["LFO 3 selected", "LFO 4 selected"],
+        "split": [0, 128]
+      },
+      "3225": {
+        "label": "LFO 3 sync",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3226": {
+        "label": "LFO 4 sync",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3227": {
+        "label": "Amp envelope loop",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3228": {
+        "label": "mod envelope 1 loop",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3229": {
+        "label": "mod envelope 2 loop",
+        "data": "enumsplit",
+        "enum": ["on", "off"],
+        "split": [0, 128]
+      },
+      "7936": {
+        "label": "",
+        "data": "enumsplit",
+        "enum": [
+          "Patch menu Single",
+          "Patch menu Multi",
+          "Oscillator menu",
+          "Envelope menu",
+          "LFO menu",
+          "Arpeggiator Clock menu",
+          "Modulation menu",
+          "Voice Filter menu",
+          "FX menu",
+          "FX mod menu",
+          "Settings",
+          "Saving patch. Press again to confirm"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408]
+      }
+    }
+  }
+}

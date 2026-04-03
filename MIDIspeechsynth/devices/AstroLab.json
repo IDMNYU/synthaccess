@@ -1,0 +1,68 @@
+{
+  "device": {
+    "name": "AstroLab",
+    "manufacturer": "Arturia",
+    "language": "en-US",
+    "version": 1,
+    "program_change": {
+      "0": {
+        "label": "program",
+        "data": "value"
+      }
+    },
+    "CC": {
+      "0": {
+        "label": "bank",
+        "data": "none"
+      },
+      "1": {
+        "label": "mod wheel",
+        "data": "none"
+      },
+      "11": {
+        "label": "expression",
+        "data": "none"
+      },
+      "93": {
+        "label": "fx A",
+        "data": "float"
+      },
+      "18": {
+        "label": "fx B",
+        "data": "float"
+      },
+      "19": {
+        "label": "delay",
+        "data": "float"
+      },
+      "16": {
+        "label": "reverb",
+        "data": "float"
+      },
+      "74": {
+        "label": "brightness",
+        "data": "float"
+      },
+      "71": {
+        "label": "timbre",
+        "data": "float"
+      },
+      "76": {
+        "label": "time",
+        "data": "float"
+      },
+      "77": {
+        "label": "movement",
+        "data": "float"
+      },
+      "102": {
+        "label": "previous preset",
+        "data": "none"
+      },
+      "103": {
+        "label": "next preset",
+        "data": "none"
+      }
+    }
+  }
+}

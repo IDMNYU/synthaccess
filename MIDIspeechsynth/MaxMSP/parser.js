@@ -8,6 +8,8 @@ var thestuff = {}; // main data structure
 var fload = 0; // is the file loaded
 var prevparam = -1; // most recent param
 var chan = 1; // MIDI channel
+var pmode = 0; // use "packet" mode (Max [thresh]) vs. individual messages
+var verbose = 1; // verbosity: 0 = minimum, 1 = normal, 2 = maximum
 
 function fread(_s) // read a JSON file
 {
@@ -19,14 +21,30 @@ function fread(_s) // read a JSON file
         while(f.position<f.eof) s+=f.readline(); // ingest file
         thestuff = JSON.parse(s); // parse and stash the data
         f.close(); // close file
+        
+        // parse globals
+        pmode = 0;
+        if(thestuff.device.datatype=="packet") pmode=1;
+
         fload = 1; // file is loaded
         prevparam = -1; // reset params
+
     }
+}
+
+function packet(..._p)
+{
+    post("packet: " + _p.length + "\n");
+}
+
+function verboselevel(_v)
+{
+    verbose = _v;
 }
 
 function cc(_val, _param, _c) // continuous controller
 {
-    if(fload==1) {
+    if(fload==1&&pmode==0) {
         let plist = thestuff.device.CC;
         if(_c==chan) parseSpeak(plist, _param, _val);
     } 
@@ -34,9 +52,20 @@ function cc(_val, _param, _c) // continuous controller
 
 function nrpn(_val, _param, _c) // non-registered parameter number
 {
-    if(fload==1) {
+    if(fload==1&&pmode==0) {
         let plist = thestuff.device.NRPN;
         if(_c==chan) parseSpeak(plist, _param, _val);
+    }
+}
+
+function program(_val, _c) // program change
+{
+    if(fload==1&&pmode==0) {
+        let tempv = verbose;
+        let plist = thestuff.device.program_change;
+        if(tempv==0) verbose=1; // program changes always read numbers
+        if(_c==chan) parseSpeak(plist, 0, _val);
+        verbose = tempv; // swap back
     }
 }
 
@@ -64,14 +93,6 @@ function keypress(_val) // keypress
                   break;
                 }
         }
-    }
-}
-
-function program(_val, _c) // program change
-{
-    if(fload==1) {
-        let plist = thestuff.device.program_change;
-        if(_c==chan) parseSpeak(plist, 0, _val);
     }
 }
 
@@ -151,11 +172,18 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 mval = 16383; // 14-bit value
                 hval = 8192; // half value
             }
+            if(_plist[_param].hires=='MSBonly')
+            {
+                _val = _val>>7; // shift 7 bits down then interpret
+            }
         }
         switch(_plist[_param].data) // speechify data byte
         {
             case "value": // read the numeric value of the parameter
                 speakstring+=" " + _val.toString();
+                break;
+            case "plusone": // add one and read (good for 1-based program changes)
+                speakstring+=" " + (_val+1).toString();
                 break;
             case "bivalue": // read the numeric value of the parameter (bipolar -64 to 63)
                 speakstring+=" " + (_val-hval).toString();
@@ -238,13 +266,15 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 speakstring+=" " + (v+o);
                 break;
             case "none": // read just the parameter
-                if(prevparam == _param) dospeak = 0; // skip repeats
+                //if(prevparam == _param) dospeak = 0; // skip repeats
                 break;
             default:
                 break;
         }
         s = ("suffix" in _plist[_param]) ? _plist[_param].suffix : " ";
         speakstring+=" " + s;
+        //post("dospeak: " + dospeak + "\n");
+        //post("string: " + speakstring + "\n");
         if(dospeak) outlet(0, speakstring); // send to synthesizer
         prevparam = _param; // save for next time
     }
