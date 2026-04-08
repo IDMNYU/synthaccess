@@ -123,6 +123,7 @@ async function loadFile(_ptr)
   const fileName = fileSelect.elt.value;
   speaker.speak("File Selected " + fileName.split('.json')[0]);
   thestuff = await loadJSON('./devices/'+fileName);
+  console.log(thestuff);
 }
 
 function changeMidiInput(_ptr)
