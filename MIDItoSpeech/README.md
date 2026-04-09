@@ -1,4 +1,4 @@
-# MIDItospeech
+# MIDItoSpeech
 
 Part of [synthaccess](../README.md)
 
@@ -17,7 +17,7 @@ Files:
 
 [Max/MSP Executable (Mac)](https://drive.google.com/file/d/1u1-NINkdkdMtlsw5puJtBNQdSXQtVLLW/view?usp=sharing)
 
-**MIDItospeech** is a set of software and tools to "speak" the affordances on the synthesizers using a computer. Our model relies on MIDI transmission of parameters as affordances are touched on the synth. This is being designed as both a Max patch / Max4Live device as well as a website using the Web MIDI API. In both cases, there is a community-driven repository of JSON files (the 'devices' folder) for models of synthesizers that describe their NRPN / CC values with labels, enumerators, etc. 
+**MIDItoSpeech** is a set of software and tools to "speak" the affordances on the synthesizers using a computer. Our model relies on MIDI transmission of parameters as affordances are touched on the synth. This is being designed as both a Max patch / Max4Live device as well as a website using the Web MIDI API. In both cases, there is a community-driven repository of JSON files (the 'devices' folder) for models of synthesizers that describe their NRPN / CC values with labels, enumerators, etc. 
 
 Manufacturers can develop these JSON files as part of their production pipeline, and community members / enthusiasts can develop them for legacy synthesizers, open source initiatives, etc. As a second-order benefit, these files can be used for translanguaging as well as access (i.e. you could have distinct JSON files for a synthesizer in English, Mandarin, Spanish, etc.).
 
