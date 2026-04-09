@@ -173,7 +173,7 @@ function keyPressed() {
             event.error
           );
         };
-    speaker.interrupt = true
+    speaker.interrupt = true;
     speechrate>0 ? speaker.setRate(1.8) : speaker.setRate(1.0);
     saySomething('Welcome to MIDI to Speech! Press i for instructions.');
     firstspeak = 0;
@@ -375,7 +375,7 @@ function readInstructions()
 function saySomething(_s) // shim for transmission to speech synthesizer
 {
     textDebug.html(_s);
-    if(!muted) {
+    if(!muted&&!firstspeak) {
       console.log('speaking... ' + _s);
       speaker.speak(_s); // send to synthesizer
     }
