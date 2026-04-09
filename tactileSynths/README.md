@@ -7,7 +7,7 @@ NYU
 
 Files:
 - README.md - this file
-- TactileSynths StyleGuide.pdf - PDF style guide
-- ARP2600TTSH - tactile guide for the ARP 2600 / TTSH
+- [Style Guide]('./TactileSynthsStyleGuide.pdf') - PDF style guide
+- [ARP2600TTSH]('./ARP2600TTSH.pdf) - tactile guide for the ARP 2600 / TTSH
 - common - folder containing common JavaScript code for all versions
-- elements - folder of SVG tactile elements
+- elements - folder of EPS and SVG tactile elements
