@@ -29,8 +29,11 @@ var speechrate = 1; // speed of speaking
 var muted = 0; // top level mute for speech
 var paused = 0; // temp pause
 
-const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
+// speech queue
+let qflag = 0; // is there a speech event pending
+let qclock = 0; // queue service clock
+let qclock_time = 6 // how many frames of delay (default is 1/10th of a second)
+let qstr = ""; // queue string
 
 function onMidiEnabled() { // MIDI active
   // wipe everything
@@ -142,10 +145,7 @@ I = list device-specific mappings');
 function keyPressed() {
   // require user interaction on audio context
   if(firstspeak) {
-    console.log('starting from keypress...');
-    if (audioCtx.state === 'suspended') {
-        audioCtx.resume();
-    }
+    console.log('starting speech from keypress...');
     let def = 0;
     for(let i in speaker.voices)
     {
@@ -153,26 +153,6 @@ function keyPressed() {
       break;
     }
     speaker.setVoice(speaker.voices[def].name);
-    speaker.utterance.onstart = () => {
-          console.log("Speech started at:", new Date().toLocaleTimeString());
-        };
-
-    speaker.utterance.onend = () => {
-          console.log("Speech ended at:", new Date().toLocaleTimeString());
-        };
-  
-    speaker.utterance.onpause = () => {
-          console.log("Speech pause at:", new Date().toLocaleTimeString());
-          
-        };
-    speaker.utterance.onerror = (event) => {
-          console.log(
-            "Speech error at:",
-            new Date().toLocaleTimeString(),
-            "Error:",
-            event.error
-          );
-        };
     speaker.interrupt = true;
     speechrate>0 ? speaker.setRate(1.8) : speaker.setRate(1.0);
     saySomething('Welcome to MIDI to Speech! Press i for instructions.');
@@ -302,6 +282,11 @@ function draw() {
 
   paused--;
   if(paused<0) paused=0;
+  qclock--;
+  if(qclock<0) {
+    if(qflag) serviceSpeechQueue();
+    qclock=0;
+  }
 }
 
 // main function for parsing incoming MIDI
@@ -374,11 +359,20 @@ function readInstructions()
 
 function saySomething(_s) // shim for transmission to speech synthesizer
 {
-    textDebug.html(_s);
+  // create a queue
+  qstr = _s; // set string
+  qclock = qclock_time; // reset clock
+  qflag = 1; // something is now in the queue
+}
+
+function serviceSpeechQueue()
+{
+    textDebug.html(qstr);
     if(!muted&&!firstspeak) {
-      console.log('speaking... ' + _s);
-      speaker.speak(_s); // send to synthesizer
+      speaker.speak(qstr); // send to synthesizer
     }
+    qflag = 0;
+
 }
 
 function sendMidi(_b) // shim for MIDI transmission
@@ -388,7 +382,6 @@ function sendMidi(_b) // shim for MIDI transmission
 
 function pauseReceiver() // shim for blanking Midi input temporarily
 {
-  console.log('pausing MIDI...');
   paused = 30; // 30 frame pause on MIDI input
 }
 
