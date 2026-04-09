@@ -29,6 +29,9 @@ var speechrate = 1; // speed of speaking
 var muted = 0; // top level mute for speech
 var paused = 0; // temp pause
 
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+
 function onMidiEnabled() { // MIDI active
   // wipe everything
   midiInList = [];
@@ -112,6 +115,20 @@ async function setup() {
 
   blah = createDiv('<br>by R. Luke DuBois & Tommy Martinez<br>NYU IDM / NYU Ability Project<br>part of <a href="https://idmnyu.github.io/synthaccess/" target="new">synthaccess</a>');
 
+  blah = createDiv('<br>\
+key mappings:<br>\
+ESC = reload MIDI ports<br>\
+up/down = cycle file list<br>\
+left/right = cycle MIDI input port<br>\
+shift-left/shift-right = cycle MIDI output port<br>\
+c = cycle MIDI channel<br>\
+r = voiceover rate<br>\
+v = verbose mode<br>\
+j = JSON load<br>\
+V = toggle speech<br>\
+i = instructions<br>\
+I = list device-specific mappings');
+
   speaker = new p5.Speech();
 
   await WebMidi.enable()
@@ -121,11 +138,35 @@ async function setup() {
   // end of setup
 }
 
-
-// require user interaction on audio context
-function keyPressed() {
-  // say cheers:
+function MousePressed() {
+  // require user interaction on audio context
   if(firstspeak) {
+    console.log("starting from mouse...");
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+    let def = 0;
+    for(let i in speaker.voices)
+    {
+      if(speaker.voices[i].default) def = i;
+      break;
+    }
+    speaker.setVoice(speaker.voices[def].name);
+    speaker.interrupt = true
+    speechrate>0 ? speaker.setRate(1.8) : speaker.setRate(1.0);
+    saySomething('Welcome to MIDI to Speech! Press i for instructions.');
+    firstspeak = 0;
+  }
+}
+
+
+function keyPressed() {
+  // require user interaction on audio context
+  if(firstspeak) {
+    console.log("starting from key...");
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
     let def = 0;
     for(let i in speaker.voices)
     {
@@ -222,7 +263,8 @@ function changeMidiOutput(_ptr)
 
 function changeChannel()
 {
-  chan = (chan+1)%16;
+  chan = chan+1;
+  if(chan>16) chan=1;
   saySomething("MIDI channel " + chan);
 }
 
