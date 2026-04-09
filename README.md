@@ -18,5 +18,5 @@ Featuring the work of:
 - Moira Zhang
 
 Projects:
-- **[MIDIspeechsynth](./MIDIspeechsynth/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
+- **[MIDItospeech](./MIDItospeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
 - **[tactilesynths](./tactilesynths/)** : a library of swell-form printable tactile maps for synthesizers and other audio equipment.
