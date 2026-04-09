@@ -72,21 +72,6 @@ function program(_val, _c) // program change
     }
 }
 
-function keypress(_val) // keypress
-{
-    if(fload==1) {
-        for(var i in thestuff.device.keypress)
-        {
-                if(i==_val)
-                {
-                  let plist = thestuff.device.keypress;
-                  parseMIDIout(plist, _val);  
-                  break;
-                }
-        }
-    }
-}
-
 function channel(_c) // change active MIDI channel
 {
     chan = _c;

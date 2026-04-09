@@ -12,7 +12,9 @@ var midiInPtr = 0; // current device
 var midiDeviceSelectOut;
 var midiOutList = []; // list of MIDI output devices
 var midiOutPtr = 0; // current device
+var midiOutputDevice; // midi output device object
 let selectedDevice;
+let loadFilebutton;
 
 var textDebug;
 let speaker; // speech synthesis object
@@ -25,6 +27,7 @@ var pmode = 0; // use "packet" mode (Max [thresh]) vs. individual messages
 var verbose = 1; // verbosity: 0 = minimum, 1 = normal, 2 = maximum
 var speechrate = 1; // speed of speaking
 var muted = 0; // top level mute for speech
+var paused = 0; // temp pause
 
 function onMidiEnabled() { // MIDI active
   // wipe everything
@@ -52,6 +55,8 @@ function onMidiEnabled() { // MIDI active
     midiDeviceSelectOut.option(device.name);
     midiOutList.push(device.name);
   });
+
+  midiOutputDevice = new Output(WebMidi.outputs[0]);
 }
 
 // main stuff:
@@ -101,6 +106,10 @@ async function setup() {
     changeMidiOutput(deviceIndex);
   });
 
+  blah = createDiv('<br>');
+
+  loadFilebutton = createFileInput(loadCustomFile);
+
   blah = createDiv('<br>by R. Luke DuBois & Tommy Martinez<br>NYU IDM / NYU Ability Project<br>part of <a href="https://idmnyu.github.io/synthaccess/" target="new">synthaccess</a>');
 
   speaker = new p5.Speech();
@@ -136,7 +145,20 @@ function keyPressed() {
   if(key === 'i') readInstructions();
   if(key === 'c') changeChannel();
   if(key === 'r') changeSpeechRate();
+  if(key === 'l') loadFilebutton.elt.click();
+  keypress(key);
   //console.log(keyCode);
+}
+
+async function loadCustomFile(_f)
+{
+  thestuff = _f.data;
+  // parse globals
+  pmode = 0;
+  if(thestuff.device.datatype=="packet") pmode=1;
+
+  fload = 1; // file is loaded
+  prevparam = -1; // reset params
 }
 
 async function loadFile(_ptr)
@@ -188,6 +210,7 @@ function changeMidiOutput(_ptr)
     const deviceIndex = WebMidi.outputs.findIndex(
       (device) => device.name === deviceName,
       );
+  midiOutputDevice = new Output(WebMidi.outputs[deviceIndex]);
 
 }
 
@@ -229,15 +252,19 @@ function cycleVerbosity()
 
 function draw() {
   if (keyIsDown('ShiftLeft')=== true || keyIsDown('ShiftRight')===true) shiftDown = 1; else shiftDown = 0;
+
+  paused--;
+  if(paused<0) paused=0;
 }
 
+// main function for parsing incoming MIDI
 function doit(_mess) {
 
   let _c;
   let _param;
   let _val;
 
-  if(_mess.type=="controlchange")
+  if(_mess.type=="controlchange"&&paused==0)
   {
     _c = _mess.message.channel;
     if(_mess.subtype=="dataentrycoarse") vvv = parseInt(_mess.rawValue) << 7;
@@ -254,7 +281,7 @@ function doit(_mess) {
             }
           }
         }
-        if(_mess.type=="nrpn")
+        if(_mess.type=="nrpn"&&paused==0)
         {
           _c = _mess.message.channel;
           if(_mess.subtype=="dataentrycoarse") vvv = parseInt(_mess.rawValue) << 7;
@@ -266,7 +293,7 @@ function doit(_mess) {
               if(_c==chan) parseSpeak(plist, _param, _val);
           }
         }
-        if(_mess.type=="programchange")
+        if(_mess.type=="programchange"&&paused==0)
         {
           _c = _mess.message.channel;
           if(_mess.subtype=="dataentrycoarse") vvv = parseInt(_mess.rawValue) << 7;
@@ -306,10 +333,10 @@ function saySomething(_s) // shim for transmission to speech synthesizer
 
 function sendMidi(_b) // shim for MIDI transmission
 {
-    outlet(1, _b); // send MIDI output
+    midiOutputDevice.send(_b);
 }
 
 function pauseReceiver() // shim for blanking Midi input temporarily
 {
-    outlet(2, "bang"); // turn off MIDI receiver
+  paused = 30; // 30 frame pause on MIDI input
 }

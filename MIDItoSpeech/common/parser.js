@@ -132,6 +132,7 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
 function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pings the receiving synth
 {
     let l, o;
+    let xstream = [];
     pauseReceiver(); // turn off MIDI receiver
     let speakstring = "";
     if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
@@ -145,9 +146,9 @@ function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pi
                 speakstring+=" " + _plist[_param].enum[ptr];
                 for(let i = 0;i<_plist[_param].byteprefix.length;i++)
                 {
-                    sendMidi(_plist[_param].byteprefix[i]);
+                    xstream.push(_plist[_param].byteprefix[i]);
                 }
-                sendMidi(databyte);
+                xstream.push(databyte);
                 _plist[_param].ptr = (_plist[_param].ptr+1)%_plist[_param].vals.length;
                 break;
             case "countup": // counter with internal
@@ -157,9 +158,9 @@ function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pi
                 speakstring+=" " + (_plist[l]+1);
                 for(let i = 0;i<_plist[_param].byteprefix.length;i++)
                 {
-                    sendMidi(_plist[_param].byteprefix[i]);
+                    xstream.push(_plist[_param].byteprefix[i]);
                 }
-                sendMidi(_plist[l]);
+                xstream.push(_plist[l]);
                 break;
             case "countdown": // counter with internal
                 l = _plist[_param].label;
@@ -168,15 +169,16 @@ function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pi
                 speakstring+=" " + (_plist[l]+1);
                 for(let i = 0;i<_plist[_param].byteprefix.length;i++)
                 {
-                    sendMidi(_plist[_param].byteprefix[i]);
+                    xstream.push(_plist[_param].byteprefix[i]);
                 }
-                sendMidi(_plist[l]);
+                xstream.push(_plist[l]);
                 break;
             case "none": // read just the parameter
                 break;
             default:
                 break;
         }
+        sendMidi(xstream);
         saySomething(speakstring); // send to synthesizer
     }
 }
@@ -190,6 +192,21 @@ function readkeymap() // read the device keymap, if it exists
             speakstring+="press " + i + " for " + thestuff.device.keypress[i].label + ". ";
         }        
         if(speakstring.length>0) saySomething(speakstring); // send to synthesizer
+    }
+}
+
+function keypress(_val) // keypress
+{
+    if(fload==1) {
+        for(var i in thestuff.device.keypress)
+        {
+                if(i==_val)
+                {
+                  let plist = thestuff.device.keypress;
+                  parseMIDIout(plist, _val);  
+                  break;
+                }
+        }
     }
 }
 

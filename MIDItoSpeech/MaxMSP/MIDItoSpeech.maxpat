@@ -1446,12 +1446,11 @@
             {
                 "box": {
                     "id": "obj-5",
-                    "linecount": 17,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 256.0, 174.0, 245.0, 234.0 ],
-                    "text": "MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. The v key changes how verbose the speech is. The tab key turns on and off the speech. Other keys can be mapped in the device file. The capital I key will read any device-specific key mappings. The lowercase i key will reread these instructions. "
+                    "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
+                    "text": "bank 2"
                 }
             },
             {
@@ -1498,6 +1497,17 @@
                         "classnamespace": "box",
                         "rect": [ 380.0, 316.0, 822.0, 612.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-28",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 17.0, 142.0, 25.0, 22.0 ],
+                                    "text": "iter"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-34",
@@ -1916,7 +1926,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 17.0, 142.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 17.0, 89.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -2611,7 +2621,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-24", 0 ],
+                                    "destination": [ "obj-28", 0 ],
                                     "source": [ "obj-25", 0 ]
                                 }
                             },
@@ -2625,6 +2635,12 @@
                                 "patchline": {
                                     "destination": [ "obj-81", 0 ],
                                     "source": [ "obj-27", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-24", 0 ],
+                                    "source": [ "obj-28", 0 ]
                                 }
                             },
                             {
@@ -3424,7 +3440,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 639.0, 349.5, 182.0, 35.0 ],
-                    "text": "."
+                    "text": "DeckardsDream"
                 }
             },
             {
