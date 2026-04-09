@@ -180,7 +180,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "patching_rect": [ 136.0, 179.0, 82.0, 22.0 ],
-                    "text": "nrpnout 110 1"
+                    "text": "nrpnout 67 1"
                 }
             }
         ],

@@ -1,5 +1,4 @@
 var vvv;
-var chan = 1; // active MIDI channel
 var firstspeak = 1;
 var shiftDown = 0;
 
@@ -17,7 +16,13 @@ let selectedDevice;
 
 var textDebug;
 let speaker; // speech synthesis object
-var thestuff; // JSON data
+
+var thestuff = {}; // main data structure
+var fload = 0; // is the file loaded
+var prevparam = -1; // most recent param
+var chan = 1; // MIDI channel
+var pmode = 0; // use "packet" mode (Max [thresh]) vs. individual messages
+var verbose = 1; // verbosity: 0 = minimum, 1 = normal, 2 = maximum
 
 function onEnabled() { // MIDI active
   midiInList = [];
@@ -36,7 +41,6 @@ function onEnabled() { // MIDI active
     midiOutList.push(device.name);
   });
 }
-
 
 // main stuff:
 async function setup() {
@@ -84,10 +88,7 @@ async function setup() {
     changeMidiOutput(deviceIndex);
   });
 
-  textAlign(LEFT, CENTER);
-  textSize(24);
-  fill(255);
-  text("hi there", 50, width / 2);
+  blah = createDiv('<br>by R. Luke DuBois & Tommy Martinez<br>NYU IDM / NYU Ability Project');
 
   speaker = new p5.Speech();
 
@@ -108,12 +109,15 @@ function keyPressed() {
     speaker.speak("Welcome to MIDI to Speech! Press i for instructions.");
     firstspeak = 0;
   }
-  if(keyCode === 37&&!shiftDown) changeMidiInput(midiInPtr-1);
-  if(keyCode === 39&&!shiftDown) changeMidiInput(midiInPtr+1);
-  if(keyCode === 37&&shiftDown) changeMidiOutput(midiOutPtr-1);
-  if(keyCode === 39&&shiftDown) changeMidiOutput(midiOutPtr+1);
-  if(keyCode === 38) loadFile(filePtr-1);
-  if(keyCode === 40) loadFile(filePtr+1);
+  if(keyCode === 37&&!shiftDown) changeMidiInput(midiInPtr-1); // LEFT
+  if(keyCode === 39&&!shiftDown) changeMidiInput(midiInPtr+1); // RIGHT
+  if(keyCode === 37&&shiftDown) changeMidiOutput(midiOutPtr-1); // SHIFT-LEFT
+  if(keyCode === 39&&shiftDown) changeMidiOutput(midiOutPtr+1); // SHIFT-RIGHT
+  if(keyCode === 38) loadFile(filePtr-1); // UP
+  if(keyCode === 40) loadFile(filePtr+1); // DOWN
+  if(key === 'i') readInstructions();
+  if(key === 'c') changeChannel();
+  //console.log(key);
 }
 
 async function loadFile(_ptr)
@@ -121,9 +125,15 @@ async function loadFile(_ptr)
   filePtr = (_ptr + fileList.length)%fileList.length; // keep in bounds
   fileSelect.selected(fileList[filePtr]);
   const fileName = fileSelect.elt.value;
-  speaker.speak("File Selected " + fileName.split('.json')[0]);
+  saySomething("File Selected " + fileName.split('.json')[0]);
   thestuff = await loadJSON('./devices/'+fileName);
-  console.log(thestuff);
+  //console.log(thestuff);
+  // parse globals
+  pmode = 0;
+  if(thestuff.device.datatype=="packet") pmode=1;
+
+  fload = 1; // file is loaded
+  prevparam = -1; // reset params
 }
 
 function changeMidiInput(_ptr)
@@ -131,7 +141,7 @@ function changeMidiInput(_ptr)
   midiInPtr = (_ptr + midiInList.length)%midiInList.length; // keep in bounds
   midiDeviceSelectIn.selected(midiInList[midiInPtr]);
     const deviceName = midiDeviceSelectIn.elt.value;
-    speaker.speak("MIDI input " + deviceName);
+    saySomething("MIDI input " + deviceName);
     const deviceIndex = WebMidi.inputs.findIndex(
       (device) => device.name === deviceName,
       );
@@ -155,11 +165,17 @@ function changeMidiOutput(_ptr)
   midiOutPtr = (_ptr + midiOutList.length)%midiOutList.length; // keep in bounds
   midiDeviceSelectOut.selected(midiOutList[midiOutPtr]);
     const deviceName = midiDeviceSelectOut.elt.value;
-    speaker.speak("MIDI output " + deviceName);
+    saySomething("MIDI output " + deviceName);
     const deviceIndex = WebMidi.outputs.findIndex(
       (device) => device.name === deviceName,
       );
 
+}
+
+function changeChannel()
+{
+  chan = (chan+1)%16;
+  saySomething("MIDI channel " + chan);
 }
 
 function draw() {
@@ -179,10 +195,13 @@ function doit(_mess) {
     if(_mess.subtype=="dataentryfine") vvv+= parseInt(_mess.rawValue);
     _param = _mess.controller.number;
     _val = _mess.rawValue;
-    if(_c==chan&&_param!=99&&_param!=98&&_param!=6&&_param!=38) {
+    if(_param!=99&&_param!=98&&_param!=6&&_param!=38) {
             if(_param!=100&&_param!=101) // filter out RPNs (temporary)
             {
-              showit("CC", _param, _val);
+              if(fload==1&&pmode==0) {
+                let plist = thestuff.device.CC;
+                if(_c==chan) parseSpeak(plist, _param, _val);
+              } 
             }
           }
         }
@@ -193,7 +212,10 @@ function doit(_mess) {
           if(_mess.subtype=="dataentryfine") vvv+= parseInt(_mess.rawValue);
           _param = _mess.parameter;
           _val = vvv;
-          if(_c==chan) showit("nrpn", _param, _val);
+          if(fload==1&&pmode==0) {
+            let plist = thestuff.device.NRPN;
+              if(_c==chan) parseSpeak(plist, _param, _val);
+          }
         }
         if(_mess.type=="programchange")
         {
@@ -202,15 +224,43 @@ function doit(_mess) {
           if(_mess.subtype=="dataentryfine") vvv+= parseInt(_mess.rawValue);
           _param = _mess.parameter;
           _val = _mess.value;
-          if(_c==chan) showit("programchange", 0, _val);
+          if(fload==1&&pmode==0) {
+          let tempv = verbose;
+          let plist = thestuff.device.program_change;
+          if(tempv==0) verbose=1; // program changes always read numbers
+          if(_c==chan) parseSpeak(plist, 0, _val);
+          verbose = tempv; // swap back
+          }
         }
-      }
+}
 
-      function showit(_type, _param, _val)
-      {
+// debugging function
+function showit(_type, _param, _val)
+{
+  let t = "";
+  t = _type + ": " + _param + " " + _val;
+  textDebug.html(t);
+  speaker.speak(t);
+}
 
-        let t = "";
-        t = _type + ": " + _param + " " + _val;
-        textDebug.html(t);
-        speaker.speak(t);
-      }
+function readInstructions()
+{
+  let _istr = "MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. The v key changes how verbose the speech is. The tab key turns on and off the speech. Other keys can be mapped in the device file. The capital I key will read any device-specific key mappings. The lowercase i key will reread these instructions. ";
+  saySomething(_istr);
+}
+
+function saySomething(_s) // shim for transmission to speech synthesizer
+{
+    textDebug.html(_s);
+    speaker.speak(_s); // send to synthesizer
+}
+
+function sendMidi(_b) // shim for MIDI transmission
+{
+    outlet(1, _b); // send MIDI output
+}
+
+function pauseReceiver() // shim for blanking Midi input temporarily
+{
+    outlet(2, "bang"); // turn off MIDI receiver
+}

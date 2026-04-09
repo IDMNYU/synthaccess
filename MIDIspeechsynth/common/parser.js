@@ -2,157 +2,6 @@
 // MIDI parameter -> speech interface
 // rld, 2025
 
-outlets = 3;
-
-var thestuff = {}; // main data structure
-var fload = 0; // is the file loaded
-var prevparam = -1; // most recent param
-var chan = 1; // MIDI channel
-var pmode = 0; // use "packet" mode (Max [thresh]) vs. individual messages
-var verbose = 1; // verbosity: 0 = minimum, 1 = normal, 2 = maximum
-
-function fread(_s) // read a JSON file
-{
-    thestuff = {}; // blow everyting away
-    var f = new File(_s, "read"); // open file
-    if(f.isopen)
-    {
-        let s = "";
-        while(f.position<f.eof) s+=f.readline(); // ingest file
-        thestuff = JSON.parse(s); // parse and stash the data
-        f.close(); // close file
-        
-        // parse globals
-        pmode = 0;
-        if(thestuff.device.datatype=="packet") pmode=1;
-
-        fload = 1; // file is loaded
-        prevparam = -1; // reset params
-
-    }
-}
-
-function packet(..._p)
-{
-    post("packet: " + _p.length + "\n");
-}
-
-function verboselevel(_v)
-{
-    verbose = _v;
-}
-
-function cc(_val, _param, _c) // continuous controller
-{
-    if(fload==1&&pmode==0) {
-        let plist = thestuff.device.CC;
-        if(_c==chan) parseSpeak(plist, _param, _val);
-    } 
-}
-
-function nrpn(_val, _param, _c) // non-registered parameter number
-{
-    if(fload==1&&pmode==0) {
-        let plist = thestuff.device.NRPN;
-        if(_c==chan) parseSpeak(plist, _param, _val);
-    }
-}
-
-function program(_val, _c) // program change
-{
-    if(fload==1&&pmode==0) {
-        let tempv = verbose;
-        let plist = thestuff.device.program_change;
-        if(tempv==0) verbose=1; // program changes always read numbers
-        if(_c==chan) parseSpeak(plist, 0, _val);
-        verbose = tempv; // swap back
-    }
-}
-
-function readkeymap() // read the device keymap, if it exists
-{
-    if(fload==1) {
-        let speakstring = "";
-        for(var i in thestuff.device.keypress)
-        {
-            speakstring+="press " + i + " for " + thestuff.device.keypress[i].label + ". ";
-        }        
-        if(speakstring.length>0) outlet(0, speakstring); // send to synthesizer
-    }
-}
-
-function keypress(_val) // keypress
-{
-    if(fload==1) {
-        for(var i in thestuff.device.keypress)
-        {
-                if(i==_val)
-                {
-                  let plist = thestuff.device.keypress;
-                  parseMIDIout(plist, _val);  
-                  break;
-                }
-        }
-    }
-}
-
-function channel(_c) // change active MIDI channel
-{
-    chan = _c;
-}
-
-function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pings the receiving synth
-{
-    let l, o;
-    outlet(2, "bang"); // turn off MIDI receiver
-    let speakstring = "";
-    if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
-    {
-        speakstring+=_plist[_param].label; // speechify parameter
-        switch(_plist[_param].data) // speechify data byte
-        {
-            case "enum": // enumerator (value=index)
-                let ptr = _plist[_param].ptr;
-                let databyte = _plist[_param].vals[ptr];
-                speakstring+=" " + _plist[_param].enum[ptr];
-                for(let i = 0;i<_plist[_param].byteprefix.length;i++)
-                {
-                    outlet(1, _plist[_param].byteprefix[i]);
-                }
-                outlet(1, databyte);
-                _plist[_param].ptr = (_plist[_param].ptr+1)%_plist[_param].vals.length;
-                break;
-            case "countup": // counter with internal
-                l = _plist[_param].label;
-                if(typeof(_plist[l])==='undefined') _plist[l] = _plist[_param].min;
-                _plist[l] = (_plist[l] + 1) % _plist[_param].max;
-                speakstring+=" " + (_plist[l]+1);
-                for(let i = 0;i<_plist[_param].byteprefix.length;i++)
-                {
-                    outlet(1, _plist[_param].byteprefix[i]);
-                }
-                outlet(1, _plist[l]);
-                break;
-            case "countdown": // counter with internal
-                l = _plist[_param].label;
-                if(typeof(_plist[l])==='undefined') _plist[l] = _plist[_param].max;
-                _plist[l] = (_plist[l] - 1 + _plist[_param].max) % _plist[_param].max;
-                speakstring+=" " + (_plist[l]+1);
-                for(let i = 0;i<_plist[_param].byteprefix.length;i++)
-                {
-                    outlet(1, _plist[_param].byteprefix[i]);
-                }
-                outlet(1, _plist[l]);
-                break;
-            case "none": // read just the parameter
-                break;
-            default:
-                break;
-        }
-        outlet(0, speakstring); // send to synthesizer
-    }
-}
-
 function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
@@ -275,8 +124,72 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
         speakstring+=" " + s;
         //post("dospeak: " + dospeak + "\n");
         //post("string: " + speakstring + "\n");
-        if(dospeak) outlet(0, speakstring); // send to synthesizer
+        if(dospeak) saySomething(speakstring); // send to synthesizer
         prevparam = _param; // save for next time
+    }
+}
+
+function parseMIDIout(_plist, _param) // takes (computer) keyboard events and pings the receiving synth
+{
+    let l, o;
+    pauseReceiver(); // turn off MIDI receiver
+    let speakstring = "";
+    if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
+    {
+        speakstring+=_plist[_param].label; // speechify parameter
+        switch(_plist[_param].data) // speechify data byte
+        {
+            case "enum": // enumerator (value=index)
+                let ptr = _plist[_param].ptr;
+                let databyte = _plist[_param].vals[ptr];
+                speakstring+=" " + _plist[_param].enum[ptr];
+                for(let i = 0;i<_plist[_param].byteprefix.length;i++)
+                {
+                    sendMidi(_plist[_param].byteprefix[i]);
+                }
+                sendMidi(databyte);
+                _plist[_param].ptr = (_plist[_param].ptr+1)%_plist[_param].vals.length;
+                break;
+            case "countup": // counter with internal
+                l = _plist[_param].label;
+                if(typeof(_plist[l])==='undefined') _plist[l] = _plist[_param].min;
+                _plist[l] = (_plist[l] + 1) % _plist[_param].max;
+                speakstring+=" " + (_plist[l]+1);
+                for(let i = 0;i<_plist[_param].byteprefix.length;i++)
+                {
+                    sendMidi(_plist[_param].byteprefix[i]);
+                }
+                sendMidi(_plist[l]);
+                break;
+            case "countdown": // counter with internal
+                l = _plist[_param].label;
+                if(typeof(_plist[l])==='undefined') _plist[l] = _plist[_param].max;
+                _plist[l] = (_plist[l] - 1 + _plist[_param].max) % _plist[_param].max;
+                speakstring+=" " + (_plist[l]+1);
+                for(let i = 0;i<_plist[_param].byteprefix.length;i++)
+                {
+                    sendMidi(_plist[_param].byteprefix[i]);
+                }
+                sendMidi(_plist[l]);
+                break;
+            case "none": // read just the parameter
+                break;
+            default:
+                break;
+        }
+        saySomething(speakstring); // send to synthesizer
+    }
+}
+
+function readkeymap() // read the device keymap, if it exists
+{
+    if(fload==1) {
+        let speakstring = "";
+        for(var i in thestuff.device.keypress)
+        {
+            speakstring+="press " + i + " for " + thestuff.device.keypress[i].label + ". ";
+        }        
+        if(speakstring.length>0) saySomething(speakstring); // send to synthesizer
     }
 }
 
