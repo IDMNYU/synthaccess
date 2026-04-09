@@ -142,6 +142,7 @@ I = list device-specific mappings');
 function keyPressed() {
   // require user interaction on audio context
   if(firstspeak) {
+    console.log('starting from keypress...');
     if (audioCtx.state === 'suspended') {
         audioCtx.resume();
     }
@@ -152,6 +153,26 @@ function keyPressed() {
       break;
     }
     speaker.setVoice(speaker.voices[def].name);
+    speaker.utterance.onstart = () => {
+          console.log("Speech started at:", new Date().toLocaleTimeString());
+        };
+
+    speaker.utterance.onend = () => {
+          console.log("Speech ended at:", new Date().toLocaleTimeString());
+        };
+  
+    speaker.utterance.onpause = () => {
+          console.log("Speech pause at:", new Date().toLocaleTimeString());
+          
+        };
+    speaker.utterance.onerror = (event) => {
+          console.log(
+            "Speech error at:",
+            new Date().toLocaleTimeString(),
+            "Error:",
+            event.error
+          );
+        };
     speaker.interrupt = true
     speechrate>0 ? speaker.setRate(1.8) : speaker.setRate(1.0);
     saySomething('Welcome to MIDI to Speech! Press i for instructions.');
@@ -355,6 +376,7 @@ function saySomething(_s) // shim for transmission to speech synthesizer
 {
     textDebug.html(_s);
     if(!muted) {
+      console.log('speaking... ' + _s);
       speaker.speak(_s); // send to synthesizer
     }
 }
@@ -366,5 +388,7 @@ function sendMidi(_b) // shim for MIDI transmission
 
 function pauseReceiver() // shim for blanking Midi input temporarily
 {
+  console.log('pausing MIDI...');
   paused = 30; // 30 frame pause on MIDI input
 }
+

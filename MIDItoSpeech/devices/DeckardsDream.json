@@ -28,14 +28,14 @@
 				"ptr" : 0
 			},
 			"w" : {
-				"label" : "preset",
+				"label" : "preset up",
 				"data" : "countup",
 				"byteprefix" : [192],
 				"min" : 0,
 				"max" : 127
 			},
 			"s" : {
-				"label" : "preset",
+				"label" : "preset down",
 				"data" : "countdown",
 				"byteprefix" : [192],
 				"min" : 0,
