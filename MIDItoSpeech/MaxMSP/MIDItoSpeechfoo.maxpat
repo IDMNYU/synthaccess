@@ -1450,7 +1450,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
-                    "text": "panel off"
+                    "text": "midi channel 1"
                 }
             },
             {
@@ -3248,7 +3248,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 17.0, 455.0, 234.0, 234.0 ],
-                    "text": "MIDI to speech translator\n\nESC = reload MIDI ports\nup/down = cycle file list\nleft/right = cycle MIDI input port\nshift-left/shift-right = cycle MIDI output port\nc = cycle MIDI channel\nr = voiceover rate\nv = verbose mode\nj = JSON load\nTAB = toggle speech\ni = instructions\nI = specific instructions\n\nother keys can be mapped in the JSON\n\nrld, 2025"
+                    "text": "MIDI to Speech\n\nESC = reload MIDI ports\nup/down = cycle file list\nleft/right = cycle MIDI input port\nshift-left/shift-right = cycle MIDI output port\nc = cycle MIDI channel\nr = voiceover rate\nv = verbose mode\nj = JSON load\nTAB = toggle speech\ni = instructions\nI = specific instructions\n\nother keys can be mapped in the JSON\n\nrld, 2025"
                 }
             },
             {
@@ -3423,7 +3423,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 639.0, 349.5, 182.0, 35.0 ],
-                    "text": "DeckardsDream"
+                    "text": "."
                 }
             },
             {
