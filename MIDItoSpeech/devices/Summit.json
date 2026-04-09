@@ -381,7 +381,7 @@
       "59": {
         "label": "mod envelope",
         "data": "enumsplit",
-        "enum": ["2", "1"],
+        "enum": ["1", "2"],
         "split": [0, 128]
       },
       "68": {
