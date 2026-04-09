@@ -376,7 +376,10 @@ function readInstructions()
 function saySomething(_s) // shim for transmission to speech synthesizer
 {
     textDebug.html(_s);
-    if(!muted) speaker.speak(_s); // send to synthesizer
+    if(!muted) {
+      speaker.cancel(); // kill anything already speaking
+      speaker.speak(_s); // send to synthesizer
+    }
 }
 
 function sendMidi(_b) // shim for MIDI transmission
