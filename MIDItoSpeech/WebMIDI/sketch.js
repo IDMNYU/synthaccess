@@ -359,6 +359,7 @@ function readInstructions()
 
 function saySomething(_s) // shim for transmission to speech synthesizer
 {
+  textDebug.html(_s);
   // create a queue
   qstr = _s; // set string
   qclock = qclock_time; // reset clock
@@ -367,7 +368,6 @@ function saySomething(_s) // shim for transmission to speech synthesizer
 
 function serviceSpeechQueue()
 {
-    textDebug.html(qstr);
     if(!muted&&!firstspeak) {
       speaker.speak(qstr); // send to synthesizer
     }
