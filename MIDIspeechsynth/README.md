@@ -1,6 +1,6 @@
-# MIDI speech synth
+# MIDItospeech
 
-Part of synthaccess
+Part of [synthaccess](../)
 
 [ABILITY Project](http://ability.nyu.edu) / [Integrated Design & Media](http://idm.engineering.nyu.edu)   
 NYU
@@ -8,12 +8,20 @@ NYU
 Files:
 - README.md - this file
 - LICENSE - MIT license
-- MaxMSP - folder containing the Max patcher version
-- WebMIDI - folder containing the web version
+- MaxMSP - source for the Max patcher version
+- WebMIDI - source for the web version
 - common - folder containing common JavaScript code for all versions
 - devices - folder of JSON device files
 
 [Live Web Version](https://idmnyu.github.io/synthaccess/MIDIspeechsynth/WebMIDI/index.html)
+
+[Max/MSP Executable (Mac)](https://drive.google.com/file/d/1u1-NINkdkdMtlsw5puJtBNQdSXQtVLLW/view?usp=sharing)
+
+**MIDItospeech** is a set of software and tools to "speak" the affordances on the synthesizers using a computer. Our model relies on MIDI transmission of parameters as affordances are touched on the synth. This is being designed as both a Max patch / Max4Live device as well as a website using the Web MIDI API. In both cases, there is a community-driven repository of JSON files (the 'devices' folder) for models of synthesizers that describe their NRPN / CC values with labels, enumerators, etc. 
+
+Manufacturers can develop these JSON files as part of their production pipeline, and community members / enthusiasts can develop them for legacy synthesizers, open source initiatives, etc. As a second-order benefit, these files can be used for translanguaging as well as access (i.e. you could have distinct JSON files for a synthesizer in English, Mandarin, Spanish, etc.).
+
+If you'd like to contribute to the project, please get in touch.
 
 JSON format:
 
