@@ -68,6 +68,7 @@ function onMidiEnabled() { // MIDI active
 // main stuff:
 async function setup() {
   let blah;
+  frameRate(60);
   noCanvas();
 
   //text debugger:
