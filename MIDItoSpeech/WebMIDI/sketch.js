@@ -138,32 +138,10 @@ I = list device-specific mappings');
   // end of setup
 }
 
-function MousePressed() {
-  // require user interaction on audio context
-  if(firstspeak) {
-    console.log("starting from mouse...");
-    if (audioCtx.state === 'suspended') {
-        audioCtx.resume();
-    }
-    let def = 0;
-    for(let i in speaker.voices)
-    {
-      if(speaker.voices[i].default) def = i;
-      break;
-    }
-    speaker.setVoice(speaker.voices[def].name);
-    speaker.interrupt = true
-    speechrate>0 ? speaker.setRate(1.8) : speaker.setRate(1.0);
-    saySomething('Welcome to MIDI to Speech! Press i for instructions.');
-    firstspeak = 0;
-  }
-}
-
 
 function keyPressed() {
   // require user interaction on audio context
   if(firstspeak) {
-    console.log("starting from key...");
     if (audioCtx.state === 'suspended') {
         audioCtx.resume();
     }
@@ -377,7 +355,6 @@ function saySomething(_s) // shim for transmission to speech synthesizer
 {
     textDebug.html(_s);
     if(!muted) {
-      speaker.cancel(); // kill anything already speaking
       speaker.speak(_s); // send to synthesizer
     }
 }
