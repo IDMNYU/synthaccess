@@ -2,13 +2,15 @@
 
 Part of synthaccess
 
-NYU Ability Project / NYU IDM
+[ABILITY Project](http://ability.nyu.edu) / [Integrated Design & Media](http://idm.engineering.nyu.edu)   
+NYU
 
 Files:
 - README.md - this file
 - LICENSE - MIT license
 - MaxMSP - folder containing the Max patcher version
 - WebMIDI - folder containing the web version (not ready yet)
+- common - folder containing common JavaScript code for all versions
 - devices - folder of JSON device files
 
 JSON format:
