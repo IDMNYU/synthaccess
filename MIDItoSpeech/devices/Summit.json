@@ -12,7 +12,7 @@
     "CC": {
       "0": {
         "label": "bank",
-        "data": "none"
+        "data": "value"
       },
       "3": {
         "label": "os one range",
@@ -75,15 +75,15 @@
       },
       "23": {
         "label": "os 1 level",
-        "data": "none"
+        "data": "value"
       },
       "24": {
         "label": "os 2 level",
-        "data": "none"
+        "data": "value"
       },
       "25": {
         "label": "os 3 level",
-        "data": "none"
+        "data": "value"
       },
       "26": {
         "label": "ring mod amount",
@@ -91,7 +91,7 @@
       },
       "27": {
         "label": "noise level",
-        "data": "none"
+        "data": "value"
       },
       "28": {
         "label": "filter LFO depth",
@@ -103,7 +103,7 @@
       },
       "30": {
         "label": "LFO 1 rate",
-        "data": "none"
+        "data": "value"
       },
       "31": {
         "label": "LFO 2 rate",
@@ -192,7 +192,7 @@
       },
       "81": {
         "label": "LFO 1 rate",
-        "data": "none"
+        "data": "value"
       },
       "82": {
         "label": "LFO 1 fade time",
@@ -206,7 +206,7 @@
       },
       "84": {
         "label": "LFO 2 rate",
-        "data": "none"
+        "data": "value"
       },
       "85": {
         "label": "LFO 2 fade time",
@@ -286,11 +286,11 @@
       },
       "114": {
         "label": "animate one",
-        "data": "none"
+        "data": "value"
       },
       "115": {
         "label": "animate two",
-        "data": "none"
+        "data": "value"
       },
       "117": {
         "label": "mod 2 sustain",
@@ -318,7 +318,7 @@
       },
       "6": {
         "label": "Octave bank",
-        "data": "none"
+        "data": "value"
       },
       "14": {
         "label": "os 1 waveform",
@@ -358,7 +358,7 @@
       },
       "42": {
         "label": "VCA gain",
-        "data": "none"
+        "data": "value"
       },
       "45": {
         "label": "filter slope",
@@ -414,7 +414,7 @@
       },
       "94": {
         "label": "delay time",
-        "data": "none"
+        "data": "value"
       },
       "101": {
         "label": "reverb type",
@@ -525,15 +525,15 @@
       },
       "3213": {
         "label": "Oss 3 to Oss 1 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3214": {
         "label": "Oss 3 to Oss 1 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3215": {
         "label": "Oss 3 to Oss 1 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3216": {
         "label": "Oss 2 F M Source",
@@ -543,15 +543,15 @@
       },
       "3217": {
         "label": "Oss 1 to Oss 2 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3218": {
         "label": "Oss 1 to Oss 2 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3219": {
         "label": "Oss 1 to Oss 2 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3220": {
         "label": "Oss 3 F M Source",
@@ -561,15 +561,15 @@
       },
       "3221": {
         "label": "Oss 2 to Oss 3 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3222": {
         "label": "Oss 2 to Oss 3 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3223": {
         "label": "Oss 2 to Oss 3 F M amount",
-        "data": "none"
+        "data": "value"
       },
       "3224": {
         "label": "Global",
