@@ -9,9 +9,11 @@ Files:
 - README.md - this file
 - LICENSE - MIT license
 - MaxMSP - folder containing the Max patcher version
-- WebMIDI - folder containing the web version (not ready yet)
+- WebMIDI - folder containing the web version
 - common - folder containing common JavaScript code for all versions
 - devices - folder of JSON device files
+
+[Live Web Version](https://idmnyu.github.io/synthaccess/MIDIspeechsynth/WebMIDI/index.html)
 
 JSON format:
 
