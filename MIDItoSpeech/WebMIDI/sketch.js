@@ -23,10 +23,22 @@ var prevparam = -1; // most recent param
 var chan = 1; // MIDI channel
 var pmode = 0; // use "packet" mode (Max [thresh]) vs. individual messages
 var verbose = 1; // verbosity: 0 = minimum, 1 = normal, 2 = maximum
+var speechrate = 1; // speed of speaking
+var muted = 0; // top level mute for speech
 
-function onEnabled() { // MIDI active
+function onMidiEnabled() { // MIDI active
+  // wipe everything
   midiInList = [];
   midiOutList = [];
+  midiDeviceSelectIn.elt.innerHTML = '';
+  midiDeviceSelectOut.elt.innerHTML = '';
+
+    // remove earlier listeners
+    WebMidi.inputs.forEach((device, index) => {
+      WebMidi.inputs[index].removeListener("nrpn");
+      WebMidi.inputs[index].removeListener("controlchange");
+      WebMidi.inputs[index].removeListener("programchange");
+    });
 
   WebMidi.inputs[midiInPtr].addListener("programchange", (e) => doit(e));
   WebMidi.inputs[midiInPtr].addListener("controlchange", (e) => doit(e));
@@ -48,14 +60,15 @@ async function setup() {
   noCanvas();
 
   //text debugger:
-  textDebug = createDiv('hi there');
+  textDebug = createDiv('hi there.');
 
   blah = createDiv('<br>JSON files:');
 
   fileList = await loadStrings('devlist.txt');
+  if(fileList[fileList.length-1].length==0) fileList.pop(); // kill blank line
   fileSelect = createSelect();
   fileList.forEach((fname) => {
-    if(fname.length>0) fileSelect.option(fname);
+      fileSelect.option(fname);
   });
     fileSelect.changed(() => {
     const fileName = fileSelect.elt.value;
@@ -88,12 +101,12 @@ async function setup() {
     changeMidiOutput(deviceIndex);
   });
 
-  blah = createDiv('<br>by R. Luke DuBois & Tommy Martinez<br>NYU IDM / NYU Ability Project');
+  blah = createDiv('<br>by R. Luke DuBois & Tommy Martinez<br>NYU IDM / NYU Ability Project<br>part of <a href="https://idmnyu.github.io/synthaccess/" target="new">synthaccess</a>');
 
   speaker = new p5.Speech();
 
   await WebMidi.enable()
-  .then(onEnabled)
+  .then(onMidiEnabled)
   .catch((err) => alert(err));
 
   // end of setup
@@ -105,8 +118,9 @@ function keyPressed() {
   // say cheers:
   if(firstspeak) {
     speaker.setVoice('Google US English');
-    speaker.interrupt = true;
-    speaker.speak("Welcome to MIDI to Speech! Press i for instructions.");
+    speaker.interrupt = true
+    speechrate>0 ? speaker.setRate(1.5) : speaker.setRate(1.0);
+    saySomething('Welcome to MIDI to Speech! Press i for instructions.');
     firstspeak = 0;
   }
   if(keyCode === 37&&!shiftDown) changeMidiInput(midiInPtr-1); // LEFT
@@ -115,9 +129,14 @@ function keyPressed() {
   if(keyCode === 39&&shiftDown) changeMidiOutput(midiOutPtr+1); // SHIFT-RIGHT
   if(keyCode === 38) loadFile(filePtr-1); // UP
   if(keyCode === 40) loadFile(filePtr+1); // DOWN
+  if(keyCode === 27) onMidiEnabled(); // ESC - redo MIDI
+  if(key === 'V') toggleMute();
+  if(key === 'v') cycleVerbosity();
+  if(key === 'I') readkeymap();
   if(key === 'i') readInstructions();
   if(key === 'c') changeChannel();
-  //console.log(key);
+  if(key === 'r') changeSpeechRate();
+  //console.log(keyCode);
 }
 
 async function loadFile(_ptr)
@@ -176,6 +195,36 @@ function changeChannel()
 {
   chan = (chan+1)%16;
   saySomething("MIDI channel " + chan);
+}
+
+function changeSpeechRate()
+{
+  speechrate = !speechrate;
+  speechrate>0 ? speaker.setRate(1.5) : speaker.setRate(1.0);
+
+  saySomething("Rate changed.");
+}
+
+function toggleMute()
+{
+  if(muted==0)
+  {
+    saySomething("voice off");
+    muted = 1;
+  }
+  else
+  {
+    muted = 0;
+    saySomething("voice on");
+  }
+}
+
+function cycleVerbosity()
+{
+  verbose = (verbose + 1) % 2;
+  if(verbose == 0) saySomething("verbosity level minimum.");
+  else if(verbose == 1) saySomething("verbosity level normal.");
+  else if(verbose == 2) saySomething("Verbosity level maximum.");
 }
 
 function draw() {
@@ -252,7 +301,7 @@ function readInstructions()
 function saySomething(_s) // shim for transmission to speech synthesizer
 {
     textDebug.html(_s);
-    speaker.speak(_s); // send to synthesizer
+    if(!muted) speaker.speak(_s); // send to synthesizer
 }
 
 function sendMidi(_b) // shim for MIDI transmission

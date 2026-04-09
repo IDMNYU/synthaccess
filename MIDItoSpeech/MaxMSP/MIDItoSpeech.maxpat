@@ -682,7 +682,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 404.0, 200.0, 600.0, 102.0 ],
-                                    "text": "\"MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. The v key changes how verbose the speech is. The tab key turns on and off the speech. Other keys can be mapped in the device file. The capital I key will read any device-specific key mappings. The lowercase i key will reread these instructions. \""
+                                    "text": "\"MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. Lowercase v changes how verbose the speech is. Capital V turns on and off the speech. Other keys can be mapped in the device file. The capital I key will read any device-specific key mappings. The lowercase i key will reread these instructions. \""
                                 }
                             },
                             {
@@ -1065,8 +1065,8 @@
                                     "numinlets": 13,
                                     "numoutlets": 13,
                                     "outlettype": [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-                                    "patching_rect": [ 26.0, 62.0, 664.0, 22.0 ],
-                                    "text": "sel 30 31 28 29 27 114 99 9 106 105 73 118"
+                                    "patching_rect": [ 26.0, 62.0, 673.0, 22.0 ],
+                                    "text": "sel 30 31 28 29 27 114 99 86 106 105 73 118"
                                 }
                             },
                             {
@@ -1446,11 +1446,12 @@
             {
                 "box": {
                     "id": "obj-5",
+                    "linecount": 17,
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
-                    "text": "midi channel 1"
+                    "patching_rect": [ 256.0, 174.0, 245.0, 234.0 ],
+                    "text": "MIDI to speech translator instructions. The up and down keys cycle through the list of device files in the devices folder. If the file is elsewhere, press the j key to find it. The escape key will rescan your MIDI ports. The left and right keys will cycle through the MIDI inputs; if you hold down shift, the left and right keys will cycle through the MIDI outputs. The c key will change your active MIDI channel. The r key changes the rate of the voice. The v key changes how verbose the speech is. The tab key turns on and off the speech. Other keys can be mapped in the device file. The capital I key will read any device-specific key mappings. The lowercase i key will reread these instructions. "
                 }
             },
             {
@@ -3248,7 +3249,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 17.0, 455.0, 234.0, 234.0 ],
-                    "text": "MIDI to Speech\n\nESC = reload MIDI ports\nup/down = cycle file list\nleft/right = cycle MIDI input port\nshift-left/shift-right = cycle MIDI output port\nc = cycle MIDI channel\nr = voiceover rate\nv = verbose mode\nj = JSON load\nTAB = toggle speech\ni = instructions\nI = specific instructions\n\nother keys can be mapped in the JSON\n\nrld, 2025"
+                    "text": "MIDI to Speech\n\nESC = reload MIDI ports\nup/down = cycle file list\nleft/right = cycle MIDI input port\nshift-left/shift-right = cycle MIDI output port\nc = cycle MIDI channel\nr = voiceover rate\nv = verbose mode\nj = JSON load\nV = toggle speech\ni = instructions\nI = specific instructions\n\nother keys can be mapped in the JSON\n\nrld, 2025"
                 }
             },
             {
