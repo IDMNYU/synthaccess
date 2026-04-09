@@ -7,8 +7,10 @@ NYU
 
 Featuring the work of:
 - Ciarra Black
+- Jason Dasent
 - R. Luke DuBois, Faculty Lead, MIDI Speech Synth
 - Stefanie Koseff, Faculty Lead, Tactile Synths
+- Tommy Martinez
 - Madeline Mau
 - Lauren Race
 - Izabella Rodrigues
@@ -17,4 +19,4 @@ Featuring the work of:
 
 Projects:
 - **[MIDIspeechsynth](./MIDIspeechsynth/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
-- **tactilesynths** : a library of swell-form printable tactile maps for synthesizers and other audio equipment.
+- **[tactilesynths](./tactilesynths/)** : a library of swell-form printable tactile maps for synthesizers and other audio equipment.
