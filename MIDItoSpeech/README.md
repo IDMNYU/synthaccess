@@ -13,7 +13,7 @@ Files:
 - common - folder containing common JavaScript code for all versions
 - devices - folder of JSON device files
 
-[Live Web Version](https://idmnyu.github.io/synthaccess/MIDIspeechsynth/WebMIDI/index.html)
+[Live Web Version](https://idmnyu.github.io/synthaccess/MIDItoSpeech/WebMIDI/index.html)
 
 [Max/MSP Executable (Mac)](https://drive.google.com/file/d/1aupf2dkb0ezcIs6NBSnhZevZ7ARDpdF_/view?usp=drive_link)
 
