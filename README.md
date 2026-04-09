@@ -12,6 +12,7 @@ Featuring the work of:
 - Stefanie Koseff, Faculty Lead, Tactile Synths
 - Tommy Martinez
 - Madeline Mau
+- Willie Payne
 - Lauren Race
 - Izabella Rodrigues
 - Jason Wallach
