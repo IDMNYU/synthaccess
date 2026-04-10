@@ -23,11 +23,11 @@ Level 1 braille defines a [basic mapping](https://brailleaustralia.org/wp-conten
 
 If you use Level 2 braille, you can save space. For example, the phrase:
 
-> "Some little children adding 2+2 might count it as 22." 
+> "Some little children adding 2+2 might count it as 22, not 4." 
 
 maps to...
 
-> <bl>,"s ll *n add+ #b"6#b mi<t c.t x z #bb4</bl>
+> <bl>,"s ll *n add+ #b"6#b mi<t c.t x z #bb1 n #d4</bl>
 
 <br>
 
