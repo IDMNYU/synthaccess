@@ -27,8 +27,7 @@ If your synthesizer is "one affordance per function", one of the simplest and mo
 <img src = "./img/roland100c_braille.jpg" width="100%" title="Roland 100 Series Model 104 with braille" alt="Roland 100 Series Model 104 with braille">
 <img src = "./img/sh101_braille.jpg" width="100%" title="Roland SH-101 with braille" alt="Roland SH-101 with braille">
 
-
-
+### Suggested Mappings
 
 | Label | 2 | 3 | 4 |
 | ----- | ----- | ----- | ----- |
