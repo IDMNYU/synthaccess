@@ -15,19 +15,13 @@ Files:
 
 ## Introduction
 
-If your synthesizer is "one affordance per function", one of the simplest and most effective ways to add tactile accessibility for Blind / Low Vision users is to label the synthesizer with braille.
+If your synthesizer is "one affordance per function", one of the simplest and most effective ways to add tactile accessibility for Blind / Low Vision users is to label the synthesizer with braille. Below, we outline three methods (from simple and inexpensive to somewhat complex) for doing this.
 
-## Gallery
+A few things to remember about braille:
+- Braille is a [standard](https://brailleauthority.org/size-and-spacing-braille-characters) tactile writing system invented in 1824 that uses a two column by three row grid of six dots for each character. The braille system not only specifies the layout of these dots for each character in the writing system, but also defines the characters' nominal dot sizing and spacing. In other words, there's no such thing as "jumbo braille" or "mini braille". There's just braille. There are [standard mappings](https://en.wikipedia.org/wiki/International_uniformity_of_braille_alphabets) for common writing systems across the world. Languages that use logographic writing systems (such as [Chinese](https://en.wikipedia.org/wiki/Mainland_Chinese_Braille)) will use a phonetic alphabet to create a braille mapping.
+- Level 1 braille defines a basic mapping for the alphabet; level 2 (or contracted) braille has [contractions](https://uebonline.org/wp-content/uploads/2015/03/ueb_manual_braille_ref_brialle_tables.pdf), leveraging context and unused characters to reduce common words and syllables to a single character.
 
-<img src = "./img/ttsh_braille.jpg" width="100%" title="TTSH & DIY 1601 Sequencer with braille" alt="TTSH & DIY 1601 Sequencer with braille">
-<img src = "./img/prophet6_braille.jpg" width="100%" title="Sequential Prophet 6 module with braille" alt="Sequential Prophet 6 module with braille">
-<img src = "./img/ddrm_braille.jpg" width="100%" title="Black Corporation Deckard's Dream with braille" alt="Black Corporation Deckard's Dream with braille">
-<img src = "./img/roland100a_braille.jpg" width="100%" title="Roland 100 Series Model 101 with braille" alt="Roland 100 Series Model 101 with braille">
-<img src = "./img/roland100b_braille.jpg" width="100%" title="Roland 100 Series Model 102 with braille" alt="Roland 100 Series Model 102 with braille">
-<img src = "./img/roland100c_braille.jpg" width="100%" title="Roland 100 Series Model 104 with braille" alt="Roland 100 Series Model 104 with braille">
-<img src = "./img/sh101_braille.jpg" width="100%" title="Roland SH-101 with braille" alt="Roland SH-101 with braille">
-
-### Suggested Mappings
+## Suggested Mappings
 
 | Label | 2 | 3 | 4 |
 | ----- | ----- | ----- | ----- |
@@ -39,3 +33,13 @@ If your synthesizer is "one affordance per function", one of the simplest and mo
 | <bl>attack decay sustain release</bl><br>Attack Decay Sustain Release | <bl>eg</bl><br>eg | <bl>eg</bl><br>eg | <bl>adsr</bl><br>adsr |
 | <bl>envelope generator</bl><br>Envelope Generator | <bl>eg</bl><br>eg | <bl>eg</bl><br>eg | <bl>eg</bl><br>eg |
 | <bl>sample and hold</bl><br>Sample and Hold | <bl>sh</bl><br>sh | <bl>sah</bl><br>sah | <bl>sah</bl><br>sah |
+
+## Gallery
+
+<img src = "./img/ttsh_braille.jpg" width="100%" title="TTSH & DIY 1601 Sequencer with braille" alt="TTSH & DIY 1601 Sequencer with braille">
+<img src = "./img/prophet6_braille.jpg" width="100%" title="Sequential Prophet 6 module with braille" alt="Sequential Prophet 6 module with braille">
+<img src = "./img/ddrm_braille.jpg" width="100%" title="Black Corporation Deckard's Dream with braille" alt="Black Corporation Deckard's Dream with braille">
+<img src = "./img/roland100a_braille.jpg" width="100%" title="Roland 100 Series Model 101 with braille" alt="Roland 100 Series Model 101 with braille">
+<img src = "./img/roland100b_braille.jpg" width="100%" title="Roland 100 Series Model 102 with braille" alt="Roland 100 Series Model 102 with braille">
+<img src = "./img/roland100c_braille.jpg" width="100%" title="Roland 100 Series Model 104 with braille" alt="Roland 100 Series Model 104 with braille">
+<img src = "./img/sh101_braille.jpg" width="100%" title="Roland SH-101 with braille" alt="Roland SH-101 with braille">
