@@ -23,3 +23,10 @@ Featuring the work of:
 Projects:
 - **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
 - **[tactileSynths](./tactileSynths/)** : a library of swell-form printable tactile maps for synthesizers and other audio equipment.
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | #### right-aligned | $1600 |
+| col 2 is      | #### centered      |   $12 |
+| zebra stripes | #### are neat      |    $1 |
