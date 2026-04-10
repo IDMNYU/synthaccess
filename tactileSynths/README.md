@@ -1,4 +1,6 @@
-# tactilesynths
+# tactileSynths
+
+#### tactileSynths
 
 Part of [synthaccess](../README.md)
 
