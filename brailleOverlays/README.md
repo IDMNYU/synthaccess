@@ -3,8 +3,8 @@
 #### brailleOverlays
 
 | Label | 2 char&nbsp; | 3 char | 4 char |
-| ------- | ------- | ------- | ------- |
-| Power | pr <bl>pr</bl> | pwr <bl>pwr</bl> | powr <bl>powr</bl> |
+| ----- | ----- | ----- | ----- |
+| Power | <bl>pr</bl><br>pr | <bl>pwr</bl><br>pwr | <bl>powr</bl><br>powr |
 | Headphones | ph <bl>ph</bl> | ph <bl>ph</bl> | phns <bl>phns</bl> |
 | Voltage-Controlled Oscillator (VCO) | vo <bl>vo</bl> | vco <bl>vco</bl> | vco <bl>vco</bl> |
 | Voltage-Controlled Filter (VCF) | vf <bl>vf</bl> | vcf <bl>vcf</bl> | vcf <bl>vcf</bl> |
