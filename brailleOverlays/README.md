@@ -17,21 +17,25 @@ Files:
 
 If your synthesizer is "one affordance per function", one of the simplest and most effective ways to add tactile accessibility for Blind / Low Vision users is to label the synthesizer with braille. Below, we outline three methods (from simple and inexpensive to somewhat complex) for doing this.
 
-A few things to remember about braille:
-- Braille is a [standard](https://brailleauthority.org/size-and-spacing-braille-characters) tactile writing system invented in 1824 that uses a two column by three row grid of six dots for each character. The braille system not only specifies the layout of these dots for each character in the writing system, but also defines the characters' nominal dot sizing and spacing. In other words, there's no such thing as "jumbo braille" or "mini braille". There's just braille. There are [standard mappings](https://en.wikipedia.org/wiki/International_uniformity_of_braille_alphabets) for common writing systems across the world. Languages that use logographic writing systems (such as [Chinese](https://en.wikipedia.org/wiki/Mainland_Chinese_Braille)) will use a phonetic alphabet to create a braille mapping.
-- Level 1 braille defines a [basic mapping](https://brailleaustralia.org/wp-content/uploads/2013/09/braillecharacters.pdf) for the alphabet, numbers, and punctuation. Level 2 braille has [contractions](https://www.teachingvisuallyimpaired.com/uploads/1/4/1/2/14122361/ueb_braille_chart.pdf), leveraging context and unused characters to reduce common words, letter combinations, and syllables to fewer characters. Free software such as [BrailleBlaster](https://www.brailleblaster.org/) can be used to convert text into braille that includes these level 2 contractions.
+[Braille](https://en.wikipedia.org/wiki/Braille) is a [standard](https://brailleauthority.org/size-and-spacing-braille-characters) tactile writing system invented in 1824 that uses a two column by three row grid of six dots for each character. The braille system not only specifies the layout of these dots for each character in the writing system, but also defines the characters' nominal dot sizing and spacing. In other words, there's no such thing as "jumbo braille" or "mini braille". There's just braille. There are [standard mappings](https://en.wikipedia.org/wiki/International_uniformity_of_braille_alphabets) for common writing systems across the world. Languages that use logographic writing systems (such as [Chinese](https://en.wikipedia.org/wiki/Mainland_Chinese_Braille)) will use a phonetic alphabet to create a braille mapping.
 
-This will map, e.g. the phrase:
+Level 1 braille defines a [basic mapping](https://brailleaustralia.org/wp-content/uploads/2013/09/braillecharacters.pdf) for the alphabet, numbers, and punctuation. Level 2 braille has [contractions](https://www.teachingvisuallyimpaired.com/uploads/1/4/1/2/14122361/ueb_braille_chart.pdf), leveraging context and unused characters to reduce common words, letter combinations, and syllables to fewer characters. Level 2 braille is specific to the *language* being written (e.g. English vs. French), wherease Level 1 braille is standardized by character set (e.g. the Roman alphabet versus Cyrillic). Free software such as [BrailleBlaster](https://www.brailleblaster.org/) can be used to convert text into braille that includes these level 2 contractions.
+
+If you use Level 2 braille, you can save space. For example, the phrase:
 
 > "Some little children adding 2+2 might count it as 22." 
 
-to
+maps to...
 
 > <bl>,"s ll *n add+ #b"6#b mi<t c.t x z #bb4</bl>
 
+## Option #1: Braille Tape
 
+The simplest way to add braille to a synthesizer is to use a low cost braille labeller (such as [this one](https://www.maxiaids.com/product/reizen-rl-350-braille-labeler)) and some labeling tape (such as [this](https://www.amazon.com/NineLeaf-Compatible-3D-Embossing-Organizer/dp/B0C3MGZKYH/?th=1)). You can then punch out braille labels and apply them directly to your synthesizer front panel. If you use clear labels, you can place the labels over your synthesizer.
 
 ## Suggested Mappings
+
+When designing braille overlays for physical synthesizers, space may be at a premium, so shorhands, abbreviations, and contractions will be super useful for labelling things. Below are some suggested mappings for common synthesizer controls. For more high density interfaces, the [tactileSynths](../tactileSynths) part of this repository might be helpful as well. 
 
 | Label | 2 | 3 | 4 |
 | ----- | ----- | ----- | ----- |
