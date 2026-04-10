@@ -3,7 +3,7 @@
 #### brailleOverlays
 
 | Label | 2 char | 3 char | 4 char |
-| ---- | ---- | ---- | ---- |
+| ------- | ------- | ------- | ------- |
 | Power | pr <bl>pr</bl> | pwr <bl>pwr</bl> | powr <bl>powr</bl> |
 | Headphones | ph <bl>ph</bl> | ph <bl>ph</bl> | phns <bl>phns</bl> |
 | Voltage-Controlled Oscillator (VCO) | vo <bl>vo</bl> | vco <bl>vco</bl> | vco <bl>vco</bl> |
