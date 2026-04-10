@@ -1,11 +1,11 @@
 # synthaccess
 
+#### synthaccess
+
 A repository for research around synthesizer (and other audio technology) accessibility. 
 
 [ABILITY Project](http://ability.nyu.edu) / [Integrated Design & Media](http://idm.engineering.nyu.edu)   
 NYU
-
-#### testing testing testing
 
 Featuring the work of:
 - Ciarra Black
