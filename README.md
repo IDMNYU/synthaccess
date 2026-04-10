@@ -24,3 +24,4 @@ Projects:
 - **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
 - **[tactileSynths](./tactileSynths/)** : a library of swell-form printable tactile maps for synthesizers and other audio equipment.
 - **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
+- **[tactileJacksKnobs](./tactileJacksKnobs/)** : a set of designs for tactile affordances for modular synthesizers.
