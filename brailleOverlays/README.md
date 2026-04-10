@@ -41,7 +41,7 @@ n.b. an alternative to this method is to print out sheets of braille on an embos
 
 While it's great to add labels directly to your equipment, two issues might occur. First, the synthesizer surface might not take well to adhesive labels (for example, if the face plate on the synthesizer is powder-coated). Second, you might be worried about the labels damaging your synthesizer (for example, if you have a vintage equipment where adhesives might cause wear on the visual labels underneath.
 
-A great solution for all of this is to cut a plexiglass overlay for your synthesizer, and then affix the braille to the overlay. You can often make these overlays simply if you have access to pre-cut plexiglass (we use 0.040" clear colorless acrylic) and a laser cutter.
+A great solution for all of this is to cut a plexiglass overlay for your synthesizer, and then affix the braille to the overlay. You can often make these overlays simply if you have access to pre-cut plexiglass (we use [0.040" clear colorless acrylic](https://www.canalplastic.com/products/clear-colorless-0-040-acrylic-sheet?variant=37615076302)) and a laser cutter.
 
 ## Suggested Mappings
 
