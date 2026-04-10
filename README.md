@@ -27,6 +27,6 @@ Projects:
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | <ins>right-aligned</ins> | $1600 |
-| col 2 is      | <ins>centered</ins>      |   $12 |
+| col 3 is      | <braille>right-aligned</braille> | $1600 |
+| col 2 is      | <braille>centered</braille>      |   $12 |
 | zebra stripes | <ins>are neat</ins>      |    $1 |
