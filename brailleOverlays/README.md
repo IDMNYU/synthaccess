@@ -2,7 +2,7 @@
 
 #### brailleOverlays
 
-| Label | 2 char | 3 char | 4 char |
+| Label | 2 char&nbsp; | 3 char | 4 char |
 | ------- | ------- | ------- | ------- |
 | Power | pr <bl>pr</bl> | pwr <bl>pwr</bl> | powr <bl>powr</bl> |
 | Headphones | ph <bl>ph</bl> | ph <bl>ph</bl> | phns <bl>phns</bl> |
