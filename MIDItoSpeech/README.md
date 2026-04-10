@@ -1,6 +1,6 @@
 # MIDItoSpeech
 
-#### MIDItoSpeech
+#### miditospee*
 
 Part of [synthaccess](../README.md)
 
