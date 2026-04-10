@@ -1,6 +1,6 @@
 # tactileModular
 
-#### tactileModular
+#### tactilemodul>
 
 Part of [synthaccess](../README.md)
 
