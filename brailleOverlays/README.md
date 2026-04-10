@@ -19,7 +19,8 @@ If your synthesizer is "one affordance per function", one of the simplest and mo
 
 A few things to remember about braille:
 - Braille is a [standard](https://brailleauthority.org/size-and-spacing-braille-characters) tactile writing system invented in 1824 that uses a two column by three row grid of six dots for each character. The braille system not only specifies the layout of these dots for each character in the writing system, but also defines the characters' nominal dot sizing and spacing. In other words, there's no such thing as "jumbo braille" or "mini braille". There's just braille. There are [standard mappings](https://en.wikipedia.org/wiki/International_uniformity_of_braille_alphabets) for common writing systems across the world. Languages that use logographic writing systems (such as [Chinese](https://en.wikipedia.org/wiki/Mainland_Chinese_Braille)) will use a phonetic alphabet to create a braille mapping.
-- Level 1 braille defines a basic mapping for the alphabet; level 2 (or contracted) braille has [contractions](https://uebonline.org/wp-content/uploads/2015/03/ueb_manual_braille_ref_brialle_tables.pdf), leveraging context and unused characters to reduce common words and syllables to a single character.
+- Level 1 braille defines a [basic mapping](https://brailleaustralia.org/wp-content/uploads/2013/09/braillecharacters.pdf) for the alphabet, numbers, and punctuation. Level 2 braille has [contractions](https://www.teachingvisuallyimpaired.com/uploads/1/4/1/2/14122361/ueb_braille_chart.pdf), leveraging context and unused characters to reduce common words, letter combinations, and syllables to fewer characters. Free software such as [BrailleBlaster](https://www.brailleblaster.org/) can be used to convert text into braille that includes these level 2 contractions.
+- <bl>fuck+ #b"6#b</bl>
 
 ## Suggested Mappings
 
