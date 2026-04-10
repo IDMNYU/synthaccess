@@ -29,6 +29,8 @@ maps to...
 
 > <bl>,"s ll *n add+ #b"6#b mi<t c.t x z #bb4</bl>
 
+<br>
+
 ## Option #1: Braille Tape
 
 The simplest way to add braille to a synthesizer is to use a low cost braille labeller (such as [this one](https://www.maxiaids.com/product/reizen-rl-350-braille-labeler)) and some labeling tape (such as [this](https://www.amazon.com/NineLeaf-Compatible-3D-Embossing-Organizer/dp/B0C3MGZKYH/?th=1)). You can then punch out braille labels and apply them directly to your synthesizer front panel. If you use clear labels, you can place the labels over your synthesizer.
