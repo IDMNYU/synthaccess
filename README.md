@@ -1,6 +1,6 @@
 # synthaccess
 
-#### synthaccess
+#### syn?a3ess
 
 A repository for research around synthesizer (and other audio technology) accessibility. 
 
