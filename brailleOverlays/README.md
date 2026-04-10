@@ -1,9 +1,7 @@
-# synthaccess
+# brailleOverlays
 
-#### synthaccess
+#### brailleOverlays
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | <braille>right-aligned</braille> | $1600 |
-| col 2 is      | <braille>centered</braille>      |   $12 |
-| zebra stripes | <ins>are neat</ins>      |    $1 |
+| Label | 2 char | 3 char | 4 char |
+| ---- | ---- | ---- | ---- |
+| VCO | vo <bl>vo</bl> | vco <bl>vco</bl> | vco <bl>vco</bl> |
