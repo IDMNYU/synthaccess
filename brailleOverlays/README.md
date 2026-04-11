@@ -52,13 +52,13 @@ When designing braille overlays for physical synthesizers, space may be at a pre
 | Label | 2 | 3 | 4 |
 | ----- | ----- | ----- | ----- |
 | <bl>p{}</bl><br>Power | <bl>pr</bl><br>pr | <bl>pwr</bl><br>pwr | <bl>powr</bl><br>powr |
-| <bl>h1dph"os</bl><br>Headphones | <bl>ph</bl><br>ph | <bl>ph</bl><br>ph | <bl>phns</bl><br>phns |
-| <bl>voltage-3troll$ oscillator</bl><br>Voltage-Controlled Oscillator | <bl>vo</bl><br>vo | <bl>vco</bl><br>vco | <bl>vco</bl><br>vco |
-| <bl>voltage-3troll$ filt}</bl><br>Voltage-Controlled Filter | <bl>vf</bl><br>vf | <bl>vcf</bl><br>vcf | <bl>vcf</bl><br>vcf |
-| <bl>voltage-3troll$ amplifi}</bl><br>Voltage-Controlled Amplifier | <bl>va</bl><br>va | <bl>vca</bl><br>vca | <bl>vca</bl><br>vca |
-| <bl>attack decay su/a9 rel1se</bl><br>Attack Decay Sustain Release | <bl>eg</bl><br>eg | <bl>eg</bl><br>eg | <bl>adsr</bl><br>adsr |
-| <bl>5velope g5}ator</bl><br>Envelope Generator | <bl>eg</bl><br>eg | <bl>eg</bl><br>eg | <bl>eg</bl><br>eg |
-| <bl>sample & hold</bl><br>Sample and Hold | <bl>sh</bl><br>sh | <bl>sah</bl><br>sah | <bl>sah</bl><br>sah |
+| <bl>h1dph"os</bl><br>Headphones | <bl>ph</bl><br>ph |  | <bl>phns</bl><br>phns |
+| <bl>voltage-3troll$ oscillator</bl><br>Voltage-Controlled Oscillator | <bl>vo</bl><br>vo | <bl>vco</bl><br>vco | |
+| <bl>voltage-3troll$ filt}</bl><br>Voltage-Controlled Filter | <bl>vf</bl><br>vf | <bl>vcf</bl><br>vcf |  |
+| <bl>voltage-3troll$ amplifi}</bl><br>Voltage-Controlled Amplifier | <bl>va</bl><br>va | <bl>vca</bl><br>vca |  |
+| <bl>attack decay su/a9 rel1se</bl><br>Attack Decay Sustain Release | <bl>eg</bl><br>eg | | <bl>adsr</bl><br>adsr |
+| <bl>5velope g5}ator</bl><br>Envelope Generator | <bl>eg</bl><br>eg | <bl>env</bl><br>env |  |
+| <bl>sample & hold</bl><br>Sample and Hold | <bl>sh</bl><br>sh | <bl>sah</bl><br>sah | |
 
 ## Gallery
 
