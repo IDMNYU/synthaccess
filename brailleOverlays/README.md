@@ -29,6 +29,8 @@ maps to...
 
 > <bl>,"s ll *n add+ #b"6#b mi<t c.t x z #bb1 n #d4</bl>
 
+<br>
+
 This certainly saves space (46 characters instead of 61). However, a braille user who reads in another language might not be able to read it.
 
 ## Option #1: Braille tape
