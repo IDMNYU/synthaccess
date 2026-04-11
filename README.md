@@ -25,3 +25,5 @@ Projects:
 - **[tactileSynths](./tactileSynths/)** : a library of swell-form printable tactile maps for synthesizers and other audio equipment.
 - **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
 - **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
+
+*A note to screen reader users:* some of the pages in this site use level 2 braille examples. These examples will be encoded in a way that may prevent a screen reader from reading them correctly. For example, the level 2 braille equivalent of **synthaccess** - this project's name - is <bl>syn?a3ess</bl>. In each case, a regular transliteration will be provided as well.
