@@ -68,7 +68,7 @@ The synthesizers we have created overlays for in the [IDM Audio Lab](https://idm
 2. The 'braille' layer contains braille labels in the [Swell Braille](https://www.ffonts.net/Swell-Braille.font.download) font. These labels can be made with a braile labeler, printed using an embossing printer, or directly printed onto an overlay using a UV printer.
 3. The 'dividers' layer contains suggested dividers for different sections of the synthesizer. These can be made in a variety of ways; the simplest is to use the <bl>a</bl> / 'a' letter on a braille labeller and then turn the tape to the correct orientation. As with the above, you can also directly print this onto an overlay using a UV printer.
 
-For example, here is the overlay we designed for our [TTSH](https://idmnyu.github.io/audiolab/arp.html#ttsh) (a DIY ARP 2600 clone, developed by Jon Nensén).
+For example, here is the overlay developed by Moira Zhang for our [TTSH](https://idmnyu.github.io/audiolab/arp.html#ttsh) (a DIY ARP 2600 clone, developed by Jon Nensén).
 
 This image shows the full composite overlay of the TTSH (interface channels, braille, and dividers) looks like this:
 <img src = "./img/TTSH.png" width="100%" title="TTSH full overlay, with dividers and braille" alt="TTSH full overlay, with dividers and braille">
