@@ -72,6 +72,8 @@ The synthesizers we have created overlays for in the [IDM Audio Lab](https://idm
 
 For example, here is the overlay developed by Moira Zhang for our [TTSH](https://idmnyu.github.io/audiolab/arp.html#ttsh) (a DIY ARP 2600 clone, developed by Jon Nensén).
 
+This image shows the front panel of the TTSH:
+<img src = "./img/TTSH_interface.png" width="100%" title="TTSH visual interface" alt="TTSH visual interface">
 This image shows the full composite overlay of the TTSH (interface channels, braille, and dividers) looks like this:
 <img src = "./img/TTSH.png" width="100%" title="TTSH full overlay, with dividers and braille" alt="TTSH full overlay, with dividers and braille">
 This is the TTSH interface image used for laser cutting the overlay. Note the smaller circles - those are the front-panel screw points, not modular jacks - we used those to fix the overlay. We removed the knob for the microphone gain and the caps for the slide potentiometers before putting the panel on.
