@@ -9,7 +9,7 @@ NYU
 
 Files:
 - README.md - this file
-- synths - folder containing example vector synth overlays with braille mappings
+- [synths](https://github.com/IDMNYU/synthaccess/tree/main/brailleOverlays/synths) - folder containing vector synth overlays with braille mappings
 - img - folder containing example images
 
 **brailleOverlays** is a set of design guidelines and examples for adding braille lettering to synthesizers. 
