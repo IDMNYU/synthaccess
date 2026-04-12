@@ -70,13 +70,13 @@ The synthesizers we have created overlays for in the [IDM Audio Lab](https://idm
 
 For example, here is the overlay we designed for our [TTSH](https://idmnyu.github.io/audiolab/arp.html#ttsh) (a DIY ARP 2600 clone, developed by Jon Nensén).
 
-The full composite overlay of the TTSH (interface channels, braille, and dividers) looks like this:
+This image shows the full composite overlay of the TTSH (interface channels, braille, and dividers) looks like this:
 <img src = "./img/TTSH.png" width="100%" title="TTSH full overlay, with dividers and braille" alt="TTSH full overlay, with dividers and braille">
-The TTSH interface overlay for laser cutting. Note the smaller circles - those are the front-panel screw points, not modular jacks - we used those to fix the overlay.
+This is the TTSH interface image used for laser cutting the overlay. Note the smaller circles - those are the front-panel screw points, not modular jacks - we used those to fix the overlay. We removed the knob for the microphone gain and the caps for the slide potentiometers before putting the panel on.
 <img src = "./img/TTSH_overlay.png" width="100%" title="TTSH laser overlay" alt="TTSH laser overlay">
 These are the TTSH braille labels by themselves. You could use a braille labeller to make these.
 <img src = "./img/TTSH_braille.png" width="100%" title="TTSH braille labels" alt="TTSH braille labels">
-TTSH divider labels made using braille dots. You can make a long adhesive line of them, cut them to size with scissors, and apply them to give a tactile sense of the boundaries between the different modules on the synth.
+Finally, these show divider labels for the TTSH made using braille dots. You can make a long adhesive line of them, cut them to size with scissors, and apply them to give a tactile sense of the boundaries between the different modules on the synth.
 <img src = "./img/TTSH_dividers.png" width="100%" title="TTSH divider labels" alt="TTSH divider labels">
 
 If you would like to contribute to this project or have an overlay file you've done, please get in touch.
