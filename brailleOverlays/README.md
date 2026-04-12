@@ -40,6 +40,8 @@ The simplest way to add braille to a synthesizer is to use a low cost braille la
 
 An alternative to this method is to print out sheets of braille on an embossing printer (such as [this one](https://viewplus.com/product/vp-columbia-2/#product-more-info)) using sticker paper which you then cut out and affix to the device. You can use [BrailleBlaster](https://www.brailleblaster.org/) and the [Braille TTF](https://www.1001fonts.com/braille-font.html) typeface to experiment with this method.
 
+Depending on the density of controls on your synthesizer, you may not be able to label everything (see [mappings](#mappings), below, on some ideas for shorthand. For synthesizers where it's not practicable to create a braille label for every single affordance, you could consider labelling the section headings of different areas of the synth (oscillator, filter, mixer, etc.), and then create a [tactile guide](../tactileSynths) to cover the details.
+
 ## Option #2: Labels on an overlay
 
 While it's great to add labels directly to your equipment, two issues might occur. First, the synthesizer surface might not take well to adhesive labels (for example, if the face plate on the synthesizer is powder-coated). Second, you might be worried about the labels damaging your synthesizer (for example, if you have a vintage equipment where adhesives might cause wear on the visual labels underneath.
@@ -85,7 +87,7 @@ If you would like to contribute to this project or have an overlay file you've d
 
 When designing braille overlays for physical synthesizers, space may be at a premium, so shorhands, abbreviations, contractions, and use of Grade 2 braille will be super useful for labelling things. Below are some suggested mappings for common synthesizer controls if you have space for 2, 3, or 4 braille characters. 
 
-For more high density interfaces, a great solution is to create a tactile guide. The [tactileSynths](../tactileSynths) part of this repository will help you get started.
+As mentioned above, for more high density interfaces, a great solution is to create a tactile guide. The [tactileSynths](../tactileSynths) part of this repository will help you get started.
 
 | Label | 2 | 3 | 4 |
 | ----- | ----- | ----- | ----- |
