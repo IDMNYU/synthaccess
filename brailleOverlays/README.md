@@ -59,7 +59,7 @@ With any of these methods, we recommend doing a test cut first on cardboard to m
 
 ## Option #3: UV Print the braille directly onto an overlay
 
-If you're going to create an overlay for your synth, you can UV print the braille (and dividers, and any other tactile graphics) onto the acrylic directly, using a commercial UV flatbed printer. Commercial print shops will often have UV printing service; for example, in the USA, if a print shop advertises that they can do "ADA signage", then you're probably in the right place. There may be places in your community that are able to do a full-service project - they will source the acrylic, laser cut the overlay, and do the braille printing all in one go.
+If you're going to create an overlay for your synth, you can UV print the braille (and dividers, and any other tactile graphics) onto the acrylic directly, using a commercial UV flatbed printer. Commercial print shops will often have UV printing service; for example, in the USA, if a print shop advertises that they can do "ADA signage", then you're probably in the right place. There may be places in your community that are able to do a full-service project - they will source the acrylic, laser cut the overlay, and do the braille printing all in one go. It's our experience that many UV printers will typeset braille within their own software or work with design software customized for sign printing that knows how to typeset braille, such as [Flexi Design](https://www.thinksai.com/products-flexi-design/).
 
 ## Examples
 
