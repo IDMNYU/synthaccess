@@ -83,7 +83,9 @@ If you would like to contribute to this project or have an overlay file you've d
 
 ## Suggested Mappings
 
-When designing braille overlays for physical synthesizers, space may be at a premium, so shorhands, abbreviations, and contractions will be super useful for labelling things. Below are some suggested mappings for common synthesizer controls. For more high density interfaces, the [tactileSynths](../tactileSynths) part of this repository might be helpful as well. 
+When designing braille overlays for physical synthesizers, space may be at a premium, so shorhands, abbreviations, contractions, and use of Grade 2 braille will be super useful for labelling things. Below are some suggested mappings for common synthesizer controls if you have space for 2, 3, or 4 braille characters. 
+
+For more high density interfaces, a great solution is to create a tactile guide. The [tactileSynths](../tactileSynths) part of this repository will help you get started.
 
 | Label | 2 | 3 | 4 |
 | ----- | ----- | ----- | ----- |
@@ -92,9 +94,20 @@ When designing braille overlays for physical synthesizers, space may be at a pre
 | <bl>voltage-3troll$ oscillator</bl><br>Voltage-Controlled Oscillator | <bl>vo</bl><br>vo | <bl>vco</bl><br>vco | |
 | <bl>voltage-3troll$ filt}</bl><br>Voltage-Controlled Filter | <bl>vf</bl><br>vf | <bl>vcf</bl><br>vcf |  |
 | <bl>voltage-3troll$ amplifi}</bl><br>Voltage-Controlled Amplifier | <bl>va</bl><br>va | <bl>vca</bl><br>vca |  |
-| <bl>attack decay su/a9 rel1se</bl><br>Attack Decay Sustain Release | <bl>eg</bl><br>eg | | <bl>adsr</bl><br>adsr |
+| <bl>l{ frequ5cy oscillator</bl><br>Low Frequency Oscillator | <bl>lf</bl><br>lf | <bl>lfo</bl><br>lfo |  |
+| <bl>s9e wave</bl><br>Sine Wave | <bl>sn</bl><br>sn | <bl>s9e</bl><br>sine |  |
+| <bl>triangle wave</bl><br>Triangle Wave | <bl>tr</bl><br>tr | <bl>tri</bl><br>tri |  |
+| <bl>sawtoo? wave</bl><br>Sawtooth Wave | <bl>sa</bl><br>sa | <bl>saw</bl><br>saw |  |
+| <bl>squ>e wave</bl><br>Square Wave | <bl>sq</bl><br>sq | <bl>sqr</bl><br>sqr |  |
+| <bl>noise generator</bl><br>Noise Generator | <bl>no</bl><br>no | <bl>noi</bl><br>noi | |
+| <bl>attack rel1se</bl><br>Attack Release | <bl>ar</bl><br>ar | | |
+| <bl>attack decay su/a9 rel1se</bl><br>Attack Decay Sustain Release | | | <bl>adsr</bl><br>adsr |
 | <bl>5velope g5}ator</bl><br>Envelope Generator | <bl>eg</bl><br>eg | <bl>env</bl><br>env |  |
 | <bl>sample & hold</bl><br>Sample and Hold | <bl>sh</bl><br>sh | <bl>sah</bl><br>sah | |
+| <bl>5velope foll{}</bl><br>Envelope Follower | <bl>ef</bl><br>ef | <bl>efl</bl><br>efl |<bl>enfl</bl><br>enfl |
+| <bl>r+ modulator</bl><br>Ring Modulator | <bl>rm</bl><br>rm | <bl>r+m</bl><br>ringm |<bl>r+md</bl><br>ringmd |
+| <bl>mix}</bl><br>Mixer | <bl>mx</bl><br>mx | <bl>mxr</bl><br>mxr |<bl>mix}</bl><br>mixer |
+
 
 ## Gallery
 
