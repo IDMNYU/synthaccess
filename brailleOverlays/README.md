@@ -68,11 +68,15 @@ The synthesizers we have created overlays for in the [IDM Audio Lab](https://idm
 2. The 'braille' layer contains braille labels in the [Swell Braille](https://www.ffonts.net/Swell-Braille.font.download) font. These labels can be made with a braile labeler, printed using an embossing printer, or directly printed onto an overlay using a UV printer.
 3. The 'dividers' layer contains suggested dividers for different sections of the synthesizer. These can be made in a variety of ways; the simplest is to use the 'a' (<bl>a</bl>) letter on a braille labeller and then turn the tape to the correct orientation. As with the above, you can also directly print this onto an overlay using a UV printer.
 
-For example, here is the overlay we designed for our [TTSH](https://idmnyu.github.io/audiolab/arp.html#ttsh) (a DIY ARP 2600 clone, developed by Jon Nensén). The images show the full composite overlay, the laser cut channels, the braille labels, and the divider labels.
+For example, here is the overlay we designed for our [TTSH](https://idmnyu.github.io/audiolab/arp.html#ttsh) (a DIY ARP 2600 clone, developed by Jon Nensén).
 
+The full composite overlay of the TTSH (interface channels, braille, and dividers) looks like this:
 <img src = "./img/TTSH.png" width="100%" title="TTSH full overlay, with dividers and braille" alt="TTSH full overlay, with dividers and braille">
+The TTSH interface overlay for laser cutting. Note the smaller circles - those are the front-panel screw points, not modular jacks - we used those to fix the overlay.
 <img src = "./img/TTSH_overlay.png" width="100%" title="TTSH laser overlay" alt="TTSH laser overlay">
+These are the TTSH braille labels by themselves. You could use a braille labeller to make these.
 <img src = "./img/TTSH_braille.png" width="100%" title="TTSH braille labels" alt="TTSH braille labels">
+TTSH divider labels made using braille dots. You can make a long adhesive line of them, cut them to size with scissors, and apply them to give a tactile sense of the boundaries between the different modules on the synth.
 <img src = "./img/TTSH_dividers.png" width="100%" title="TTSH divider labels" alt="TTSH divider labels">
 
 If you would like to contribute to this project or have an overlay file you've done, please get in touch.
