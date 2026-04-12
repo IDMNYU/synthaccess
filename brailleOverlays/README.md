@@ -63,7 +63,7 @@ If you're going to create an overlay for your synth, you can UV print the braill
 
 ## Examples
 
-The synthesizers we have created overlays for in the [IDM Audio Lab](https://idmnyu.github.io/audiolab/) are contained in the 'synths' folder of this repository as layered SVG files. 
+The synthesizers we have created overlays for in the [IDM Audio Lab](https://idmnyu.github.io/audiolab/) are contained in the [synths](https://github.com/IDMNYU/synthaccess/tree/main/brailleOverlays/synths) folder of this repository as layered SVG files. 
 1. The 'overlay' layer contain the laserable cutout.
 2. The 'braille' layer contains braille labels in the [Swell Braille](https://www.ffonts.net/Swell-Braille.font.download) font. These labels can be made with a braile labeler, printed using an embossing printer, or directly printed onto an overlay using a UV printer.
 3. The 'dividers' layer contains suggested dividers for different sections of the synthesizer. These can be made in a variety of ways; the simplest is to use the <bl>a</bl> / 'a' letter on a braille labeller and then turn the tape to the correct orientation. As with the above, you can also directly print this onto an overlay using a UV printer.
