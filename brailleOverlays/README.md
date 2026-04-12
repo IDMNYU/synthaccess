@@ -9,6 +9,7 @@ NYU
 
 Files:
 - README.md - this file
+- synths - folder containing example vector synth overlays with braille mappings
 - img - folder containing example images
 
 **brailleOverlays** is a set of design guidelines and examples for adding braille lettering to synthesizers. 
@@ -37,13 +38,37 @@ This certainly saves space (46 characters instead of 61). However, a braille use
 
 The simplest way to add braille to a synthesizer is to use a low cost braille labeller (such as [this one](https://www.maxiaids.com/product/reizen-rl-350-braille-labeler)) and some adhesive-backed labeling tape (such as [this](https://www.amazon.com/NineLeaf-Compatible-3D-Embossing-Organizer/dp/B0C3MGZKYH/?th=1)). You can then punch out braille labels and apply them directly to your synthesizer front panel. If you use clear labels, you can place the labels over your synthesizer.
 
-n.b. an alternative to this method is to print out sheets of braille on an embossing printer (such as [this one](https://viewplus.com/product/vp-columbia-2/#product-more-info)) using sticker paper which you then cut out and affix to the device.
+An alternative to this method is to print out sheets of braille on an embossing printer (such as [this one](https://viewplus.com/product/vp-columbia-2/#product-more-info)) using sticker paper which you then cut out and affix to the device.
 
 ## Option #2: Labels on an overlay
 
 While it's great to add labels directly to your equipment, two issues might occur. First, the synthesizer surface might not take well to adhesive labels (for example, if the face plate on the synthesizer is powder-coated). Second, you might be worried about the labels damaging your synthesizer (for example, if you have a vintage equipment where adhesives might cause wear on the visual labels underneath.
 
 A great solution for all of this is to cut a plexiglass overlay for your synthesizer, and then affix the braille to the overlay. You can often make these overlays simply if you have access to pre-cut plexiglass (we use [0.040" clear colorless acrylic](https://www.canalplastic.com/products/clear-colorless-0-040-acrylic-sheet?variant=37615076302)) and a laser cutter.
+
+The best overlays have ample space for all of the affordances (knobs, switches, sliders, jacks) on the synthesizer, but can still be affixed to the synth face in an easy manner. One way to do this is to add cutout points for the front panel mounting screws and make those circles small enough that you can use the screws to mounth the plexi overlay and securit it to the synth. Additionally, potentiometers often have knobs or slider caps that can be removed, so the cutout can be narrower, as it only needs to accommodate the shaft of the pot.
+
+To make an overlay, there are a bunch of options:
+
+1. Many commercial manufacturers provide line-art renderings of their front panels (on their websites, in PDF documentation, etc.) that can be imported into a vector design program (e.g. [Inkscape](https://inkscape.org/), Adobe Illustrator, CorelDRAW) and traced over to make a laser cuttable overlay. You can also write the manufacturer's support group and explain that you're making an accessibility overlay for one of their synths and would love a reference CAD file to work from - there's a good chance they'll help you out.
+2. You can take a high resolution photograph of your synth and trace over it. Be careful for skewing / pincushioning artifacts from your camera not being face on with the synth.
+3. You can use a 3D scanning app (such as Polycam or 3D Scanner App) to make a scan of your synthesizer's front panel and import it into 3D modelling software (such as [Blender](https://www.blender.org/) that knows how to export a 2D vector slice of a 3D model. 2D vector software that knows how to create slices from 3D assets (Illustrator, Inkscape) can do this as well.
+4. If the synthesizer is reasonably small, you can place it face-down on a scanner (or a photocopier with a scanning function). You can then create a layer and draw cutouts for your overlay.
+
+With any of these methods, we recommend doing a test cut first on cardboard to make sure everything fits properly. Once you've got your overlay fitted, you can add your braille adhesive labels and they should still well. As an added bonus, you now have a protective cover for your synthesizer!
+
+## Option #3: UV Print the braille directly onto an overlay
+
+If you're going to create an overlay for your synth, you can UV print the braille (and dividers, and any other tactile graphics) onto the acrylic directly, using a commercial UV flatbed printer. Commercial print shops will often have UV printing service; for example, in the USA, if a print shop advertises that they can do "ADA signage", then you're probably in the right place. There may be places in your community that are able to do a full-service project - they will source the acrylic, laser cut the overlay, and do the braille printing all in one go.
+
+## Examples
+
+The synthesizers we have created overlays for in the [IDM Audio Lab](https://idmnyu.github.io/audiolab/) are contained in the 'synths' folder of this repository as layered SVG files. 
+1. The 'overlay' layer contain the laserable cutout.
+2. The 'braille' layer contains braille labels in the [Swell Braille](https://www.ffonts.net/Swell-Braille.font.download) font. These labels can be made with a braile labeler, printed using an embossing printer, or directly printed onto an overlay using a UV printer.
+3. The 'dividers' layer contains suggested dividers for different sections of the synthesizer. These can be made in a variety of ways; the simplest is to use the 'a' (<bl>a</bl>) letter on a braille labeller and then turn the tape to the correct orientation. As with the above, you can also directly print this onto an overlay using a UV printer.
+
+If you would like to contribute to this project or have an overlay file you've done, please get in touch.
 
 ## Suggested Mappings
 
