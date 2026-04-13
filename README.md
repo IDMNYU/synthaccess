@@ -11,7 +11,7 @@ Featuring the work of:
 - Ciarra Black
 - Jason Dasent
 - R. Luke DuBois, Faculty Lead, MIDI Speech Synth
-- Stefanie Koseff, Faculty Lead, Tactile Guides
+- Stefanie Koseff, Faculty Lead, Tactile Synth Guides
 - Tommy Martinez
 - Madeline Mau
 - Willie Payne
