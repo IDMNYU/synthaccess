@@ -317,7 +317,7 @@
         "split": [0, 128, 256, 384, 512]
       },
       "6": {
-        "label": "Octave bank",
+        "label": "Octave",
         "data": "enumsplit",
         "enum": ["minus 3", "minus 2", "minus 1", "zero", "plus 1", "plus 2", "plus 3"],
         "split": [7808, 7936, 8064, 8192, 8320, 8448, 8576]
