@@ -11,7 +11,7 @@ Featuring the work of:
 - Ciarra Black
 - Jason Dasent
 - R. Luke DuBois, Faculty Lead, MIDI Speech Synth
-- Stefanie Koseff, Faculty Lead, Tactile Synths
+- Stefanie Koseff, Faculty Lead, Tactile Guides
 - Tommy Martinez
 - Madeline Mau
 - Willie Payne
@@ -22,7 +22,7 @@ Featuring the work of:
 
 Projects:
 - **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
-- **[tactileSynths](./tactileSynths/)** : a library of swell-form printable tactile maps for synthesizers and other audio equipment.
+- **[tactileGuides](./tactileGuides/)** : a design guide and library of swell-form printable tactile guides for synthesizers and other audio equipment.
 - **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
 - **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
 
