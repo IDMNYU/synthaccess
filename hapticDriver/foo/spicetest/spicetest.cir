@@ -1,0 +1,10 @@
+.title KiCad schematic
+.include "/Users/lukedubois/Documents/TEACHING/nyu/idm/soundstudio/synthaccess/hapticDriver/foo/spicetest/TL074_12V.301"
+V1 Net-_C1-Pad1_ 0 DC 0 SIN( 0 5 1k 0 0 0 ) AC 1  
+C1 Net-_C1-Pad1_ Net-_U1A-+_ 10u
+R1 Net-_U1E-V+_ Net-_U1A-+_ 100k
+XU1 Net-_U1A-+_ Net-_U1A--_ Net-_U1E-V+_ 0 Net-_U1A--_ TL074
+R2 Net-_U1A-+_ 0 100k
+V2 Net-_U1E-V+_ 0 DC 12 
+C2 Net-_U1A--_ /OUT 10u
+.end
