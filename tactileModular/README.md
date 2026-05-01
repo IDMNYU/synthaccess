@@ -13,7 +13,11 @@ Files:
 
 Resources for tactile affordances specific to modular synthesizers. 
 
-The *Serge* folder contains a collection of Serge modular jack collars and knob designs by Jason Wallach to allow for tactile sensing of the different affordances on Serge Modular (and related "4U" banana-jack modular) equipment.
+The *Serge* folder contains a collection of Serge modular jack collars and knob designs by Jason Wallach to allow for tactile sensing of the different affordances on Serge Modular (and related "4U" banana-jack modular) equipment. The repository contains both [STL](https://en.wikipedia.org/wiki/STL_(file_format)) and [STEP](https://en.wikipedia.org/wiki/ISO_10303-21) files that can be used with most 3D printers.
+
+- In our mapping, AC signal jacks have circular collars, DC signal jacks have square collars, and Pulse jacks have triangular collars.
+- The *output* jacks are flat and should fit flush onto the standard Pomona jacks used on most Serge and other 4U synthesizers.
+- The *input* jacks are deeper and have rounded "calderas"; in addition to providing a tactile distinction from the output jacks, they (lightly) disincentivize the stacking of banana cables at inputs.
 
 | Jack Type  | Color | Image | 3D | STL file | STEP file |
 | ---------- | ----- | ----- | -- | -------- | --------- |
