@@ -18,3 +18,4 @@ The *Serge* folder contains a collection of Serge modular jack collars and knob 
 | Jack Type  | Color | Image | 3D | STL file | STEP file |
 | ---------- | ----- | ----- | -- | -------- | --------- |
 | AC Input   | Blue/Grey | ![black cylinder with caldera](./img/AC_InCircle.jpg) | ![black cylinder with caldera](./img/AC_InCircle_3d.png) | AC_InCircle.stl | AC_InCircle.step |
+| AC Output   | Blue/Grey | ![black cylinder](./img/AC_OutCircle.jpg) | ![black cylinder](./img/AC_OutCircle_3d.png) | AC_OutCircle.stl | AC_OutCircle.step |
