@@ -9,7 +9,7 @@ NYU
 
 Files:
 - README.md - this file
-- Serge - files for the Serge modular system
+- Serge - 3D files for the Serge modular system
 
 Resources for tactile affordances specific to modular synthesizers. 
 
