@@ -3,10 +3,17 @@
     "name": "Summmit",
     "manufacturer": "Novation",
     "version": 1,
+    "globals": {
+      "pgm": {
+        "value": 0,
+        "offset": -1
+      }
+    },
     "program_change": {
       "0": {
         "label": "patch",
-        "data": "value"
+        "data": "global1",
+        "global": "pgm"
       }
     },
     "CC": {
@@ -109,6 +116,12 @@
         "label": "LFO 2 rate",
         "data": "intrange",
         "range": [0, 255]
+      },
+      "32": {
+        "label": "bank",
+        "data": "global100",
+        "global": "pgm",
+        "silent": "yes"
       },
       "33": {
         "label": "os 1 LFO amount",
