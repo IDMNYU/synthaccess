@@ -21,9 +21,8 @@ The *Serge* folder contains a collection of Serge modular jack collars and knob 
 
 | Jack Type  | Color | Image | 3D | STL file | STEP file |
 | ---------- | ----- | ----- | -- | -------- | --------- |
-| AC Input   | Black/Brown | <img src="./img/AC_InCircle.jpg" alt="black cylinder with caldera" width="20%"/>
- | <img src="./img/AC_InCircle_3d.png" alt="black cylinder with caldera" width="20%"/>
- | AC_InCircle.stl | AC_InCircle.step |
+| AC Input   | Black/Brown | ![black cylinder with caldera](./img/AC_InCircle.jpg)
+ | ![black cylinder with caldera](./img/AC_InCircle_3d.png) | AC_InCircle.stl | AC_InCircle.step |
 | AC Output   | Black/Brown | ![black cylinder](./img/AC_OutCircle.jpg) | ![black cylinder](./img/AC_OutCircle_3d.png) | AC_OutCircle.stl | AC_OutCircle.step |
 | DC Input   | Blue/Grey | ![blue square with caldera](./img/DC_InSquare.jpg) | ![blue square with caldera](./img/DC_InSquare_3d.png) | DC_InSquare.stl | DC_InSquare.step |
 | DC Output   | Blue/Grey | ![blue square](./img/DC_OutSquare.jpg) | ![blue square](./img/DC_OutSquare_3d.png) | DC_OutSquare.stl | DC_OutSquare.step |
