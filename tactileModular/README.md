@@ -21,3 +21,7 @@ The *Serge* folder contains a collection of Serge modular jack collars and knob 
 | AC Output   | Black/Brown | ![black cylinder](./img/AC_OutCircle.jpg) | ![black cylinder](./img/AC_OutCircle_3d.png) | AC_OutCircle.stl | AC_OutCircle.step |
 | DC Input   | Blue/Grey | ![blue square with caldera](./img/DC_InSquare.jpg) | ![blue square with caldera](./img/DC_InSquare_3d.png) | DC_InSquare.stl | DC_InSquare.step |
 | DC Output   | Blue/Grey | ![blue square](./img/DC_OutSquare.jpg) | ![blue square](./img/DC_OutSquare_3d.png) | DC_OutSquare.stl | DC_OutSquare.step |
+| Pulse Input   | Red | ![red triangle with caldera](./img/pulse_InTriangle.jpg) | ![red triangle with caldera](./img/pulse_InTriangle_3d.png) | DC_InSquare.stl | DC_InSquare.step |
+| Pulse Output   | Red | ![red triangle](./img/pulse_OutTriangle.jpg) | ![red triangle](./img/pulse_OutTriangle_3d.png) | DC_OutSquare.stl | DC_OutSquare.step |
+| Misc Input   | Various | ![gray hexagon with dots](./img/misc_InHexagon.jpg) | ![gray hexagon with dots](./img/misc_InHexagon_3d.png) | DC_InSquare.stl | DC_InSquare.step |
+| Misc Output   | Various | ![gray hexagon](./img/misc_OutHexagon.jpg) | ![gray hexagon](./img/misc_OutHexagon_3d.png) | DC_OutSquare.stl | DC_OutSquare.step |
