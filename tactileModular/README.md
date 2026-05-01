@@ -7,9 +7,9 @@ Part of [synthaccess](../README.md)
 [ABILITY Project](http://ability.nyu.edu) / [Integrated Design & Media](http://idm.engineering.nyu.edu)   
 NYU
 
-Contents:
+Files:
 - README.md - this file
-- [Serge/](https://github.com/IDMNYU/synthaccess/tree/main/tactileModular/Serge) - 3D files for the Serge modular system
+- [Serge](https://github.com/IDMNYU/synthaccess/tree/main/tactileModular/Serge) - 3D files for the Serge modular system
 
 Resources for tactile affordances specific to modular synthesizers. 
 
