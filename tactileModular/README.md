@@ -14,3 +14,7 @@ Files:
 Resources for tactile affordances specific to modular synthesizers. 
 
 The *Serge* folder contains a collection of Serge modular jack collars and knob designs by Jason Wallach to allow for tactile sensing of the different affordances on Serge Modular (and related "4U" banana-jack modular) equipment.
+
+| Jack Type  | Color | Image | 3D | STL file | STEP file |
+| ---------- | ----- | ----- | -- | -------- | --------- |
+| AC Input   | Blue/Grey | ![black cylinder with caldera](./img/AC_InCircle.jpg) | ![black cylinder with caldera](./img/AC_InCircle_3d.png) | AC_InCircle.stl | AC_InCircle.step |
