@@ -13,7 +13,7 @@ Files:
 
 Resources for tactile affordances specific to modular synthesizers. 
 
-## Serge
+### Serge
 
 ![73-75 Serge Modular system with tactile affordances](./img/7375.jpg)
 
