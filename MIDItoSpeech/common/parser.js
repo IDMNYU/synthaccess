@@ -26,6 +26,7 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 _val = _val>>7; // shift 7 bits down then interpret
             }
         }
+        if(verbose>0) {
         switch(_plist[_param].data) // speechify data byte
         {
             case "value": // read the numeric value of the parameter
@@ -96,7 +97,8 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 o = parseInt(thestuff.device.globals[l].offset);
                 v = _val;
                 thestuff.device.globals[l].value = v;
-                speakstring+=" " + (v+o);
+                v=v+o;
+                speakstring+=" " + v;
                 break;
             case "global1": // modify the first two digits of a global value and preserve the third
                 l = _plist[_param].global;
@@ -104,7 +106,8 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 o = parseInt(thestuff.device.globals[l].offset);
                 v = (Math.floor(v/100)*100) + _val;
                 thestuff.device.globals[l].value = v;
-                speakstring+=" " + (v+o);
+                v=v+o;
+                speakstring+=" " + v;
                 break;
             case "global100": // modify the third digit of a global value and preserve the first two
                 l = _plist[_param].global;
@@ -112,7 +115,8 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 o = parseInt(thestuff.device.globals[l].offset);
                 v = (_val*100) + v%100;
                 thestuff.device.globals[l].value = v;
-                speakstring+=" " + (v+o);
+                v=v+o;
+                speakstring+=" " + v;
                 break;
             case "none": // read just the parameter
                 //if(prevparam == _param) dospeak = 0; // skip repeats
@@ -121,7 +125,18 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 break;
         }
         s = ("suffix" in _plist[_param]) ? _plist[_param].suffix : " ";
-        speakstring+=" " + s;
+        if(s=="_patchname") // find patches
+        {
+            let p = thestuff.device.patchlist;
+            if(v in p)
+            {
+                if(verbose==2) speakstring+= ". " + p[v];
+            }
+        }
+        else {
+            speakstring+=" " + s;
+        }
+        }
         //post("dospeak: " + dospeak + "\n");
         //post("string: " + speakstring + "\n");
         if(dospeak) saySomething(speakstring); // send to synthesizer
