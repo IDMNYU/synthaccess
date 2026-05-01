@@ -19,7 +19,7 @@ The *Serge* folder contains a collection of Serge modular jack collars and knob 
 - The *output* jacks are flat and should fit flush onto the standard Pomona jacks used on most Serge and other 4U synthesizers.
 - The *input* jacks are deeper and have rounded "calderas"; in addition to providing a tactile distinction from the output jacks, they (lightly) disincentivize the stacking of banana cables at inputs.
 
-| Jack Type  | Color | Image | 3D | STL file | STEP file |
+| Jack Type  | Color | Image | 3D preview | STL file | STEP file |
 | ---------- | ----- | ----- | -- | -------- | --------- |
 | AC Input   | Black/Brown | ![black cylinder with caldera](./img/AC_InCircle.jpg) | ![black cylinder with caldera](./img/AC_InCircle_3d.png) | AC_InCircle.stl | AC_InCircle.step |
 | AC Output   | Black/Brown | ![black cylinder](./img/AC_OutCircle.jpg) | ![black cylinder](./img/AC_OutCircle_3d.png) | AC_OutCircle.stl | AC_OutCircle.step |
