@@ -49,7 +49,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 267.0, 455.0, 155.0, 22.0 ],
-                    "text": "program 6 1"
+                    "text": "nrpn 36 5 1"
                 }
             },
             {
@@ -378,7 +378,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-51",
-                    "items": [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2", ",", "Prophet 6 Module" ],
+                    "items": [ "AU DLS Synth 1", ",", "Prophet 6 Module", ",", "from Max 1", ",", "from Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -1450,7 +1450,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
-                    "text": "program 5"
+                    "text": "oscillator two pitch C 1  "
                 }
             },
             {
@@ -3402,7 +3402,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-2",
-                    "items": [ "to Max 1", ",", "to Max 2", ",", "Prophet 6 Module" ],
+                    "items": [ "Prophet 6 Module", ",", "to Max 1", ",", "to Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,

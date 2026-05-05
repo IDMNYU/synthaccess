@@ -29,171 +29,191 @@
     "NRPN": {
       "67": {
         "label": "amplifier attack",
-        "data": "none"
+        "data": "float"
       },
       "68": {
         "label": "amplifier decay",
-        "data": "none"
+        "data": "float"
       },
       "69": {
         "label": "amplifier sustain",
-        "data": "none"
+        "data": "float"
       },
       "70": {
         "label": "amplifier release",
-        "data": "none"
+        "data": "float"
       },
       "78": {
         "label": "filter attack",
-        "data": "none"
+        "data": "float"
       },
       "79": {
         "label": "filter decay",
-        "data": "none"
+        "data": "float"
       },
       "80": {
         "label": "filter sustain",
-        "data": "none"
+        "data": "float"
       },
       "81": {
         "label": "filter release",
-        "data": "none"
+        "data": "float"
       },
       "62": {
         "label": "program volume",
-        "data": "none"
+        "data": "mtodb"
       },
       "63": {
         "label": "pan spread",
-        "data": "none"
+        "data": "float"
       },
       "66": {
         "label": "amplifer envelope amount",
-        "data": "none"
+        "data": "float"
       },
       "45": {
         "label": "low pass filter cutoff",
-        "data": "none"
+        "data": "mtof"
       },
       "46": {
         "label": "low pass filter resonance",
-        "data": "none"
+        "data": "floatmap",
+        "map": [0, 255, 0.0, 1.0]
       },
       "77": {
         "label": "low pass filter envelope amount",
-        "data": "none"
+        "data": "intmap",
+        "map": [0, 254, -100, 100],
+        "suffix": "percent"
       },
       "49": {
         "label": "high pass filter cutoff",
-        "data": "none"
+        "data": "mtof"
       },
       "50": {
         "label": "high pass filter resonance",
-        "data": "none"
+        "data": "floatmap",
+        "map": [0, 255, 0.0, 1.0]
       },
       "82": {
         "label": "high pass filter envelope amount",
-        "data": "none"
+        "data": "intmap",
+        "map": [0, 254, -100, 100],
+        "suffix": "percent"
       },
       "2": {
         "label": "oscillator one level",
-        "data": "none"
+        "data": "float"
       },
       "7": {
         "label": "oscillator two level",
-        "data": "none"
+        "data": "float"
       },
       "27": {
         "label": "sub octave level",
-        "data": "none"
+        "data": "float"
       },
       "32": {
         "label": "noise level",
-        "data": "none"
+        "data": "float"
       },
       "33": {
         "label": "oscillator slop",
-        "data": "none"
+        "data": "float"
       },
       "5": {
         "label": "oscillator two pitch",
-        "data": "note"
+        "data": "noteC5",
+        "enharmonic": "flat"
       },
       "6": {
         "label": "oscillator two fine pitch",
-        "data": "notename"
+        "data": "floatmap",
+        "map": [0, 254, -1.0, 1.0]
       },
       "8": {
         "label": "oscillator two shape",
-        "data": "none"
+        "data": "floatmap",
+        "map": [0, 254, -1.0, 1.0]
       },
       "9": {
         "label": "oscillator two pulse width",
-        "data": "none"
+        "data": "float"
       },
       "0": {
         "label": "oscillator one pitch",
-        "data": "note"
+        "data": "noteC5",
+        "enharmonic": "flat"
       },
       "3": {
         "label": "oscillator one shape",
-        "data": "none"
+        "data": "floatmap",
+        "map": [0, 254, -1.0, 1.0]
       },
       "4": {
         "label": "oscillator one pulse width",
-        "data": "none"
+        "data": "float"
       },
       "109": {
-        "label": "aftertouch amount",
-        "data": "none"
+        "label": "after touch amount",
+        "data": "intmap",
+        "map": [0, 254, -100, 100],
+        "suffix": "percent"
       },
       "143": {
         "label": "poly mod filter envelope",
-        "data": "none"
+        "data": "intmap",
+        "map": [0, 254, -100, 100],
+        "suffix": "percent"
       },
       "144": {
         "label": "poly mod oscillator two envelope",
-        "data": "none"
+        "data": "intmap",
+        "map": [0, 254, -100, 100],
+        "suffix": "percent"
       },
       "89": {
         "label": "LFO amount",
-        "data": "none"
+        "data": "intmap",
+        "map": [0, 255, 0, 100],
+        "suffix": "percent"
       },
       "88": {
         "label": "LFO frequency",
-        "data": "none"
+        "data": "floatmap",
+        "map": [0, 254, 0, 100]
       },
       "64": {
         "label": "distortion amount",
-        "data": "none"
+        "data": "value"
       },
       "30": {
         "label": "glide rate",
-        "data": "none"
+        "data": "value"
       },
       "128": {
         "label": "effect B. mix",
-        "data": "none"
+        "data": "value"
       },
       "120": {
         "label": "effect A. mix",
-        "data": "none"
+        "data": "value"
       },
       "121": {
         "label": "effect A. parameter one",
-        "data": "none"
+        "data": "value"
       },
       "122": {
         "label": "effect A. parameter two",
-        "data": "none"
+        "data": "value"
       },
       "129": {
         "label": "effect B. parameter one",
-        "data": "none"
+        "data": "value"
       },
       "130": {
         "label": "effect B. parameter two",
-        "data": "none"
+        "data": "value"
       },
       "167": {
         "label": "clock tempo",

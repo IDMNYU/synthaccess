@@ -74,10 +74,25 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 speakstring+=". " + (_val>hval?"two":"one");
                 break;
             case "note": // interpret value as MIDI pitch (60=C3)
-                speakstring+=" " + mtos(_val);
+                if(typeof(_plist[_param].enharmonic)!=='undefined') a = _plist[_param].enharmonic; else a = "sharp";
+                speakstring+=" " + mtos(_val, a);
                 break;
             case "noteC4": // interpret value as MIDI pitch (60=C4)
-                speakstring+=" " + mtos(_val+12);
+                if(typeof(_plist[_param].enharmonic)!=='undefined') a = _plist[_param].enharmonic; else a = "sharp";
+                speakstring+=" " + mtos(_val+12, a);
+                break;
+            case "noteC5": // interpret value as MIDI pitch (60=C5)
+                if(typeof(_plist[_param].enharmonic)!=='undefined') a = _plist[_param].enharmonic; else a = "sharp";
+                speakstring+=" " + mtos(_val+24, a);
+                break;
+            case "mtof": // interpret value as MIDI, read as Hz (60=C3)
+                speakstring+=" " + mtof(_val);
+                break;
+            case "mtodb": // interpret value as dB, 127 = 0
+                speakstring+=" " + mtodb(_val);
+                break;
+            case "mtopct": // interpret value as percent, 127 = 100%
+                speakstring+=" " + mtopct(_val);
                 break;
             case "enum": // enumerator (value=index)
                 speakstring+=" " + _plist[_param].enum[_val];
@@ -225,13 +240,43 @@ function keypress(_val) // keypress
     }
 }
 
-function mtos(_i) // MIDI note number to name
+function mtos(_i, _a) // MIDI note number to name
 {
-    let pitches = ["C", "C sharp", "D", "D sharp", "E", "F", "F sharp", "G", "G sharp", "A", "A sharp", "B"];
+    let pitches; 
+    if(_a=="sharp") pitches= ["C", "C sharp", "D", "D sharp", "E", "F", "F sharp", "G", "G sharp", "A", "A sharp", "B"];
+    if(_a=="flat") pitches= ["C", "D flat", "D", "E flat", "E", "F", "G flat", "G", "A flat", "A", "B flat", "B"];
     let pc = _i%12; // pitch class
     let oct = Math.floor(_i/12)-2; // octave
     let outstr = pitches[pc] + " " + oct.toString();
     return(outstr);      
+}
+
+function mtof(_i) // MIDI note number to hertz
+{
+    if(_i<0) i=0;
+    let f = 440.0 * Math.pow(2.0, (_i - 69.0) / 12.0)
+    let outstr = "";
+    if(f<1000) { // Hz
+        outstr = f.toFixed(2) + " Hertz";
+    } else // kHz
+    {
+        outstr = (f/1000.).toFixed(2) + " Kilohertz";
+    }
+    return(outstr);
+}
+
+function mtodb(_i) // MIDI CC value to dB (127=0db)
+{
+    let db = 20.*Math.log10(_i/127.);
+    let outstr = db.toFixed(2) + " d b";
+    return(outstr);
+}
+
+function mtopct(_i) // MIDI CC value as percent
+{
+    let pct = Math.round((_i/127.)*100.);
+    let outstr = pct + " percent";
+    return(outstr);
 }
 
 function vmap(_i, _m, _cl) // arbitrary value mapping
