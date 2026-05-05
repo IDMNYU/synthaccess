@@ -57,7 +57,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - "note" : read out the *value* as a MIDI pitch (60 = C3).
          - "noteC4" : read out the *value* as a MIDI pitch (60 = C4).
          - "noteC5" : read out the *value* as a MIDI pitch (60 = C5).
-         - "frequency" : read out the *frequency* as a MIDI pitch (60 = C3; A=440).
+         - "frequency" : read out the *frequency* of a MIDI pitch (60 = C3; A=440).
          - "decibels" : interpret the MIDI range as decibels (127 = 0db).
          - "enum" : read labels from an enumerating array using the *value* as the index.
          - "enumsplit" : read labels from an enumerating array using split points.
