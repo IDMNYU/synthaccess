@@ -112,8 +112,7 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 o = parseInt(thestuff.device.globals[l].offset);
                 v = _val;
                 thestuff.device.globals[l].value = v;
-                v=v+o;
-                speakstring+=" " + v;
+                speakstring+=" " + (v+o);
                 break;
             case "global1": // modify the first two digits of a global value and preserve the third
                 l = _plist[_param].global;
@@ -121,8 +120,7 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 o = parseInt(thestuff.device.globals[l].offset);
                 v = (Math.floor(v/100)*100) + _val;
                 thestuff.device.globals[l].value = v;
-                v=v+o;
-                speakstring+=" " + v;
+                speakstring+=" " + (v+o);
                 break;
             case "global100": // modify the third digit of a global value and preserve the first two
                 l = _plist[_param].global;
@@ -130,8 +128,7 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 o = parseInt(thestuff.device.globals[l].offset);
                 v = (_val*100) + v%100;
                 thestuff.device.globals[l].value = v;
-                v=v+o;
-                speakstring+=" " + v;
+                speakstring+=" " + (v+o);
                 break;
             case "none": // read just the parameter
                 //if(prevparam == _param) dospeak = 0; // skip repeats
@@ -140,6 +137,7 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 break;
         }
         s = ("suffix" in _plist[_param]) ? _plist[_param].suffix : " ";
+        // special suffixes:
         if(s=="_patchname") // find patches
         {
             let p = thestuff.device.patchlist;

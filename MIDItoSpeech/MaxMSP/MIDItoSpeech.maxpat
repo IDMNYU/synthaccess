@@ -49,7 +49,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 267.0, 455.0, 155.0, 22.0 ],
-                    "text": "nrpn 36 5 1"
+                    "text": "program 1 1"
                 }
             },
             {
@@ -1450,7 +1450,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
-                    "text": "oscillator two pitch C 1  "
+                    "text": "midi channel 1"
                 }
             },
             {
@@ -1498,6 +1498,17 @@
                         "classnamespace": "box",
                         "rect": [ 380.0, 316.0, 822.0, 612.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-33",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 615.0, 210.0, 29.5, 22.0 ],
+                                    "text": "- 1"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-28",
@@ -2220,7 +2231,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 615.0, 210.0, 71.0, 22.0 ],
+                                    "patching_rect": [ 615.0, 253.0, 71.0, 22.0 ],
                                     "text": "join"
                                 }
                             },
@@ -2286,7 +2297,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 633.0, 246.0, 32.0, 22.0 ],
+                                    "patching_rect": [ 633.0, 289.0, 32.0, 22.0 ],
                                     "text": "22 1"
                                 }
                             },
@@ -2672,6 +2683,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-121", 0 ],
+                                    "source": [ "obj-33", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-32", 0 ],
                                     "source": [ "obj-34", 0 ]
                                 }
@@ -2720,7 +2737,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-121", 0 ],
+                                    "destination": [ "obj-33", 0 ],
                                     "source": [ "obj-6", 0 ]
                                 }
                             },
@@ -3441,7 +3458,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 639.0, 349.5, 182.0, 35.0 ],
-                    "text": "Prophet6"
+                    "text": "."
                 }
             },
             {

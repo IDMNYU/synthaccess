@@ -6,7 +6,7 @@
     "globals": {
       "pgm": {
         "value": 0,
-        "offset": -1
+        "offset": 0
       }
     },
     "program_change": {
