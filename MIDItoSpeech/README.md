@@ -46,6 +46,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - "bivalue" : read out a signed (bipolar) value (-64 to 63 or -8192 to 8191).
          - "float" : read out an unsigned floating point value (0.0 to 1.0).
          - "bifloat" : read out a signed floating point value (-1.0 to 1.0).
+         - "percent" : read out an integer percent range (0 to 100).
          - "intrange" : read out an integer value specified by **range**.
          - "floatrange" : read out a floating-point value specified by **range**.
          - "intmap" : read out an integer value specified by a 4-value **map**.
@@ -55,6 +56,9 @@ The JSON root element is a **device**, which has the following top-level propert
          - "onetwo64" : read out "one" or "two" if the *value* is below or above 64, respectively.
          - "note" : read out the *value* as a MIDI pitch (60 = C3).
          - "noteC4" : read out the *value* as a MIDI pitch (60 = C4).
+         - "noteC5" : read out the *value* as a MIDI pitch (60 = C5).
+         - "frequency" : read out the *frequency* as a MIDI pitch (60 = C3; A=440).
+         - "decibels" : interpret the MIDI range as decibels (127 = 0db).
          - "enum" : read labels from an enumerating array using the *value* as the index.
          - "enumsplit" : read labels from an enumerating array using split points.
          - "global" : modify a global variable
@@ -63,6 +67,7 @@ The JSON root element is a **device**, which has the following top-level propert
       - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default - "false"), 14-bit 0-16363 ("true"), or 14-bit interpreted as 0-127 ("MSBonly")
       - **range** : array for "intrange", "floatrange" data; index 0 is the minimum output value; 1 is the maximum output value.
       - **map** : array for "intmap", and "floatmap" data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
+      - **enharmonic** : for "note", "noteC4", and "noteC5", defines whether enharmonic pitch classes are read as "sharp" (default) or "flat".
       - **clamp** : boolean ("true" / "false") value for "intmap" and "floatmap" data to specify whether the mapping will be constrained within the output values specified by **range**.
       - **enum** : array of labels for "enum" and "enumsplit" data.
          - for "enum", the *value* serves as the literal index to the array.
