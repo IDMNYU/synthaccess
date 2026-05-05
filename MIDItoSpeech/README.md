@@ -74,7 +74,7 @@ The JSON root element is a **device**, which has the following top-level propert
       - **split** : array of splitpoints for "enumsplit" data.
          - for "enumsplit" data, the *value* is checked against the **split** array, and...
          - the highest index that the *value* is greater than or equal to is the index for the **enum**.
-      - **suffix** : for all "data" modes, a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.).
+      - **suffix** : for all "data" modes, a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.). if the **suffix** is "_patchname", the suffix will be derived from the "patchlist" key in the JSON.
       - **silent** : for all "data" modes, any value at this parameter will mute the speech for that parameter.
 - **keypress** : MIDI messages to be sent when receiving keyboard events on the computer; these also have speech labels attached.
    - the encapsulated object contains enumerable keys defining the alphanumeric key that will trigger the event; the properties of these keys are:
@@ -92,7 +92,7 @@ The JSON root element is a **device**, which has the following top-level propert
       - **ptr** : for "enum" data, the starting index of the **enum** and **vals** arrays.
       - **min** : for "countup" and "countdown" data, the minimum value.
       - **max** : for "countup" and "countdown" data, the maximum value.
-  
+   - **patchlist** : an array of patch names that will be substituted in when the **suffix** "_patchname" is used, based on the  value in the data.
 
 Example:
 ```javascript
