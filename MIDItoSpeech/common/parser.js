@@ -85,13 +85,13 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 if(typeof(_plist[_param].enharmonic)!=='undefined') a = _plist[_param].enharmonic; else a = "sharp";
                 speakstring+=" " + mtos(_val+24, a);
                 break;
-            case "mtof": // interpret value as MIDI, read as Hz (60=C3)
+            case "frequency": // interpret value as MIDI, read as Hz (60=C3)
                 speakstring+=" " + mtof(_val);
                 break;
-            case "mtodb": // interpret value as dB, 127 = 0
+            case "decibels": // interpret value as dB, 127 = 0
                 speakstring+=" " + mtodb(_val);
                 break;
-            case "mtopct": // interpret value as percent, 127 = 100%
+            case "percent": // interpret value as percent, 127 = 100%
                 speakstring+=" " + mtopct(_val);
                 break;
             case "enum": // enumerator (value=index)
@@ -257,10 +257,10 @@ function mtof(_i) // MIDI note number to hertz
     let f = 440.0 * Math.pow(2.0, (_i - 69.0) / 12.0)
     let outstr = "";
     if(f<1000) { // Hz
-        outstr = f.toFixed(2) + " Hertz";
+        outstr = f.toFixed(2) + " hertz";
     } else // kHz
     {
-        outstr = (f/1000.).toFixed(2) + " Kilohertz";
+        outstr = (f/1000.).toFixed(2) + " kilohertz";
     }
     return(outstr);
 }

@@ -61,7 +61,7 @@
       },
       "62": {
         "label": "program volume",
-        "data": "mtodb"
+        "data": "decibels"
       },
       "63": {
         "label": "pan spread",
@@ -73,7 +73,7 @@
       },
       "45": {
         "label": "low pass filter cutoff",
-        "data": "mtof"
+        "data": "frequency"
       },
       "46": {
         "label": "low pass filter resonance",
@@ -88,7 +88,7 @@
       },
       "49": {
         "label": "high pass filter cutoff",
-        "data": "mtof"
+        "data": "frequency"
       },
       "50": {
         "label": "high pass filter resonance",
