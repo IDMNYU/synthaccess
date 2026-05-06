@@ -5,7 +5,7 @@
 function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
-    let a, b, s, cl, l, o, v;
+    let a, b, s, cl, l, o, v, g, i, j, k, nlist, p;
     let dospeak = 1; // default to speaking
     let mval = 127; // assume 7-bit
     let hval = 64; // 7-bit half value
@@ -34,7 +34,6 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
             case "global1": // modify the first two digits of a global value and preserve the third
                 l = _plist[_param].global;
                 v = parseInt(thestuff.device.globals[l].value);
-                //o = parseInt(thestuff.device.globals[l].offset);
                 v = (Math.floor(v/100)*100) + _val;
                 thestuff.device.globals[l].value = v;
                 _val = v; // replace _val for speaksynth later
@@ -42,10 +41,13 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
             case "global100": // modify the third digit of a global value and preserve the first two
                 l = _plist[_param].global;
                 v = parseInt(thestuff.device.globals[l].value);
-                //o = parseInt(thestuff.device.globals[l].offset);
                 v = (_val*100) + v%100;
                 thestuff.device.globals[l].value = v;
                 _val = v; // replace _val for speaksynth later
+                break;
+            case "0or128": // set global to 1 if 128 (novation single/multi)
+                l = _plist[_param].global;
+                thestuff.device.globals[l].value = _val==128?1:0;                
                 break;
             case "global": // modify a global value directly
             default:
@@ -136,12 +138,74 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 speakstring+=" " + _plist[_param].enum[idx];
                 break;
             case "patchsimple": // read strings against an index
-                let nlist = _plist[_param].names;
-                let p = thestuff.device[nlist];
+                nlist = _plist[_param].names;
+                p = thestuff.device[nlist];
                 speakstring+=" " + _val.toString();
+                o = thestuff.device.globals[_plist[_param].global].offset;
+                _val+=o; // add offset for indexing
                 if(_val in p)
                 {
                     if(verbose==2) speakstring+= ". " + p[_val];
+                }
+                break;
+            case "patchcustom": // read strings against an (custom) index
+                g = thestuff.device.globals;
+                i = g[_plist[_param].idx[0]].value;
+                nlist = _plist[_param].names;
+                p = thestuff.device[nlist];
+                speakstring+=" " + i.toString();
+                // do offsets:
+                o = g[_plist[_param].idx[0]].offset;
+                i+=o;
+                if(i in p)
+                {
+                    if(verbose==2) speakstring+= ". " + p[i+o];
+                }
+                break;
+            case "patchbank": // read strings against a bank/patch 2d index
+                g = thestuff.device.globals;
+                i = g[_plist[_param].idx[0]].value;
+                j = g[_plist[_param].idx[1]].value;
+                nlist = _plist[_param].names;
+                p = thestuff.device[nlist];
+                speakstring+=" " + i.toString() + " " + j.toString();
+                // do offsets:
+                o = g[_plist[_param].idx[0]].offset;
+                i+=o;
+                o = g[_plist[_param].idx[1]].offset;
+                j+=o;
+                if(i in p)
+                {
+                    if(j in p[i])
+                    {
+                        if(verbose==2) speakstring+= ". " + p[i][j];
+                    }
+                }
+                break;
+            case "patchmultibank": // read strings against a multi/bank/patch 3d index
+                g = thestuff.device.globals;
+                i = g[_plist[_param].idx[0]].value;
+                j = g[_plist[_param].idx[1]].value;
+                k = g[_plist[_param].idx[2]].value;
+                nlist = _plist[_param].names;
+                p = thestuff.device[nlist];
+                speakstring+=" " + i.toString() + " " + j.toString() + " " + k.toString();
+                // do offsets:
+                o = g[_plist[_param].idx[0]].offset;
+                i+=o;
+                o = g[_plist[_param].idx[1]].offset;
+                j+=o;
+                o = g[_plist[_param].idx[2]].offset;
+                k+=o;
+                if(i in p)
+                {
+                    if(j in p[i])
+                    {
+                        if(k in p[i][j])
+                        {
+                            if(verbose==2) speakstring+= ". " + p[i][j][k];
+                        }
+                    }
                 }
                 break;
             case "none": // read just the parameter

@@ -7,13 +7,23 @@
       "pgm": {
         "value": 0,
         "offset": 0
+      },
+      "bank": {
+        "value": 0,
+        "offset": -1
+      },
+      "multi": {
+        "value": 0,
+        "offset": 0
       }
     },
     "program_change": {
       "0": {
         "label": "patch",
-        "data": "global1",
-        "global": "pgm"
+        "global": "pgm",
+        "data": "patchmultibank",
+        "idx": ["multi","bank","pgm"],
+        "names": "patchlist"
       }
     },
     "CC": {
@@ -119,8 +129,8 @@
       },
       "32": {
         "label": "bank",
-        "data": "global100",
-        "global": "pgm",
+        "data": "label",
+        "global": "bank",
         "silent": "yes"
       },
       "33": {
@@ -624,6 +634,8 @@
       },
       "7936": {
         "label": "",
+        "global": "multi",
+        "globalmode": "0or128",
         "data": "enumsplit",
         "enum": [
           "Patch menu Single",
@@ -641,6 +653,187 @@
         ],
         "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408]
       }
-    }
+    },
+    "patchlist": 
+[
+  [
+    [
+    "Dystopian", "Buzzy Brass", "Aetherphone", "3 Osc BassSynth", "GIL Deep Plane",
+    "Death of a King", "Epic Atmosphere", "OperatahBass", "Little Grey Bass", "Simple & Sublime",
+    "Droom Wolk", "Alpine Crystal", "Amatoral Concept", "Arpeggi Trancy", "Beautiful Bits",
+    "Carnival of Soul", "Coastal Hamlet", "Digital Dew", "Enery Splash", "Experial Evil",
+    "Florist Study", "Forestfull", "Frog Empirium", "Hiphat Garden", "Jnverness Synth Shop",
+    "Magic Castle", "Precinct Bass", "Saucy Bass", "Spring Neptunium", "Thera Atlantis",
+    "\\^/", "Alpine Lake", "Ambient Arp", "Basement", "Bathysphere",
+    "Beneath the Wave", "déjà vu Feeling", "Dream Baby", "Dub Organ", "Eating Tape",
+    "Electro-static", "Erosion", "Exorcism", "Found Sound", "From the Stars",
+    "Golden Egg", "Guitar Distorted", "Hammered Dulcimer", "Haunting Memory", "Heliocentric",
+    "Hovercraft", "Kick & Toms", "Lace Timbre", "Life as a bee", "Lost At Sea",
+    "Mirage", "Mission Complete", "Secret Room", "Silver Bamboo", "Snake Charmer",
+    "Spiritual Path", "Talking Ghosts", "Techno Utopia", "Teles", "Time-Lapse",
+    "Vanishing Point", "Over8iased", "ArtilleryBass", "AyeEyeGuy", "Big Hyper",
+    "FestaBass", "FlintTinder", "Gleamers", "Gray Havens", "HouseLoveOrgan",
+    "KlyMaxx", "KnockDown Bass", "Let's Go Paisley", "MagneticBloom", "MeowMod",
+    "OpticalBurn", "Origins", "PastelShores", "PVC Kalimba", "Rewinder",
+    "StPeters2095", "StringMachine", "Supertanker", "That's Super", "Thumper",
+    "TimeBender", "Wow&Flutter", "WuvaaLova", "CommsErrorPad", "EasterlyPlucks",
+    "StringSectionSwell", "Woodwindesque", "Analog Dawn", "Analog Kick MW", "Analog Separatn",
+    "Analog Snare", "Bass SubOsc", "Bite Poly", "Eighties Organ", "Eighties Brass",
+    "Epic Sync LoopEG", "Ethernal FM", "FM Chaos", "Game Over", "HardSync Lead",
+    "LFO No Arpeggio", "Mellow Lead", "Pad 3SawDnsAftBP", "Pad Sawdense", "Power Fifth",
+    "Prog Lead", "Ring Dyn Ambient", "SingleTrig Bass", "Triangle Motion", "Belmont Whip GIL",
+    "Blue Dulcimer", "Crush Bass GIL", "Faerie Ring GIL", "GIL's Memories", "Glassy Strider GIL",
+    "Light House GIL", "Sendai GIL", "Sp. Beam Cannon"
+    ],
+    [
+    "Dune Sunrise PAD", "Force Field", "Dearly Beloved", "Triple Wavetable", "Sergey Repetae",
+    "Careless Crystal", "4>8>12 UnisonPWM", "80s Bell Patch", "80's Digi-Syn", "99to88to78",
+    "Arc de Triumph", "Arps Of Joy", "Breathy Trumpet", "Buzz BASS!", "Dirt Guitar Lead",
+    "Dirty Basstard", "DoAnimate2&Bend", "Dream Arp", "Dukey Lead", "Eerie ModW^",
+    "Epic Flutter", "Fifths", "Floating Ether", "Floating OnWaves", "FM Piano Elec'",
+    "FM Xylo", "Fmod Bass", "Guitar Patch", "Icicle Warmth", "Little EP Tines",
+    "Little Strike", "Music Box", "Oldie Mogie", "OwWaa Pad", "OxOsc Sync",
+    "Rich Pad", "Silky Retro Syn", "Simple Pad", "Soft OB", "Space Organ",
+    "Spiritual Skies", "Syn Clav", "Three Digi Bells", "Tino Moo", "Voxarrhh Vocal",
+    "You 70s FunkyCat", "Zither Guitar FX", "Wurli ModW Vib", "Arpy Lead", "Brass Stitcher",
+    "Chamber Pipes", "Cosmic Lead", "Crystal Sky", "Detroitich", "Digi Harmonium",
+    "French Horn Pad", "Glassy Drops", "Gluey Stab", "Griffyndor", "Mars Arp",
+    "Phat n Low", "Round Sub", "Rubber Leady", "Rubber Sub Sub", "Sharp Wash",
+    "Steely Dran", "Sub Arp234", "Tasty Chorder", "Tubey Sub", "Wail Pad",
+    "Wood Pecker", "Wurli Alloy", "Alpha Omega", "Animate4Harmny", "Classic Keys",
+    "Clavier Sync", "Cocteaul Choire1", "Cocteaul Choire2", "Digital BodyBass", "Fat Fifths",
+    "FM Bells", "Gas,GrassOrBrass", "Glacial Mood", "Harding Bass", "LastTrain2Bass",
+    "Linear Fifty", "Liquid Rave Chrd", "Mallelt Vox!", "Midnight", "Neural Scanner",
+    "Orange Nightmare", "PleasureDome", "PWM Pad", "RadiophonicOrgan", "Risky Biz",
+    "StankFunk Bass", "Table Organ", "Vox Humana A", "Vox Humana B", "West Coast LPG",
+    "EP Overdrive", "EP2", "EP4", "LFO Bass", "LFO Bass 2",
+    "LFO Bass 3", "Organ", "Soft Organ", "Saw Bass", "Space Lead",
+    "10p Ice Pops", "70's NYC Jam", "Blockers", "Bounty by Grace", "Bronzer",
+    "Catharsis", "Cone Blown", "Dalston Dream", "Digi Bass Basics", "Elysian",
+    "Expansion Card", "Hard Bowed", "Intimate Rotary", "it's all Ours", "Maybe Too Cool",
+    "Pluck your keys", "Reminiscent", "Shadow Industry"
+    ],
+    [
+    "Ponderosa", "Evening Light", "Star Simulator", "Telcom Splendor", "Raw Deal",
+    "Sesqua Valley", "Cobra Duobass", "Nomad Ninja", "Sequenchoco", "Nam Flashback",
+    "Druid Music", "Space Giraffe", "Emerald Cascade", "Seafax Museum", "Memory X Bass",
+    "Marin Pad", "Olympius", "Spacejazz Ranger", "Analog Speedo", "Simple Things",
+    "British Ambient", "Artic Liqorish", "Ravens Jazz", "Nite Critters", "Feed Me Wavesap",
+    "Welsh Synthesis", "Candy Rainfall", "Bamoose Bass", "Ondes Messianen", "Silver Shamrock",
+    "Parapoly 8000", "Wasabi Ghost", "Sprinkle Stars", "Rusty Soul", "Tamboura Rays",
+    "Oxford Dreams", "Ural Myst", "Ambient Sockshop", "Thera Tears", "Eomius Belay",
+    "Fantasoba", "Steadybass Flute", "New Age Marina", "Side By Side", "Glory Jam",
+    "Radiance Of Lite", "Big Splash Snug", "Einstein Strand", "TapeWave Infloop", "Jezebel",
+    "Wyoming LSD", "Rain Shadow VIP", "Computer Day", "Valaxtica", "Manta Day",
+    "Hypno Envelope", "Caramelbass", "Nine Gates", "Alpensynposium", "Jimi Patch",
+    "Bodega Bay", "Season 3 Bass", "Duneman", "Parapoly Saw 700", "Analog Jazz EP",
+    "Starlooper", "PennyWaffle Sa8", "Napa Breeze", "Synth Marmalade", "Lion Figurine",
+    "Haddonfield", "Shetland Pony", "Historical Orleo", "Lizard Breath", "Modestoharpsi",
+    "AeonBass", "Sinistrone Soup", "Fadango Vampy", "Katjesdrop", "Socour Overcast",
+    "Arparoma", "Golden Age", "South Pacific", "Desert Bus", "Xenomurf",
+    "Icepalace", "Wave Dew", "Oxford Manor", "Elvenmeadow", "Majestic Wolharp",
+    "Grand CanyonPad", "Moddervet", "Island Astronomy", "Rigoheim", "Lazybass",
+    "Swamp Satyr", "Americana", "Dream Plants", "Solarius", "Hyperborian Orca",
+    "OxoAcid Oz", "VipeBuzz Big", "Atmy Synt", "Edensynt Seq", "Moondust",
+    "Oervogel", "Emotional Wealth", "Castles", "Smolzazia pad", "Square Galapagos",
+    "Faroer Ichiban", "Trip Cat", "Mystery Coast", "Mixtur Trautoni", "lima Lama",
+    "Ambi Sludge Pro", "Sweet Acid Seq", "Juniper", "Winter Shore", "QuicksilverPudi",
+    "Norycove Harpsi", "LAQidayS", "Lifespan 75", "Niteowl", "Millenia",
+    "TV Detective", "Mesc Uni Drums", "P.O. BOX Space"
+    ],
+    [
+      
+    ]
+    ],
+  [
+    [
+    "FM Singularity", "Buzzy Brass", "Bored of Canada", "Alluvial", "FM Bell Layer",
+    "Gas Valves", "Puzzlebox GIL", "Dream Gazing", "Tape Choir", "Infinite Power",
+    "Cornish Pie", "Dark Funk Haven", "Deep Sea Jazz", "Desert Springs", "Donker Moraes",
+    "Film Noir", "Florida Mallsad", "Flying Boards", "Night Mood", "Outer Aegis",
+    "Pattern Bay", "Pensive Planets", "Puppy Hotel", "Saturated Hues", "SID PWM & Poly",
+    "Spacial Experts", "Spirited Moose", "Tape Delay Jazz", "Twirly Mallets", "Vampirion",
+    "Vetbass & Cosmos", "6 Osc Bass", "80s Electro", "Anointed Poly", "Arp & Wavetable",
+    "Arp Perc Pad", "Arp Triplet", "Arps Everywhere", "Bass & Pad Synth", "Bass/Wurly C#3",
+    "Bell Waves", "Big (-_-) Poly", "Blades of Fire", "ChimEPad", "Dirty Wiper",
+    "Dub Keys", "Echo Keys", "Epic Start", "Film Score Epic", "Formant Peaks",
+    "Funk Split", "Hi Ya Nisqatsi", "Humana Vox", "I Hear U Jon", "LA Saccharinth",
+    "Loving Chord", "Loving The Arps", "Lymphadenopathy", "Mid C Pattern", "Moody Pad",
+    "Noise Nirvana", "NuovaChord", "Octaves & Fifths", "Pad & Lead 1", "Pad & Lead 2",
+    "Phased Delight", "Pick a Pad", "Plucka Bed", "Plucket Again", "PoWeR SiNthesist",
+    "Red Alert!", "Refractions", "Ricochet Pad", "Rise & Flutter", "Romford Tecno 90",
+    "Seismic Lights", "Shifting Sands", "Space Cadet", "Spiked", "Strings Octaves",
+    "Stringy Fifths", "Super Chord", "Super Nasty Lead", "Sync Clasher", "Triumphant",
+    "Tyrell Brass", "Uni Bass & Poly", "Wind Staccato", "Windy Pad", "Wurly\\Lead C3",
+    "80s String Unit", "Back Catalogue", "Brass for Days!", "Carrillon Matron", "Champs-Elysees",
+    "Clingerclang", "Coming Abroad", "Discovery Layer", "Dust Down Love", "EP P37",
+    "Escape Pod", "Faux Century", "For Her Genius", "Fruit Picking", "Fully Loaded",
+    "Grey's Abduction", "Guilty Pleasures", "Hardcore Score", "Legacy Lead", "Long Gone",
+    "Mercury", "Nil by Mouth", "Panuc Stations", "Regeneration", "Remember Fusion",
+    "Revised Hope", "Slick & Trick", "Small Town USA", "Spectral Helper", "Stock-Ex Montage",
+    "Such a Charmer!", "That's the Jazz!", "The Good Stuff", "Them Feels", "Toe Tap 2000",
+    "Find And Forget", "Was it a Dream", "We Must Hide!"
+    ],
+    [
+    "Dream Stance", "Eighties Brass", "Portal", "Movement Above", "FM Piano & Pad",
+    "Cyanide Sister", "Expanding Heads", "Warehouse Shapes", "Imperfect 5ths", "Italo Split",
+    "Bell Ensemble", "Bubble Skyline", "Claw Bass GIL", "Damp Night GIL", "Dark Planet GIL",
+    "Dark Funk Heaven", "Full Spectrum", "Hand of Midas", "Mossy Log GIL", "Plasma Battery",
+    "Rift Stone GIL", "Sparklizer GIL", "Stone Organ GIL", "Temple Depths", "Tube World GIL",
+    "Tunnel Bass GIL", "Twilight GIL", "Visual Light GIL", "Warm Wind GIL", "Abyssal",
+    "Algae", "Aurora Pockets", "Belloma", "Carl'stapes", "Cedar",
+    "Chrome Forest", "City Maps", "Fjossa", "Glass Bird", "Iguana and Bee",
+    "Kaleidaharp", "Kitro", "Opal", "Pond", "Rivulet",
+    "Seasick", "Sea Song", "Sequoia", "To The Wind", "Animus",
+    "Big Dreams", "Bubble Maker", "Candy Machine", "Chop Saw", "Cloud Cover",
+    "Coast Clavier", "Coasting", "Cookie Cilffs", "Cotton Candy", "Drift On",
+    "Easy Bop", "Flight Path", "Floating Lanterns", "Foam Chord", "Goose Bumps",
+    "Gulf Winds", "Horizon Bounce", "Night Crime", "Old Friends", "Pacific By Way",
+    "Plunker", "Pomp Comp", "Power Suit", "Pump up", "RAM Flow",
+    "Researching", "Riggles", "Shoreline", "Social Funk", "Speedish House",
+    "Start Screen", "The Forge", "The Orishas", "Tight Walk", "Vice City",
+    "Wild & Loose", "Zeus Fanfare", "Alva Bass Pile", "PolySummit Choir", "Astral Duves",
+    "Big EP", "Big Romance", "Cabaret Vol Spit", "City of Monica", "Cocteau1 Hour",
+    "Covenant Split", "Digistalgia Splt", "Dueling Arps", "Dyno My Piano", "FM AM Split",
+    "FSOLos Angeles", "Instant Intro", "Last Train", "Liquid Stack", "Massiv Strings",
+    "McBride's Cave", "Mifgr's Split", "Neologic split", "Orange Chariots", "Oranic",
+    "Phantasia 2020", "Pleasure Quest", "Pop Composer", "Recombinant Mlab", "Start The Rave",
+    "Sunrise Summit", "Thorny", "Unicorn Dreams", "Uno Linear Split", "Violated",
+    "Voice of Summit", "Vurtual Rain", "Warm Games", "West End Split", "InTheGloaming",
+    "Kosmic Hope", "Strung Out", "Zen Orbit"
+    ],
+    [
+    "Alchemy", "Anthromorphize", "Anticipation", "Aquatic Paridise", "Aurora Borealis",
+    "Cascade", "Chasm", "Childhood Memory", "Chimera", "Clandestine",
+    "Cloud Hopping", "Clouds Pass By", "Crystal Lattice", "Day Dream", "Degraded Tape",
+    "Desert Sunset", "Electric Company", "Euphoria", "Fairyland", "Falling Water",
+    "first Kiss", "First Saw You", "Fond Memory", "Frozen Lake", "If You Believe",
+    "In Your Head", "Introspection", "Ionic Bond", "Lady Bug", "Last Dance",
+    "Longing", "Magic Pool", "Magic Sword", "Memory", "Mercury",
+    "Metal Music", "Molten Core", "Moonlit Lake", "Morning Light", "Noble Cause",
+    "Obstacle", "Quiet Guitar", "Racing Dolphins", "Rock Face", "Scrambled",
+    "Secret Meeting", "Secret Mission", "Shimmer", "Snowy Owl", "Soaring",
+    "Star Gazing", "Strong Along", "Sundown Arp", "Suspense", "The Weaver",
+    "Tranquil Water", "Tundra", "Urban Decay", "Water Dragon", "Wild Horses",
+    "Windswept", "Winged Migration", "Call and Action DN", "Aggro Poly", "Altered Arpeggio",
+    "Altered State", "Arp & SyncLead", "Bass & MellwLead", "Bass & Organ", "Bass & Pad",
+    "Bass & Prog Lead", "Big Stab", "Bouncing Pad", "Bravo Delta Arp", "Charlie & Pad",
+    "Charlie Delta 2Arp", "Dawn", "Deceleration", "Dirdir", "Drone Arpeggio",
+    "DynaDecelerated", "Epic", "FM Percuss Pad", "Frozen Motion", "Karabas",
+    "Kick & Snare", "Layer Bass", "Layer Pad", "Moving Stab", "Nigth Time",
+    "Out There", "Separated Octave", "Seq Friendly", "Silk Pad", "The Chase",
+    "Two Friends", "Window Tears", "Leave The Latch", "Bass Chords", "Bubbling Vista",
+    "Wooden Bridge", "Sustenance", "Pree Yrself", "Mechanical Pill", "Fuzzy Logic",
+    "Instant Darkroom", "Bastian Machine", "Not Really Brass", "Smoke The Pipe", "80s Rolled Sleev",
+    "Split Creamola", "Crustacian", "Gristling Throb", "Fresh Milk", "Wired Harmonium",
+    "Tree Lined Walk", "Slow Arp DN", "Puhu", "/_\\", "Nara",
+    "Kona", "Hold", "Alba", "Lima", "Petit Chat",
+    "EM", "Jima", "Miya"
+    ],
+    [
+      
+    ]
+  ]
+]
   }
 }

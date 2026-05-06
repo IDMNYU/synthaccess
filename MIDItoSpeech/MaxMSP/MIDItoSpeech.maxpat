@@ -154,7 +154,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 267.0, 455.0, 155.0, 22.0 ],
-                    "text": "program 77 1"
+                    "text": "program 58 1"
                 }
             },
             {
@@ -1555,7 +1555,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
-                    "text": "program 377. Qknox Bass  "
+                    "text": "patch 1 2 58. Cotton Candy  "
                 }
             },
             {
@@ -3581,7 +3581,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 639.0, 349.5, 182.0, 35.0 ],
-                    "text": "Prophet6"
+                    "text": "Summit"
                 }
             },
             {
