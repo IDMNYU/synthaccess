@@ -40,7 +40,7 @@ Over the past year, we have developed a number of exemplar design interventions 
 
 We are interested in collaborating with industry partners and manufacturers groups to further develop our proposed designs and have them adopted as standards that could be integrated into the design and manufacturing stage for commercial synthesizers. We are also interested in further developing these tools for other music technology devices, and partnering with enthusiasts in the community to develop assets for vintage equipment.
 
-We believe there is an opportunity to create strong consensus in the music technology industry that accessibility matters and that it can be viewed as a subject of *collaboration*, not *competition*. To this end, this work is being published as free and open to the public under open-source software (MIT) and document copyright (CC BY-NC-SA 4.0) licenses.
+We believe there is an opportunity to create strong consensus in the music technology industry that accessibility matters and can be viewed as a subject of *collaboration*, not *competition*. To this end, this work is being published as free and open to the public under open-source software (MIT) and document copyright (CC BY-NC-SA 4.0) licenses.
 
 If you're interested in working with us, please get in touch by writing Luke (dubois at nyu dot edu).
 
