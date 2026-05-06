@@ -5,7 +5,7 @@
 Part of [synthaccess](../README.md)
 
 [ABILITY Project](http://ability.nyu.edu) / [Integrated Design & Media](http://idm.engineering.nyu.edu)   
-NYU
+New York University
 
 Files:
 - README.md - this file
