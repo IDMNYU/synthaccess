@@ -28,7 +28,7 @@ Projects:
 
 ---
 
-**SynthAccess** is a multi-pronged open source initiative around accessibility for Blind / Low Vision (BLV) musicians who use synthesizers and related equipment. This includes standards for braille labeling and tactile guides, software to generate sythesized speech as affordances are moved on the devices, and 3D printed alternatives to knobs and jacks to make them distinguishable by feel. We have been collaborating with a variety of musicians from the Filomen M. D’Agostino Greenberg Music School in New York City as well as the Focusrite Group.
+**SynthAccess** is a multi-pronged open source initiative around accessibility for Blind / Low Vision (BLV) musicians who use synthesizers and related equipment. This includes standards for braille labeling and tactile guides, software to generate sythesized speech as affordances are moved on the devices, and 3D printed alternatives to knobs and jacks to make them distinguishable by feel.
 
 Modern music technology is challenging from an accessibility standpoint as it often features ocularcentric design patterns that use screens, LEDs to indicate state, and affordances such as rotary controls and soft buttons that only provide visual feedback.
 
