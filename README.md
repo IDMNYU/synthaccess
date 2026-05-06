@@ -20,7 +20,13 @@ Featuring the work of:
 - Jason Wallach
 - Moira Zhang
 
-Overview:
+#### Projects:
+- **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
+- **[tactileSynthGuides](./tactileSynthGuides/)** : a design guide and library of swell-form printable tactile guides for synthesizers.
+- **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
+- **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
+
+#### Overview:
 
 **SynthAccess** is a multi-pronged open source initiative around accessibility for Blind / Low Vision (BLV) musicians who use synthesizers and related equipment. This includes standards for braille labeling and tactile guides, software to generate sythesized speech as affordances are moved on the devices, and 3D printed alternatives to knobs and jacks to make them distinguishable by feel. We have been collaborating with a variety of musicians from the Filomen M. D’Agostino Greenberg Music School in New York City as well as the Focusrite Group.
 
@@ -37,11 +43,5 @@ We are interested in collaborating with industry partners and manufacturers grou
 We believe there is an opportunity to create strong consensus in the music technology industry that accessibility matters and that it can be viewed as a subject of *collaboration*, not *competition*. To this end, this work is being published as free and open to the public under open-source software (MIT) and document copyright (CC BY-NC-SA 4.0) licenses.
 
 If you're interested in working with us, please get in touch by writing Luke (dubois at nyu dot edu).
-
-Projects:
-- **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
-- **[tactileSynthGuides](./tactileSynthGuides/)** : a design guide and library of swell-form printable tactile guides for synthesizers.
-- **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
-- **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
 
 *A note to screen reader users:* some of the pages in this site use Grade 2 braille examples. These examples will be encoded in a way that may prevent a screen reader from reading them correctly. For example, the Grade 2 braille equivalent of **synthaccess** - this project's name - is <bl>syn?a3ess</bl>. In each case, a regular transliteration will be provided as well.
