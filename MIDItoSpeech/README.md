@@ -61,9 +61,6 @@ The JSON root element is a **device**, which has the following top-level propert
          - "decibels" : interpret the MIDI range as decibels (127 = 0db).
          - "enum" : read labels from an enumerating array using the *value* as the index.
          - "enumsplit" : read labels from an enumerating array using split points.
-         - "global" : modify a global variable
-         - "global1" : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
-         - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for program numbers)
       - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default - "false"), 14-bit 0-16363 ("true"), or 14-bit interpreted as 0-127 ("MSBonly")
       - **range** : array for "intrange", "floatrange" data; index 0 is the minimum output value; 1 is the maximum output value.
       - **map** : array for "intmap", and "floatmap" data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
@@ -74,6 +71,11 @@ The JSON root element is a **device**, which has the following top-level propert
       - **split** : array of splitpoints for "enumsplit" data.
          - for "enumsplit" data, the *value* is checked against the **split** array, and...
          - the highest index that the *value* is greater than or equal to is the index for the **enum**.
+      - **global** : name of a global variable to write into
+      - **globalmode** : format of how global data is written:
+         - "global" (default) : modify a global variable
+         - "global1" : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
+         - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for program numbers)
       - **suffix** : for all "data" modes, a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.). if the **suffix** is "_patchname", the suffix will be derived from the "patchlist" key in the JSON if the verbosity level is set to maximum.
       - **silent** : for all "data" modes, any value at this parameter will mute the speech for that parameter.
 - **keypress** : MIDI messages to be sent when receiving keyboard events on the computer; these also have speech labels attached.
@@ -92,7 +94,7 @@ The JSON root element is a **device**, which has the following top-level propert
       - **ptr** : for "enum" data, the starting index of the **enum** and **vals** arrays.
       - **min** : for "countup" and "countdown" data, the minimum value.
       - **max** : for "countup" and "countdown" data, the maximum value.
-   - **patchlist** : an array of patch names that will be substituted in when the **suffix** "_patchname" is used, based on the  value in the data.
+- **patchlist** : an array of patch names that will be substituted in when the **suffix** "_patchname" is used, based on the  value in the data.
 
 Example:
 ```javascript
