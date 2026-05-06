@@ -2,7 +2,7 @@
 
 #### syn?a3ess
 
-A repository for research around synthesizer (and other audio technology) accessibility. 
+A repository for research around synthesizer (and other audio technology) accessibility.
 
 [ABILITY Project](http://ability.nyu.edu) / [Integrated Design & Media](http://idm.engineering.nyu.edu)   
 NYU
@@ -19,6 +19,24 @@ Featuring the work of:
 - Izabella Rodrigues
 - Jason Wallach
 - Moira Zhang
+
+Overview:
+
+**SynthAccess** is a multi-pronged open source initiative around accessibility for Blind / Low Vision (BLV) musicians who use synthesizers and related equipment. This includes standards for braille labeling and tactile guides, software to generate sythesized speech as affordances are moved on the devices, and 3D printed alternatives to knobs and jacks to make them distinguishable by feel. We have been collaborating with a variety of musicians from the Filomen M. D’Agostino Greenberg Music School in New York City as well as the Focusrite Group.
+
+Modern music technology is challenging from an accessibility standpoint as it often features ocularcentric design patterns that use screens, LEDs to indicate state, and affordances such as rotary controls and soft buttons that only provide visual feedback.
+
+For this project, we leverage two trends in synthesizer equipment: 
+- Historical synthesizer designs employ *analog* circuitry, and have a design layout that is one affordance per function, which means that there are knobs, buttons, switches, sliders, and so forth that map to one specific parameter on the instrument. There are many modern synthesizers that either emulate this design approach or are recreations of historical equipment. This allows us to create overlay systems and tactile guides that allow a user to navigate a synthesizer user interface by touch.
+- Modern synthesizers often employ microprocessors that *transmit the state* of their controls as they are being manipulated, typically using the MIDI protocol introduced in 1983 for digital communication among music technology equipment. This allows us to use computer software to listen to user actions performed on a synthesizer and create accessible speech information without any change to the hardware.
+
+Over the past year, we have developed a number of exemplar design interventions to assist BLV users with synthesizers. This work was undertaken as part of a larger initiative around making the [NYU Tandon IDM Audio Lab](https://idmnyu.github.io/audiolab/) accessible for users with disabilities, as well as work done in collaboration with the [FMDG Music School](https://fmdgmusicschool.org/) and a number of US music conservatories towards creating contemporary standards around music education for BLV students. In addition, we partnered with the Focusrite Group to adopt our standards to three of their synthesizer brands (Sequential Circuits, Oberheim, and Novation). We have also developed overlays for various other historical and contemporary synthesizers made by ARP, Roland, Nensén Electronics, and the Black Corporation.
+
+We are interested in collaborating with industry partners and manufacturers groups to further develop our proposed designs and have them adopted as standards that could be integrated into the design and manufacturing stage for commercial synthesizers. We are also interested in further developing these tools for other music technology devices, and partnering with enthusiasts in the community to develop assets for vintage equipment.
+
+We believe there is an opportunity to create strong consensus in the music technology industry that accessibility matters and that it can be viewed as a subject of *collaboration*, not *competition*. To this end, this work is being published as free and open to the public under open-source software (MIT) and document copyright (CC BY-NC-SA 4.0) licenses.
+
+If you're interested in working with us, please get in touch by writing Luke (dubois at nyu dot edu).
 
 Projects:
 - **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
