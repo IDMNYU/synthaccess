@@ -76,10 +76,10 @@ The JSON root element is a **device**, which has the following top-level propert
          - the highest index that the *value* is greater than or equal to is the index for the **enum**.
       - **global** : name of a global variable to write into
       - **globalmode** : format of how global data is written:
-         - "global" (default) : modify a global variable
+         - "global" (default) : overwrite a global variable
          - "global1" : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
-         - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for program numbers)
-         - "0or128" : set the global to 1 if the value is 128, 0 otherwise (good for Novation single/multi mode)
+         - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for e.g. three-digit program numbers on Sequential equipment)
+         - "0or128" : set the global to 1 if the value is 128, 0 otherwise (good for e.g. Novation single/multi mode)
       - **idx** : for "patch" modes, an array of globals to use as indices for the "names" array; if this is missing, it will be inferred from the "global" key for "patch1d".
       - **names** : for "patch" modes, the name of an array in the JSON listing strings for patch / preset names.
       - **suffix** : for all "data" modes, a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.).
