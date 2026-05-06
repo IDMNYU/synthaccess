@@ -63,8 +63,8 @@ The JSON root element is a **device**, which has the following top-level propert
          - "enumsplit" : read labels from an enumerating array using split points.
          - "patchsimple" : read labels from a list of patch names based on the global value bound to that parameter. Assumes "names" is a 1-dimensional array of strings.
          - "patchcustom" : read labels from a list of patch names based on a custom global value as the index. Assumes "names" is a 1-dimensional array of strings.
-         - "patchbankpreset" : read labels from a 2-dimensional list of patch names (e.g. bank, preset). Assumes "names" is a 2-dimensional array of strings.
-         - "patchmultibankpreset" : read labels from a 3-dimensional list of patch names (e.g. single/multi, bank, preset). Assumes "names" is a 3-dimensional array of strings.
+         - "patchbank" : read labels from a 2-dimensional list of patch names (e.g. bank, preset). Assumes "names" is a 2-dimensional array of strings.
+         - "patchmultibank" : read labels from a 3-dimensional list of patch names (e.g. single/multi, bank, preset). Assumes "names" is a 3-dimensional array of strings.
       - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default - "false"), 14-bit 0-16363 ("true"), or 14-bit interpreted as 0-127 ("MSBonly")
       - **range** : array for "intrange", "floatrange" data; index 0 is the minimum output value; 1 is the maximum output value.
       - **map** : array for "intmap", and "floatmap" data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
