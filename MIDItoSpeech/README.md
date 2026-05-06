@@ -34,7 +34,7 @@ The JSON root element is a **device**, which has the following top-level propert
 - **version** : version of the *parser* to be used (this is in anticipation of a versioned release).
 - **globals** : global variables to be maintained by the parameter structure, e.g. patch numbers combined by more than one parameter, etc.; each *key* is a parameter name that can be called by different mappings; the properties of these keys are:
    -  **value** : the initial value of the parameter
-   -  **offset** : a numeric offset for the parameter when used when speaking (e.g. 0-99 for a value that's internally represented as 1-100)
+   -  **offset** : a numeric offset for the parameter when used when indexing against an array (e.g. use -1 when a MIDI parameter is transmitting 1-10 for a value you need to use as 0-9)
 - **program_change**, **CC**, **NRPN** : these define speech interactions that occur upon receiving [MIDI](https://en.wikipedia.org/wiki/MIDI) program change, continuous controller, or [non-registered parameter number](https://en.wikipedia.org/wiki/NRPN) messages.
    - the encapsulated object contains enumerable string keys defining the *controller number* that dictates which CC or NRPN to respond; for program changes this is always *0*; the properties of these keys are:
       - **label** : the speakable label for the key (e.g. "modulation" for CC0).
@@ -61,7 +61,10 @@ The JSON root element is a **device**, which has the following top-level propert
          - "decibels" : interpret the MIDI range as decibels (127 = 0db).
          - "enum" : read labels from an enumerating array using the *value* as the index.
          - "enumsplit" : read labels from an enumerating array using split points.
-         - "patchsimple" : read labels from a list of patch names. Assumes "names" is a 1-dimensional array of strings.
+         - "patchsimple" : read labels from a list of patch names based on the global value bound to that parameter. Assumes "names" is a 1-dimensional array of strings.
+         - "patchcustom" : read labels from a list of patch names based on a custom global value as the index. Assumes "names" is a 1-dimensional array of strings.
+         - "patchbank" : read labels from a 2-dimensional list of patch names (e.g. bank, preset). Assumes "names" is a 2-dimensional array of strings.
+         - "patchmultibank" : read labels from a 3-dimensional list of patch names (e.g. single/multi, bank, preset). Assumes "names" is a 3-dimensional array of strings.
       - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default - "false"), 14-bit 0-16363 ("true"), or 14-bit interpreted as 0-127 ("MSBonly")
       - **range** : array for "intrange", "floatrange" data; index 0 is the minimum output value; 1 is the maximum output value.
       - **map** : array for "intmap", and "floatmap" data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
@@ -77,6 +80,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - "global" (default) : modify a global variable
          - "global1" : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
          - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for program numbers)
+      - **idx** : for "patch" modes, an array of globals to use as indices for the "names" array; if this is missing, it will be inferred from the "global" key for "patch1d".
       - **names** : for "patch" modes, the name of an array in the JSON listing strings for patch / preset names.
       - **suffix** : for all "data" modes, a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.). if the **suffix** is "_patchname", the suffix will be derived from the "patchlist" key in the JSON if the verbosity level is set to maximum.
       - **silent** : for all "data" modes, any value at this parameter will mute the speech for that parameter.
@@ -96,7 +100,6 @@ The JSON root element is a **device**, which has the following top-level propert
       - **ptr** : for "enum" data, the starting index of the **enum** and **vals** arrays.
       - **min** : for "countup" and "countdown" data, the minimum value.
       - **max** : for "countup" and "countdown" data, the maximum value.
-- **patchlist** : an array of patch names that will be substituted in when the **suffix** "_patchname" is used, based on the  value in the data.
 
 Example:
 ```javascript
