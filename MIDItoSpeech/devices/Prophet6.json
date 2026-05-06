@@ -13,16 +13,18 @@
     "program_change": {
       "0": {
         "label": "program",
-        "data": "global1",
         "global": "pgm",
-        "suffix": "_patchname"
+        "globalmode": "global1",
+        "data": "patchsimple",
+        "names": "patchlist"
       }
     },
     "CC": {
       "32": {
         "label": "program",
-        "data": "global100",
         "global": "pgm",
+        "globalmode": "global100",
+        "data": "alpha",
         "silent": "yes"
       }
     },

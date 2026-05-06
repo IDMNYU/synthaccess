@@ -26,6 +26,35 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 _val = _val>>7; // shift 7 bits down then interpret
             }
         }
+        // global data in the param?
+        if(typeof(_plist[_param].global)!='undefined')
+        {
+            switch(_plist[_param].globalmode)
+            {
+            case "global1": // modify the first two digits of a global value and preserve the third
+                l = _plist[_param].global;
+                v = parseInt(thestuff.device.globals[l].value);
+                //o = parseInt(thestuff.device.globals[l].offset);
+                v = (Math.floor(v/100)*100) + _val;
+                thestuff.device.globals[l].value = v;
+                _val = v; // replace _val for speaksynth later
+                break;
+            case "global100": // modify the third digit of a global value and preserve the first two
+                l = _plist[_param].global;
+                v = parseInt(thestuff.device.globals[l].value);
+                //o = parseInt(thestuff.device.globals[l].offset);
+                v = (_val*100) + v%100;
+                thestuff.device.globals[l].value = v;
+                _val = v; // replace _val for speaksynth later
+                break;
+            case "global": // modify a global value directly
+            default:
+                l = _plist[_param].global;
+                thestuff.device.globals[l].value = _val;
+                break;
+            }
+        }
+
         if(verbose>0) {
         switch(_plist[_param].data) // speechify data byte
         {
@@ -106,29 +135,14 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 }
                 speakstring+=" " + _plist[_param].enum[idx];
                 break;
-            case "global": // modify a global value directly
-                l = _plist[_param].global;
-                v = parseInt(thestuff.device.globals[l].value);
-                o = parseInt(thestuff.device.globals[l].offset);
-                v = _val;
-                thestuff.device.globals[l].value = v;
-                speakstring+=" " + (v+o);
-                break;
-            case "global1": // modify the first two digits of a global value and preserve the third
-                l = _plist[_param].global;
-                v = parseInt(thestuff.device.globals[l].value);
-                o = parseInt(thestuff.device.globals[l].offset);
-                v = (Math.floor(v/100)*100) + _val;
-                thestuff.device.globals[l].value = v;
-                speakstring+=" " + (v+o);
-                break;
-            case "global100": // modify the third digit of a global value and preserve the first two
-                l = _plist[_param].global;
-                v = parseInt(thestuff.device.globals[l].value);
-                o = parseInt(thestuff.device.globals[l].offset);
-                v = (_val*100) + v%100;
-                thestuff.device.globals[l].value = v;
-                speakstring+=" " + (v+o);
+            case "patchsimple": // read strings against an index
+                let nlist = _plist[_param].names;
+                let p = thestuff.device[nlist];
+                speakstring+=" " + _val.toString();
+                if(_val in p)
+                {
+                    if(verbose==2) speakstring+= ". " + p[_val];
+                }
                 break;
             case "none": // read just the parameter
                 //if(prevparam == _param) dospeak = 0; // skip repeats
@@ -136,19 +150,8 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
             default:
                 break;
         }
-        s = ("suffix" in _plist[_param]) ? _plist[_param].suffix : " ";
-        // special suffixes:
-        if(s=="_patchname") // find patches
-        {
-            let p = thestuff.device.patchlist;
-            if(v in p)
-            {
-                if(verbose==2) speakstring+= ". " + p[v];
-            }
-        }
-        else {
+            s = ("suffix" in _plist[_param]) ? _plist[_param].suffix : " ";
             speakstring+=" " + s;
-        }
         }
         //post("dospeak: " + dospeak + "\n");
         //post("string: " + speakstring + "\n");

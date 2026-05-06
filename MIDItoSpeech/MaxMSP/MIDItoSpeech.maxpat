@@ -13,6 +13,111 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-10",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patcher": {
+                        "fileversion": 1,
+                        "appversion": {
+                            "major": 9,
+                            "minor": 2,
+                            "revision": 0,
+                            "architecture": "x64",
+                            "modernui": 1
+                        },
+                        "classnamespace": "box",
+                        "rect": [ 59.0, 114.0, 216.0, 206.0 ],
+                        "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 120.0, 54.0, 22.0 ],
+                                    "text": "deferlow"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 50.0, 156.0, 63.0, 22.0 ],
+                                    "text": "s filemenu"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-4",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 79.0, 110.0, 22.0 ],
+                                    "text": "prepend symbol"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, 47.0, 129.0, 22.0 ],
+                                    "text": "sprintf symout %s.json"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-9",
+                                    "index": 1,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 50.0, -1.0, 30.0, 30.0 ]
+                                }
+                            }
+                        ],
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-4", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-7", 0 ],
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-4", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-9", 0 ]
+                                }
+                            }
+                        ]
+                    },
+                    "patching_rect": [ 705.0, 498.0, 83.0, 22.0 ],
+                    "text": "p guessJSON"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-3",
                     "maxclass": "newobj",
                     "numinlets": 1,
@@ -49,7 +154,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 267.0, 455.0, 155.0, 22.0 ],
-                    "text": "program 1 1"
+                    "text": "program 77 1"
                 }
             },
             {
@@ -378,7 +483,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-51",
-                    "items": [ "AU DLS Synth 1", ",", "Prophet 6 Module", ",", "from Max 1", ",", "from Max 2" ],
+                    "items": [ "AU DLS Synth 1", ",", "Summit", ",", "from Max 1", ",", "from Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -1450,7 +1555,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
-                    "text": "midi channel 1"
+                    "text": "program 377. Qknox Bass  "
                 }
             },
             {
@@ -1474,7 +1579,8 @@
                         "flags": 0,
                         "embed": 0,
                         "autowatch": 1
-                    }
+                    },
+                    "varname": "v8_AA"
                 }
             },
             {
@@ -1498,6 +1604,17 @@
                         "classnamespace": "box",
                         "rect": [ 380.0, 316.0, 822.0, 612.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-36",
+                                    "maxclass": "number",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 675.0, 289.0, 50.0, 22.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-33",
@@ -2298,7 +2415,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 633.0, 289.0, 32.0, 22.0 ],
-                                    "text": "22 1"
+                                    "text": "$1 1"
                                 }
                             },
                             {
@@ -2691,6 +2808,12 @@
                                 "patchline": {
                                     "destination": [ "obj-32", 0 ],
                                     "source": [ "obj-34", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-41", 0 ],
+                                    "source": [ "obj-36", 0 ]
                                 }
                             },
                             {
@@ -3419,7 +3542,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-2",
-                    "items": [ "Prophet 6 Module", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "Summit", ",", "to Max 1", ",", "to Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -3458,7 +3581,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 639.0, 349.5, 182.0, 35.0 ],
-                    "text": "."
+                    "text": "Prophet6"
                 }
             },
             {
@@ -3598,7 +3721,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-10", 0 ],
+                    "order": 0,
+                    "source": [ "obj-2", 1 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-70", 0 ],
+                    "order": 1,
                     "source": [ "obj-2", 1 ]
                 }
             },
