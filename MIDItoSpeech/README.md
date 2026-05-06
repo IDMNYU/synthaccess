@@ -61,7 +61,8 @@ The JSON root element is a **device**, which has the following top-level propert
          - "decibels" : interpret the MIDI range as decibels (127 = 0db).
          - "enum" : read labels from an enumerating array using the *value* as the index.
          - "enumsplit" : read labels from an enumerating array using split points.
-         - "patch1d" : read labels from a list of patch names. Assumes "names" is a 1-dimensional array of strings.
+         - "patchsimple" : read labels from a list of patch names based on the global value bound to that parameter. Assumes "names" is a 1-dimensional array of strings.
+         - "patch1d" : read labels from a list of patch names based on a custom global value as the index. Assumes "names" is a 1-dimensional array of strings.
          - "patch2d" : read labels from a 2-dimensional list of patch names (e.g. bank, preset). Assumes "names" is a 2-dimensional array of strings.
          - "patch3d" : read labels from a 3-dimensional list of patch names (e.g. single/multi, bank, preset). Assumes "names" is a 3-dimensional array of strings.
       - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default - "false"), 14-bit 0-16363 ("true"), or 14-bit interpreted as 0-127 ("MSBonly")
