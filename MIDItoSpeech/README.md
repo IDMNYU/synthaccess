@@ -96,7 +96,6 @@ The JSON root element is a **device**, which has the following top-level propert
       - **ptr** : for "enum" data, the starting index of the **enum** and **vals** arrays.
       - **min** : for "countup" and "countdown" data, the minimum value.
       - **max** : for "countup" and "countdown" data, the maximum value.
-- **patchlist** : an array of patch names that will be substituted in when the **suffix** "_patchname" is used, based on the  value in the data.
 
 Example:
 ```javascript
