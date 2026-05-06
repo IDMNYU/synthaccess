@@ -5,7 +5,7 @@
 A repository for research around synthesizer (and other audio technology) accessibility.
 
 [ABILITY Project](http://ability.nyu.edu) / [Integrated Design & Media](http://idm.engineering.nyu.edu)   
-NYU
+New York University
 
 Featuring the work of:
 - Ciarra Black
