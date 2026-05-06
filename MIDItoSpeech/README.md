@@ -79,6 +79,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - "global" (default) : modify a global variable
          - "global1" : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
          - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for program numbers)
+      - **idx** : for "patch" modes, an array of globals to use as indices for the "names" array; if this is missing, it will be inferred from the "global" key for "patch1d".
       - **names** : for "patch" modes, the name of an array in the JSON listing strings for patch / preset names.
       - **suffix** : for all "data" modes, a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.). if the **suffix** is "_patchname", the suffix will be derived from the "patchlist" key in the JSON if the verbosity level is set to maximum.
       - **silent** : for all "data" modes, any value at this parameter will mute the speech for that parameter.
