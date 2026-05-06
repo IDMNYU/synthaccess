@@ -39,8 +39,7 @@ The JSON root element is a **device**, which has the following top-level propert
    - the encapsulated object contains enumerable string keys defining the *controller number* that dictates which CC or NRPN to respond; for program changes this is always *0*; the properties of these keys are:
       - **label** : the speakable label for the key (e.g. "modulation" for CC0).
       - **data** : how the MIDI parameter's *value* is to be parsed; options are:
-         - "none" - read the label only.
-            - n.b. in verbose mode 0, all parameters except program changes are read label only; this mode will *not* read multiple changes to the same parameter in direct succession.
+         - "none" - read the label only; in verbose mode 0 (minimum), all parameters except program changes are read label only.
          - "value" : read out its raw numeric value (0 to 127 or 0-16383).
          - "plusone" : add one to its raw numeric value (1 to 128 or 1-16384); good for program changes.
          - "bivalue" : read out a signed (bipolar) value (-64 to 63 or -8192 to 8191).
@@ -80,6 +79,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - "global" (default) : modify a global variable
          - "global1" : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
          - "global100" : modify the third digit a global variable, leaving the first two digits alone (good for program numbers)
+         - "0or128" : set the global to 1 if the value is 128, 0 otherwise (good for Novation single/multi mode)
       - **idx** : for "patch" modes, an array of globals to use as indices for the "names" array; if this is missing, it will be inferred from the "global" key for "patch1d".
       - **names** : for "patch" modes, the name of an array in the JSON listing strings for patch / preset names.
       - **suffix** : for all "data" modes, a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.).
