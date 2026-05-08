@@ -167,10 +167,6 @@
         "label": "os 3 pitch envelope",
         "data": "value"
       },
-      "64": {
-        "label": "sustain",
-        "data": "offon"
-      },
       "65": {
         "label": "os 3 range",
         "data": "enumsplit",

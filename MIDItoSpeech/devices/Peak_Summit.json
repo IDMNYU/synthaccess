@@ -1,0 +1,3505 @@
+{
+  "device": {
+    "name": "Summmit",
+    "manufacturer": "Novation",
+    "version": 1,
+    "program_change": {
+      "0": {
+        "label": "patch",
+        "data": "value"
+      }
+    },
+    "CC": {
+      "0": {
+        "label": "bank",
+        "data": "value"
+      },
+      "3": {
+        "label": "oscillator one range",
+        "data": "enumsplit",
+        "enum": ["16 feet", "8 feet", "4 feet", "2 feet"],
+        "split": [63, 64, 65, 66]
+      },
+      "5": {
+        "label": "glide time",
+        "data": "value"
+      },
+      "9": {
+        "label": "oscillator one pitch envelope",
+        "data": "value"
+      },
+      "11": {
+        "label": "expression",
+        "data": "value"
+      },
+      "12": {
+        "label": "oscillator one amount",
+        "data": "value"
+      },
+      "14": {
+        "label": "oscillator one deetune",
+        "data": "intmap",
+        "map": [0, 127, -63, 64]
+      },
+      "15": {
+        "label": "oscillator one fine tune",
+        "data": "value"
+      },
+      "16": {
+        "label": "oscillator one pitch LFO",
+        "data": "value"
+      },
+      "17": {
+        "label": "oscillator two coarse tune",
+        "data": "value"
+      },
+      "18": {
+        "label": "oscillator two fine tune",
+        "data": "value"
+      },
+      "19": {
+        "label": "oscillator two pitch LFO",
+        "data": "value"
+      },
+      "20": {
+        "label": "oscillator 3 coarse tune",
+        "data": "value"
+      },
+      "21": {
+        "label": "oscillator 3 fine tune",
+        "data": "value"
+      },
+      "22": {
+        "label": "oscillator 3 pitch LFO",
+        "data": "value"
+      },
+      "23": {
+        "label": "oscillator 1 level",
+        "data": "value"
+      },
+      "24": {
+        "label": "oscillator 2 level",
+        "data": "value"
+      },
+      "25": {
+        "label": "oscillator 3 level",
+        "data": "value"
+      },
+      "26": {
+        "label": "ring mod amount",
+        "data": "value"
+      },
+      "27": {
+        "label": "noise level",
+        "data": "value"
+      },
+      "28": {
+        "label": "filter LFO depth",
+        "data": "value"
+      },
+      "29": {
+        "label": "filter cut off",
+        "data": "value"
+      },
+      "30": {
+        "label": "LFO 1 rate",
+        "data": "value"
+      },
+      "31": {
+        "label": "LFO 2 rate",
+        "data": "intrange",
+        "range": [0, 255]
+      },
+      "33": {
+        "label": "oscillator 1 LFO amount",
+        "data": "value"
+      },
+      "35": {
+        "label": "glide",
+        "data": "offon"
+      },
+      "37": {
+        "label": "oscillator 2 range",
+        "data": "enumsplit",
+        "enum": ["16 feet", "8 feet", "4 feet", "2 feet"],
+        "split": [63, 64, 65, 66]
+      },
+      "38": {
+        "label": "oscillator 2 pitch envelope",
+        "data": "value"
+      },
+      "39": {
+        "label": "oscillator 2 amount",
+        "data": "value"
+      },
+      "40": {
+        "label": "oscillator 2 envelope amount",
+        "data": "value"
+      },
+      "41": {
+        "label": "oscillator 2 LFO amount",
+        "data": "value"
+      },
+      "43": {
+        "label": "oscillator 3 pitch envelope",
+        "data": "value"
+      },
+      "64": {
+        "label": "sustain",
+        "data": "offon"
+      },
+      "65": {
+        "label": "oscillator 3 range",
+        "data": "enumsplit",
+        "enum": ["16 feet", "8 feet", "4 feet", "2 feet"],
+        "split": [63, 64, 65, 66]
+      },
+      "71": {
+        "label": "oscillator 3 amount",
+        "data": "value"
+      },
+      "72": {
+        "label": "oscillator 3 envelope amount",
+        "data": "value"
+      },
+      "73": {
+        "label": "oscillator 3 LFO amount",
+        "data": "value"
+      },
+      "75": {
+        "label": "filter key tracking",
+        "data": "value"
+      },
+      "76": {
+        "label": "oscillator 3 filter mod",
+        "data": "value"
+      },
+      "77": {
+        "label": "filter envelope depth",
+        "data": "value"
+      },
+      "78": {
+        "label": "filter envelope depth",
+        "data": "value"
+      },
+      "79": {
+        "label": "resonance",
+        "data": "value"
+      },
+      "80": {
+        "label": "filter overdrive",
+        "data": "value"
+      },
+      "81": {
+        "label": "LFO 1 rate",
+        "data": "value"
+      },
+      "82": {
+        "label": "LFO 1 fade time",
+        "data": "value"
+      },
+      "83": {
+        "label": "LFO 2 range",
+        "data": "enumsplit",
+        "enum": ["Low", "High", "Sync"],
+        "split": [0, 1, 2]
+      },
+      "84": {
+        "label": "LFO 2 rate",
+        "data": "value"
+      },
+      "85": {
+        "label": "LFO 2 fade time",
+        "data": "value"
+      },
+      "86": {
+        "label": "amp attack",
+        "data": "value"
+      },
+      "87": {
+        "label": "amp decay",
+        "data": "value"
+      },
+      "88": {
+        "label": "amp sustain",
+        "data": "value"
+      },
+      "89": {
+        "label": "amp release",
+        "data": "value"
+      },
+      "90": {
+        "label": "mod 1 attack",
+        "data": "value"
+      },
+      "91": {
+        "label": "mod 1 decay",
+        "data": "value"
+      },
+      "92": {
+        "label": "mod 1 sustain",
+        "data": "value"
+      },
+      "93": {
+        "label": "mod 1 release",
+        "data": "value"
+      },
+      "94": {
+        "label": "mod 2 attack",
+        "data": "value"
+      },
+      "95": {
+        "label": "mod 2 decay",
+        "data": "value"
+      },
+      "103": {
+        "label": "mod 2 release",
+        "data": "value"
+      },
+      "104": {
+        "label": "distortion",
+        "data": "value"
+      },
+      "105": {
+        "label": "chorus level",
+        "data": "value"
+      },
+      "108": {
+        "label": "delay level",
+        "data": "value"
+      },
+      "109": {
+        "label": "delay time",
+        "data": "value"
+      },
+      "110": {
+        "label": "delay feedback",
+        "data": "value"
+      },
+      "112": {
+        "label": "re verb level",
+        "data": "value"
+      },
+      "113": {
+        "label": "re verb time",
+        "data": "value"
+      },
+      "114": {
+        "label": "animate one",
+        "data": "enumsplit",
+        "enum": ["Off", "On"],
+        "split": [0, 127]
+      },
+      "115": {
+        "label": "animate two",
+        "data": "enumsplit",
+        "enum": ["Off", "On"],
+        "split": [0, 127]
+      },
+      "117": {
+        "label": "mod 2 sustain",
+        "data": "value"
+      },
+      "118": {
+        "label": "chorus rate",
+        "data": "value"
+      },
+      "119": {
+        "label": "oscillator 1 envelope amount",
+        "data": "value"
+      },
+      "34": {
+        "label": "oscillator 1 vee sync",
+        "data": "value"
+      },
+      "42": {
+        "label": "oscillator 2 vee sync",
+        "data": "value"
+      },
+      "44": {
+        "label": "oscillator 3 vee sync",
+        "data": "value"
+      }
+    },
+    "NRPN": {
+      "2": {
+        "label": "voice mode",
+        "data": "enumsplit",
+        "enum": ["mono", "legato glide", "mono two", "poly", "poly two"],
+        "split": [0, 128, 256, 384, 512]
+      },
+      "6": {
+        "label": "Octave",
+        "data": "enumsplit",
+        "enum": ["minus 3", "minus 2", "minus 1", "zero", "plus 1", "plus 2", "plus 3"],
+        "split": [7808, 7936, 8064, 8192, 8320, 8448, 8576]
+      },
+      "14": {
+        "label": "oscillator 1 waveform",
+        "data": "enumsplit",
+        "enum": ["Sine", "Triangle", "Saw", "Pulse"],
+        "split": [0, 128, 256, 384]
+      },
+      "16": {
+        "label": "oscillator 1 shape source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod envelope 1", "LFO 1"],
+        "split": [0, 128, 256]
+      },
+      "23": {
+        "label": "oscillator 2 waveform",
+        "data": "enumsplit",
+        "enum": ["Sine", "Triangle", "Saw", "Pulse"],
+        "split": [0, 128, 256, 384]
+      },
+      "25": {
+        "label": "oscillator 2 shape source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod envelope 1", "LFO 1"],
+        "split": [0, 128, 256]
+      },
+      "32": {
+        "label": "oscillator 3 waveform",
+        "data": "enumsplit",
+        "enum": ["Sine", "Triangle", "Saw", "Pulse"],
+        "split": [0, 128, 256, 384]
+      },
+      "34": {
+        "label": "oscillator 3 shape source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod envelope 1", "LFO 1"],
+        "split": [0, 128, 256]
+      },
+      "42": {
+        "label": "V C A gain",
+        "data": "value"
+      },
+      "45": {
+        "label": "filter slope",
+        "data": "enumsplit",
+        "enum": ["12 d b", "24 d b"],
+        "split": [0, 128]
+      },
+      "46": {
+        "label": "filter shape",
+        "data": "enumsplit",
+        "enum": ["low pass", "band pass", "high pass"],
+        "split": [0, 128, 256]
+      },
+      "47": {
+        "label": "filter source",
+        "data": "enumsplit",
+        "enum": ["amp envelope", "mod envelope 1"],
+        "split": [128, 0]
+      },
+      "59": {
+        "label": "mod envelope",
+        "data": "enumsplit",
+        "enum": ["1", "2"],
+        "split": [0, 128]
+      },
+      "68": {
+        "label": "LFO 1 range",
+        "data": "enumsplit",
+        "enum": ["Low", "High", "Sync"],
+        "split": [0, 128, 256]
+      },
+      "69": {
+        "label": "LFO 1 shape",
+        "data": "enumsplit",
+        "enum": ["triangle", "saw", "square", "sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "78": {
+        "label": "LFO 2 shape",
+        "data": "enumsplit",
+        "enum": ["triangle", "saw", "square", "sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "88": {
+        "label": "fx bypass",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "93": {
+        "label": "delay sync",
+        "data": "offon"
+      },
+      "94": {
+        "label": "delay time",
+        "data": "value"
+      },
+      "101": {
+        "label": "re verb type",
+        "data": "enumsplit",
+        "enum": ["1", "2", "3"],
+        "split": [0, 128, 256]
+      },
+      "111": {
+        "label": "chorus type",
+        "data": "enumsplit",
+        "enum": ["2 Tap", "4 Tap", "Ensemble"],
+        "split": [0, 128, 256]
+      },
+      "117": {
+        "label": "arpedgiator type",
+        "data": "enumsplit",
+        "enum": [
+          "Up",
+          "Down",
+          "Up and Down",
+          "Up and Down two",
+          "As Played",
+          "Random",
+          "Chord"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768]
+      },
+      "118": {
+        "label": "arpedgiator rhythm",
+        "data": "value"
+      },
+      "119": {
+        "label": "arpedgiator octave",
+        "data": "enumsplit",
+        "enum": ["1", "2", "3", "4", "5", "6", "7"],
+        "split": [0, 128, 256, 384, 512, 640, 768]
+      },
+      "121": {
+        "label": "arpedgiator",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "122": {
+        "label": "latch",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "125": {
+        "label": "modulation slot",
+        "data": "enumsplit",
+        "enum": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16"
+        ],
+        "split": [
+          0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536,
+          1664, 1792, 1920
+        ]
+      },
+      "3200": {
+        "label": "LFO 3 type",
+        "data": "enumsplit",
+        "enum": ["Triangle", "Saw", "Pulse", "Sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "3201": {
+        "label": "LFO 3 rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3202": {
+        "label": "LFO 3 sync rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3203": {
+        "label": "LFO 4 type",
+        "data": "enumsplit",
+        "enum": ["Triangle", "Saw", "Pulse", "Sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "3204": {
+        "label": "LFO 4 rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3212": {
+        "label": "Oss 1 F M Source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod Envelope two", "LFO two"],
+        "split": [0, 128, 256]
+      },
+      "3213": {
+        "label": "Oss 3 to Oss 1 F M amount",
+        "data": "value"
+      },
+      "3214": {
+        "label": "Oss 3 to Oss 1 F M amount",
+        "data": "value"
+      },
+      "3215": {
+        "label": "Oss 3 to Oss 1 F M amount",
+        "data": "value"
+      },
+      "3216": {
+        "label": "Oss 2 F M Source",
+        "data": "enumsplit",
+        "enum": ["Manual", "Mod Envelope two", "LFO 2"],
+        "split": [0, 128, 256]
+      },
+      "3217": {
+        "label": "Oss 1 to Oss 2 F M amount",
+        "data": "value"
+      },
+      "3218": {
+        "label": "Oss 1 to Oss 2 F M amount",
+        "data": "value"
+      },
+      "3219": {
+        "label": "Oss 1 to Oss 2 F M amount",
+        "data": "value"
+      },
+      "3220": {
+        "label": "Oss 3 F M Source",
+        "data": "enumsplit",
+        "enum": ["LFO two", "Manual", "Mod Envelope two"],
+        "split": [0, 128, 256]
+      },
+      "3221": {
+        "label": "Oss 2 to Oss 3 F M amount",
+        "data": "value"
+      },
+      "3222": {
+        "label": "Oss 2 to Oss 3 F M amount",
+        "data": "value"
+      },
+      "3223": {
+        "label": "Oss 2 to Oss 3 F M amount",
+        "data": "value"
+      },
+      "3224": {
+        "label": "Global",
+        "data": "enumsplit",
+        "enum": ["LFO 3 selected", "LFO 4 selected"],
+        "split": [0, 128]
+      },
+      "3225": {
+        "label": "LFO 3 sync",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3226": {
+        "label": "LFO 4 sync",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3227": {
+        "label": "Amp envelope loop",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3228": {
+        "label": "mod envelope 1 loop",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3229": {
+        "label": "mod envelope 2 loop",
+        "data": "enumsplit",
+        "enum": ["on", "off"],
+        "split": [0, 128]
+      },
+      "7936": {
+        "label": "",
+        "data": "enumsplit",
+        "enum": [
+          "Patch menu",
+          "Oscillator menu",
+          "Envelope menu",
+          "LFO menu",
+          "arpedgiator Clock menu",
+          "Modulation menu",
+          "Voice Filter menu",
+          "FX menu",
+          "Settings",
+          "Saving patch. Press again to confirm",
+          "Patch menu Single"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408]
+      },
+      "9": {
+        "label": "oscillator diverge",
+        "data": "value"
+      },
+      "10": {
+        "label": "oscillator drift",
+        "data": "value"
+      },
+      "3206": {
+        "label": "tuning table",
+        "data": "value"
+      },
+      "13": {
+        "label": "key sync",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "11": {
+        "label": "noise low pass",
+        "data": "value"
+      },
+      "12": {
+        "label": "noise high pass",
+        "data": "value"
+      },
+      "15": {
+        "label": "oscillator 1 wave more",
+        "data": "enumsplit",
+        "enum": ["", "", "", "", "BS sine", "Random", "Zing", "Tubey", "Octaves", "Wobbler", "Chords", "didgeridoo", "Harsh", "Organ", "Electric Piano", "vox oowee", 
+          "vox yah ee", "winds", "soft clav", "string", "Bass organ", "Acid", "Buzzy", "Carousel", "choral", "climbing", "cion flip", "deep", 
+          "dub", "e", "Eris", "Flame", "further", "Glass saw", "glassy", "granular", "grime", "grow", "heavy", "hedge", 
+          "Hungry", "Ladders", "Lead", "modelling", "modem", "monster", "screech", "sea base", "shmorgan", "spirals", "steel", "sunrise", 
+          "swell", "thicker", "thinner", "tides", "Tokyo", "Tops", "V chord", "variance", "vocaloid", "vowel", "weird vox", "yeah", 
+          "User 1", "User 2", "User 3", "User 4", "User 5", "User 6", "User 7", "User 8", "User 9", "User 10"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 
+          1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 
+          3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 
+          4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 
+          6144, 6272, 6400, 6528, 6656, 6784, 6912, 7040, 7168, 7296, 7424, 7552, 
+          7680, 7808, 7936, 8064, 8192, 8320, 8448, 8576, 8704, 8832, 8960, 9088, 
+          9216, 9344]
+      },
+      "19": {
+        "label": "oscillator 1 fixed note",
+        "data": "value"
+      },
+      "20": {
+        "label": "oscillator 1 bend range",
+        "data": "value"
+      },
+      "17": {
+        "label": "oscillator 1 Saw density",
+        "data": "value"
+      },
+      "18": {
+        "label": "oscillator 1 density detune",
+        "data": "value"
+      },
+      "24": {
+        "label": "oscillator 2 wave more",
+        "data": "enumsplit",
+        "enum": ["", "", "", "", "BS sine", "Random", "Zing", "Tubey", "Octaves", "Wobbler", "Chords", "didgeridoo", "Harsh", "Organ", "Electric Piano", "vox oowee", 
+          "vox yah ee", "winds", "soft clav", "string", "Bass organ", "Acid", "Buzzy", "Carousel", "choral", "climbing", "cion flip", "deep", 
+          "dub", "e", "Eris", "Flame", "further", "Glass saw", "glassy", "granular", "grime", "grow", "heavy", "hedge", 
+          "Hungry", "Ladders", "Lead", "modelling", "modem", "monster", "screech", "sea base", "shmorgan", "spirals", "steel", "sunrise", 
+          "swell", "thicker", "thinner", "tides", "Tokyo", "Tops", "V chord", "variance", "vocaloid", "vowel", "weird vox", "yeah", 
+          "User 1", "User 2", "User 3", "User 4", "User 5", "User 6", "User 7", "User 8", "User 9", "User 10"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 
+          1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 
+          3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 
+          4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 
+          6144, 6272, 6400, 6528, 6656, 6784, 6912, 7040, 7168, 7296, 7424, 7552, 
+          7680, 7808, 7936, 8064, 8192, 8320, 8448, 8576, 8704, 8832, 8960, 9088, 
+          9216, 9344]
+      },
+      "28": {
+        "label": "oscillator 2 fixed note",
+        "data": "value"
+      },
+      "29": {
+        "label": "oscillator 2 bend range",
+        "data": "value"
+      },
+      "26": {
+        "label": "oscillator 2 Saw density",
+        "data": "value"
+      },
+      "27": {
+        "label": "oscillator 2 density detune",
+        "data": "value"
+      },
+      "33": {
+        "label": "oscillator 3 wave more",
+        "data": "enumsplit",
+        "enum": ["", "", "", "", "BS sine", "Random", "Zing", "Tubey", "Octaves", "Wobbler", "Chords", "didgeridoo", "Harsh", "Organ", "Electric Piano", "vox oowee", 
+          "vox yah ee", "winds", "soft clav", "string", "Bass organ", "Acid", "Buzzy", "Carousel", "choral", "climbing", "cion flip", "deep", 
+          "dub", "e", "Eris", "Flame", "further", "Glass saw", "glassy", "granular", "grime", "grow", "heavy", "hedge", 
+          "Hungry", "Ladders", "Lead", "modelling", "modem", "monster", "screech", "sea base", "shmorgan", "spirals", "steel", "sunrise", 
+          "swell", "thicker", "thinner", "tides", "Tokyo", "Tops", "V chord", "variance", "vocaloid", "vowel", "weird vox", "yeah", 
+          "User 1", "User 2", "User 3", "User 4", "User 5", "User 6", "User 7", "User 8", "User 9", "User 10"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 
+          1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 
+          3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 
+          4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 
+          6144, 6272, 6400, 6528, 6656, 6784, 6912, 7040, 7168, 7296, 7424, 7552, 
+          7680, 7808, 7936, 8064, 8192, 8320, 8448, 8576, 8704, 8832, 8960, 9088, 
+          9216, 9344]
+      },
+      "37": {
+        "label": "oscillator 3 fixed note",
+        "data": "value"
+      },
+      "38": {
+        "label": "oscillator 3 bend range",
+        "data": "value"
+      },
+      "35": {
+        "label": "oscillator 3 Saw density",
+        "data": "value"
+      },
+      "36": {
+        "label": "oscillator 3 density detune",
+        "data": "value"
+      },
+      "55": {
+        "label": "amp envelope velocity",
+        "data": "value"
+      },
+      "56": {
+        "label": "amp envelope mono triggering",
+        "data": "enumsplit",
+        "enum": ["retrigger", "legato"],
+        "split": [0, 128]
+      },
+      "3230": {
+        "label": "amp envelope delay",
+        "data": "value"
+      },
+      "57": {
+        "label": "amp envelope hold time",
+        "data": "value"
+      },
+      "55": {
+        "label": "amp envelope repeats",
+        "data": "value"
+      },
+      "60": {
+        "label": "mod envelope 1 velocity",
+        "data": "value"
+      },
+      "61": {
+        "label": "mod envelope 1 mono triggering",
+        "data": "enumsplit",
+        "enum": ["retrigger", "legato"],
+        "split": [0, 128]
+      },
+      "3231": {
+        "label": "mod envelope 1 delay",
+        "data": "value"
+      },
+      "62": {
+        "label": "mod envelope 1 hold time",
+        "data": "value"
+      },
+      "63": {
+        "label": "mod envelope 1 delay",
+        "data": "value"
+      },
+      "64": {
+        "label": "mod envelope 2 velocity",
+        "data": "value"
+      },
+      "65": {
+        "label": "mod envelope 2 mono triggering",
+        "data": "enumsplit",
+        "enum": ["retrigger", "legato"],
+        "split": [0, 128]
+      },
+      "3232": {
+        "label": "mod envelope 2 delay",
+        "data": "value"
+      },
+      "66": {
+        "label": "mod envelope 2 hold time",
+        "data": "value"
+      },
+      "67": {
+        "label": "mod envelope 2 delay",
+        "data": "value"
+      },
+      "3234": {
+        "label": "Animate 1 attack",
+        "data": "value"
+      },
+      "3235": {
+        "label": "Animate 1 release",
+        "data": "value"
+      },
+      "3236": {
+        "label": "Animate 2 attack",
+        "data": "value"
+      },
+      "3237": {
+        "label": "Animate 2 release",
+        "data": "value"
+      },
+      "70": {
+        "label": "LFO 1 phase",
+        "data": "enumsplit",
+        "enum": ["Free", 
+          "0 degrees", "3 degrees", "6 degrees", "9 degrees", "12 degrees", "15 degrees",
+          "18 degrees", "21 degrees", "24 degrees", "27 degrees", "30 degrees", "33 degrees",
+          "36 degrees", "39 degrees", "42 degrees", "45 degrees", "48 degrees", "51 degrees",
+          "54 degrees", "57 degrees", "60 degrees", "63 degrees", "66 degrees", "69 degrees",
+          "72 degrees", "75 degrees", "78 degrees", "81 degrees", "84 degrees", "87 degrees",
+          "90 degrees", "93 degrees", "96 degrees", "99 degrees", "102 degrees", "105 degrees",
+          "108 degrees", "111 degrees", "114 degrees", "117 degrees", "120 degrees", "123 degrees",
+          "126 degrees", "129 degrees", "132 degrees", "135 degrees", "138 degrees", "141 degrees",
+          "144 degrees", "147 degrees", "150 degrees", "153 degrees", "156 degrees", "159 degrees",
+          "162 degrees", "165 degrees", "168 degrees", "171 degrees", "174 degrees", "177 degrees",
+          "180 degrees", "183 degrees", "186 degrees", "189 degrees", "192 degrees", "195 degrees",
+          "198 degrees", "201 degrees", "204 degrees", "207 degrees", "210 degrees", "213 degrees",
+          "216 degrees", "219 degrees", "222 degrees", "225 degrees", "228 degrees", "231 degrees",
+          "234 degrees", "237 degrees", "240 degrees", "243 degrees", "246 degrees", "249 degrees",
+          "252 degrees", "255 degrees", "258 degrees", "261 degrees", "264 degrees", "267 degrees",
+          "270 degrees", "273 degrees", "276 degrees", "279 degrees", "282 degrees", "285 degrees",
+          "288 degrees", "291 degrees", "294 degrees", "297 degrees", "300 degrees", "303 degrees",
+          "306 degrees", "309 degrees", "312 degrees", "315 degrees", "318 degrees", "321 degrees",
+          "324 degrees", "327 degrees", "330 degrees", "333 degrees", "336 degrees", "339 degrees",
+          "342 degrees", "345 degrees", "348 degrees", "351 degrees", "354 degrees", "357 degrees"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 
+          1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 
+          3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 
+          4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 
+          6144, 6272, 6400, 6528, 6656, 6784, 6912, 7040, 7168, 7296, 7424, 7552, 
+          7680, 7808, 7936, 8064, 8192, 8320, 8448, 8576, 8704, 8832, 8960, 9088, 
+          9216, 9344, 9472, 9600, 9728, 9856, 9984, 10112, 10240, 10368, 10496, 10624, 
+          10752, 10880, 11008, 11136, 11264, 11392, 11520, 11648, 11776, 11904, 12032, 
+          12160, 12288, 12416, 12544, 12672, 12800, 12928, 13056, 13184, 13312, 13440, 
+          13568, 13696, 13824, 13952, 14080, 14208, 14336, 14464, 14592, 14720, 14848, 
+          14976, 15104, 15232, 15360]
+      },
+      "74": {
+        "label": "LFO 1 mono triggering",
+        "data": "enumsplit",
+        "enum": ["retrigger", "legato"],
+        "split": [0, 128]
+      },
+      "71": {
+        "label": "LFO 1 slew",
+        "data": "value"
+      },
+      "72": {
+        "label": "LFO 1 fade mode",
+        "data": "enumsplit",
+        "enum": ["fade in", "fade out", "gate in", "gate out"],
+        "split": [0, 128, 256, 384]
+      },
+      "73": {
+        "label": "LFO 1 fade sync",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "75": {
+        "label": "LFO 1 repeats",
+        "data": "value"
+      },
+      "76": {
+        "label": "LFO 1 common",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "79": {
+        "label": "LFO 2 phase",
+        "data": "enumsplit",
+        "enum": ["Free", 
+          "0 degrees", "3 degrees", "6 degrees", "9 degrees", "12 degrees", "15 degrees",
+          "18 degrees", "21 degrees", "24 degrees", "27 degrees", "30 degrees", "33 degrees",
+          "36 degrees", "39 degrees", "42 degrees", "45 degrees", "48 degrees", "51 degrees",
+          "54 degrees", "57 degrees", "60 degrees", "63 degrees", "66 degrees", "69 degrees",
+          "72 degrees", "75 degrees", "78 degrees", "81 degrees", "84 degrees", "87 degrees",
+          "90 degrees", "93 degrees", "96 degrees", "99 degrees", "102 degrees", "105 degrees",
+          "108 degrees", "111 degrees", "114 degrees", "117 degrees", "120 degrees", "123 degrees",
+          "126 degrees", "129 degrees", "132 degrees", "135 degrees", "138 degrees", "141 degrees",
+          "144 degrees", "147 degrees", "150 degrees", "153 degrees", "156 degrees", "159 degrees",
+          "162 degrees", "165 degrees", "168 degrees", "171 degrees", "174 degrees", "177 degrees",
+          "180 degrees", "183 degrees", "186 degrees", "189 degrees", "192 degrees", "195 degrees",
+          "198 degrees", "201 degrees", "204 degrees", "207 degrees", "210 degrees", "213 degrees",
+          "216 degrees", "219 degrees", "222 degrees", "225 degrees", "228 degrees", "231 degrees",
+          "234 degrees", "237 degrees", "240 degrees", "243 degrees", "246 degrees", "249 degrees",
+          "252 degrees", "255 degrees", "258 degrees", "261 degrees", "264 degrees", "267 degrees",
+          "270 degrees", "273 degrees", "276 degrees", "279 degrees", "282 degrees", "285 degrees",
+          "288 degrees", "291 degrees", "294 degrees", "297 degrees", "300 degrees", "303 degrees",
+          "306 degrees", "309 degrees", "312 degrees", "315 degrees", "318 degrees", "321 degrees",
+          "324 degrees", "327 degrees", "330 degrees", "333 degrees", "336 degrees", "339 degrees",
+          "342 degrees", "345 degrees", "348 degrees", "351 degrees", "354 degrees", "357 degrees"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 
+          1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 
+          3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 
+          4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 
+          6144, 6272, 6400, 6528, 6656, 6784, 6912, 7040, 7168, 7296, 7424, 7552, 
+          7680, 7808, 7936, 8064, 8192, 8320, 8448, 8576, 8704, 8832, 8960, 9088, 
+          9216, 9344, 9472, 9600, 9728, 9856, 9984, 10112, 10240, 10368, 10496, 10624, 
+          10752, 10880, 11008, 11136, 11264, 11392, 11520, 11648, 11776, 11904, 12032, 
+          12160, 12288, 12416, 12544, 12672, 12800, 12928, 13056, 13184, 13312, 13440, 
+          13568, 13696, 13824, 13952, 14080, 14208, 14336, 14464, 14592, 14720, 14848, 
+          14976, 15104, 15232, 15360]
+      },
+      "83": {
+        "label": "LFO 2 mono triggering",
+        "data": "enumsplit",
+        "enum": ["retrigger", "legato"],
+        "split": [0, 128]
+      },
+      "80": {
+        "label": "LFO 2 slew",
+        "data": "value"
+      },
+      "81": {
+        "label": "LFO 2 fade mode",
+        "data": "enumsplit",
+        "enum": ["fade in", "fade out", "gate in", "gate out"],
+        "split": [0, 128, 256, 384]
+      },
+      "82": {
+        "label": "LFO 2 fade sync",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "84": {
+        "label": "LFO 2 repeats",
+        "data": "value"
+      },
+      "85": {
+        "label": "LFO 2 common",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3238": {
+        "label": "LFO 3 phase",
+        "data": "enumsplit",
+        "enum": ["Free", 
+          "0 degrees", "3 degrees", "6 degrees", "9 degrees", "12 degrees", "15 degrees",
+          "18 degrees", "21 degrees", "24 degrees", "27 degrees", "30 degrees", "33 degrees",
+          "36 degrees", "39 degrees", "42 degrees", "45 degrees", "48 degrees", "51 degrees",
+          "54 degrees", "57 degrees", "60 degrees", "63 degrees", "66 degrees", "69 degrees",
+          "72 degrees", "75 degrees", "78 degrees", "81 degrees", "84 degrees", "87 degrees",
+          "90 degrees", "93 degrees", "96 degrees", "99 degrees", "102 degrees", "105 degrees",
+          "108 degrees", "111 degrees", "114 degrees", "117 degrees", "120 degrees", "123 degrees",
+          "126 degrees", "129 degrees", "132 degrees", "135 degrees", "138 degrees", "141 degrees",
+          "144 degrees", "147 degrees", "150 degrees", "153 degrees", "156 degrees", "159 degrees",
+          "162 degrees", "165 degrees", "168 degrees", "171 degrees", "174 degrees", "177 degrees",
+          "180 degrees", "183 degrees", "186 degrees", "189 degrees", "192 degrees", "195 degrees",
+          "198 degrees", "201 degrees", "204 degrees", "207 degrees", "210 degrees", "213 degrees",
+          "216 degrees", "219 degrees", "222 degrees", "225 degrees", "228 degrees", "231 degrees",
+          "234 degrees", "237 degrees", "240 degrees", "243 degrees", "246 degrees", "249 degrees",
+          "252 degrees", "255 degrees", "258 degrees", "261 degrees", "264 degrees", "267 degrees",
+          "270 degrees", "273 degrees", "276 degrees", "279 degrees", "282 degrees", "285 degrees",
+          "288 degrees", "291 degrees", "294 degrees", "297 degrees", "300 degrees", "303 degrees",
+          "306 degrees", "309 degrees", "312 degrees", "315 degrees", "318 degrees", "321 degrees",
+          "324 degrees", "327 degrees", "330 degrees", "333 degrees", "336 degrees", "339 degrees",
+          "342 degrees", "345 degrees", "348 degrees", "351 degrees", "354 degrees", "357 degrees"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 
+          1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 
+          3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 
+          4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 
+          6144, 6272, 6400, 6528, 6656, 6784, 6912, 7040, 7168, 7296, 7424, 7552, 
+          7680, 7808, 7936, 8064, 8192, 8320, 8448, 8576, 8704, 8832, 8960, 9088, 
+          9216, 9344, 9472, 9600, 9728, 9856, 9984, 10112, 10240, 10368, 10496, 10624, 
+          10752, 10880, 11008, 11136, 11264, 11392, 11520, 11648, 11776, 11904, 12032, 
+          12160, 12288, 12416, 12544, 12672, 12800, 12928, 13056, 13184, 13312, 13440, 
+          13568, 13696, 13824, 13952, 14080, 14208, 14336, 14464, 14592, 14720, 14848, 
+          14976, 15104, 15232, 15360]
+      },
+      "3239": {
+        "label": "LFO 3 slew",
+        "data": "value"
+      },
+      "3240": {
+        "label": "LFO 3 fade time",
+        "data": "value"
+      },
+      "3200": {
+        "label": "LFO 3 waveform",
+        "data": "enumsplit",
+        "enum": ["triangle", "saw tooth", "square", "sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "3201": {
+        "label": "LFO 3 rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "123": {
+        "label": "LFO 3 rate sync",
+        "data": "enumsplit",
+        "enum": ["Off", "64 beats", "48 beats", "42 beats", "36 beats", "32 beats", "30 beats", "28 beats", "24 beats", "21 1 third", "20 beats", "18 2 thirds", "18 beats", "16 beats", "13 1 third", "12 beats", "10 2 thirds", "8 beats", "6 beats", "5 1 third", "4 beats", "3 beats", "2 2 thirds", "2nd", "4th dotted", "1 1 third", "4th", "8th dotted", "4th triplet", "8th", "16th dotted", "8th triplet", "16th", "16th triplet", "32nd", "32nd triplet"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480]
+      },
+      "3241": {
+        "label": "LFO 4 phase",
+        "data": "enumsplit",
+        "enum": ["Free", 
+          "0 degrees", "3 degrees", "6 degrees", "9 degrees", "12 degrees", "15 degrees",
+          "18 degrees", "21 degrees", "24 degrees", "27 degrees", "30 degrees", "33 degrees",
+          "36 degrees", "39 degrees", "42 degrees", "45 degrees", "48 degrees", "51 degrees",
+          "54 degrees", "57 degrees", "60 degrees", "63 degrees", "66 degrees", "69 degrees",
+          "72 degrees", "75 degrees", "78 degrees", "81 degrees", "84 degrees", "87 degrees",
+          "90 degrees", "93 degrees", "96 degrees", "99 degrees", "102 degrees", "105 degrees",
+          "108 degrees", "111 degrees", "114 degrees", "117 degrees", "120 degrees", "123 degrees",
+          "126 degrees", "129 degrees", "132 degrees", "135 degrees", "138 degrees", "141 degrees",
+          "144 degrees", "147 degrees", "150 degrees", "153 degrees", "156 degrees", "159 degrees",
+          "162 degrees", "165 degrees", "168 degrees", "171 degrees", "174 degrees", "177 degrees",
+          "180 degrees", "183 degrees", "186 degrees", "189 degrees", "192 degrees", "195 degrees",
+          "198 degrees", "201 degrees", "204 degrees", "207 degrees", "210 degrees", "213 degrees",
+          "216 degrees", "219 degrees", "222 degrees", "225 degrees", "228 degrees", "231 degrees",
+          "234 degrees", "237 degrees", "240 degrees", "243 degrees", "246 degrees", "249 degrees",
+          "252 degrees", "255 degrees", "258 degrees", "261 degrees", "264 degrees", "267 degrees",
+          "270 degrees", "273 degrees", "276 degrees", "279 degrees", "282 degrees", "285 degrees",
+          "288 degrees", "291 degrees", "294 degrees", "297 degrees", "300 degrees", "303 degrees",
+          "306 degrees", "309 degrees", "312 degrees", "315 degrees", "318 degrees", "321 degrees",
+          "324 degrees", "327 degrees", "330 degrees", "333 degrees", "336 degrees", "339 degrees",
+          "342 degrees", "345 degrees", "348 degrees", "351 degrees", "354 degrees", "357 degrees"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 
+          1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 
+          3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 
+          4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 
+          6144, 6272, 6400, 6528, 6656, 6784, 6912, 7040, 7168, 7296, 7424, 7552, 
+          7680, 7808, 7936, 8064, 8192, 8320, 8448, 8576, 8704, 8832, 8960, 9088, 
+          9216, 9344, 9472, 9600, 9728, 9856, 9984, 10112, 10240, 10368, 10496, 10624, 
+          10752, 10880, 11008, 11136, 11264, 11392, 11520, 11648, 11776, 11904, 12032, 
+          12160, 12288, 12416, 12544, 12672, 12800, 12928, 13056, 13184, 13312, 13440, 
+          13568, 13696, 13824, 13952, 14080, 14208, 14336, 14464, 14592, 14720, 14848, 
+          14976, 15104, 15232, 15360]
+      },
+      "3242": {
+        "label": "LFO 4 slew",
+        "data": "value"
+      },
+      "3243": {
+        "label": "LFO 4 fade time",
+        "data": "value"
+      },
+      "3200": {
+        "label": "LFO 4 waveform",
+        "data": "enumsplit",
+        "enum": ["triangle", "saw tooth", "square", "sample and hold"],
+        "split": [0, 128, 256, 384]
+      },
+      "3201": {
+        "label": "LFO 4 rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3205": {
+        "label": "LFO 4 sync rate",
+        "data": "enumsplit",
+        "enum": ["Off", "64 beats", "48 beats", "42 beats", "36 beats", "32 beats", "30 beats", "28 beats", "24 beats", "21 1 third", "20 beats", "18 2 thirds", "18 beats", "16 beats", "13 1 third", "12 beats", "10 2 thirds", "8 beats", "6 beats", "5 1 third", "4 beats", "3 beats", "2 2 thirds", "2nd", "4th dotted", "1 1 third", "4th", "8th dotted", "4th triplet", "8th", "16th dotted", "8th triplet", "16th", "16th triplet", "32nd", "32nd triplet"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480]
+      },
+      "8198": {
+        "label": "arpedgiator source",
+        "data": "enumsplit",
+        "enum": ["Auto", "Internal", "External", "MIDI", "USB"],
+        "split": [0, 128, 256, 384, 512]
+      },
+      "120": {
+        "label": "arpedgiator swing",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "116": {
+        "label": "arpedgiator sync rate",
+        "data": "enumsplit",
+        "enum": ["32nd triplet", "32nd", "16th triplet", "16th", "8th triplet", "16th dotted","8th", "4th triplet", "8th dotted", "4th", "1 1 third", "4th dotted", "2nd", "2 2 thirds", "3 beats", "4 beats", "5 1 third", "6 beats", "8 beats"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304]
+      },
+      "123": {
+        "label": "arpedgiator key sync",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "3233": {
+        "label": "arpedgiator chance",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3233": {
+        "label": "arpedgiator chance",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "3": {
+        "label": "Unison",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "4": {
+        "label": "Unison detune",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "5": {
+        "label": "Spread",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "52": {
+        "label": "Spread mode",
+        "data": "enumsplit",
+        "enum": ["diverge", "alternate", "diverge 2", "note value"],
+        "split": [0, 128, 256, 384]
+      },
+      "51": {
+        "label": "Pan position",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "7": {
+        "label": "pre glide",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "41": {
+        "label": "patch level",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "36": {
+        "label": "post filter drive",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "48": {
+        "label": "Filter diverge",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "44": {
+        "label": "FX wet level",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "43": {
+        "label": "FX dry level",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "89": {
+        "label": "FX routing",
+        "data": "enumsplit",
+        "enum": ["parallel", "D R C", "D C R", "R D C", "R C D", "C D R", "C R D"],
+        "split": [0, 128, 256, 384, 512, 640, 768]
+      },
+      "112": {
+        "label": "Chorus depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "107": {
+        "label": "Chorus feedback",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "115": {
+        "label": "Chorus mode",
+        "data": "enumsplit",
+        "enum": ["chorus", "flanger", "Phat flanger"],
+        "split": [0, 128, 256]
+      },
+      "113": {
+        "label": "Chorus low pass",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "114": {
+        "label": "chorus hi pass",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "94": {
+        "label": "delay sync",
+        "data": "enumsplit",
+        "enum": ["32nd triplet", "32nd", "16th triplet", "16th", "8th triplet", "16th dotted","8th", "4th triplet", "8th dotted", "4th", "1 1 third", "4th dotted", "2nd", "2 2 thirds", "3 beats", "4 beats", "5 1 third", "6 beats", "8 beats", "10 2 thirds", "12 beats", "13 1 third", "16 beats", "18 beats", "18 2 thirds", "20 beats", "21 1 third", "24 beats"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456]
+      },
+      "95": {
+        "label": "delay low pass damping",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "96": {
+        "label": "Delay hi pass damping",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "91": {
+        "label": "Delay left right ratio",
+        "data": "enumsplit",
+        "enum": ["1 1", "4 3", "3 4", "3 2", "2 3", "2 1", "1 2", "3 1", "1 3", "4 1", "1 4"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280]
+      },
+      "97": {
+        "label": "delay slew rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "92": {
+        "label": "Delay width",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "98": {
+        "label": "Delay mode",
+        "data": "enumsplit",
+        "enum": ["normal", "double", "treble", "quad lo fi", "Hex lo fi"],
+        "split": [0, 128, 256, 384, 512]
+      },
+      "3244": {
+        "label": "Delay type",
+        "data": "enumsplit",
+        "enum": ["original", "crossfeed", "dual"],
+        "split": [0, 128, 256]
+      },
+      "3245": {
+        "label": "Delay output",
+        "data": "enumsplit",
+        "enum": ["pre damping", "post damping"],
+        "split": [0, 128, 256]
+      },
+      "109": {
+        "label": "re verb pre delay",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "102": {
+        "label": "re verb low pass damping",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "103": {
+        "label": "re verb hi pass damping",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "104": {
+        "label": "re verb size",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "105": {
+        "label": "re verb mod depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "106": {
+        "label": "re verb mod rate",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "107": {
+        "label": "re verb low pass",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "108": {
+        "label": "re verb high pass",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "2176": {
+        "label": "Fx slot 1 source 1",
+        "data": "enumsplit",
+        "enum": ["Direct", "mod wheel", "after touch", "pedal 1", "pedal 2", "velocity", "keyboard", "animate 1", "animate 2", "cv in", "LFO 3 positive", "LFO 3 positive and negative", "LFO 4 positive", "LFO 4 positive and negative", "bend wheel positive", "bend wheel negative", "noise"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+      },
+      "2177": {
+        "label": "Fx slot 1 source 2",
+        "data": "enumsplit",
+        "enum": ["Direct", "mod wheel", "after touch", "pedal 1", "pedal 2", "velocity", "keyboard", "animate 1", "animate 2", "cv in", "LFO 3 positive", "LFO 3 positive and negative", "LFO 4 positive", "LFO 4 positive and negative", "bend wheel positive", "bend wheel negative", "noise"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+      },
+      "2179": {
+        "label": "Fx slot 1 destination",
+        "data": "enumsplit",
+        "enum": ["distortion level", "chorus level", "chorus rate", "chorus depth", "chorus feedback", "delay level", "delay time", "delay feedback", "re verb level", "re verb time", "re verb low damping", "re verb high damping", "re verb size", "re verb low pass", "re verb high pass", "Delay slew", "delay low damping", "delay high damping", "delay width", "delay ratio", "LFO 3 rate", "LFO 4 rate", "Noise low pass", "noise high pass"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "2178": {
+        "label": "Fx slot 1 depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "2304": {
+        "label": "Fx slot 2 source 1",
+        "data": "enumsplit",
+        "enum": ["Direct", "mod wheel", "after touch", "pedal 1", "pedal 2", "velocity", "keyboard", "animate 1", "animate 2", "cv in", "LFO 3 positive", "LFO 3 positive and negative", "LFO 4 positive", "LFO 4 positive and negative", "bend wheel positive", "bend wheel negative", "noise"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+      },
+      "2305": {
+        "label": "Fx slot 2 source 2",
+        "data": "enumsplit",
+        "enum": ["Direct", "mod wheel", "after touch", "pedal 1", "pedal 2", "velocity", "keyboard", "animate 1", "animate 2", "cv in", "LFO 3 positive", "LFO 3 positive and negative", "LFO 4 positive", "LFO 4 positive and negative", "bend wheel positive", "bend wheel negative", "noise"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+      },
+      "2307": {
+        "label": "Fx slot 2 destination",
+        "enum": ["distortion level", "chorus level", "chorus rate", "chorus depth", "chorus feedback", "delay level", "delay time", "delay feedback", "re verb level", "re verb time", "re verb low damping", "re verb high damping", "re verb size", "re verb low pass", "re verb high pass", "Delay slew", "delay low damping", "delay high damping", "delay width", "delay ratio", "LFO 3 rate", "LFO 4 rate", "Noise low pass", "noise high pass"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "2306": {
+        "label": "Fx slot 2 depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "2432": {
+        "label": "Fx slot 3 source 1",
+        "data": "enumsplit",
+        "enum": ["Direct", "mod wheel", "after touch", "pedal 1", "pedal 2", "velocity", "keyboard", "animate 1", "animate 2", "cv in", "LFO 3 positive", "LFO 3 positive and negative", "LFO 4 positive", "LFO 4 positive and negative", "bend wheel positive", "bend wheel negative", "noise"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+      },
+      "2433": {
+        "label": "Fx slot 3 source 2",
+        "data": "enumsplit",
+        "enum": ["Direct", "mod wheel", "after touch", "pedal 1", "pedal 2", "velocity", "keyboard", "animate 1", "animate 2", "cv in", "LFO 3 positive", "LFO 3 positive and negative", "LFO 4 positive", "LFO 4 positive and negative", "bend wheel positive", "bend wheel negative", "noise"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+      },
+      "2435": {
+        "label": "Fx slot 3 destination",
+        "enum": ["distortion level", "chorus level", "chorus rate", "chorus depth", "chorus feedback", "delay level", "delay time", "delay feedback", "re verb level", "re verb time", "re verb low damping", "re verb high damping", "re verb size", "re verb low pass", "re verb high pass", "Delay slew", "delay low damping", "delay high damping", "delay width", "delay ratio", "LFO 3 rate", "LFO 4 rate", "Noise low pass", "noise high pass"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "2434": {
+        "label": "Fx slot 3 depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "2560": {
+        "label": "Fx slot 4 source 1",
+        "data": "enumsplit",
+        "enum": ["Direct", "mod wheel", "after touch", "pedal 1", "pedal 2", "velocity", "keyboard", "animate 1", "animate 2", "cv in", "LFO 3 positive", "LFO 3 positive and negative", "LFO 4 positive", "LFO 4 positive and negative", "bend wheel positive", "bend wheel negative", "noise"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+      },
+      "2561": {
+        "label": "Fx slot 4 source 2",
+        "data": "enumsplit",
+        "enum": ["Direct", "mod wheel", "after touch", "pedal 1", "pedal 2", "velocity", "keyboard", "animate 1", "animate 2", "cv in", "LFO 3 positive", "LFO 3 positive and negative", "LFO 4 positive", "LFO 4 positive and negative", "bend wheel positive", "bend wheel negative", "noise"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048]
+      },
+      "2563": {
+        "label": "Fx slot 4 destination",
+        "enum": ["distortion level", "chorus level", "chorus rate", "chorus depth", "chorus feedback", "delay level", "delay time", "delay feedback", "re verb level", "re verb time", "re verb low damping", "re verb high damping", "re verb size", "re verb low pass", "re verb high pass", "Delay slew", "delay low damping", "delay high damping", "delay width", "delay ratio", "LFO 3 rate", "LFO 4 rate", "Noise low pass", "noise high pass"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "2562": {
+        "label": "Fx slot 4 depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "128": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "129": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "131": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "130": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "256": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "257": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "259": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "258": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "384": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "385": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "387": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "386": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "512": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "513": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "515": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "514": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "640": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "641": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "643": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "642": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "768": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "769": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "771": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "770": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "896": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "897": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "899": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "898": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "1024": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1025": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1027": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "1026": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "1152": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1153": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1155": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "1154": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "1280": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1281": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1283": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "1282": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "1408": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1409": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1411": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "1410": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "1536": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1537": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1539": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "1538": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "1664": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1665": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1667": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "1666": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "1792": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1793": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1795": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "1794": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "1920": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1921": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "1923": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "1922": {
+        "label": "depth",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "2048": {
+        "label": "source 1",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "2049": {
+        "label": "source 2",
+        "data": "enumsplit",
+        "enum": [
+          "Direct",
+          "mod wheel",
+          "after touch",
+          "pedal 1",
+          "pedal 2",
+          "velocity",
+          "keyboard",
+          "LFO 1 positive",
+          "LFO 1 positive and negative",
+          "LFO 2 positive",
+          "LFO 2 positive and negative",
+          "amp envelope",
+          "mod envelope 1",
+          "mod envelope 2",
+          "animate 1",
+          "animate 2",
+          "cv in",
+          "LFO 3 positive",
+          "LFO 3 positive and negative",
+          "LFO 4 positive",
+          "LFO 4 positive and negative",
+          "Bend wheel positive",
+          "Bend wheel negative",
+          "noise"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944]
+      },
+      "2051": {
+        "label": "destination",
+        "data": "enumsplit",
+        "enum": [
+          "oscillator 1 2 and 3 pitch",
+          "oscillator 1 pitch",
+          "oscillator 2 pitch",
+          "oscillator 3 pitch",
+          "oscillator 1 vee sync",
+          "oscillator 2 vee sync",
+          "oscillator 3 vee sync",
+          "oscillator 1 shape",
+          "oscillator 2 shape",
+          "oscillator 3 shape",
+          "oscillator 1 level",
+          "oscillator 2 level",
+          "oscillator 3 level",
+          "noise level",
+          "ring level",
+          "vca level",
+          "filter drive",
+          "filter distortion",
+          "filter frequency",
+          "filter resonance",
+          "LFO 1 rate",
+          "LFO2 Rate",
+          "Amp Attack",
+          "Amp Decay",
+          "amp release",
+          "mod envelope 1 attack",
+          "mod envelope 1 decay",
+          "mod envelope 1 release",
+          "mod envelope 2 attack",
+          "mod envelope 2 decay",
+          "mod envelope 2 release",
+          "FM operator 1 into 2",
+          "FM operator 2 into 3",
+          "FM operator 3 into 1",
+          "FM noise into operator 1",
+          "oscillator 3 into filter FM",
+          "Noise into filter FM",
+          "SUMMIT?",
+          "pan position",
+          "oscillator 1 2 and 3 shape",
+          "amp envelope delay",
+          "amp envelope hold",
+          "amp envelope sustain",
+          "mod envelope 1 delay",
+          "mod envelope 1 hold",
+          "mod envelope 1 sustain",
+          "mod envelope 2 delay",
+          "mod envelope 2 hold",
+          "mod envelope 2 sustain"
+        ],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920, 2048, 2176, 2304, 2432, 2560, 2688, 2816, 2944, 3072, 3200, 3328, 3456, 3584, 3712, 3840, 3968, 4096, 4224, 4352, 4480, 4608, 4736, 4864, 4992, 5120, 5248, 5376, 5504, 5632, 5760, 5888, 6016, 6144]
+      },
+      "2050": {
+        "label": "depth",
+        "data": "intmap",
+        "map": [0, 16256, -64, 63],
+        "clamp": "true"
+      },
+      "8201": {
+        "label": "Write protect",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "8202": {
+        "label": "Value pickup",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "8203": {
+        "label": "Screen brightness",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "8216": {
+        "label": "message time",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "8204": {
+        "label": "velocity shape",
+        "data": "value",
+        "hires": "MSBonly"
+      },
+      "8205": {
+        "label": "Global tuning cents",
+        "data": "intmap",
+        "map": [1792, 14592, -50, 50],
+        "clamp": "true"
+      },
+      "8206": {
+        "label": "Global transpose",
+        "data": "intmap",
+        "map": [6656, 9728, -12, 12],
+        "clamp": "true"
+      },
+      "8207": {
+        "label": "midi channel",
+        "data": "enumsplit",
+        "enum": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 1792, 1920]
+      },
+      "8209": {
+        "label": "arpedgiator midi",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "8210": {
+        "label": "CC NRPN transmission",
+        "data": "enumsplit",
+        "enum": ["off", "recieve", "Transmit", "recieve and transmit"],
+        "split": [0, 128, 256, 384]
+      },
+      "8211": {
+        "label": "patch change transmission",
+        "data": "enumsplit",
+        "enum": ["off", "recieve", "Transmit", "recieve and transmit"],
+        "split": [0, 128, 256, 384]
+      },
+      "8212": {
+        "label": "pedal 1 behaviour",
+        "data": "enumsplit",
+        "enum": ["Auto", "Open", "Closed"],
+        "split": [0, 128, 256]
+      },
+      "8213": {
+        "label": "pedal 2 behaviour",
+        "data": "enumsplit",
+        "enum": ["Auto", "Open", "Closed"],
+        "split": [0, 128, 256]
+      },
+      "8214": {
+        "label": "pedal 1 mode",
+        "data": "enumsplit",
+        "enum": ["Animate 1", "Sustain", "Sostenato"],
+        "split": [0, 128, 256]
+      },
+      "8215": {
+        "label": "pedal 2 mode",
+        "data": "enumsplit",
+        "enum": ["Animate 2", "Sustain", "Sostenato"],
+        "split": [0, 128, 256]
+      },
+      "8221": {
+        "label": "volume range",
+        "data": "enumsplit",
+        "enum": ["-6db", "-3db", "0db"],
+        "split": [0, 128, 256]
+      },
+      "8219": {
+        "label": "initialise mode",
+        "data": "enumsplit",
+        "enum": ["init patch", "lyve"],
+        "split": [0, 128]
+      },
+      "8222": {
+        "label": "tuning mode",
+        "data": "enumsplit",
+        "enum": ["note", "octave"],
+        "split": [0, 128]
+      },
+      "8192": {
+        "label": "patch cue",
+        "data": "enumsplit",
+        "enum": ["off", "on"],
+        "split": [0, 128]
+      },
+      "8199": {
+        "label": "Backup",
+        "data": "enumsplit",
+        "enum": ["current", "bank A", "bank B", "bank C", "bank D", "banks ABC and D", "settings", "banks ABCD and settings"],
+        "split": [0, 128, 256, 384, 512, 640, 768, 896]
+      },
+      "8200": {
+        "label": "Send backup to",
+        "data": "enumsplit",
+        "enum": ["USB port", "MIDI out"],
+        "split": [0, 128]
+      }
+    }
+  }
+}
