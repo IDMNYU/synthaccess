@@ -118,10 +118,29 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 
 Serge Modular systems have specific acronyms and abbreviations for canonical modules (as seen in e.g. the [1983 sales catalog](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/IDMNYU/audiolab/master/docs/pdf/Serge_Catalogue_83.pdf)) that are short enough to be used as braille labels. A mapping table is below.
 
+**1973-75 "Paperface" Modules:**
+
 | Module | Label |
 | ----- | ----- |
-| Triple Waveshaper | <bl>tws</bl><br>TWS |
+| Adapter | <bl>adp</bl><br>ADP |
+| Dual Processor | <bl>prc</bl><br>PRC |
+| Envelope Generator | <bl>env</bl><br>ENV |
+| Filter | <bl>vcf</bl><br>VCF |
+| Gate | <bl>vca</bl><br>VCA |
+| Negative Slew | <bl>neg</bl><br>NEG |
 | Noise Source | <bl>noi</bl><br>NOI |
+| Oscillator | <bl>vco</bl><br>VCO |
+| Peak & Trough | <bl>p&t</bl>P&T |
+| Preamp | <bl>pre</bl>PRE |
+| Reverb | <bl>rvb</bl>RVB |
+| Positive Slew | <bl>pos</bl><br>POS |
+| Programmer | <bl>prg</bl>PRG |
+| Ring Modulator | <bl>ring</bl><br>RING |
+| Sequencer | <bl>seq</bl>SEQ |
+| Smooth / Stepped Function VG Generator | <bl>ssg</bl><br>SSG |
+| (Triple) Bi-Directional Router | <bl>tbs</bl>TBS |
+| (Triple) Comparator | <bl>com</bl><br>COM |
+| Triple Waveshaper | <bl>tws</bl><br>TWS |
 
 ## Gallery
 
