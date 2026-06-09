@@ -135,7 +135,7 @@ Serge Modular systems have specific acronyms and abbreviations for canonical mod
 | Reverb | <bl>rvb</bl><br>RVB |
 | Positive Slew | <bl>pos</bl><br>POS |
 | Programmer | <bl>prg</bl><br>PRG |
-| Ring Modulator | <bl>ring</bl><br>RING |
+| Ring Modulator | <bl>r+</bl><br>RING |
 | Sequencer | <bl>seq</bl><br>SEQ |
 | Smooth Function / Stepped Function VC Generator | <bl>ssg</bl><br>SSG |
 | (Triple) Bi-Directional Router | <bl>tbs</bl><br>TBS |
