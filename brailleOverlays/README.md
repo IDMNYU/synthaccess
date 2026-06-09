@@ -137,7 +137,7 @@ Serge Modular systems have specific acronyms and abbreviations for canonical mod
 | Programmer | <bl>prg</bl>PRG |
 | Ring Modulator | <bl>ring</bl><br>RING |
 | Sequencer | <bl>seq</bl>SEQ |
-| Smooth / Stepped Function VG Generator | <bl>ssg</bl><br>SSG |
+| Smooth / Stepped Function VC Generator | <bl>ssg</bl><br>SSG |
 | (Triple) Bi-Directional Router | <bl>tbs</bl>TBS |
 | (Triple) Comparator | <bl>com</bl><br>COM |
 | Triple Waveshaper | <bl>tws</bl><br>TWS |
