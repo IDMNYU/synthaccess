@@ -130,15 +130,15 @@ Serge Modular systems have specific acronyms and abbreviations for canonical mod
 | Negative Slew | <bl>neg</bl><br>NEG |
 | Noise Source | <bl>noi</bl><br>NOI |
 | Oscillator | <bl>vco</bl><br>VCO |
-| Peak & Trough | <bl>p&t</bl>P&T |
-| Preamp | <bl>pre</bl>PRE |
-| Reverb | <bl>rvb</bl>RVB |
+| Peak & Trough | <bl>p&t</bl><br>P&T |
+| Preamp | <bl>pre</bl><br>PRE |
+| Reverb | <bl>rvb</bl><br>RVB |
 | Positive Slew | <bl>pos</bl><br>POS |
-| Programmer | <bl>prg</bl>PRG |
+| Programmer | <bl>prg</bl><br>PRG |
 | Ring Modulator | <bl>ring</bl><br>RING |
-| Sequencer | <bl>seq</bl>SEQ |
+| Sequencer | <bl>seq</bl><br>SEQ |
 | Smooth Function / Stepped Function VC Generator | <bl>ssg</bl><br>SSG |
-| (Triple) Bi-Directional Router | <bl>tbs</bl>TBS |
+| (Triple) Bi-Directional Router | <bl>tbs</bl><br>TBS |
 | (Triple) Comparator | <bl>com</bl><br>COM |
 | Triple Waveshaper | <bl>tws</bl><br>TWS |
 
