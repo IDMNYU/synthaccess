@@ -91,6 +91,8 @@ When designing braille overlays for physical synthesizers, space may be at a pre
 
 As mentioned above, for more high density interfaces, a great solution is to create a tactile guide. The [tactileSynths](../tactileSynths) part of this repository will help you get started.
 
+### General Synthesizer Terminology
+
 | Label | 2 | 3 | 4 |
 | ----- | ----- | ----- | ----- |
 | <bl>p{}</bl><br>Power | <bl>pr</bl><br>pr | <bl>pwr</bl><br>pwr | <bl>powr</bl><br>powr |
@@ -112,6 +114,14 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 | <bl>r+ modulator</bl><br>Ring Modulator | <bl>rm</bl><br>rm | <bl>r+m</bl><br>ringm |<bl>r+md</bl><br>ringmd |
 | <bl>mix}</bl><br>Mixer | <bl>mx</bl><br>mx | <bl>mxr</bl><br>mxr |<bl>mix}</bl><br>mixer |
 
+### Serge Modular Names
+
+Serge Modular systems have specific acronyms and abbreviations for canonical modules that are short enough to be used as braille labels. A mapping table is below.
+
+| Module | Label |
+| ----- | ----- |
+| Triple Waveshaper | <bl>tws</bl><br>TWS |
+| Noise Source | <bl>noi</bl><br>NOI |
 
 ## Gallery
 
