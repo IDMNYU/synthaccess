@@ -116,7 +116,7 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 
 ### Serge Modular Names
 
-Serge Modular systems have specific acronyms and abbreviations for canonical modules that are short enough to be used as braille labels. A mapping table is below.
+Serge Modular systems have specific acronyms and abbreviations for canonical modules (as seen in e.g. the [1983 sales catalog](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/IDMNYU/audiolab/master/docs/pdf/Serge_Catalogue_83.pdf)) that are short enough to be used as braille labels. A mapping table is below.
 
 | Module | Label |
 | ----- | ----- |
