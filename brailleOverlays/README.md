@@ -151,10 +151,7 @@ Serge Modular systems have specific acronyms and abbreviations for canonical mod
 | Control Module | <bl>c/m</bl><br>C/M |
 | Divide-by-N Comparator | <bl>ncom</bl><br>NCOM |
 | Dual 3-Input Audio Mixer | <bl>mix</bl><br>MIX |
-| Dual Analog Shift Register | <bl>2asr</bl><br>2ASR |
 | Dual Channel Stereo Mixer | <bl>dcsm</bl><br>DCSM |
-| Dual Envelope Detector | <bl>env2</bl><br>ENV2 |
-| Dual Random Voltage Generator | <bl>2rvg</bl><br>2RVG |
 | Dual Schmitt Trigger | <bl>str</bl><br>STR |
 | Dual Stereo Panner Channel | <bl>pan</bl><br>PAN |
 | Dual Universal Slope Generator | <bl>dsg</bl><br>DSG |
