@@ -147,16 +147,13 @@ Serge Modular systems have specific acronyms and abbreviations for canonical mod
 | Module | Label |
 | ----- | ----- |
 | Active Processor | <bl>acpr</bl><br>ACPR |
-| Adaptors | <bl>adp</bl><br>ADP |
 | Analog Shift Register | <bl>asr</bl><br>ASR |
 | Control Module | <bl>c/m</bl><br>C/M |
 | Divide-by-N Comparator | <bl>ncom</bl><br>NCOM |
 | Dual 3-Input Audio Mixer | <bl>mix</bl><br>MIX |
 | Dual Analog Shift Register | <bl>2asr</bl><br>2ASR |
 | Dual Channel Stereo Mixer | <bl>dcsm</bl><br>DCSM |
-| Dual Comparator | <bl>com</bl><br>COM |
 | Dual Envelope Detector | <bl>env2</bl><br>ENV2 |
-| Dual Processor | <bl>prc</bl><br>PRC |
 | Dual Random Voltage Generator | <bl>2rvg</bl><br>2RVG |
 | Dual Schmitt Trigger | <bl>str</bl><br>STR |
 | Dual Stereo Panner Channel | <bl>pan</bl><br>PAN |
@@ -168,41 +165,33 @@ Serge Modular systems have specific acronyms and abbreviations for canonical mod
 | Extended ADSR Envelope Generator | <bl>adsr</bl><br>ADSR |
 | Extended Range VCFQ  | <bl>vcfs</bl><br>VCFX |
 | Four Input Stereo Mixer/Panner | <bl>mxp</bl><br>MXP |
-| Frequency Shifter w/External Carrier | <bl>frsx</bl><br>FRSX |
 | Frequency Shifter | <bl>frs</bl><br>FRS |
 | Matrix Mixer  | <bl>max</bl><br>MAX |
 | Multi-Channel Quadraphonic Mixer | <bl>qmx</bl><br>QMX |
 | Multi-Channel Stereo Panner | <bl>stx</bl><br>STX |
 | N-Voice Controller | <bl>nvc</bl><br>NVC |
 | New Timbral Oscillator | <bl>nto</bl><br>NTO |
-| Noise Source | <bl>noi</bl><br>NOI |
-| Pitch and Envelope Follower | <bl>ref</bl><br>REF |
+| Pitch and Envelope Follower | <bl>pef</bl><br>PEF |
 | Preamp Detector | <bl>prnv</bl><br>PRNV |
 | Precision VCO | <bl>pco</bl><br>PCO |
 | Quad Panner Channel  | <bl>qpc</bl><br>QPC |
-| Quantizer far TKB | <bl>qtkb</bl><br>QTKB |
-| Quantizer for SQPs | <bl>qseq</bl><br>QSEQ |
 | Quantizer | <bl>quan</bl><br>QUAN |
 | Random Source | <bl>rs</bl><br>RS |
 | Random Voltage Generator | <bl>rvg</bl><br>RVG |
 | Resonant Equalizer | <bl>eq</bl><br>EQ |
-| Ring Modulator | <bl>r+</bl><br>RING |
 | Scaling Buffer | <bl>buff</bl><br>BUFF |
 | Scaling Processor | <bl>sprc</bl><br>SPRC |
-| Sequencer | <bl>seq8</bl><br>SEQ |
 | Sequencer Programer | <bl>sqp4</bl><br>SQP |
-| Smooth & Stepped Function Generator | <bl>ssg</bl><br>SSG |
 | Touch Activated Keyboard Sequencer | <bl>tkb</bl><br>TKB |
-| Triple VC Waveshaper | <bl>tws</bl><br>TWS |
 | Universal Audio Processor  | <bl>uap</bl><br>UAP |
-| Variable 'Q' VC Filter | <bl>vcfq</bl><br>VCFQ |
+| Variable Q VC Filter | <bl>vcfq</bl><br>VCFQ |
 | Variable Bandwidth VC Filter | <bl>vcf2</bl><br>VCF2 |
 | Variable Slope VC Filter | <bl>vcfs</bl><br>VCFS |
 | VC Cross-Fader  | <bl>xfad</bl><br>XFAD |
 | VC Phaser | <bl>pha</bl><br>PHA |
 | VC Quadrature Oscillator | <bl>quo</bl><br>QUO |
 | VC Wave Multipliers | <bl>vcm</bl><br>VCM |
-| Voltage Controlled Stereo Mixer | <bl>qvm</bl><br>QVM |
+| VC Stereo Mixer | <bl>vcsm</bl><br>VCSM |
 | Wilson Analog Delay | <bl>wad</bl><br>WAD |
 
 ## Gallery
