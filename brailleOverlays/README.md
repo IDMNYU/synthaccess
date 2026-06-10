@@ -20,7 +20,7 @@ If your synthesizer is "one affordance per function", one of the simplest and mo
 
 [Braille](https://en.wikipedia.org/wiki/Braille) is a [standard](https://brailleauthority.org/size-and-spacing-braille-characters) tactile writing system invented in 1824 that uses a two column by three row grid of six dots for each character. The braille system not only specifies the layout of these dots for each character in the writing system, but also defines the characters' nominal dot sizing and spacing. In other words, there's no such thing as "winging it" when it comes to your braille size. There's just braille. With standard braille fonts, such as David Rakowski's [Braille TTF](https://www.1001fonts.com/braille-font.html) and [Swell Braille](https://www.ffonts.net/Swell-Braille.font.download), you can set your design software to 24 point and it will be within range. There are [standard mappings](https://en.wikipedia.org/wiki/International_uniformity_of_braille_alphabets) for common writing systems across the world. Languages that use logographic writing systems (such as [Chinese](https://en.wikipedia.org/wiki/Mainland_Chinese_Braille)) will use a phonetic alphabet to create a braille mapping.
 
-Grade (or Level) 1 braille defines a [basic mapping](https://brailleaustralia.org/wp-content/uploads/2013/09/braillecharacters.pdf) for the alphabet, numbers, and punctuation. Grade 2 braille has [contractions](https://www.teachingvisuallyimpaired.com/uploads/1/4/1/2/14122361/ueb_braille_chart.pdf), leveraging context and unused characters to reduce common words, letter combinations, and syllables to fewer characters. Grade 1 braille is standardized by character set (e.g. the Roman alphabet versus Cyrillic), whereas Grade 2 braille is specific to the *language* being written (e.g. English vs. French). Free software such as [BrailleBlaster](https://www.brailleblaster.org/) can be used to convert text into braille that includes these Grade 2 contractions.
+Grade (or Level) 1 braille defines a [basic mapping](https://brailleaustralia.org/wp-content/uploads/2013/09/braillecharacters.pdf) for the alphabet, numbers, and punctuation. Grade 2 braille has [contractions](https://www.teachingvisuallyimpaired.com/uploads/1/4/1/2/14122361/ueb_braille_chart.pdf), leveraging context and unused characters to reduce common words, letter combinations, and syllables to fewer characters. Grade 1 braille is standardized by *character set* (e.g. the Roman alphabet versus Cyrillic), whereas Grade 2 braille is specific to the *language* being written (e.g. English vs. French). Free software such as [BrailleBlaster](https://www.brailleblaster.org/) can be used to convert text into braille that includes these Grade 2 contractions.
 
 If you use Grade 2 braille, you can save space. For example, the phrase:
 
@@ -36,19 +36,19 @@ This certainly saves space (46 characters instead of 61). However, a user who re
 
 ## Option #1: Braille tape
 
-The simplest way to add braille to a synthesizer is to use a low cost braille labeller (such as [this one](https://www.maxiaids.com/product/reizen-rl-350-braille-labeler)) and some adhesive-backed labeling tape (such as [this](https://www.amazon.com/NineLeaf-Compatible-3D-Embossing-Organizer/dp/B0C3MGZKYH/?th=1)). You can then punch out braille labels and apply them directly to your synthesizer's front panel. If you use clear labels, you can place the braille labels directly over the printed labels on the synthesizer. You can also create braille labels manually, using a [braille stylus](https://carroll.org/product/single-line-slate-w-stylus/) on dymo tape or any adhesive paper.
+The simplest way to add braille to a synthesizer is to use a low cost braille labeller (such as [this one](https://www.maxiaids.com/product/reizen-rl-350-braille-labeler)) and some adhesive-backed labeling tape (such as [this](https://www.amazon.com/NineLeaf-Compatible-3D-Embossing-Organizer/dp/B0C3MGZKYH/?th=1)). You can then punch out braille labels and apply them directly to your synthesizer's front panel. If you use clear labels, you can place the braille labels over the printed labels on the synthesizer. You can also create braille labels manually, using a [braille stylus](https://carroll.org/product/single-line-slate-w-stylus/) on dymo tape or any adhesive paper.
 
 An alternative to this method is to print out sheets of braille on an embossing printer (such as [this one](https://viewplus.com/product/vp-columbia-2/#product-more-info)) using sticker paper, which you then cut out and affix to the device. You can use [BrailleBlaster](https://www.brailleblaster.org/) and the [Braille TTF](https://www.1001fonts.com/braille-font.html) typeface to experiment with this method.
 
-Depending on the density of controls on your synthesizer, you may not be able to label everything (see [mappings](#mappings), below, on some ideas for shorthand. For synthesizers where it's not practicable to create a braille label for every single affordance, you could consider labelling the section headings of different areas of the synth (oscillator, filter, mixer, etc.), and then create a [tactile guide](../tactileSynths) to cover the details.
+Depending on the density of controls on your synthesizer, you may not be able to label everything (see [mappings](#mappings), below, on some ideas for shorthand). For synthesizers where it's not practicable to create a braille label for every single affordance, you could consider labelling the section headings of different areas of the synth (oscillator, filter, mixer, etc.), and then create a [tactile guide](../tactileSynths) to cover the details.
 
 ## Option #2: Labels on an overlay
 
-While it's great to add labels directly to your equipment, two issues might occur. First, the synthesizer surface might not take well to adhesive labels (for example, if the face plate on the synthesizer is powder-coated metal). Second, you might be worried about the labels damaging your synthesizer (for example, if you have a vintage equipment where adhesives might cause wear on the visual labels underneath.
+While it's great to add labels directly to your equipment, two issues might occur. First, the synthesizer surface might not take well to adhesive labels (for example, if the face plate on the synthesizer is powder-coated metal). Second, you might be worried about the labels damaging your synthesizer (for example, if you have a vintage equipment where adhesives might cause wear on the visual labels underneath).
 
 A great solution for all of this is to cut a **plexiglass overlay** for your synthesizer, and then affix the braille to the overlay. You can often make these overlays simply if you have access to a laser cutter; you can use pre-cut plexiglass (we use [0.040" clear colorless acrylic](https://www.canalplastic.com/products/clear-colorless-0-040-acrylic-sheet?variant=37615076302)) to make clear, thin sheets that can sit on top of the synthesizer's face, with holes cut in place for switches, buttons, knobs, etc.
 
-The best overlays have ample space for all of the affordances (knobs, switches, sliders, jacks) on the synthesizer, but can still be affixed to the synth face in an easy manner. One way to do this is to add cutout points for the front panel mounting screws and make those circles small enough that you can use the screws to mounth the plexi overlay and securit it to the synth. Additionally, potentiometers often have knobs or slider caps that can be removed, so the cutout can be narrower, as it only needs to accommodate the shaft of the pot.
+The best overlays have ample space for all of the affordances (knobs, switches, sliders, jacks) on the synthesizer, but can still be affixed to the synth face in an easy manner. One way to do this is to add cutout points for the front panel mounting screws and make those circles small enough that you can use the screws to mount the plexi overlay and secure it it to the synth. Additionally, potentiometers often have knobs or slider caps that can be removed, so the cutout can be narrower, as it only needs to accommodate the shaft of the pot.
 
 To make an overlay, there are a bunch of options:
 
@@ -57,11 +57,11 @@ To make an overlay, there are a bunch of options:
 3. You can use a 3D scanning app (such as Polycam or 3D Scanner App) to make a scan of your synthesizer's front panel and import it into 3D modelling software (such as [Blender](https://www.blender.org/)) that knows how to export a 2D vector slice of a 3D model. 2D vector software that knows how to create slices from 3D assets (Illustrator, Inkscape) can do this as well.
 4. If the synthesizer is reasonably small, you can place it face-down on a scanner (or a photocopier with a scanning function). You can then create a layer and draw cutouts for your overlay.
 
-With any of these methods, we recommend doing a test cut first on cardboard to make sure everything fits properly. Once you've got your overlay fitted, you can add your braille adhesive labels and they should still well. As an added bonus, you now have a protective cover for your synthesizer!
+With any of these methods, we recommend doing a test cut first on cardboard to make sure everything fits properly. Once you've got your overlay fitted, you can add your braille adhesive labels and they should stick well. As an added bonus, you now have a protective cover for your synthesizer!
 
 ## Option #3: UV Print the braille directly onto an overlay
 
-If you're going to create an overlay for your synth, you can UV print the braille (and dividers, and any other tactile graphics) onto the acrylic directly, using a commercial UV flatbed printer. Commercial print shops will often have UV printing service; for example, in the USA, if a print shop advertises that they can do "ADA signage", then you're probably in the right place. There may be places in your community that are able to do a full-service project - they will source the acrylic, laser cut the overlay, and do the braille printing all in one go. It's our experience that many UV printers will typeset braille within their own software or work with design software customized for sign printing that knows how to typeset braille, such as [Flexi Design](https://www.thinksai.com/products-flexi-design/).
+If you're going to create an overlay for your synth, you can UV print the braille (as well as dividers and any other tactile graphics) onto the acrylic directly by using a commercial UV flatbed printer. Commercial print shops will often have UV printing service; for example, in the USA, if a print shop advertises that they can do "ADA signage", then you're probably in the right place. There may be print services in your community that are able to do a full-service project - they will source the acrylic, laser cut the overlay, and do the braille printing all in one go. It's our experience that many UV printers will typeset braille within their own software or work with design software customized for sign printing that knows how to typeset braille, such as [Flexi Design](https://www.thinksai.com/products-flexi-design/).
 
 ## Examples
 
@@ -74,7 +74,7 @@ For example, here is the overlay developed by Moira Zhang for our [TTSH](https:/
 
 This image shows the front panel of the TTSH:
 <img src = "./img/TTSH_interface.png" width="100%" title="TTSH visual interface" alt="TTSH visual interface">
-This image shows the full composite overlay of the TTSH (interface channels, braille, and dividers) looks like this:
+This image shows the full composite overlay of the TTSH, including interface channels, braille, and dividers:
 <img src = "./img/TTSH.png" width="100%" title="TTSH full overlay, with dividers and braille" alt="TTSH full overlay, with dividers and braille">
 This is the TTSH interface image used for laser cutting the overlay. Note the smaller circles - those are the front-panel screw points, not modular jacks - we used those to fix the overlay. We removed the knob for the microphone gain and the caps for the slide potentiometers before putting the panel on.
 <img src = "./img/TTSH_overlay.png" width="100%" title="TTSH laser overlay" alt="TTSH laser overlay">
@@ -141,6 +141,69 @@ Serge Modular systems have specific acronyms and abbreviations for canonical mod
 | (Triple) Bi-Directional Router | <bl>tbs</bl><br>TBS |
 | (Triple) Comparator | <bl>com</bl><br>COM |
 | Triple Waveshaper | <bl>tws</bl><br>TWS |
+
+**3rd/4th Generation Modules:**
+
+| Module | Label |
+| ----- | ----- |
+| Active Processor | <bl>acpr</bl><br>ACPR |
+| Adaptors | <bl>adp</bl><br>ADP |
+| Analog Shift Register | <bl>asr</bl><br>ASR |
+| Control Module | <bl>c/m</bl><br>C/M |
+| Divide-by-N Comparator | <bl>ncom</bl><br>NCOM |
+| Dual 3-Input Audio Mixer | <bl>mix</bl><br>MIX |
+| Dual Analog Shift Register | <bl>2asr</bl><br>2ASR |
+| Dual Channel Stereo Mixer | <bl>dcsm</bl><br>DCSM |
+| Dual Comparator | <bl>com</bl><br>COM |
+| Dual Envelope Detector | <bl>env2</bl><br>ENV2 |
+| Dual Processor | <bl>prc</bl><br>PRC |
+| Dual Random Voltage Generator | <bl>2rvg</bl><br>2RVG |
+| Dual Schmitt Trigger | <bl>str</bl><br>STR |
+| Dual Stereo Panner Channel | <bl>pan</bl><br>PAN |
+| Dual Universal Slope Generator | <bl>dsg</bl><br>DSG |
+| Dual VC Phaser | <bl>2pha</bl><br>2PHA |
+| Dual VC Transient Generator | <bl>dtg</bl><br>DTG |
+| Dual VCA | <bl>2vca</bl><br>2VCA |
+| Envelope Detector | <bl>env</bl><br>ENV |
+| Extended ADSR Envelope Generator | <bl>adsr</bl><br>ADSR |
+| Extended Range VCFQ  | <bl>vcfs</bl><br>VCFX |
+| Four Input Stereo Mixer/Panner | <bl>mxp</bl><br>MXP |
+| Frequency Shifter w/External Carrier | <bl>frsx</bl><br>FRSX |
+| Frequency Shifter | <bl>frs</bl><br>FRS |
+| Matrix Mixer  | <bl>max</bl><br>MAX |
+| Multi-Channel Quadraphonic Mixer | <bl>qmx</bl><br>QMX |
+| Multi-Channel Stereo Panner | <bl>stx</bl><br>STX |
+| N-Voice Controller | <bl>nvc</bl><br>NVC |
+| New Timbral Oscillator | <bl>nto</bl><br>NTO |
+| Noise Source | <bl>noi</bl><br>NOI |
+| Pitch and Envelope Follower | <bl>ref</bl><br>REF |
+| Preamp Detector | <bl>prnv</bl><br>PRNV |
+| Precision VCO | <bl>pco</bl><br>PCO |
+| Quad Panner Channel  | <bl>qpc</bl><br>QPC |
+| Quantizer far TKB | <bl>qtkb</bl><br>QTKB |
+| Quantizer for SQPs | <bl>qseq</bl><br>QSEQ |
+| Quantizer | <bl>quan</bl><br>QUAN |
+| Random Source | <bl>rs</bl><br>RS |
+| Random Voltage Generator | <bl>rvg</bl><br>RVG |
+| Resonant Equalizer | <bl>eq</bl><br>EQ |
+| Ring Modulator | <bl>r+</bl><br>RING |
+| Scaling Buffer | <bl>buff</bl><br>BUFF |
+| Scaling Processor | <bl>sprc</bl><br>SPRC |
+| Sequencer | <bl>seq8</bl><br>SEQ |
+| Sequencer Programer | <bl>sqp4</bl><br>SQP |
+| Smooth & Stepped Function Generator | <bl>ssg</bl><br>SSG |
+| Touch Activated Keyboard Sequencer | <bl>tkb</bl><br>TKB |
+| Triple VC Waveshaper | <bl>tws</bl><br>TWS |
+| Universal Audio Processor  | <bl>uap</bl><br>UAP |
+| Variable 'Q' VC Filter | <bl>vcfq</bl><br>VCFQ |
+| Variable Bandwidth VC Filter | <bl>vcf2</bl><br>VCF2 |
+| Variable Slope VC Filter | <bl>vcfs</bl><br>VCFS |
+| VC Cross-Fader  | <bl>xfad</bl><br>XFAD |
+| VC Phaser | <bl>pha</bl><br>PHA |
+| VC Quadrature Oscillator | <bl>quo</bl><br>QUO |
+| VC Wave Multipliers | <bl>vcm</bl><br>VCM |
+| Voltage Controlled Stereo Mixer | <bl>qvm</bl><br>QVM |
+| Wilson Analog Delay | <bl>wad</bl><br>WAD |
 
 ## Gallery
 
