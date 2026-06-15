@@ -10,8 +10,7 @@ New York University
 Files:
 - README.md - this file
 - [Style Guide](TactileSynthsStyleGuide.pdf) - PDF style guide
-- [ARP2600TTSH](ARP2600TTSH.pdf) - tactile guide for the ARP 2600 / TTSH
-- common - folder containing common JavaScript code for all versions
+- [ARP2600](ARP2600.pdf) - tactile guide for the ARP 2600 / TTSH
 - elements - folder of EPS and SVG tactile elements
 
 **tactileSynthGuides** consist of a collection of tactile guides and standards for synthesizers. These are currently designed to be printed using swell-form or UV printing as little booklets, with the goal of allowing a B/LV user to "feel" the synthesizer interface as a spatial map on a page while working with the physical hardware. 
