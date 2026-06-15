@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.39 29.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Key">
+    <g id="power_button" data-name="power button">
+      <polyline class="cls-1" points=".71 25.06 23.35 2.41 23.35 26.64 46.39 3.6 46.39 25.85"/>
+    </g>
+  </g>
+</svg>

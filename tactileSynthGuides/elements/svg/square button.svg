@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.74 42.91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Key">
+    <g id="square_button" data-name="square button">
+      <polygon class="cls-1" points="1.06 1 41.74 1 41.74 41.78 41.74 41.79 1 41.9 1.06 1"/>
+      <path class="cls-1" d="M41.68,41.79C28.36,28.36,14.38,14.26,1.06.83"/>
+      <path class="cls-1" d="M1.11,41.18C14.3,28.07,28.44,14.01,41.63.89"/>
+      <rect class="cls-2" x="8.76" y="8.84" width="25.21" height="25.07"/>
+    </g>
+  </g>
+</svg>

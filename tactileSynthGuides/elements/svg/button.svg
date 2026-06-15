@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.49 32.02">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.49 32.02">
   <defs>
     <style>
       .cls-1 {
@@ -17,7 +17,7 @@
         stroke-width: 1px;
       }
     </style>
-    <pattern id="_10_dpi_40_" data-name="10 dpi 40%" x="0" y="0" width="27.36" height="27.36" patternTransform="translate(-3860.36 -4262.4) scale(.61 .58)" patternUnits="userSpaceOnUse" viewBox="0 0 27.36 27.36">
+    <pattern id="_10_dpi_40_" data-name="10 dpi 40%" x="0" y="0" width="27.36" height="27.36" patternTransform="translate(-3594.41 -3671.66) scale(.61 .58)" patternUnits="userSpaceOnUse" viewBox="0 0 27.36 27.36">
       <g>
         <rect class="cls-1" width="27.36" height="27.36"/>
         <path class="cls-2" d="M24.48,27.36c1.59,0,2.88-1.29,2.88-2.88s-1.29-2.88-2.88-2.88-2.88,1.29-2.88,2.88,1.29,2.88,2.88,2.88Z"/>
@@ -31,5 +31,7 @@
       </g>
     </pattern>
   </defs>
-  <ellipse class="cls-3" cx="16.25" cy="16.01" rx="15.74" ry="15.51"/>
+  <g id="Key">
+    <ellipse class="cls-3" cx="16.25" cy="16.01" rx="15.74" ry="15.51"/>
+  </g>
 </svg>

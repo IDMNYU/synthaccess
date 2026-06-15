@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.96 70.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Key">
+    <g id="_3_pos_switch" data-name="3 pos switch">
+      <path class="cls-1" d="M1.49,1h18.48v68.28H1.01L1.49,1Z"/>
+      <line class="cls-1" x1="1.87" y1="22.39" x2="19.99" y2="22.34"/>
+      <line class="cls-1" x1="1.98" y1="45.34" x2="20.32" y2="45.34"/>
+    </g>
+  </g>
+</svg>

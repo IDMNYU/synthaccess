@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.79 47.35">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Key">
+    <g id="power_button" data-name="power button">
+      <ellipse class="cls-2" cx="23.89" cy="23.68" rx="22.89" ry="22.68"/>
+      <ellipse class="cls-2" cx="23.89" cy="23.49" rx="16.95" ry="16.79"/>
+      <path class="cls-1" d="M8.6,18.93l30.59.08s-6.15-11.06-15.46-11.06c-10.72,0-15.13,10.97-15.13,10.97Z"/>
+    </g>
+  </g>
+</svg>

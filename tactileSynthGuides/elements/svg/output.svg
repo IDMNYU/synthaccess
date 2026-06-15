@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 31.42">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 34.05 39.43">
   <defs>
     <style>
       .cls-1, .cls-2 {
@@ -18,7 +18,7 @@
         stroke-width: 1.44px;
       }
     </style>
-    <pattern id="output_stripes" data-name="output stripes" x="0" y="0" width="72" height="72" patternTransform="translate(-701.21 -1063.38) scale(1.03 1)" patternUnits="userSpaceOnUse" viewBox="0 0 72 72">
+    <pattern id="output_stripes" data-name="output stripes" x="0" y="0" width="72" height="72" patternTransform="translate(864.78 -123.37) scale(1.03 1)" patternUnits="userSpaceOnUse" viewBox="0 0 72 72">
       <g>
         <rect class="cls-1" width="72" height="72"/>
         <g>
@@ -75,5 +75,7 @@
       </g>
     </pattern>
   </defs>
-  <polygon id="key_output" data-name="key output" class="cls-3" points="27.5 8.16 27.5 23.26 14 30.85 .5 23.26 .5 8.16 14 .58 27.5 8.16"/>
+  <g id="Key">
+    <polygon id="key_output" data-name="key output" class="cls-3" points="33.55 10.17 33.55 29.27 17.03 38.86 .5 29.27 .5 10.17 17.03 .58 33.55 10.17"/>
+  </g>
 </svg>
