@@ -562,30 +562,30 @@
 		]
 	  },
 	  "80": {
-	    "label": "aftertouch ",
+	    "label": "aftertouch destination pair 1",
 	    "data": "enum",
 		"enum": [
-			"unrouted on destination pair 1",
+			"unrouted",
 			"routed to frequency a,",
 			"routed to frequency b,",
 			"routed to frequency a, and b"
 		]
 	  },
 	  "81": {
-	    "label": "aftertouch ",
+	    "label": "aftertouch destination pair 2",
 	    "data": "enum",
 		"enum": [
-			"unrouted on destination pair 2",
+			"unrouted",
 			"routed to filter cut off",
 			"routed to amplifier",
 			"routed to filter cut off, and amplifier"
 		]
 	  },
 	  "82": {
-	    "label": "aftertouch ",
+	    "label": "aftertouch destination pair 3",
 	    "data": "enum",
 		"enum": [
-			"unrouted on destination pair 3",
+			"unrouted",
 			"routed to L F O frequency",
 			"routed to L F O amount",
 			"routed to L F O frequency, and L F O amount"
