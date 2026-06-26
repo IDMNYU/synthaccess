@@ -2,7 +2,7 @@
 // MIDI parameter -> speech interface
 // rld, 2025
 
-function parseSpeak(_plist, _param, _val, _data) // create and generate a speech string based on MIDI input
+function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
     let a, b, s, cl, l, o, v, g, i, j, k, nlist, p;
@@ -126,14 +126,7 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
                 speakstring+=" " + mtopct(_val);
                 break;
             case "enum": // enumerator (value=index)
-                if(Array.isArray(_plist[_param].enum)&&_val>=0&&_val<_plist[_param].enum.length)
-                {
-                    speakstring+=" " + _plist[_param].enum[_val];
-                }
-                else
-                {
-                    speakstring+=" " + _val.toString();
-                }
+                speakstring+=" " + _plist[_param].enum[_val];
                 break;
             case "enumsplit": // enumerator (value split up across range)
                 let idx = 0;
@@ -143,28 +136,6 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
                     idx = i;
                 }
                 speakstring+=" " + _plist[_param].enum[idx];
-                break;
-            case "ascii": // read a byte array as ASCII text
-                {
-                    let astr = "";
-                    let start = 0;
-                    let dlen = -1;
-                    if(typeof(_plist[_param].dataOffset)!=='undefined') start = parseInt(_plist[_param].dataOffset);
-                    if(typeof(_plist[_param].dataLength)!=='undefined') dlen = parseInt(_plist[_param].dataLength);
-                    if(Array.isArray(_data))
-                    {
-                        let dstop = _data.length;
-                        if(dlen>=0) dstop = Math.min(_data.length, start+dlen);
-                        for(let ii=start;ii<dstop;ii++)
-                        {
-                            let ch = _data[ii];
-                            if(ch==0) continue; // skip null padding bytes
-                            if(ch>=32&&ch<=126) astr+=String.fromCharCode(ch);
-                        }
-                    }
-                    if(astr.length==0) astr = "blank";
-                    speakstring+=" " + astr;
-                }
                 break;
             case "patchsimple": // read strings against an index
                 nlist = _plist[_param].names;
