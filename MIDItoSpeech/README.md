@@ -71,6 +71,8 @@ The JSON root element is a **device**, which has the following top-level propert
       - **clamp** : boolean ("true" / "false") value for **intmap** and **floatmap** data to specify whether the mapping will be constrained within the output values specified by **range**.
       - **enum** : array of labels for **enum** and **enumsplit** data.
          - for **enum**, the *value* serves as the literal index to the array.
+         - if **enum** is a symbol rather than an array, an array in the JSON at that key will be indexed instead.
+      - **ascii** : interpret parameter data as an ASCII array.
       - **split** : array of splitpoints for **enumsplit** data.
          - for "**numsplit** data, the *value* is checked against the **split** array, and...
          - the highest index that the *value* is greater than or equal to is the index for the **enum**.
