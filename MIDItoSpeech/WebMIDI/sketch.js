@@ -35,6 +35,72 @@ let qclock = 0; // queue service clock
 let qclock_time = 6 // how many frames of delay (default is 1/10th of a second)
 let qstr = ""; // queue string
 
+function getMessageBytes(_mess)
+{
+  // Sysex payload shape differs by WebMidi version/event object, so probe likely fields.
+  if(_mess&&Array.isArray(_mess.rawData)) return _mess.rawData.slice();
+  if(_mess&&_mess.message&&Array.isArray(_mess.message.rawData)) return _mess.message.rawData.slice();
+  if(_mess&&Array.isArray(_mess.data)) return _mess.data.slice();
+  if(_mess&&_mess.message&&Array.isArray(_mess.message.data)) return _mess.message.data.slice();
+  return [];
+}
+
+function findSysexPayloadStart(_bytes, _header)
+{
+  if(!Array.isArray(_bytes)||!Array.isArray(_header)||_header.length==0) return 0;
+  const starts = [0];
+  // Some APIs omit F0 from sysex event payloads.
+  if(_header[0]==240) starts.push(1);
+  for(let s=0;s<starts.length;s++)
+  {
+    const start = starts[s];
+    const h = start==1 ? _header.slice(1) : _header;
+    if(h.length==0) return 0;
+    if(_bytes.length>=h.length)
+    {
+      let matched = true;
+      for(let i=0;i<h.length;i++)
+      {
+        if(_bytes[i]!=h[i])
+        {
+          matched = false;
+          break;
+        }
+      }
+      if(matched) return h.length;
+    }
+  }
+  return -1;
+}
+
+function sendSysexSetup()
+{
+  if(!fload) return;
+  if(typeof(thestuff.device)==='undefined') return;
+  if(!Array.isArray(thestuff.device["Sysex setup"])) return;
+  if(typeof(midiOutputDevice)==='undefined'||midiOutputDevice==null)
+  {
+    saySomething("No MIDI output selected. Sysex setup not sent.");
+    return;
+  }
+  try
+  {
+    const sx = thestuff.device["Sysex setup"];
+    if(sx.length<2||sx[0]!=240||sx[sx.length-1]!=247)
+    {
+      saySomething("Sysex setup is not a valid F0 to F7 message.");
+      return;
+    }
+    midiOutputDevice.send(sx);
+  }
+  catch(err)
+  {
+    const emsg = (err&&err.message) ? err.message : "unknown error";
+    saySomething("Sysex setup failed. " + emsg);
+    console.error(err);
+  }
+}
+
 function onMidiEnabled() { // MIDI active
   // wipe everything
   midiInList = [];
@@ -47,11 +113,13 @@ function onMidiEnabled() { // MIDI active
       WebMidi.inputs[index].removeListener("nrpn");
       WebMidi.inputs[index].removeListener("controlchange");
       WebMidi.inputs[index].removeListener("programchange");
+      WebMidi.inputs[index].removeListener("sysex");
     });
 
   WebMidi.inputs[midiInPtr].addListener("programchange", (e) => doit(e));
   WebMidi.inputs[midiInPtr].addListener("controlchange", (e) => doit(e));
   WebMidi.inputs[midiInPtr].addListener("nrpn", (e) => doit(e));
+  WebMidi.inputs[midiInPtr].addListener("sysex", (e) => doit(e));
 
   WebMidi.inputs.forEach((device, index) => {
     midiDeviceSelectIn.option(device.name);
@@ -62,7 +130,8 @@ function onMidiEnabled() { // MIDI active
     midiOutList.push(device.name);
   });
 
-  midiOutputDevice = new Output(WebMidi.outputs[0]);
+  if(WebMidi.outputs.length>0) midiOutputDevice = WebMidi.outputs[0];
+  else midiOutputDevice = null;
 }
 
 // main stuff:
@@ -135,7 +204,7 @@ I = list device-specific mappings');
 
   speaker = new p5.Speech();
 
-  await WebMidi.enable()
+  await WebMidi.enable({ sysex: true })
   .then(onMidiEnabled)
   .catch((err) => alert(err));
 
@@ -186,6 +255,10 @@ async function loadCustomFile(_f)
 
   fload = 1; // file is loaded
   prevparam = -1; // reset params
+  sendSysexSetup();
+  
+  // Reset file input to allow re-selecting the same file
+  loadFilebutton.elt.value = '';
 }
 
 async function loadFile(_ptr)
@@ -202,6 +275,7 @@ async function loadFile(_ptr)
 
   fload = 1; // file is loaded
   prevparam = -1; // reset params
+  sendSysexSetup();
 }
 
 function changeMidiInput(_ptr)
@@ -219,6 +293,7 @@ function changeMidiInput(_ptr)
       WebMidi.inputs[index].removeListener("nrpn");
       WebMidi.inputs[index].removeListener("controlchange");
       WebMidi.inputs[index].removeListener("programchange");
+      WebMidi.inputs[index].removeListener("sysex");
     });
 
     // add new listeners
@@ -226,10 +301,16 @@ function changeMidiInput(_ptr)
     selectedDevice.addListener("programchange", (e) => doit(e));
     selectedDevice.addListener("controlchange", (e) => doit(e));
     selectedDevice.addListener("nrpn", (e) => doit(e));
+    selectedDevice.addListener("sysex", (e) => doit(e));
 }
 
 function changeMidiOutput(_ptr)
 {
+  if(midiOutList.length==0) {
+    midiOutputDevice = null;
+    saySomething("No MIDI outputs available");
+    return;
+  }
   midiOutPtr = (_ptr + midiOutList.length)%midiOutList.length; // keep in bounds
   midiDeviceSelectOut.selected(midiOutList[midiOutPtr]);
     const deviceName = midiDeviceSelectOut.elt.value;
@@ -237,7 +318,7 @@ function changeMidiOutput(_ptr)
     const deviceIndex = WebMidi.outputs.findIndex(
       (device) => device.name === deviceName,
       );
-  midiOutputDevice = new Output(WebMidi.outputs[deviceIndex]);
+  midiOutputDevice = WebMidi.outputs[deviceIndex];
 
 }
 
@@ -339,6 +420,41 @@ function doit(_mess) {
           if(tempv==0) verbose=1; // program changes always read numbers
           if(_c==chan) parseSpeak(plist, 0, _val);
           verbose = tempv; // swap back
+          }
+        }
+        if(_mess.type=="sysex"&&paused==0)
+        {
+          if(fload==1&&pmode==0&&typeof(thestuff.device)!=='undefined')
+          {
+            if(typeof(thestuff.device.Sysex)!=='undefined')
+            {
+              const sysexBytes = getMessageBytes(_mess);
+              if(sysexBytes.length>0)
+              {
+                let sysexData = sysexBytes.slice();
+                // Trim trailing EOX if present.
+                if(sysexData[sysexData.length-1]==247) sysexData.pop();
+                const idHeader = thestuff.device["Sysex idheader"];
+                const payloadStart = findSysexPayloadStart(sysexData, idHeader);
+                if(payloadStart>=0&&payloadStart<sysexData.length)
+                {
+                  const cmd = sysexData[payloadStart];
+                  const payload = sysexData.slice(payloadStart+1);
+                  const sysexList = thestuff.device.Sysex;
+                  if(Object.hasOwn(sysexList, cmd.toString()))
+                  {
+                    const cdef = sysexList[cmd.toString()];
+                    let val = payload.length>0 ? payload[0] : 0;
+                    if(typeof(cdef.valueIndex)!=='undefined')
+                    {
+                      const vi = parseInt(cdef.valueIndex);
+                      if(payload.length>vi&&vi>=0) val = payload[vi];
+                    }
+                    parseSpeak(sysexList, cmd, val, payload);
+                  }
+                }
+              }
+            }
           }
         }
 }
