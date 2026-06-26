@@ -353,7 +353,7 @@ function toggleMute()
 
 function cycleVerbosity()
 {
-  verbose = (verbose + 1) % 3;
+  verbose = (verbose + 1) % 2;
   if(verbose == 0) saySomething("verbosity level minimum.");
   else if(verbose == 1) saySomething("verbosity level normal.");
   else if(verbose == 2) saySomething("Verbosity level maximum.");
