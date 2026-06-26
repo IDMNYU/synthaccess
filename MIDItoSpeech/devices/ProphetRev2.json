@@ -334,12 +334,12 @@
       "38": {
         "label": "layer A LFO 1 shape",
         "data": "enum",
-        "enum": ["triangle", "sawtooth", "reverse sawtooth", "square", "random"]
+        "enum": "LFOshapes"
       },
       "2086": {
         "label": "layer B LFO 1 shape",
         "data": "enum",
-        "enum": ["triangle", "sawtooth", "reverse sawtooth", "square", "random"]
+        "enum": "LFOshapes"
       },
       "39": {
         "label": "layer A LFO 1 amount",
@@ -351,11 +351,13 @@
       },
       "40": {
         "label": "layer A LFO 1 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "2088": {
         "label": "layer B LFO 1 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "41": {
         "label": "layer A LFO 1 clock sync",
@@ -376,12 +378,12 @@
       "43": {
         "label": "layer A LFO 2 shape",
         "data": "enum",
-        "enum": ["triangle", "sawtooth", "reverse sawtooth", "square", "random"]
+        "enum": "LFOshapes"
       },
       "2091": {
         "label": "layer B LFO 2 shape",
         "data": "enum",
-        "enum": ["triangle", "sawtooth", "reverse sawtooth", "square", "random"]
+        "enum": "LFOshapes"
       },
       "44": {
         "label": "layer A LFO 2 amount",
@@ -393,11 +395,13 @@
       },
       "45": {
         "label": "layer A LFO 2 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "2093": {
         "label": "layer B LFO 2 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "46": {
         "label": "layer A LFO 2 clock sync",
@@ -418,12 +422,12 @@
       "48": {
         "label": "layer A LFO 3 shape",
         "data": "enum",
-        "enum": ["triangle", "sawtooth", "reverse sawtooth", "square", "random"]
+        "enum": "LFOshapes"
       },
       "2096": {
         "label": "layer B LFO 3 shape",
         "data": "enum",
-        "enum": ["triangle", "sawtooth", "reverse sawtooth", "square", "random"]
+        "enum": "LFOshapes"
       },
       "49": {
         "label": "layer A LFO 3 amount",
@@ -435,11 +439,13 @@
       },
       "50": {
         "label": "layer A LFO 3 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "2098": {
         "label": "layer B LFO 3 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "51": {
         "label": "layer A LFO 3 clock sync",
@@ -460,12 +466,12 @@
       "53": {
         "label": "layer A LFO 4 shape",
         "data": "enum",
-        "enum": ["triangle", "sawtooth", "reverse sawtooth", "square", "random"]
+        "enum": "LFOshapes"
       },
       "2101": {
         "label": "layer B LFO 4 shape",
         "data": "enum",
-        "enum": ["triangle", "sawtooth", "reverse sawtooth", "square", "random"]
+        "enum": "LFOshapes"
       },
       "54": {
         "label": "layer A LFO 4 amount",
@@ -477,11 +483,13 @@
       },
       "55": {
         "label": "layer A LFO 4 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "2103": {
         "label": "layer B LFO 4 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "56": {
         "label": "layer A LFO 4 clock sync",
@@ -493,11 +501,13 @@
       },
       "57": {
         "label": "layer A envelope 3 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "2105": {
         "label": "layer B envelope 3 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "58": {
         "label": "layer A envelope 3 amount",
@@ -558,12 +568,12 @@
       "65": {
         "label": "layer A mod 1 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "2113": {
         "label": "layer B mod 1 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "66": {
         "label": "layer A mod 1 amount",
@@ -576,22 +586,22 @@
       "67": {
         "label": "layer A mod 1 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2115": {
         "label": "layer B mod 1 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "68": {
         "label": "layer A mod 2 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "2116": {
         "label": "layer B mod 2 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "69": {
         "label": "layer A mod 2 amount",
@@ -604,22 +614,22 @@
       "70": {
         "label": "layer A mod 2 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2118": {
         "label": "layer B mod 2 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "71": {
         "label": "layer A mod 3 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "2119": {
         "label": "layer B mod 3 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "72": {
         "label": "layer A mod 3 amount",
@@ -632,22 +642,22 @@
       "73": {
         "label": "layer A mod 3 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2121": {
         "label": "layer B mod 3 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "74": {
         "label": "layer A mod 4 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "2122": {
         "label": "layer B mod 4 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "75": {
         "label": "layer A mod 4 amount",
@@ -660,22 +670,22 @@
       "76": {
         "label": "layer A mod 4 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2124": {
         "label": "layer B mod 4 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "77": {
         "label": "layer A mod 5 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "2125": {
         "label": "layer B mod 5 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "78": {
         "label": "layer A mod 5 amount",
@@ -687,21 +697,23 @@
       },
       "79": {
         "label": "layer A mod 5 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "2127": {
         "label": "layer B mod 5 destination",
-        "data": "value"
+        "data": "enum",
+        "enum": "moddestinations"
       },
       "80": {
         "label": "layer A mod 6 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "2128": {
         "label": "layer B mod 6 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "81": {
         "label": "layer A mod 6 amount",
@@ -714,22 +726,22 @@
       "82": {
         "label": "layer A mod 6 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2130": {
         "label": "layer B mod 6 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "83": {
         "label": "layer A mod 7 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "2131": {
         "label": "layer B mod 7 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "84": {
         "label": "layer A mod 7 amount",
@@ -742,22 +754,22 @@
       "85": {
         "label": "layer A mod 7 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2133": {
         "label": "layer B mod 7 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "86": {
         "label": "layer A mod 8 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "2134": {
         "label": "layer B mod 8 source",
         "data": "enum",
-        "enum": ["off", "sequence 1", "sequence 2", "sequence 3", "sequence 4", "LFO 1", "LFO 2", "LFO 3", "LFO 4", "envelope LPF", "envelope VCA", "envelope 3", "pitch bend", "mod wheel", "pressure", "breath", "foot pedal", "expression pedal", "velocity", "note number", "noise", "dc", "audio out"]
+        "enum": "modsources"
       },
       "87": {
         "label": "layer A mod 8 amount",
@@ -770,12 +782,12 @@
       "88": {
         "label": "layer A mod 8 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2136": {
         "label": "layer B mod 8 destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "97": {
         "label": "layer A envelope 3 repeat",
@@ -902,12 +914,12 @@
       "117": {
         "label": "layer A mod wheel destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2165": {
         "label": "layer B mod wheel destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "118": {
         "label": "layer A pressure amount",
@@ -920,12 +932,12 @@
       "119": {
         "label": "layer A pressure destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2167": {
         "label": "layer B pressure destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "120": {
         "label": "layer A breath amount",
@@ -938,12 +950,12 @@
       "121": {
         "label": "layer A breath destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2169": {
         "label": "layer B breath destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "122": {
         "label": "layer A velocity amount",
@@ -956,12 +968,12 @@
       "123": {
         "label": "layer A velocity destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2171": {
         "label": "layer B velocity destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "124": {
         "label": "layer A foot controller amount",
@@ -974,12 +986,12 @@
       "125": {
         "label": "layer A foot controller destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2173": {
         "label": "layer B foot controller destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "153": {
         "label": "layer A effects",
@@ -1156,42 +1168,42 @@
       "184": {
         "label": "layer A sequencer 1 Destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2232": {
         "label": "layer B sequencer 1 Destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "185": {
         "label": "layer A sequencer 2 Destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2233": {
         "label": "layer B sequencer 2 Destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "186": {
         "label": "layer A sequencer 3 Destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2234": {
         "label": "layer B sequencer 3 Destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "187": {
         "label": "layer A sequencer 4 Destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "2235": {
         "label": "layer B sequencer 4 Destination",
         "data": "enum",
-        "enum": ["off", "oscillator 1 frequency", "oscillator 2 frequency", "oscillator all frequency", "oscillator 1 level", "oscillator mix", "noise level", "sub oscillator level", "oscillator 1 shape", "oscillator 2 shape", "oscillator all shape", "filter cutoff", "filter resonance", "filter audio mod", "amplifier", "pan", "LFO 1 frequency", "LFO 2 frequency", "LFO 3 frequency", "LFO 4 frequency", "LFO all frequency", "LFO 1 amount", "LFO 2 amount", "LFO 3 amount", "LFO 4 amount", "LFO all amount", "LPF envelope amount", "amplifier envelope amount", "envelope 3 amount", "envelope all amount", "LPF attack", "amplifier attack", "envelope 3 attack", "envelope all attack", "LPF decay", "amplifier decay", "envelope 3 decay", "envelope all decay", "LPF release", "amplifier release", "envelope 3 release", "envelope all release", "mod 1 amount", "mod 2 amount", "mod 3 amount", "mod 4 amount", "mod 5 amount", "mod 6 amount", "mod 7 amount", "mod 8 amount", "oscillator slop", "effect mix", "effect parameter 1", "effect parameter 2"]
+        "enum": "moddestinations"
       },
       "1088": {
         "label": "sequence play",
@@ -1215,6 +1227,94 @@
         "enum": ["A", "B"]
       }
     },
+    "LFOshapes": [
+      "triangle", 
+      "sawtooth", 
+      "reverse sawtooth", 
+      "square", 
+      "random"
+    ],
+    "modsources": [
+      "off", 
+      "sequence 1", 
+      "sequence 2", 
+      "sequence 3", 
+      "sequence 4", 
+      "LFO 1", 
+      "LFO 2", 
+      "LFO 3", 
+      "LFO 4", 
+      "envelope LPF", 
+      "envelope VCA", 
+      "envelope 3", 
+      "pitch bend", 
+      "mod wheel", 
+      "pressure", 
+      "breath", 
+      "foot pedal", 
+      "expression pedal", 
+      "velocity", 
+      "note number", 
+      "noise", 
+      "dc", 
+      "audio out"
+    ],
+    "moddestinations": [
+      "off", 
+      "oscillator 1 frequency", 
+      "oscillator 2 frequency", 
+      "oscillator all frequency", 
+      "oscillator 1 level", 
+      "oscillator mix", 
+      "noise level", 
+      "sub oscillator level", 
+      "oscillator 1 shape", 
+      "oscillator 2 shape", 
+      "oscillator all shape", 
+      "filter cutoff", 
+      "filter resonance", 
+      "filter audio mod", 
+      "amplifier", 
+      "pan", 
+      "LFO 1 frequency", 
+      "LFO 2 frequency", 
+      "LFO 3 frequency", 
+      "LFO 4 frequency", 
+      "LFO all frequency", 
+      "LFO 1 amount", 
+      "LFO 2 amount", 
+      "LFO 3 amount", 
+      "LFO 4 amount", 
+      "LFO all amount", 
+      "LPF envelope amount", 
+      "amplifier envelope amount", 
+      "envelope 3 amount", 
+      "envelope all amount", 
+      "LPF attack", 
+      "amplifier attack", 
+      "envelope 3 attack", 
+      "envelope all attack", 
+      "LPF decay", 
+      "amplifier decay", 
+      "envelope 3 decay", 
+      "envelope all decay", 
+      "LPF release", 
+      "amplifier release", 
+      "envelope 3 release", 
+      "envelope all release", 
+      "mod 1 amount", 
+      "mod 2 amount", 
+      "mod 3 amount", 
+      "mod 4 amount", 
+      "mod 5 amount", 
+      "mod 6 amount", 
+      "mod 7 amount", 
+      "mod 8 amount", 
+      "oscillator slop", 
+      "effect mix", 
+      "effect parameter 1", 
+      "effect parameter 2"
+    ],
     "patchlist": [
       "LosVangelis2041",
       "All That Glitter",

@@ -126,9 +126,18 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
                 speakstring+=" " + mtopct(_val);
                 break;
             case "enum": // enumerator (value=index)
-                if(Array.isArray(_plist[_param].enum)&&_val>=0&&_val<_plist[_param].enum.length)
+                let elist; // array
+                if(Array.isArray(_plist[_param].enum)) // check to see if 'enum' arg is an Array
                 {
-                    speakstring+=" " + _plist[_param].enum[_val];
+                    elist = _plist[_param].enum; // pass by ref to list
+                }
+                else // assume it's a variable name to a global
+                {
+                    elist = thestuff.device[_plist[_param].enum]; // pass by ref to a global array with that name
+                }
+                if(_val>=0&&_val<elist.length)
+                {
+                    speakstring+=" " + elist[_val];
                 }
                 else
                 {
