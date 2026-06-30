@@ -1,1 +1,12 @@
-AstroLab.jsonDeckardsDream.jsonFourm.jsonISENIN.jsonPeak_Summit.jsonProphet6.jsonProphetRev2.jsonSEM4-param-list.jsonSummit.jsonTake 5.jsonTEO5.jsontesting.json
+AstroLab.json
+DeckardsDream.json
+Fourm.json
+ISENIN.json
+Peak_Summit.json
+Prophet6.json
+ProphetRev2.json
+SEM4-param-list.json
+Summit.json
+Take 5.json
+TEO5.json
+testing.json
