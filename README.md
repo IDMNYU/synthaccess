@@ -8,17 +8,17 @@ A repository of research around and resources for synthesizer (and other audio t
 New York University
 
 Featuring the work of:
-- Ciarra Black
-- Jason Dasent
-- R. Luke DuBois, Faculty Lead, MIDI Speech Synth
-- Stefanie Koseff, Faculty Lead, Tactile Synth Guides
-- Tommy Martinez
-- Madeline Mau
-- Willie Payne
-- Lauren Race
-- Izabella Rodrigues
-- Jason Wallach
-- Moira Zhang
+- [Ciarra Black](https://www.ciarrablack.com/)
+- [Jason Dasent](https://www.jasondasent.com/)
+- [R. Luke DuBois](https://lukedubois.com/), Faculty Lead, MIDI Speech Synth
+- [Stefanie Koseff](https://www.stefaniekoseff.com/), Faculty Lead, Tactile Synth Guides
+- [Tommy Martinez](https://thomasjohnmartinez.com/)
+- [Madeline Mau](https://www.linkedin.com/in/madeline-mau-b01b9739b/)
+- [Willie Payne](https://williepayne.com/)
+- [Lauren Race](https://laurenrace.com/)
+- [Izabella Rodrigues](https://www.izabellarodrigues.com/)
+- [Jason Wallach](https://www.linkedin.com/in/jason-wallach-1340a612a/)
+- [Moira Zhang](https://moirazhang.com/)
 
 Projects:
 - **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
