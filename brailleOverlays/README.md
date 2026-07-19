@@ -10,6 +10,8 @@ New York University
 Files:
 - README.md - this file
 - [synths](https://github.com/IDMNYU/synthaccess/tree/main/brailleOverlays/synths) - folder containing vector synth overlays with braille mappings
+    - [TTSH](https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/brailleOverlays/synths/TTSH.svg)
+    - [Sequential Circuits Prophet 6 Desktop](https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/brailleOverlays/synths/Prophet6.svg)
 - img - folder containing example images
 
 **brailleOverlays** is a set of design guidelines and examples for adding braille lettering to synthesizers. 
@@ -110,9 +112,16 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 | <bl>attack decay su/a9 rel1se</bl><br>Attack Decay Sustain Release | | | <bl>adsr</bl><br>adsr |
 | <bl>5velope g5}ator</bl><br>Envelope Generator | <bl>eg</bl><br>eg | <bl>env</bl><br>env |  |
 | <bl>sample & hold</bl><br>Sample and Hold | <bl>sh</bl><br>sh | <bl>sah</bl><br>sah | |
+| <bl>syn*ronize</bl><br>Synchronize | <bl>sy</bl><br>sy | <bl>syn</bl><br>syn | <bl>sync</bl><br>sync |
 | <bl>5velope foll{}</bl><br>Envelope Follower | <bl>ef</bl><br>ef | <bl>efl</bl><br>efl |<bl>enfl</bl><br>enfl |
 | <bl>r+ modulator</bl><br>Ring Modulator | <bl>rm</bl><br>rm | <bl>r+m</bl><br>ringm |<bl>r+md</bl><br>ringmd |
 | <bl>mix}</bl><br>Mixer | <bl>mx</bl><br>mx | <bl>mxr</bl><br>mxr |<bl>mix}</bl><br>mixer |
+| <bl>frequ5cy</bl><br>Frequency | <bl>fr</bl><br>fr | <bl>frq</bl><br>frq |<bl>freq</bl><br>freq |
+| <bl>filt}</bl><br>Filter | <bl>fi</bl><br>fi | <bl>fil</bl><br>fil |<bl>fltr</bl><br>fltr |
+| <bl>l{ pass filt}</bl><br>Low Pass Filter | <bl>lp</bl><br>lp | <bl>lpf</bl><br>lpf | |
+| <bl>hi< pass filt}</bl><br>High Pass Filter | <bl>hp</bl><br>hp | <bl>hpf</bl><br>hpf | |
+| <bl>b& pass filt}</bl><br>Band Pass Filter | <bl>bp</bl><br>bp | <bl>bpf</bl><br>bpf | |
+| <bl>not* filt}</bl><br>Notch Filter | <bl>nf</bl><br>nf | | <bl>not*</bl><br>notch |
 
 ### Serge Modular Names
 
