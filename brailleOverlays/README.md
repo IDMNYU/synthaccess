@@ -26,11 +26,11 @@ Grade (or Level) 1 braille defines a [basic mapping](https://brailleaustralia.or
 
 If you use Grade 2 braille, you can save space. For example, the phrase:
 
-> "Some little children adding 2+2 might count it as 22, not 4." 
+*"Some little children adding 2+2 might count it as 22, not 4."*
 
-can be converted using Grade 2 braille to...
+can be converted using Grade 2 braille to:
 
-> <bl>,"s ll *n add+ #b"6#b mi<t c.t x z #bb1 n #d4</bl>
+<bl>,"s ll *n add+ #b"6#b mi<t c.t x z #bb1 n #d4</bl>
 
 <br>
 
