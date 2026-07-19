@@ -2,7 +2,7 @@
 
 #### syn?a3ess
 
-A repository for research around synthesizer (and other audio technology) accessibility.
+A repository of research around and resources for synthesizer (and other audio technology) accessibility.
 
 [ABILITY Project](http://ability.nyu.edu) / [Integrated Design & Media](http://idm.engineering.nyu.edu)   
 New York University
