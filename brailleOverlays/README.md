@@ -32,6 +32,8 @@ can be converted using Grade 2 braille to:
 
 <bl>,"s ll *n add+ #b"6#b mi<t c.t x z #bb1 n #d4</bl>
 
+<br>
+
 This certainly saves space (46 characters instead of 61). However, a user who reads braille in a language other than English might not be able to read it.
 
 ## Option #1: Braille tape
