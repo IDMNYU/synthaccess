@@ -10,7 +10,7 @@ New York University
 Files:
 - README.md - this file
 - [synths](https://github.com/IDMNYU/synthaccess/tree/main/brailleOverlays/synths) - folder containing vector synth overlays with braille mappings
-    - [TTSH](https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/brailleOverlays/synths/TTSH.svg)
+    - [Human Comparator TTSH](https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/brailleOverlays/synths/TTSH.svg)
     - [Sequential Circuits Prophet 6 Desktop](https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/brailleOverlays/synths/Prophet6.svg)
 - img - folder containing example images
 
