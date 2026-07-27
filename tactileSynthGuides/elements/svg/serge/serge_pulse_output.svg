@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" width="75" height="75">
+  <title>Jack - Triangle Output</title>
+  <path d="M 17.671,46.755 L 34.817,12.463 L 35.177,11.907 L 35.651,11.443 L 36.214,11.094 L 36.841,10.878 L 37.500,10.805 L 38.159,10.878 L 38.786,11.094 L 39.349,11.443 L 39.823,11.907 L 40.183,12.463 L 57.329,46.755 L 57.545,47.325 L 57.641,47.927 L 57.614,48.535 L 57.464,49.126 L 57.198,49.674 L 56.827,50.157 L 56.365,50.555 L 55.833,50.852 L 55.252,51.035 L 54.646,51.097 L 20.354,51.097 L 19.748,51.035 L 19.167,50.852 L 18.635,50.555 L 18.173,50.157 L 17.802,49.674 L 17.536,49.126 L 17.386,48.535 L 17.359,47.927 L 17.455,47.325 L 17.671,46.755 Z" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="37.5" cy="37.5" r="9.5" fill="none" stroke="#000" stroke-width="1.8"/>
+<defs>
+    <clipPath id="clip-inner-triangle" clipPathUnits="userSpaceOnUse">
+      <circle cx="37.5" cy="37.5" r="9.5"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-inner-triangle)" fill="#000">
+    <rect x="0" y="23.50" width="75" height="4.0"/>
+    <rect x="0" y="31.50" width="75" height="4.0"/>
+    <rect x="0" y="39.50" width="75" height="4.0"/>
+    <rect x="0" y="47.50" width="75" height="4.0"/>
+  </g>
+</svg>

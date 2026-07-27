@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" width="75" height="75">
+  <title>Jack - Circle Output</title>
+  <path d="M59.5,37.5 A22.0,22.0 0 1,1 15.5,37.5 A22.0,22.0 0 1,1 59.5,37.5 Z" fill="none" stroke="#000" stroke-width="1.8"/>
+<circle cx="37.5" cy="37.5" r="9.5" fill="none" stroke="#000" stroke-width="1.8"/>
+<defs>
+    <clipPath id="clip-inner-circle" clipPathUnits="userSpaceOnUse">
+      <circle cx="37.5" cy="37.5" r="9.5"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-inner-circle)" fill="#000">
+    <rect x="0" y="23.50" width="75" height="4.0"/>
+    <rect x="0" y="31.50" width="75" height="4.0"/>
+    <rect x="0" y="39.50" width="75" height="4.0"/>
+    <rect x="0" y="47.50" width="75" height="4.0"/>
+  </g>
+</svg>

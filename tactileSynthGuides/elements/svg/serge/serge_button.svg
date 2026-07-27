@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" width="75" height="75">
+  <title>Button - Polka Dot</title>
+  <defs>
+    <clipPath id="clip-button" clipPathUnits="userSpaceOnUse">
+      <circle cx="37.5" cy="37.5" r="22.0"/>
+    </clipPath>
+  </defs>
+  <circle cx="37.5" cy="37.5" r="22.0" fill="#fff" stroke="#000" stroke-width="1.8"/>
+  <g clip-path="url(#clip-button)" fill="#000">
+    <circle cx="7.50" cy="8.57" r="2.3"/>
+    <circle cx="15.50" cy="8.57" r="2.3"/>
+    <circle cx="23.50" cy="8.57" r="2.3"/>
+    <circle cx="31.50" cy="8.57" r="2.3"/>
+    <circle cx="39.50" cy="8.57" r="2.3"/>
+    <circle cx="47.50" cy="8.57" r="2.3"/>
+    <circle cx="55.50" cy="8.57" r="2.3"/>
+    <circle cx="63.50" cy="8.57" r="2.3"/>
+    <circle cx="11.50" cy="15.50" r="2.3"/>
+    <circle cx="19.50" cy="15.50" r="2.3"/>
+    <circle cx="27.50" cy="15.50" r="2.3"/>
+    <circle cx="35.50" cy="15.50" r="2.3"/>
+    <circle cx="43.50" cy="15.50" r="2.3"/>
+    <circle cx="51.50" cy="15.50" r="2.3"/>
+    <circle cx="59.50" cy="15.50" r="2.3"/>
+    <circle cx="67.50" cy="15.50" r="2.3"/>
+    <circle cx="7.50" cy="22.43" r="2.3"/>
+    <circle cx="15.50" cy="22.43" r="2.3"/>
+    <circle cx="23.50" cy="22.43" r="2.3"/>
+    <circle cx="31.50" cy="22.43" r="2.3"/>
+    <circle cx="39.50" cy="22.43" r="2.3"/>
+    <circle cx="47.50" cy="22.43" r="2.3"/>
+    <circle cx="55.50" cy="22.43" r="2.3"/>
+    <circle cx="63.50" cy="22.43" r="2.3"/>
+    <circle cx="11.50" cy="29.36" r="2.3"/>
+    <circle cx="19.50" cy="29.36" r="2.3"/>
+    <circle cx="27.50" cy="29.36" r="2.3"/>
+    <circle cx="35.50" cy="29.36" r="2.3"/>
+    <circle cx="43.50" cy="29.36" r="2.3"/>
+    <circle cx="51.50" cy="29.36" r="2.3"/>
+    <circle cx="59.50" cy="29.36" r="2.3"/>
+    <circle cx="67.50" cy="29.36" r="2.3"/>
+    <circle cx="7.50" cy="36.29" r="2.3"/>
+    <circle cx="15.50" cy="36.29" r="2.3"/>
+    <circle cx="23.50" cy="36.29" r="2.3"/>
+    <circle cx="31.50" cy="36.29" r="2.3"/>
+    <circle cx="39.50" cy="36.29" r="2.3"/>
+    <circle cx="47.50" cy="36.29" r="2.3"/>
+    <circle cx="55.50" cy="36.29" r="2.3"/>
+    <circle cx="63.50" cy="36.29" r="2.3"/>
+    <circle cx="11.50" cy="43.22" r="2.3"/>
+    <circle cx="19.50" cy="43.22" r="2.3"/>
+    <circle cx="27.50" cy="43.22" r="2.3"/>
+    <circle cx="35.50" cy="43.22" r="2.3"/>
+    <circle cx="43.50" cy="43.22" r="2.3"/>
+    <circle cx="51.50" cy="43.22" r="2.3"/>
+    <circle cx="59.50" cy="43.22" r="2.3"/>
+    <circle cx="67.50" cy="43.22" r="2.3"/>
+    <circle cx="7.50" cy="50.15" r="2.3"/>
+    <circle cx="15.50" cy="50.15" r="2.3"/>
+    <circle cx="23.50" cy="50.15" r="2.3"/>
+    <circle cx="31.50" cy="50.15" r="2.3"/>
+    <circle cx="39.50" cy="50.15" r="2.3"/>
+    <circle cx="47.50" cy="50.15" r="2.3"/>
+    <circle cx="55.50" cy="50.15" r="2.3"/>
+    <circle cx="63.50" cy="50.15" r="2.3"/>
+    <circle cx="11.50" cy="57.08" r="2.3"/>
+    <circle cx="19.50" cy="57.08" r="2.3"/>
+    <circle cx="27.50" cy="57.08" r="2.3"/>
+    <circle cx="35.50" cy="57.08" r="2.3"/>
+    <circle cx="43.50" cy="57.08" r="2.3"/>
+    <circle cx="51.50" cy="57.08" r="2.3"/>
+    <circle cx="59.50" cy="57.08" r="2.3"/>
+    <circle cx="67.50" cy="57.08" r="2.3"/>
+    <circle cx="7.50" cy="64.01" r="2.3"/>
+    <circle cx="15.50" cy="64.01" r="2.3"/>
+    <circle cx="23.50" cy="64.01" r="2.3"/>
+    <circle cx="31.50" cy="64.01" r="2.3"/>
+    <circle cx="39.50" cy="64.01" r="2.3"/>
+    <circle cx="47.50" cy="64.01" r="2.3"/>
+    <circle cx="55.50" cy="64.01" r="2.3"/>
+    <circle cx="63.50" cy="64.01" r="2.3"/>
+  </g>
+  <circle cx="37.5" cy="37.5" r="22.0" fill="none" stroke="#000" stroke-width="1.8"/>
+</svg>

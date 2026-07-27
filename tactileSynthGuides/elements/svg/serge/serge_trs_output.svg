@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 75" width="75" height="75">
+  <title>TRS Output</title>
+  <defs>
+    <clipPath id="clip-trs-output" clipPathUnits="userSpaceOnUse">
+      <polygon points="37.500,15.500 56.553,26.500 56.553,48.500 37.500,59.500 18.447,48.500 18.447,26.500"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip-trs-output)" fill="#000">
+    <rect x="0" y="7.50" width="75" height="4.0"/>
+    <rect x="0" y="15.50" width="75" height="4.0"/>
+    <rect x="0" y="23.50" width="75" height="4.0"/>
+    <rect x="0" y="31.50" width="75" height="4.0"/>
+    <rect x="0" y="39.50" width="75" height="4.0"/>
+    <rect x="0" y="47.50" width="75" height="4.0"/>
+    <rect x="0" y="55.50" width="75" height="4.0"/>
+    <rect x="0" y="63.50" width="75" height="4.0"/>
+  </g>
+  <polygon points="37.500,15.500 56.553,26.500 56.553,48.500 37.500,59.500 18.447,48.500 18.447,26.500" fill="none" stroke="#000" stroke-width="2.2"/>
+</svg>
