@@ -20,5 +20,5 @@
     <circle cx="37.5" cy="37.5" r="22.0" fill="none" stroke="#000" stroke-width="1.8"/>
     <circle cx="37.5" cy="37.5" r="14.0" fill="none" stroke="#000" stroke-width="1.8"/>
   </g>
-  <g id="vertical-bar" fill="#000"><rect x="35.8" y="23.5" width="3.4" height="28.0"/></g>
+  <g id="horizontal-bar" fill="#000"><rect x="5.5" y="35.8" width="64.0" height="3.4"/></g>
 </svg>
