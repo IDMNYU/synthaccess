@@ -41,6 +41,7 @@ The JSON root element is a **device**, which has the following top-level propert
       - **data** : how the MIDI parameter's *value* is to be parsed; options are:
          - **none** - read the label only; in verbose mode 0 (minimum), all parameters except program changes are read label only.
          - **value** : read out its raw numeric value (0 to 127 or 0-16383).
+         - **byte1** : declares the value as the first byte in a two-byte pair and "stashes" it until the LSB shows up.
          - **plusone** : add one to its raw numeric value (1 to 128 or 1-16384); good for program changes and people who are superstitious of the number zero.
          - **bivalue** : read out a signed (bipolar) value (-64 to 63 or -8192 to 8191).
          - **float** : read out an unsigned floating point value (0.0 to 1.0).
@@ -65,6 +66,10 @@ The JSON root element is a **device**, which has the following top-level propert
          - **patchbank** : read labels from a 2-dimensional (bank, preset) list of patch names; assumes **names** points to a 2-dimensional array of strings.
          - **patchmultibank** : read labels from a 3-dimensional (single/multi, bank, preset) list of patch names; assumes **names** points to a 3-dimensional array of strings.
       - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default - "false"), 14-bit 0-16363 ("true"), or 14-bit interpreted as 0-127 ("MSBonly")
+      - **bitshift** : bitshifts the parameter before using it; a positive number shifts left, a negative number shifts right; useful for two-byte (LSB/MSB) data
+      - **byte1** : sums the value with a previously stashed first byte (MSB/LSB) before parsing.
+      - **precision** : number of floating-point decimal places to use when creating speech strings (default: 2).
+      - **trunc** : truncate (1) or round (default: 0) fractional values after scaling.
       - **range** : array for **intrange**, **floatrange** data; index 0 is the minimum output value; 1 is the maximum output value.
       - **map** : array for **intmap**, and **floatmap** data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
       - **enharmonic** : for **note**, **noteC4**, and **noteC5**, defines whether enharmonic pitch classes are read as "sharp" (default) or "flat".
