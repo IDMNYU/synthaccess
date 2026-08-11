@@ -1,0 +1,44 @@
+{
+  "device": {
+    "name": "Sequential Hypothetical",
+    "manufacturer": "Hypothetical",
+    "version": 0.1,
+    "SysExheader" : [240, 16, 92, 16],
+    "MIDIinit" : [240, 16, 92, 17, 0 ,1, 247],
+    "program_change": {
+      "0": {
+        "label": "program",
+        "data": "value"
+      }
+    },
+    "SysEx": {
+      "0": {
+        "label": "Some Groovy Menu",
+        "data": "enum",
+        "enum": [
+          "Option One",
+          "Option Two"
+        ]
+      },
+      "1": {
+        "label": "Another Groovy Menu",
+        "data": "enum",
+        "enum": [
+          "Stuff",
+          "Things"
+        ]
+      },
+      "2": {
+        "label": "Patch name",
+        "data": "ascii",
+        "dataLength": 20
+      }
+    },
+    "CC": {
+      "16": {
+        "label": "filter frequency",
+        "data": "frequency"
+      }
+    }
+  }
+}

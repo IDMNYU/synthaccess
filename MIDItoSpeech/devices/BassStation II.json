@@ -12,11 +12,11 @@
     "CC": {
       "16": {
         "label": "filter frequency",
-        "data": "none"
+        "data": "frequency"
       },
       "82": {
         "label": "filter resonance",
-        "data": "none"
+        "data": "float"
       },
       "83": {
         "label": "filter type",
@@ -140,21 +140,50 @@
           "square"
         ]
       },
-      "27": {
+      "59": {
         "label": "oscillator one coarse tuning",
-        "data": "none"
+        "data": "floatmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [0, 255, -12.0, 12.0],
+        "bitshift": -6,
+        "byte1": 27
+      },
+      "27": {
+        "label": "oscillator one coarse tuning (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "58": {
+        "label": "oscillator one fine tuning",
+        "data": "intmap",
+        "map": [27, 228, -100, 100],
+        "bitshift": -6,
+        "byte1": 26
       },
       "26": {
-        "label": "oscillator one fine tuning",
-        "data": "none"
+        "label": "oscillator one fine tuning (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
       },
       "71": {
         "label": "modulation envelope to oscillator one depth",
         "data": "none"
       },
-      "28": {
+      "60": {
         "label": "LFO 1 to oscillator one depth",
-        "data": "none"
+        "data": "intmap",
+        "map": [0, 255, -127, 127],
+        "bitshift": -6,
+        "byte1": 28
+      },
+      "28": {
+        "label": "LFO 1 to oscillator one depth (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
       },
       "72": {
         "label": "modulation envelope to oscillator one pulse width depth",

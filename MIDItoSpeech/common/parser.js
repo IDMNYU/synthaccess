@@ -5,16 +5,26 @@
 function parseSpeak(_plist, _param, _val, _data) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
-    let a, b, s, cl, l, o, v, g, i, j, k, nlist, p;
+    let a, b, s, cl, l, o, v, g, i, j, k, nlist, p, r;
     let dospeak = 1; // default to speaking
     let mval = 127; // assume 7-bit
     let hval = 64; // 7-bit half value
+    let dres = 2; // default floating point precision
+    let trunc = 0; // round (default) or truncate?
     if(Object.hasOwn(_plist, _param.toString())) // check if parameter exists
     {
-        speakstring+=_plist[_param].label; // speechify parameter
+        // speechify parameter:
+        if(typeof(_plist[_param].label)=='undefined') {
+            dospeak = 0; // no label, no speech
+        }
+        if(typeof(_plist[_param].label)!=='undefined') {
+            speakstring+=_plist[_param].label; 
+        }
+        // check for silent mode:
         if(typeof(_plist[_param].silent)!=='undefined') {
             dospeak = 0;
         }
+        // check for high res modes:
         if(typeof(_plist[_param].hires)!=='undefined') {
             if(_plist[_param].hires=='true') 
             {
@@ -26,7 +36,29 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
                 _val = _val>>7; // shift 7 bits down then interpret
             }
         }
-        // global data in the param?
+        // check for a bit shift:
+        if(typeof(_plist[_param].bitshift)!=='undefined') {
+            if(_plist[_param].bitshift>0)
+            {
+                _val = _val<<_plist[_param].bitshift;
+            }
+            else {
+                _val = _val>>Math.abs(_plist[_param].bitshift);
+            }
+        }
+        // check for byte 1 (add from 'stash'):
+        if(typeof(_plist[_param].byte1)!=='undefined') {
+            _val = _val + thestuff.device.stash[_plist[_param].byte1];
+        }
+        // check for a fp precision flag ('dres', default is 2):
+        if(typeof(_plist[_param].precision)!=='undefined') {
+            dres = _plist[_param].precision;
+        }        
+        // check for a truncate flag:
+        if(typeof(_plist[_param].truncate)!=='undefined') {
+            trunc = _plist[_param].truncate;
+        }        
+        // check for global data in the param
         if(typeof(_plist[_param].global)!='undefined')
         {
             switch(_plist[_param].globalmode)
@@ -56,7 +88,10 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
                 break;
             }
         }
-
+        //
+        // go through different data types.
+        // these determine the specific algorithms for creating the speech string.
+        //
         if(verbose>0) {
         switch(_plist[_param].data) // speechify data byte
         {
@@ -70,10 +105,11 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
                 speakstring+=" " + (_val-hval).toString();
                 break;
             case "float": // read the parameter as a float 0.0 to 1.0
-                speakstring+=" " + (_val/mval).toFixed(2);
+                speakstring+=" " + dotrunc(_val/mval, dres, trunc);
                 break;
             case "bifloat": // read the parameter as a float -1.0 to 1.0
-                speakstring+=" " + ((_val/mval)*2.0-1.0).toFixed(2);
+                r = ((_val/mval)*2.0-1.0);
+                speakstring+=" " + dotrunc(r, dres, trunc);
                 break;
             case "intrange": // read the parameter as a int a to b
                 a = _plist[_param].range[0];
@@ -83,7 +119,8 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
             case "floatrange": // read the parameter as a float a to b
                 a = _plist[_param].range[0];
                 b = _plist[_param].range[1];
-                speakstring+=" " + ((_val/mval)*(b-a)+a).toFixed(2);
+                r = ((_val/mval)*(b-a)+a);
+                speakstring+=" " + dotrunc(r, dres, trunc);
                 break;
             case "intmap": // 4-point scale the parameter (sim. to Max [scale]), output int
                 if(typeof(_plist[_param].clamp)!=='undefined') cl = _plist[_param].clamp; else cl = false;
@@ -93,7 +130,7 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
             case "floatmap": // 4-point scale the parameter (sim. to Max [scale]), output float
                 if(typeof(_plist[_param].clamp)!=='undefined') cl = _plist[_param].clamp; else cl = false;
                 s = vmap(_val, _plist[_param].map, cl)
-                speakstring+=" " + s.toFixed(2);
+                speakstring+=" " + dotrunc(s, dres, trunc);
                 break;
             case "offon": // 0="off", 1="on"
                 speakstring+=". " + (_val==0?"off":"on");
@@ -246,6 +283,13 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
                     }
                 }
                 break;
+            case "byte1": // stash the value as the first byte of a pair (LSB/MSB)
+                if(typeof thestuff.device.stash == 'undefined' ||!Array.isArray(thestuff.device.stash))
+                {
+                    thestuff.device.stash = [];
+                }
+                thestuff.device.stash[_param] = _val;
+                break;
             case "none": // read just the parameter
                 //if(prevparam == _param) dospeak = 0; // skip repeats
                 break;
@@ -360,10 +404,10 @@ function mtof(_i) // MIDI note number to hertz
     let f = 440.0 * Math.pow(2.0, (_i - 69.0) / 12.0)
     let outstr = "";
     if(f<1000) { // Hz
-        outstr = f.toFixed(2) + " hertz";
+        outstr = dotrunc(f,dres,trunc) + " hertz";
     } else // kHz
     {
-        outstr = (f/1000.).toFixed(2) + " kilohertz";
+        outstr = dotrunc((f/1000.),dres,trunc) + " kilohertz";
     }
     return(outstr);
 }
@@ -371,7 +415,7 @@ function mtof(_i) // MIDI note number to hertz
 function mtodb(_i) // MIDI CC value to dB (127=0db)
 {
     let db = 20.*Math.log10(_i/127.);
-    let outstr = db.toFixed(2) + " d b";
+    let outstr = dotrunc(db,dres,trunc) + " d b";
     return(outstr);
 }
 
@@ -385,16 +429,28 @@ function mtopct(_i) // MIDI CC value as percent
 function vmap(_i, _m, _cl) // arbitrary value mapping
 {
     let v;
-    a = _m[0];
-    b = _m[1];
-    c = _m[2];
-    d = _m[3];
+    let a = _m[0];
+    let b = _m[1];
+    let c = _m[2];
+    let d = _m[3];
     if(_cl=='true') // clamp
     {
         if(_i<a) _i=a;
         if(_i>b) _i=b;
     }
-    if(c<d) v = (_i/(b-a))*(d-c)+c;
-    else v = (1.0-_i/(b-a))*(c-d)+d;
+    let t1 = (_i-a)/(b-a);
+    let t2 = d-c;
+    if(c<d) v = t1*t2+c;
+    else v = (1.0-t1)*t2+d;
     return(v);    
+}
+
+function dotrunc(number, digits, truncflag) {
+    if(truncflag) {
+        const multiplier = Math.pow(10, digits);
+        return Math.trunc(number * multiplier) / multiplier;
+    }
+    else {
+        return(number.toFixed(digits));
+    }
 }

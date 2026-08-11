@@ -273,9 +273,15 @@ async function loadFile(_ptr)
   pmode = 0;
   if(thestuff.device.datatype=="packet") pmode=1;
 
+  if(thestuff.device.datatype=="packet") pmode=1;
+  if(typeof(thestuff.device.MIDIinit)!=="undefined") // send initial MIDI
+  {
+    sendMidi(thestuff.device.MIDIinit);
+  }
+
   fload = 1; // file is loaded
   prevparam = -1; // reset params
-  sendSysexSetup();
+  //sendSysexSetup();
 }
 
 function changeMidiInput(_ptr)

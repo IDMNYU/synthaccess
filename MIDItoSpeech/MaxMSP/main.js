@@ -13,6 +13,7 @@ var prevparam = -1; // most recent param
 var chan = 1; // MIDI channel
 var pmode = 0; // use "packet" mode (Max [thresh]) vs. individual messages
 var verbose = 1; // verbosity: 0 = minimum, 1 = normal, 2 = maximum
+var sysexbuf = [];
 
 function fread(_s) // read a JSON file
 {
@@ -28,6 +29,10 @@ function fread(_s) // read a JSON file
         // parse globals
         pmode = 0;
         if(thestuff.device.datatype=="packet") pmode=1;
+        if(typeof(thestuff.device.MIDIinit)!=="undefined") // send initial MIDI
+        {
+            sendMidi(thestuff.device.MIDIinit);
+        }
 
         fload = 1; // file is loaded
         prevparam = -1; // reset params
@@ -70,6 +75,36 @@ function program(_val, _c) // program change
         if(_c==chan) parseSpeak(plist, 0, _val);
         verbose = tempv; // swap back
     }
+}
+
+function sysex(_val)
+{
+    if(_val == 240) // we are starting
+    {
+        sysexbuf = [];
+        sysexbuf.push(240);
+    }
+    if(_val == 247) // we are done
+    {
+        sysexbuf.push(247);
+        if(fload==1&&pmode==0) {
+            // check sysexid
+            let match = 1;
+            for(let i = 0;i<thestuff.device.SysExheader.length;i++)
+            {
+                
+            }
+            let plist = thestuff.device.SysEx;
+            _param = sysexbuf[0];
+            parseSpeak(plist, _param, _payload);
+        }
+     
+    }
+    else
+    {
+        sysexbuf.push(_val);
+    }
+    
 }
 
 function channel(_c) // change active MIDI channel
