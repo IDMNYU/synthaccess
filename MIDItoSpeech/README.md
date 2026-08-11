@@ -35,7 +35,7 @@ The JSON root element is a **device**, which has the following top-level propert
 - **globals** : global variables to be maintained by the parameter structure, e.g. patch numbers combined by more than one parameter, etc.; each *key* is a parameter name that can be called by different mappings; the properties of these keys are:
    -  **value** : the initial value of the parameter
    -  **offset** : a numeric offset for the parameter when used when indexing against an array (e.g. use -1 when a MIDI parameter is transmitting 1-10 for a value you need to use as 0-9)
-- **program_change**, **CC**, **NRPN** : these define speech interactions that occur upon receiving [MIDI](https://en.wikipedia.org/wiki/MIDI) program change, continuous controller, or [non-registered parameter number](https://en.wikipedia.org/wiki/NRPN) messages.
+- **program_change**, **CC**, **NRPN**, **SysEx** : these define speech interactions that occur upon receiving [MIDI](https://en.wikipedia.org/wiki/MIDI) program change, continuous controller, [non-registered parameter number](https://en.wikipedia.org/wiki/NRPN), or [system exclusive ("SysEx")](https://midi.org/midi-1-0-universal-system-exclusive-messages) messages.
    - the encapsulated object contains enumerable string keys defining the *controller number* that dictates which CC or NRPN to respond; for program changes this is always *0*; the properties of these keys are:
       - **label** : the speakable label for the key (e.g. "modulation" for CC0).
       - **data** : how the MIDI parameter's *value* is to be parsed; options are:
