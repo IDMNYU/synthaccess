@@ -61,6 +61,7 @@ The JSON root element is a **device**, which has the following top-level propert
          - **decibels** : interpret the MIDI range as decibels (127 = 0db).
          - **enum** : read labels from an enumerating array using the *value* as the index.
          - **enumsplit** : read labels from an enumerating array using split points.
+         - **ascii** : interpret parameter data as an ASCII array.
          - **patchsimple** : read labels from a list of patch names based on the global value bound to that parameter; assumes **names** points to a 1-dimensional array of strings.
          - **patchcustom** : read labels from a list of patch names based on a custom global value as the index; assumes **names** points to a 1-dimensional array of strings.
          - **patchbank** : read labels from a 2-dimensional (bank, preset) list of patch names; assumes **names** points to a 2-dimensional array of strings.
@@ -77,7 +78,6 @@ The JSON root element is a **device**, which has the following top-level propert
       - **enum** : array of labels for **enum** and **enumsplit** data.
          - for **enum**, the *value* serves as the literal index to the array.
          - if **enum** is a symbol rather than an array, an array in the JSON at that key will be indexed instead.
-      - **ascii** : interpret parameter data as an ASCII array.
       - **split** : array of splitpoints for **enumsplit** data.
          - for "**numsplit** data, the *value* is checked against the **split** array, and...
          - the highest index that the *value* is greater than or equal to is the index for the **enum**.
@@ -91,6 +91,8 @@ The JSON root element is a **device**, which has the following top-level propert
       - **names** : for **patch** modes, the name of an array in the JSON listing strings for patch / preset names.
       - **suffix** : a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.).
       - **silent** : any value at this parameter will mute the speech for that parameter.
+      - **dataLength** : length of byte payload for **ascii** mode.
+      - **dataOffset** : offset of bytes for **ascii** mode.
 - **keypress** : MIDI messages to be sent when receiving keyboard events on the computer; these also have speech labels attached.
    - the encapsulated object contains enumerable keys defining the alphanumeric key that will trigger the event; the properties of these keys are:
       - **label** : the speakable label for the keypress (e.g. "panel" for "p").
