@@ -2,7 +2,7 @@
 // MIDI parameter -> speech interface
 // rld, 2025
 
-function parseSpeak(_plist, _param, _val, _data) // create and generate a speech string based on MIDI input
+function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
     let a, b, s, cl, l, o, v, g, i, j, k, nlist, p, r;
@@ -197,13 +197,13 @@ function parseSpeak(_plist, _param, _val, _data) // create and generate a speech
                     let dlen = -1;
                     if(typeof(_plist[_param].dataOffset)!=='undefined') start = parseInt(_plist[_param].dataOffset);
                     if(typeof(_plist[_param].dataLength)!=='undefined') dlen = parseInt(_plist[_param].dataLength);
-                    if(Array.isArray(_data))
+                    if(Array.isArray(_val))
                     {
-                        let dstop = _data.length;
-                        if(dlen>=0) dstop = Math.min(_data.length, start+dlen);
+                        let dstop = _val.length;
+                        if(dlen>=0) dstop = Math.min(_val.length, start+dlen);
                         for(let ii=start;ii<dstop;ii++)
                         {
-                            let ch = _data[ii];
+                            let ch = _val[ii];
                             if(ch==0) continue; // skip null padding bytes
                             if(ch>=32&&ch<=126) astr+=String.fromCharCode(ch);
                         }

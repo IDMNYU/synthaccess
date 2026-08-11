@@ -73,34 +73,6 @@ function findSysexPayloadStart(_bytes, _header)
   return -1;
 }
 
-function sendSysexSetup()
-{
-  if(!fload) return;
-  if(typeof(thestuff.device)==='undefined') return;
-  if(!Array.isArray(thestuff.device["Sysex setup"])) return;
-  if(typeof(midiOutputDevice)==='undefined'||midiOutputDevice==null)
-  {
-    saySomething("No MIDI output selected. Sysex setup not sent.");
-    return;
-  }
-  try
-  {
-    const sx = thestuff.device["Sysex setup"];
-    if(sx.length<2||sx[0]!=240||sx[sx.length-1]!=247)
-    {
-      saySomething("Sysex setup is not a valid F0 to F7 message.");
-      return;
-    }
-    midiOutputDevice.send(sx);
-  }
-  catch(err)
-  {
-    const emsg = (err&&err.message) ? err.message : "unknown error";
-    saySomething("Sysex setup failed. " + emsg);
-    console.error(err);
-  }
-}
-
 function onMidiEnabled() { // MIDI active
   // wipe everything
   midiInList = [];
@@ -253,9 +225,10 @@ async function loadCustomFile(_f)
   pmode = 0;
   if(thestuff.device.datatype=="packet") pmode=1;
 
+  sendInit(); // send initialization string
+
   fload = 1; // file is loaded
   prevparam = -1; // reset params
-  sendSysexSetup();
   
   // Reset file input to allow re-selecting the same file
   loadFilebutton.elt.value = '';
@@ -268,20 +241,15 @@ async function loadFile(_ptr)
   const fileName = fileSelect.elt.value;
   saySomething("File Selected " + fileName.split('.json')[0]);
   thestuff = await loadJSON('./devices/'+fileName);
-  //console.log(thestuff);
+
   // parse globals
   pmode = 0;
   if(thestuff.device.datatype=="packet") pmode=1;
 
-  if(thestuff.device.datatype=="packet") pmode=1;
-  if(typeof(thestuff.device.MIDIinit)!=="undefined") // send initial MIDI
-  {
-    sendMidi(thestuff.device.MIDIinit);
-  }
+  sendInit(); // send initialization string
 
   fload = 1; // file is loaded
   prevparam = -1; // reset params
-  //sendSysexSetup();
 }
 
 function changeMidiInput(_ptr)
@@ -326,6 +294,15 @@ function changeMidiOutput(_ptr)
       );
   midiOutputDevice = WebMidi.outputs[deviceIndex];
 
+  sendInit(); // send initialization string
+}
+
+function sendInit() // send MIDI init string
+{
+    if(fload==1&&typeof(thestuff.device.MIDI_init)!=="undefined") // send initial MIDI
+    {
+      sendMidi(thestuff.device.MIDI_init);
+    }  
 }
 
 function changeChannel()

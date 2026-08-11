@@ -29,15 +29,20 @@ function fread(_s) // read a JSON file
         // parse globals
         pmode = 0;
         if(thestuff.device.datatype=="packet") pmode=1;
-        if(typeof(thestuff.device.MIDIinit)!=="undefined") // send initial MIDI
-        {
-            sendMidi(thestuff.device.MIDIinit);
-        }
+        sendinit();
 
         fload = 1; // file is loaded
         prevparam = -1; // reset params
 
     }
+}
+
+function sendinit() // send MIDI init string
+{
+    if(fload==1&&typeof(thestuff.device.MIDI_init)!=="undefined") // send initial MIDI
+    {
+      sendMidi(thestuff.device.MIDI_init);
+    }  
 }
 
 function packet(..._p)
@@ -90,13 +95,19 @@ function sysex(_val)
         if(fload==1&&pmode==0) {
             // check sysexid
             let match = 1;
-            for(let i = 0;i<thestuff.device.SysExheader.length;i++)
+            let hdr = thestuff.device.SysEx_header;
+            for(let i = 0;i<hdr.length;i++)
             {
-                
+                if(hdr[i]!=sysexbuf[i]) match==0;
             }
-            let plist = thestuff.device.SysEx;
-            _param = sysexbuf[0];
-            parseSpeak(plist, _param, _payload);
+            if(match) {
+                let plist = thestuff.device.SysEx;
+                let key = sysexbuf[hdr.length+1]; // key for sysex parser
+                console.log("index: " + key);
+                let payload = sysexbuf.slice(hdr.length+2, sysexbuf.length-1); // payload
+                console.log("payload: " + payload);
+                parseSpeak(plist, key, payload);
+            }
         }
      
     }
