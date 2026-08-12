@@ -34,19 +34,22 @@ The JSON root element is a **device**, which has the following hierarchy of prop
 - **manufacturer** : who made it, e.g. 'Oberheim'.
 - **language** : a [BCP-47](https://en.wikipedia.org/wiki/IETF_language_tag) code representing the language used for the labels, e.g. 'en-US'.
 - **version** : version of the *parser* to be used (this is in anticipation of a versioned release).
+
 ---
 - **MIDI_init** : MIDI byte stream to send to the synthesizer when the JSON loads; this can be used by the manufacturer to activate accessibility-specific features.
 - **SysEx_header** : MIDI byte header for System Exclusive messages.
+
 ---
 - **globals** : global variables to be maintained by the parameter structure, e.g. patch numbers combined by more than one parameter, etc.; each *key* is a parameter name that can be called by different mappings; the properties of these keys are:
    -  **value** : the initial value of the parameter
    -  **offset** : a numeric offset for the parameter when used when indexing against an array (e.g. use -1 when a MIDI parameter is transmitting 1-10 for a value you need to use as 0-9)
 - *custom* : additional keys and values can be added in the top-level to be accessed by various **data** modes (e.g. **patchsimple**).
+
 ---
 - **program_change**, **CC**, **NRPN**, **SysEx** : these define speech interactions that occur upon receiving [MIDI](https://en.wikipedia.org/wiki/MIDI) program change, continuous controller, [non-registered parameter number](https://en.wikipedia.org/wiki/NRPN), or System Exclusive ["SysEx"](https://midi.org/midi-1-0-universal-system-exclusive-messages) messages.
    - *number* : the encapsulated object contains enumerable string keys defining the *controller numbers* that dictates which CC, NRPN, or SysEx parameter to respond to; for program changes this is always *0*; the properties of these keys are:
       - **label** : the speakable label for the key (e.g. 'modulation' for CC0).
-      - **data** : how the MIDI parameter's *value* is to be parsed; options are:
+      - **data** : defines the algorithm by which the MIDI parameter's *value* is parsed; options are:
          - **none** - read the label only; in verbose mode 0 (minimum), all parameters except program changes are read label only.
          - **value** : read out the raw numeric value of the parameter (0 to 127 or 0-16383).
          - **byte1** : declares the value as the first byte in a two-byte pair and "stashes" it until the LSB shows up.
@@ -72,10 +75,12 @@ The JSON root element is a **device**, which has the following hierarchy of prop
       - **bitshift** : bitshifts the parameter before using it; a positive number shifts left, a negative number shifts right; useful for two-byte (LSB/MSB) data
       - **precision** : number of floating-point decimal places to use when creating speech strings (default: 2).
       - **trunc** : truncate (1) or round (default: 0) fractional values after scaling.
-      - **range** : array for **intrange**, **floatrange** data; index 0 is the minimum output value; 1 is the maximum output value.
-      - **map** : array for **intmap**, and **floatmap** data, specifying the low (index 0) and high (index 1) input values to be mapped, and the low (index 2) and high (index 3) output values to be mapped; index 3 can be lower than index 2, allowing for inversion.
+      - **range** : array for **intrange** and **floatrange** data modes.
+         - index 0 is the minimum output value; 1 is the maximum output value.
+      - **map** : array for **intmap** and **floatmap** data modes.
+         - the array should have four numbers, specifying the low (index 0) and high (index 1) input values, and the low (index 2) and high (index 3) output values; index 3 can be lower than index 2, allowing for inversion.
       - **enharmonic** : for **note**, **noteC4**, and **noteC5**, defines whether enharmonic pitch classes are read as "sharp" (default) or "flat".
-      - **clamp** : boolean ("true" / "false") value for **intmap** and **floatmap** data to specify whether the mapping will be constrained within the output values specified by **range**.
+      - **clamp** : boolean ("true" / "false") value for **intmap** and **floatmap** data to specify whether the mapping will be constrained within the output range.
       - **enum** : array of labels for **enum** and **enumsplit** data.
          - for **enum**, the *value* serves as the literal index to the array.
          - if **enum** is a symbol rather than an array, an array in the JSON at that key will be indexed instead.
@@ -94,6 +99,7 @@ The JSON root element is a **device**, which has the following hierarchy of prop
       - **silent** : any value at this parameter will mute the speech for that parameter.
       - **dataLength** : length of byte payload for **ascii** mode.
       - **dataOffset** : offset of bytes for **ascii** mode.
+
 ---
 - **keypress** : MIDI messages to be sent when receiving keyboard events on the computer; these also have speech labels attached.
    - the encapsulated object contains enumerable keys defining the alphanumeric key that will trigger the event; the properties of these keys are:
