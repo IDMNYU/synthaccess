@@ -28,6 +28,7 @@ var verbose = 1; // verbosity: 0 = minimum, 1 = normal, 2 = maximum
 var speechrate = 1; // speed of speaking
 var muted = 0; // top level mute for speech
 var paused = 0; // temp pause
+var sysexbuf = []; // buffer for System Exclusive bytes
 
 // speech queue
 let qflag = 0; // is there a speech event pending
@@ -407,36 +408,26 @@ function doit(_mess) {
         }
         if(_mess.type=="sysex"&&paused==0)
         {
-          if(fload==1&&pmode==0&&typeof(thestuff.device)!=='undefined')
+          if(fload==1&&pmode==0)
           {
-            if(typeof(thestuff.device.Sysex)!=='undefined')
+            if(typeof(thestuff.device.SysEx)!=='undefined')
             {
-              const sysexBytes = getMessageBytes(_mess);
-              if(sysexBytes.length>0)
+              sysexbuf = getMessageBytes(_mess); // sysex byte stream
+
+              // check sysexid
+              let match = 1;
+              let hdr = thestuff.device.SysEx_header;
+              for(let i = 0;i<hdr.length;i++)
               {
-                let sysexData = sysexBytes.slice();
-                // Trim trailing EOX if present.
-                if(sysexData[sysexData.length-1]==247) sysexData.pop();
-                const idHeader = thestuff.device["Sysex idheader"];
-                const payloadStart = findSysexPayloadStart(sysexData, idHeader);
-                if(payloadStart>=0&&payloadStart<sysexData.length)
-                {
-                  const cmd = sysexData[payloadStart];
-                  const payload = sysexData.slice(payloadStart+1);
-                  const sysexList = thestuff.device.Sysex;
-                  if(Object.hasOwn(sysexList, cmd.toString()))
-                  {
-                    const cdef = sysexList[cmd.toString()];
-                    let val = payload.length>0 ? payload[0] : 0;
-                    if(typeof(cdef.valueIndex)!=='undefined')
-                    {
-                      const vi = parseInt(cdef.valueIndex);
-                      if(payload.length>vi&&vi>=0) val = payload[vi];
-                    }
-                    parseSpeak(sysexList, cmd, val, payload);
-                  }
-                }
+                  if(hdr[i]!=sysexbuf[i]) match==0;
               }
+              if(match) {
+                  let plist = thestuff.device.SysEx;
+                  let key = sysexbuf[hdr.length]; // key for sysex parser
+                  let payload = sysexbuf.slice(hdr.length+1, sysexbuf.length-1); // payload
+                  parseSpeak(plist, key, payload);
+              }
+
             }
           }
         }

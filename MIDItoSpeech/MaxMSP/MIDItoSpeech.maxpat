@@ -154,7 +154,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 267.0, 455.0, 155.0, 22.0 ],
-                    "text": "cc 0 58 1"
+                    "text": "sysex 247"
                 }
             },
             {
@@ -483,7 +483,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-51",
-                    "items": [ "AU DLS Synth 1", ",", "Bass Station II", ",", "from Max 1", ",", "from Max 2" ],
+                    "items": [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -1555,7 +1555,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
-                    "text": "midi channel 2"
+                    "text": "Patch name yes  "
                 }
             },
             {
@@ -3777,7 +3777,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-2",
-                    "items": [ "Bass Station II", ",", "to Max 1", ",", "to Max 2" ],
+                    "items": [ "to Max 1", ",", "to Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -3811,12 +3811,13 @@
                 "box": {
                     "fontsize": 24.0,
                     "id": "obj-60",
+                    "linecount": 2,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 639.0, 349.5, 182.0, 35.0 ],
-                    "text": "\"BassStation II\""
+                    "patching_rect": [ 639.0, 349.5, 182.0, 62.0 ],
+                    "text": "SequentialHypothetical"
                 }
             },
             {

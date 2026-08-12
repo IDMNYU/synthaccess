@@ -89,7 +89,7 @@ function sysex(_val)
         sysexbuf = [];
         sysexbuf.push(240);
     }
-    if(_val == 247) // we are done
+    else if(_val == 247) // we are done
     {
         sysexbuf.push(247);
         if(fload==1&&pmode==0) {
@@ -102,10 +102,8 @@ function sysex(_val)
             }
             if(match) {
                 let plist = thestuff.device.SysEx;
-                let key = sysexbuf[hdr.length+1]; // key for sysex parser
-                console.log("index: " + key);
-                let payload = sysexbuf.slice(hdr.length+2, sysexbuf.length-1); // payload
-                console.log("payload: " + payload);
+                let key = sysexbuf[hdr.length]; // key for sysex parser
+                let payload = sysexbuf.slice(hdr.length+1, sysexbuf.length-1); // payload
                 parseSpeak(plist, key, payload);
             }
         }
