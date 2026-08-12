@@ -52,7 +52,7 @@ The JSON root element is a **device**, which has the following hierarchy of prop
       - **data** : defines the algorithm by which the MIDI parameter's *value* is parsed; options are:
          - **none** - read the label only; in verbose mode 0 (minimum), all parameters except program changes are read label only.
          - **value** : read out the raw numeric value of the parameter (0 to 127 or 0-16383).
-         - **byte1** : declares the value as the first byte in a two-byte pair and "stashes" it until the LSB shows up.
+         - **byte1** : declares the value as the first byte in a two-byte pair and "stashes" it until the second byte is sent.
          - **plusone** : add one to the value (1 to 128 or 1-16384); good for program changes and people who are superstitious of the number zero.
          - **bivalue** : map the value to a signed (bipolar) range (-64 to 63 or -8192 to 8191).
          - **float**, **bifloat** : map the value to an unsigned or signed floating point range (-1.0 to 1.0, 0.0 to 1.0).
@@ -70,11 +70,14 @@ The JSON root element is a **device**, which has the following hierarchy of prop
          - **patchcustom** : read labels from a list of patch names based on a custom global value as the index; assumes **names** points to a 1-dimensional array of strings.
          - **patchbank** : read labels from a 2-dimensional (bank, preset) list of patch names; assumes **names** points to a 2-dimensional array of strings.
          - **patchmultibank** : read labels from a 3-dimensional (single/multi, bank, preset) list of patch names; assumes **names** points to a 3-dimensional array of strings.
+      - **silent** : any value at this parameter will mute the speech for that parameter.
+      - **suffix** : a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.).
       - **hires** : for NRPN parameters, specifies whether the *value* is 7-bit 0-127 (default - "false"), 14-bit 0-16363 ("true"), or 14-bit interpreted as 0-127 ("MSBonly")
-      - **byte1** : sums the value with a previously stashed first byte (MSB/LSB) before parsing.
-      - **bitshift** : bitshifts the parameter before using it; a positive number shifts left, a negative number shifts right; useful for two-byte (LSB/MSB) data
       - **precision** : number of floating-point decimal places to use when creating speech strings (default: 2).
       - **trunc** : truncate (1) or round (default: 0) fractional values after scaling.
+      - **bitshift** : bitshifts the parameter before using it; a positive number shifts left, a negative number shifts right; useful for two-byte (LSB/MSB) data
+      - **byte1** : sums the value with a previously stashed first byte before parsing.
+         - the value attached to the key is the controller number of the first byte, presumably mapped elsewhere in the JSON with the **byte1** data mode.
       - **range** : array for **intrange** and **floatrange** data modes.
          - index 0 is the minimum output value; 1 is the maximum output value.
       - **map** : array for **intmap** and **floatmap** data modes.
@@ -93,10 +96,8 @@ The JSON root element is a **device**, which has the following hierarchy of prop
          - **global1** : modify the first two digits of a global variable, leaving the third digit alone (good for program numbers)
          - **global100** : modify the third digit a global variable, leaving the first two digits alone (good for e.g. three-digit program numbers on Sequential equipment)
          - **0or128** : set the global to 1 if the value is 128, 0 otherwise (good for e.g. Novation single/multi mode)
-      - **idx** : for **patch** modes other than **patchsimple**, an array of globals to use as indices for the **names** array; if this is missing from the JSON, you will get an error.
       - **names** : for **patch** modes, the name of an array in the JSON listing strings for patch / preset names.
-      - **suffix** : a label to be appended to the readout e.g. to specify a unit (percent, semitones, etc.).
-      - **silent** : any value at this parameter will mute the speech for that parameter.
+      - **idx** : for **patch** modes other than **patchsimple**, an array of globals to use as indices for the **names** array; if this is missing from the JSON, you will get an error.
       - **dataLength** : length of byte payload for **ascii** mode.
       - **dataOffset** : offset of bytes for **ascii** mode.
 
