@@ -28,6 +28,7 @@ If you'd like to contribute to the project, please get in touch.
 JSON format:
 
 The JSON root element is a **device**, which has the following hierarchy of properties:
+
 ---
 - **name** : the name of the device, e.g. 'TEO-5'.
 - **manufacturer** : who made it, e.g. 'Oberheim'.
