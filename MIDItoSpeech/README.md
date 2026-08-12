@@ -44,30 +44,23 @@ The JSON root element is a **device**, which has the following hierarchy of prop
 - *custom* : additional keys and values can be added in the top-level to be accessed by various **data** modes (e.g. **patchsimple**).
 ---
 - **program_change**, **CC**, **NRPN**, **SysEx** : these define speech interactions that occur upon receiving [MIDI](https://en.wikipedia.org/wiki/MIDI) program change, continuous controller, [non-registered parameter number](https://en.wikipedia.org/wiki/NRPN), or System Exclusive ["SysEx"](https://midi.org/midi-1-0-universal-system-exclusive-messages) messages.
-   - the encapsulated object contains enumerable string keys defining the *controller number* that dictates which CC or NRPN to respond; for program changes this is always *0*; the properties of these keys are:
-      - **label** : the speakable label for the key (e.g. "modulation" for CC0).
+   - *number* : the encapsulated object contains enumerable string keys defining the *controller numbers* that dictates which CC, NRPN, or SysEx parameter to respond to; for program changes this is always *0*; the properties of these keys are:
+      - **label** : the speakable label for the key (e.g. 'modulation' for CC0).
       - **data** : how the MIDI parameter's *value* is to be parsed; options are:
          - **none** - read the label only; in verbose mode 0 (minimum), all parameters except program changes are read label only.
-         - **value** : read out its raw numeric value (0 to 127 or 0-16383).
+         - **value** : read out the raw numeric value of the parameter (0 to 127 or 0-16383).
          - **byte1** : declares the value as the first byte in a two-byte pair and "stashes" it until the LSB shows up.
-         - **plusone** : add one to its raw numeric value (1 to 128 or 1-16384); good for program changes and people who are superstitious of the number zero.
-         - **bivalue** : read out a signed (bipolar) value (-64 to 63 or -8192 to 8191).
-         - **float** : read out an unsigned floating point value (0.0 to 1.0).
-         - **bifloat** : read out a signed floating point value (-1.0 to 1.0).
-         - **percent** : read out an integer percent range (0 to 100).
-         - **intrange** : read out an integer value specified by **range**.
-         - **floatrange** : read out a floating-point value specified by **range**.
-         - **intmap** : read out an integer value specified by a 4-value **map**.
-         - **floatmap** : read out an float value specified by a 4-value **map**.
-         - **offon** : read out "off" if the *value* is 0 and "on" if it's anything else.
-         - **onoff** : read out "on" if the *value* is 0 and "off" if it's anything else.
-         - **onetwo64** : read out "one" or "two" if the *value* is below or above 64, respectively.
-         - **note** : read out the *value* as a MIDI pitch (60 = C3).
-         - **noteC4** : read out the *value* as a MIDI pitch (60 = C4).
-         - **noteC5** : read out the *value* as a MIDI pitch (60 = C5).
-         - **frequency** : read out the *frequency* of a MIDI pitch (MIDI 69 = 440 Hz).
-         - **decibels** : interpret the MIDI range as decibels (127 = 0db).
-         - **enum** : read labels from an enumerating array using the *value* as the index.
+         - **plusone** : add one to the value (1 to 128 or 1-16384); good for program changes and people who are superstitious of the number zero.
+         - **bivalue** : map the value to a signed (bipolar) range (-64 to 63 or -8192 to 8191).
+         - **float**, **bifloat** : map the value to an unsigned or signed floating point range (-1.0 to 1.0, 0.0 to 1.0).
+         - **percent** : map the value to an integer percentage (0 to 100).
+         - **intrange**, **floatrange** : map the value to an integer or floating-point value specified by **range**.
+         - **intmap**, **floatmap** : map the value to an integer or floating-point value specified by a 4-value **map**.
+         - **offon**, **onoff** : read "off" if the *value* is 0 and "on" if it's anything else, or vice versa.
+         - **onetwo64** : read "one" or "two" if the *value* is below or above 64, respectively.
+         - **note**, **noteC4**, **noteC5** : read the value as a MIDI pitch (60 = C3, C4, or C5).
+         - **frequency**, **decibels** : interpret the MIDI range as *frequency* (MIDI 69 = 440 Hz) or decibels (127 = 0dB).
+         - **enum** : read labels from an enumerating array using the value as the index.
          - **enumsplit** : read labels from an enumerating array using split points.
          - **ascii** : interpret parameter data as an ASCII array.
          - **patchsimple** : read labels from a list of patch names based on the **global** value bound to that parameter; assumes **names** points to a 1-dimensional array of strings.
