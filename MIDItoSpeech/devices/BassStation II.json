@@ -209,8 +209,7 @@
       },
       "52": {
         "label": "oscillator one level",
-        "data": "floatmap",
-        "map": [0, 255, 0.0, 1.0],
+        "data": "value",
         "bitshift": -6,
         "byte1": 20
       },
@@ -222,8 +221,7 @@
       },
       "53": {
         "label": "oscillator two level",
-        "data": "floatmap",
-        "map": [0, 255, 0.0, 1.0],
+        "data": "value",
         "bitshift": -6,
         "byte1": 21
       },
@@ -235,8 +233,7 @@
       },
       "54": {
         "label": "sub oscillator level",
-        "data": "floatmap",
-        "map": [0, 255, 0.0, 1.0],
+        "data": "value",
         "bitshift": -6,
         "byte1": 22
       },
@@ -248,8 +245,7 @@
       },
       "55": {
         "label": "noise level",
-        "data": "floatmap",
-        "map": [0, 255, 0.0, 1.0],
+        "data": "value",
         "bitshift": -6,
         "byte1": 23
       },
@@ -261,8 +257,7 @@
       },
       "56": {
         "label": "ring modulator level",
-        "data": "floatmap",
-        "map": [0, 255, 0.0, 1.0],
+        "data": "value",
         "bitshift": -6,
         "byte1": 24
       },
@@ -274,8 +269,7 @@
       },
       "57": {
         "label": "external signal level",
-        "data": "floatmap",
-        "map": [0, 255, 0.0, 1.0],
+        "data": "value",
         "bitshift": -6,
         "byte1": 25
       },
@@ -312,7 +306,7 @@
       },
       "48": {
         "label": "filter frequency",
-        "data": "frequency",
+        "data": "value",
         "bitshift": -6,
         "byte1": 16
       },
@@ -372,7 +366,7 @@
         "label": "LFO 2 speed",
         "data": "value",
         "bitshift": -6,
-        "byte1": 18
+        "byte1": 19
       },
       "87": {
         "label": "LFO 2 delay",
@@ -448,7 +442,7 @@
       },
       "119": {
         "label": "arpeggiator rhythm",
-        "data": "none"
+        "data": "value"
       },
       "118": {
         "label": "arpeggiator pattern",
@@ -622,17 +616,17 @@
         "data": "value"
       },
       "105": {
-        "label": "amplifier envelope number of loops",
+        "label": "modulation envelope trigger",
         "data": "enumsplit",
         "enum": [
-          "1",
-          "2",
-          "3"
+          "autoglide",
+          "single",
+          "multi"
         ],
         "split": [
-          1,
-          2,
-          3
+          0,
+          128,
+          255
         ]
       },
       "110": {
