@@ -428,15 +428,39 @@ function mtopct(_i) // MIDI CC value as percent
 
 function vmap(_i, _m, _cl) // arbitrary value mapping
 {
-    let v;
-    let a = _m[0];
-    let b = _m[1];
-    let c = _m[2];
-    let d = _m[3];
+    let v, a, b, c, d, inmin, inmax;
+    let themap;
+    // is the map an array? if so, find the range with the right value
+    if(!Array.isArray(_m[0])) // single range
+    {
+        a = _m[0];
+        b = _m[1];
+        c = _m[2];
+        d = _m[3];
+        inmin = a;
+        inmax = b;
+    }
+    else { // iterate through arrays to find first in range; if no match, use first range; also update clamp ranges
+        let match = 0;
+        inmin = 100000; // start high for the min
+        inmax = -100000; // start low for the max
+        for(let i = 0;i<_m.length;i++)
+        {
+            let v1 = _m[i][0];
+            let v2 = _m[i][1];
+            if(inmin>v1) inmin=v1;
+            if(inmax<v2) inmax=v2;
+            if(_i>=v1&&_i<=v2) match = i;
+        }
+        a = _m[match][0];
+        b = _m[match][1];
+        c = _m[match][2];
+        d = _m[match][3];
+    }
     if(_cl=='true') // clamp
     {
-        if(_i<a) _i=a;
-        if(_i>b) _i=b;
+        if(_i<inmin) _i=inmin;
+        if(_i>inmax) _i=inmax;
     }
     let t1 = (_i-a)/(b-a);
     let t2 = d-c;

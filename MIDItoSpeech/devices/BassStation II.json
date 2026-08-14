@@ -10,13 +10,274 @@
       }
     },
     "CC": {
-      "16": {
-        "label": "filter frequency",
-        "data": "frequency"
+      "26": {
+        "label": "oscillator one fine tuning (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
       },
-      "82": {
-        "label": "filter resonance",
-        "data": "float"
+      "58": {
+        "label": "oscillator one fine tuning",
+        "data": "intmap",
+        "map": [27, 228, -100, 100],
+        "bitshift": -6,
+        "byte1": 26
+      },
+      "70": {
+        "label": "oscillator 1 range",
+        "data": "enumsplit",
+        "enum": [
+          "16 feet",
+          "8 feet",
+          "4 feet",
+          "2 feet"
+        ],
+        "split": [
+          63,
+          64,
+          65,
+          66
+        ]
+      },
+      "27": {
+        "label": "oscillator one coarse tuning (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "59": {
+        "label": "oscillator one coarse tuning",
+        "data": "floatmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [0, 255, -12.0, 12.0],
+        "bitshift": -6,
+        "byte1": 27
+      },
+      "71": {
+        "label": "modulation envelope to oscillator one depth",
+        "data": "intmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [0, 127, -63, 63]
+      },
+      "28": {
+        "label": "LFO 1 to oscillator one depth (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "60": {
+        "label": "LFO 1 to oscillator one depth",
+        "data": "intmap",
+        "map": [0, 255, -127, 127],
+        "bitshift": -6,
+        "byte1": 28
+      },
+      "72": {
+        "label": "modulation envelope to oscillator one pulse width depth",
+        "data": "intmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [[0, 62, -90, -1],[63, 64, 0, 0],[65, 127, 1, 90]]
+      },
+      "73": {
+        "label": "LFO 2 to oscillator one pulse width depth",
+        "data": "intmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [[0, 62, -90, -1],[63, 64, 0, 0],[65, 127, 1, 90]]
+      },
+      "74": {
+        "label": "oscillator one pulse width",
+        "data": "intmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [[0, 64, 5, 50],[64, 127, 50, 95]]
+      },
+      "29": {
+        "label": "oscillator two fine tuning (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "61": {
+        "label": "oscillator two fine tuning",
+        "data": "intmap",
+        "map": [27, 228, -100, 100],
+        "bitshift": -6,
+        "byte1": 29
+      },
+      "75": {
+        "label": "oscillator 2 range",
+        "data": "enumsplit",
+        "enum": [
+          "16 feet",
+          "8 feet",
+          "4 feet",
+          "2 feet"
+        ],
+        "split": [
+          63,
+          64,
+          65,
+          66
+        ]
+      },
+      "30": {
+        "label": "oscillator two coarse tuning (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "62": {
+        "label": "oscillator two coarse tuning",
+        "data": "floatmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [0, 255, -12.0, 12.0],
+        "bitshift": -6,
+        "byte1": 30
+      },
+      "76": {
+        "label": "modulation envelope to oscillator two depth",
+        "data": "intmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [0, 127, -63, 63]
+      },
+      "31": {
+        "label": "LFO 1 to oscillator two depth (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "63": {
+        "label": "LFO 1 to oscillator two depth",
+        "data": "intmap",
+        "map": [0, 255, -127, 127],
+        "bitshift": -6,
+        "byte1": 31
+      },
+      "77": {
+        "label": "modulation envelope to oscillator two pulse width depth",
+        "data": "intmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [[0, 62, -90, -1],[63, 64, 0, 0],[65, 127, 1, 90]]
+      },
+      "78": {
+        "label": "LFO 2 to oscillator two pulse width depth",
+        "data": "intmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [[0, 62, -90, -1],[63, 64, 0, 0],[65, 127, 1, 90]]
+      },
+      "79": {
+        "label": "oscillator two pulse width",
+        "data": "intmap",
+        "precision": 1,
+        "truncate": 1,
+        "map": [[0, 64, 5, 50],[64, 127, 50, 95]]
+      },
+      "81": {
+        "label": "sub oscillator octave",
+        "data": "enumsplit",
+        "enum": [
+          "minus 2",
+          "minus 1"
+        ],
+        "split": [
+          62,
+          63
+        ]
+      },
+      "80": {
+        "label": "sub oscillator shape",
+        "data": "enum",
+        "enum": [
+          "sine",
+          "narrow pulse",
+          "square"
+        ]
+      },
+      "20": {
+        "label": "oscillator one level (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "52": {
+        "label": "oscillator one level",
+        "data": "floatmap",
+        "map": [0, 255, 0.0, 1.0],
+        "bitshift": -6,
+        "byte1": 20
+      },
+      "21": {
+        "label": "oscillator two level (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "53": {
+        "label": "oscillator two level",
+        "data": "floatmap",
+        "map": [0, 255, 0.0, 1.0],
+        "bitshift": -6,
+        "byte1": 21
+      },
+      "22": {
+        "label": "sub oscillator level (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "54": {
+        "label": "sub oscillator level",
+        "data": "floatmap",
+        "map": [0, 255, 0.0, 1.0],
+        "bitshift": -6,
+        "byte1": 22
+      },
+      "23": {
+        "label": "noise level (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "55": {
+        "label": "noise level",
+        "data": "floatmap",
+        "map": [0, 255, 0.0, 1.0],
+        "bitshift": -6,
+        "byte1": 23
+      },
+      "24": {
+        "label": "ring modulator level (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "56": {
+        "label": "ring modulator level",
+        "data": "floatmap",
+        "map": [0, 255, 0.0, 1.0],
+        "bitshift": -6,
+        "byte1": 24
+      },
+      "25": {
+        "label": "external signal level (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "57": {
+        "label": "external signal level",
+        "data": "floatmap",
+        "map": [0, 255, 0.0, 1.0],
+        "bitshift": -6,
+        "byte1": 25
       },
       "83": {
         "label": "filter type",
@@ -43,219 +304,79 @@
           "high pass"
         ]
       },
-      "114": {
-        "label": "filter overdrive",
-        "data": "none"
+      "16": {
+        "label": "filter frequency (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "48": {
+        "label": "filter frequency",
+        "data": "frequency",
+        "bitshift": -6,
+        "byte1": 16
+      },
+      "82": {
+        "label": "filter resonance",
+        "data": "value"
       },
       "85": {
         "label": "modulation envelope to filter depth",
-        "data": "none"
+        "data": "intmap",
+        "map": [0, 127, -63, 63]
       },
       "17": {
+        "label": "LFO 2 to filter depth (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
+      },
+      "49": {
         "label": "LFO 2 to filter depth",
-        "data": "none"
-      },
-      "90": {
-        "label": "amplifier attack",
-        "data": "none"
-      },
-      "91": {
-        "label": "amplifier decay",
-        "data": "none"
-      },
-      "92": {
-        "label": "amplifier sustain",
-        "data": "none"
-      },
-      "93": {
-        "label": "amplifier release",
-        "data": "none"
-      },
-      "102": {
-        "label": "modulation attack",
-        "data": "none"
-      },
-      "103": {
-        "label": "modulation decay",
-        "data": "none"
-      },
-      "104": {
-        "label": "modulation sustain",
-        "data": "none"
-      },
-      "105": {
-        "label": "modulation release",
-        "data": "none"
-      },
-      "94": {
-        "label": "distortion",
-        "data": "none"
-      },
-      "115": {
-        "label": "oscillator filter modulation",
-        "data": "none"
-      },
-      "20": {
-        "label": "oscillator 1 level",
-        "data": "none"
-      },
-      "21": {
-        "label": "oscillator 2 level",
-        "data": "none"
-      },
-      "22": {
-        "label": "sub oscillator level",
-        "data": "none"
-      },
-      "23": {
-        "label": "noise level",
-        "data": "none"
-      },
-      "24": {
-        "label": "ring modulation level",
-        "data": "none"
-      },
-      "25": {
-        "label": "external audio level",
-        "data": "none"
-      },
-      "81": {
-        "label": "sub oscillator octave",
-        "data": "enumsplit",
-        "enum": [
-          "minus 2",
-          "minus 1"
-        ],
-        "split": [
-          62,
-          63
-        ]
-      },
-      "80": {
-        "label": "sub oscillator shape",
-        "data": "enum",
-        "enum": [
-          "sine",
-          "narrow pulse",
-          "square"
-        ]
-      },
-      "59": {
-        "label": "oscillator one coarse tuning",
-        "data": "floatmap",
-        "precision": 1,
-        "truncate": 1,
-        "map": [0, 255, -12.0, 12.0],
-        "bitshift": -6,
-        "byte1": 27
-      },
-      "27": {
-        "label": "oscillator one coarse tuning (MSB)",
-        "silent": "true",
-        "bitshift": 1,
-        "data": "byte1"
-      },
-      "58": {
-        "label": "oscillator one fine tuning",
-        "data": "intmap",
-        "map": [27, 228, -100, 100],
-        "bitshift": -6,
-        "byte1": 26
-      },
-      "26": {
-        "label": "oscillator one fine tuning (MSB)",
-        "silent": "true",
-        "bitshift": 1,
-        "data": "byte1"
-      },
-      "71": {
-        "label": "modulation envelope to oscillator one depth",
-        "data": "none"
-      },
-      "60": {
-        "label": "LFO 1 to oscillator one depth",
         "data": "intmap",
         "map": [0, 255, -127, 127],
         "bitshift": -6,
-        "byte1": 28
+        "byte1": 17
       },
-      "28": {
-        "label": "LFO 1 to oscillator one depth (MSB)",
+      "114": {
+        "label": "filter overdrive",
+        "data": "value"
+      },
+      "5": {
+        "label": "glide time",
+        "data": "value"
+      },
+      "18": {
+        "label": "LFO 1 speed (MSB)",
         "silent": "true",
         "bitshift": 1,
         "data": "byte1"
       },
-      "72": {
-        "label": "modulation envelope to oscillator one pulse width depth",
-        "data": "none"
+      "50": {
+        "label": "LFO 1 speed",
+        "data": "value",
+        "bitshift": -6,
+        "byte1": 18
       },
-      "74": {
-        "label": "oscillator one pulse width",
-        "data": "none"
+      "86": {
+        "label": "LFO 1 delay",
+        "data": "value"
       },
-      "73": {
-        "label": "LFO 2 to oscillator one pulse width depth",
-        "data": "none"
+      "19": {
+        "label": "LFO 2 speed (MSB)",
+        "silent": "true",
+        "bitshift": 1,
+        "data": "byte1"
       },
-      "70": {
-        "label": "oscillator 1 range",
-        "data": "enumsplit",
-        "enum": [
-          "16 feet",
-          "8 feet",
-          "4 feet",
-          "2 feet"
-        ],
-        "split": [
-          63,
-          64,
-          65,
-          66
-        ]
+      "51": {
+        "label": "LFO 2 speed",
+        "data": "value",
+        "bitshift": -6,
+        "byte1": 18
       },
-      "30": {
-        "label": "oscillator two coarse tuning",
-        "data": "none"
-      },
-      "29": {
-        "label": "oscillator two fine tuning",
-        "data": "none"
-      },
-      "76": {
-        "label": "modulation envelope to oscillator two depth",
-        "data": "none"
-      },
-      "31": {
-        "label": "LFO 1 to oscillator two depth",
-        "data": "none"
-      },
-      "77": {
-        "label": "modulation envelope to oscillator two pulse width depth",
-        "data": "none"
-      },
-      "79": {
-        "label": "oscillator two pulse width",
-        "data": "none"
-      },
-      "78": {
-        "label": "LFO 2 to oscillator two pulse width depth",
-        "data": "none"
-      },
-      "75": {
-        "label": "oscillator two range",
-        "data": "enumsplit",
-        "enum": [
-          "16 feet",
-          "8 feet",
-          "4 feet",
-          "2 feet"
-        ],
-        "split": [
-          63,
-          64,
-          65,
-          66
-        ]
+      "87": {
+        "label": "LFO 2 delay",
+        "data": "value"
       },
       "88": {
         "label": "LFO 1 shape",
@@ -277,25 +398,53 @@
           "sample and hold"
         ]
       },
-      "18": {
-        "label": "LFO 1 speed",
-        "data": "none"
+      "90": {
+        "label": "amplifier attack",
+        "data": "value"
       },
-      "19": {
-        "label": "LFO 2 speed",
-        "data": "none"
+      "91": {
+        "label": "amplifier decay",
+        "data": "value"
       },
-      "86": {
-        "label": "LFO 1 delay",
-        "data": "none"
+      "92": {
+        "label": "amplifier sustain",
+        "data": "value"
       },
-      "87": {
-        "label": "LFO 2 delay",
-        "data": "none"
+      "93": {
+        "label": "amplifier release",
+        "data": "value"
       },
-      "5": {
-        "label": "glide time",
-        "data": "none"
+      "102": {
+        "label": "modulation attack",
+        "data": "value"
+      },
+      "103": {
+        "label": "modulation decay",
+        "data": "value"
+      },
+      "104": {
+        "label": "modulation sustain",
+        "data": "value"
+      },
+      "105": {
+        "label": "modulation release",
+        "data": "value"
+      },
+      "94": {
+        "label": "distortion",
+        "data": "value"
+      },
+      "115": {
+        "label": "oscillator filter modulation",
+        "data": "value"
+      },
+      "108": {
+        "label": "arpeggiator",
+        "data": "offon"
+      },
+      "109": {
+        "label": "arpeggiator latch",
+        "data": "offon"
       },
       "119": {
         "label": "arpeggiator rhythm",
@@ -341,14 +490,6 @@
           4
         ]
       },
-      "108": {
-        "label": "arpeggiator",
-        "data": "offon"
-      },
-      "109": {
-        "label": "arpeggiator latch",
-        "data": "offon"
-      },
       "107": {
         "label": "pitch bend range",
         "data": "bivalue"
@@ -375,20 +516,6 @@
       }
     },
     "NRPN": {
-      "73": {
-        "label": "envelope triggering",
-        "data": "enumsplit",
-        "enum": [
-          "multi",
-          "single",
-          "auto glide"
-        ],
-        "split": [
-          0,
-          128,
-          256
-        ]
-      },
       "72": {
         "label": "oscillator 1 shape",
         "data": "enumsplit",
@@ -421,21 +548,111 @@
           3
         ]
       },
-      "94": {
-        "label": "mod wheel to filter frequency depth",
-        "data": "value",
-        "hires": "false"
+      "111": {
+        "label": "oscillator error",
+        "data": "value"
+      },
+      "107": {
+        "label": "paraphonic mode",
+        "data": "onoff"
+      },
+      "113": {
+        "label": "glide diverge",
+        "data": "value"
+      },
+      "84": {
+        "label": "sub-osc coarse tuning",
+        "data": "value"
+      },
+      "77": {
+        "label": "sub-osc fine tuning",
+        "data": "value"
       },
       "108": {
         "label": "mod wheel to filter tracking",
         "data": "value"
       },
-      "70": {
-        "label": "mod wheel LFO1 to oscillator pitch",
-        "data": "bivalue"
+      "87": {
+        "label": "LFO 1 speed sync",
+        "data": "enumsplit",
+        "enum": [
+          "sync",
+          "speed"
+        ],
+        "split": [
+          0,
+          128
+        ]
+      },
+      "91": {
+        "label": "LFO 2 speed sync",
+        "data": "enumsplit",
+        "enum": [
+          "sync",
+          "speed"
+        ],
+        "split": [
+          0,
+          128
+        ]
+      },      "73": {
+        "label": "envelope triggering",
+        "data": "enumsplit",
+        "enum": [
+          "multi",
+          "single",
+          "auto glide"
+        ],
+        "split": [
+          0,
+          128,
+          256
+        ]
+      },
+      "109": {
+        "label": "amplifier envelope loop",
+        "data": "onoff"
+      },
+      "114": {
+        "label": "amplifier fixed sustain",
+        "data": "onoff"
+      },
+      "117": {
+        "label": "amplifier envelope number of loops",
+        "data": "value"
+      },
+      "105": {
+        "label": "amplifier envelope number of loops",
+        "data": "enumsplit",
+        "enum": [
+          "1",
+          "2",
+          "3"
+        ],
+        "split": [
+          1,
+          2,
+          3
+        ]
+      },
+      "110": {
+        "label": "modulation envelope loop",
+        "data": "onoff"
+      },
+      "115": {
+        "label": "modulation fixed sustain",
+        "data": "onoff"
+      },
+      "118": {
+        "label": "modulation envelope number of loops",
+        "data": "value"
       },
       "71": {
         "label": "mod wheel LFO2 to filter frequency",
+        "data": "bivalue"
+      },
+      "70": {
+        "label": "mod wheel LFO1 to oscillator pitch",
         "data": "bivalue"
       },
       "78": {
@@ -462,30 +679,6 @@
         "label": "LFO 2 key sync",
         "data": "onoff"
       },
-      "88": {
-        "label": "LFO 1 speed sync",
-        "data": "enumsplit",
-        "enum": [
-          "sync",
-          "speed"
-        ],
-        "split": [
-          0,
-          128
-        ]
-      },
-      "92": {
-        "label": "LFO 2 speed sync",
-        "data": "enumsplit",
-        "enum": [
-          "sync",
-          "speed"
-        ],
-        "split": [
-          0,
-          128
-        ]
-      },
       "86": {
         "label": "LFO 1 slew",
         "data": "value"
@@ -494,45 +687,18 @@
         "label": "LFO 2 slew",
         "data": "value"
       },
-      "111": {
-        "label": "oscillator error",
-        "data": "value"
-      },
-      "107": {
-        "label": "paraphonic mode",
+      "106": {
+        "label": "sequencer retrigger",
         "data": "onoff"
       },
-      "109": {
-        "label": "amplifier envelope loop",
-        "data": "onoff"
-      },
-      "117": {
-        "label": "amplifier envelope number of loops",
-        "data": "value"
-      },
-      "114": {
-        "label": "amplifier fixed sustain",
-        "data": "onoff"
-      },
-      "110": {
-        "label": "modulation envelope loop",
-        "data": "onoff"
-      },
-      "118": {
-        "label": "modulation envelope number of loops",
-        "data": "value"
-      },
-      "115": {
-        "label": "modulation fixed sustain",
-        "data": "onoff"
+      "94": {
+        "label": "mod wheel to filter frequency depth",
+        "data": "value",
+        "hires": "false"
       },
       "112": {
         "label": "overlay",
         "data": "value"
-      },
-      "106": {
-        "label": "sequencer retrigger",
-        "data": "onoff"
       },
       "116": {
         "label": "A F X mode",
@@ -552,10 +718,6 @@
       },
       "28": {
         "label": "external input gain",
-        "data": "value"
-      },
-      "113": {
-        "label": "glide diverge",
         "data": "value"
       }
     }
