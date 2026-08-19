@@ -10,11 +10,11 @@ New York University
 Files:
 - README.md - this file
 - [Style Guide](TactileSynthsStyleGuide.pdf) - PDF style guide
-- [ARP2600](ARP2600.pdf) - tactile guide for the ARP 2600 / TTSH
-- [Roland100_SH-101](RolandSH_101.pdf) - tactile guide for the Roland SH-101
-- [Roland100_101](Roland100_101.pdf) - tactile guide for the Roland 100 Series Model 101
-- [Roland100_102](Roland100_102.pdf) - tactile guide for the Roland 100 Series Model 102
-- [Roland100_104](Roland100_104.pdf) - tactile guide for the Roland 100 Series Model 104
+- [ARP 2600](ARP2600.pdf) - tactile guide for the ARP 2600 / The Human Comparator TTSH
+- [Roland SH-101](RolandSH_101.pdf) - tactile guide for the Roland SH-101 / Superlative SB01
+- [Roland 100 Model 101](Roland100_101.pdf) - tactile guide for the Roland 100 Series Model 101
+- [Roland 100 Model 102](Roland100_102.pdf) - tactile guide for the Roland 100 Series Model 102
+- [Roland 100_Model 104](Roland100_104.pdf) - tactile guide for the Roland 100 Series Model 104
 - [Serge 73-75](Serge7375.pdf) - tactile guide for the Serge Modular 73-75 Panels
 - elements - folder of EPS and SVG tactile elements for standard synthesizer affordances
 - elements/serge - folder of EPS and SVG tactile elements for Serge synthesizers (matched with [tactileModular](../tactileModular))
