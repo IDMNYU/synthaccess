@@ -11,6 +11,7 @@ Files:
 - README.md - this file
 - [Style Guide](TactileSynthsStyleGuide.pdf) - PDF style guide
 - [ARP2600](ARP2600.pdf) - tactile guide for the ARP 2600 / TTSH
+- [Roland100_SH-101](RolandSH_101.pdf) - tactile guide for the Roland SH-101
 - [Roland100_101](Roland100_101.pdf) - tactile guide for the Roland 100 Series Model 101
 - [Roland100_102](Roland100_102.pdf) - tactile guide for the Roland 100 Series Model 102
 - [Roland100_104](Roland100_104.pdf) - tactile guide for the Roland 100 Series Model 104
