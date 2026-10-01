@@ -10,7 +10,7 @@ New York University
 Featuring the work of:
 - [Ciarra Black](https://www.ciarrablack.com/)
 - [Jason Dasent](https://www.jasondasent.com/)
-- [R. Luke DuBois](https://lukedubois.com/), PI; Faculty Lead, MIDI Speech Synth
+- [R. Luke DuBois](https://lukedubois.com/), Faculty Lead, MIDI Speech Synth
 - [Stefanie Koseff](https://www.stefaniekoseff.com/), Faculty Lead, Tactile Synth Guides
 - [Tommy Martinez](https://thomasjohnmartinez.com/)
 - [Madeline Mau](https://www.linkedin.com/in/madeline-mau-b01b9739b/)
