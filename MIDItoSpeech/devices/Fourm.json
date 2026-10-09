@@ -1,8 +1,8 @@
 {
   "device": {
-    "name": "Form",
+    "name": "Fourm",
     "manufacturer": "Sequential",
-    "version": 0.1,
+    "version": 0.2,
     "program_change": {
       "0": {
         "label": "program",
