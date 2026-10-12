@@ -628,7 +628,7 @@
       "model_mode": 4,
       "workbook_filename": "hapticDriver.wbk"
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "SynthAccess Haptic Driver",
     "plot_directory": "",
     "reuse_designators": true,
     "subpart_first_id": 65,
@@ -640,7 +640,7 @@
         "uuid": "98e6c229-a292-4a70-82c0-d99633478e04"
       }
     ],
-    "used_designators": "#GND1,V2",
+    "used_designators": "R6",
     "variants": []
   },
   "sheets": [
