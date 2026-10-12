@@ -154,10 +154,10 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 speakstring+=" " + mtos(_val+24, a);
                 break;
             case "frequency": // interpret value as MIDI, read as Hz (60=C3)
-                speakstring+=" " + mtof(_val);
+                speakstring+=" " + mtof(_val, dres, trunc);
                 break;
             case "decibels": // interpret value as dB, 127 = 0
-                speakstring+=" " + mtodb(_val);
+                speakstring+=" " + mtodb(_val, dres, trunc);
                 break;
             case "percent": // interpret value as percent, 127 = 100%
                 speakstring+=" " + mtopct(_val);
@@ -398,24 +398,24 @@ function mtos(_i, _a) // MIDI note number to name
     return(outstr);      
 }
 
-function mtof(_i) // MIDI note number to hertz
+function mtof(_i, _d, _t) // MIDI note number to hertz
 {
     if(_i<0) i=0;
     let f = 440.0 * Math.pow(2.0, (_i - 69.0) / 12.0)
     let outstr = "";
     if(f<1000) { // Hz
-        outstr = dotrunc(f,dres,trunc) + " hertz";
+        outstr = dotrunc(f,_d,_t) + " hertz";
     } else // kHz
     {
-        outstr = dotrunc((f/1000.),dres,trunc) + " kilohertz";
+        outstr = dotrunc((f/1000.),_d,_t) + " kilohertz";
     }
     return(outstr);
 }
 
-function mtodb(_i) // MIDI CC value to dB (127=0db)
+function mtodb(_i, _d, _t) // MIDI CC value to dB (127=0db)
 {
     let db = 20.*Math.log10(_i/127.);
-    let outstr = dotrunc(db,dres,trunc) + " d b";
+    let outstr = dotrunc(db,_d,_t) + " d b";
     return(outstr);
 }
 
