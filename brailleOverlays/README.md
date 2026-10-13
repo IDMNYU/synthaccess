@@ -102,6 +102,7 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 | <bl>ma/}</bl><br>Master |  | <bl>m/r</bl><br>m/r | <bl>ma/}</bl><br>ma/} |
 | <bl>h1dph"os</bl><br>Headphones | <bl>ph</bl><br>ph |  | <bl>phns</bl><br>phns |
 | <bl>voltage-3troll$ oscillator</bl><br>Voltage-Controlled Oscillator | <bl>vo</bl><br>vo | <bl>vco</bl><br>vco | |
+| <bl>filt}</bl><br>Filter |  | <bl>flt</bl><br>flt | <bl>flt}</bl><br>flt} |
 | <bl>voltage-3troll$ filt}</bl><br>Voltage-Controlled Filter | <bl>vf</bl><br>vf | <bl>vcf</bl><br>vcf |  |
 | <bl>voltage-3troll$ amplifi}</bl><br>Voltage-Controlled Amplifier | <bl>va</bl><br>va | <bl>vca</bl><br>vca |  |
 | <bl>l{ frequ5cy oscillator</bl><br>Low Frequency Oscillator | <bl>lf</bl><br>lf | <bl>lfo</bl><br>lfo |  |
