@@ -128,6 +128,8 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 | <bl>hi< pass filt}</bl><br>High Pass Filter | <bl>hp</bl><br>hp | <bl>hpf</bl><br>hpf | |
 | <bl>b& pass filt}</bl><br>Band Pass Filter | <bl>bp</bl><br>bp | <bl>bpf</bl><br>bpf | |
 | <bl>not* filt}</bl><br>Notch Filter | <bl>nf</bl><br>nf | | <bl>not*</bl><br>notch |
+| <bl>sequ;er</bl><br>Sequencer | <bl>sq</bl><br>sq | <bl>seq</bl><br>seq | <bl>seq}</bl><br>seq} |
+| <bl>>pe7iator</bl><br>Arpeggiator | <bl>&gt;p</bl><br>&gt;p | | <bl>&gt;peg</bl><br>&gt;peg |
 
 ### Serge Modular Names
 
