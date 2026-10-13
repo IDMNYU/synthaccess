@@ -28,9 +28,9 @@ Projects:
 
 With support from our friends at:
 
-<a href="http://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" width=250 alt="Sequential"></a><br />
-<a href="http://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" width=250 alt="Oberheim"></a><br />
-<a href="http://novation" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" width=250 alt="Novation"></a><br />
+<a href="http://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" width=30% alt="Sequential"></a>
+<a href="http://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" width=30% alt="Oberheim"></a>
+<a href="http://novation" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" width=30% alt="Novation"></a><br />
 
 ---
 
