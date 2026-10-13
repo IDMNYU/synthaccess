@@ -26,11 +26,11 @@ Projects:
 - **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
 - **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
 
-With incredible support from our friends at:
+With support from our friends at:
 
-<a href="http://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" width=250 alt="Sequential logo"></a><br />
-<a href="http://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" width=250 alt="Oberheim logo"></a><br />
-<a href="http://novation" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" width=250 alt="Novation logo"></a><br />
+<a href="http://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" width=250 alt="Sequential"></a><br />
+<a href="http://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" width=250 alt="Oberheim"></a><br />
+<a href="http://novation" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" width=250 alt="Novation"></a><br />
 
 ---
 
