@@ -26,6 +26,11 @@ Projects:
 - **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
 - **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
 
+With incredible support from our friends at:
+<a href="http://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" width=250 alt="Sequential logo"></a>
+<a href="http://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" width=250 alt="Oberheim logo"></a>
+<a href="http://novation" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" width=250 alt="Novation logo"></a>
+
 ---
 
 **SynthAccess** is a multi-pronged open source initiative around accessibility for Blind / Low Vision (BLV) musicians who use synthesizers and related equipment. This includes standards for braille labeling and tactile guides, software to generate synthesized speech as affordances are moved on the devices, and 3D printed alternatives to knobs and jacks to make them distinguishable by feel.
