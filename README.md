@@ -22,9 +22,9 @@ Featuring the work of:
 
 With support from our friends at:
 
-<a href="http://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" width="30%" alt="Sequential"></a><br />
-<a href="http://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" width="30%" alt="Oberheim"></a><br />
-<a href="http://novation" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" width="30%" alt="Novation"></a><br />
+<a href="http://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" width="30%" alt="Sequential"></a> <bl>sequ5tial</bl><br />
+<a href="http://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" width="30%" alt="Oberheim"></a> <bl>ob}heim</bl><br />
+<a href="http://novation" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" width="30%" alt="Novation"></a> <bl>nova;n</bl><br />
 
 Projects:
 - **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
