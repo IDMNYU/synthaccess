@@ -101,10 +101,8 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 | <bl>sett+s</bl><br>Settings | <bl>/+</bl><br>/+ | <bl>/+s</bl><br>/+s |  |
 | <bl>ma/}</bl><br>Master |  | <bl>m/r</bl><br>m/r | <bl>ma/}</bl><br>ma/} |
 | <bl>h1dph"os</bl><br>Headphones | <bl>ph</bl><br>ph |  | <bl>phns</bl><br>phns |
+| <bl>oscillator</bl><br>Oscillator | | <bl>osc</bl><br>osc | |
 | <bl>voltage-3troll$ oscillator</bl><br>Voltage-Controlled Oscillator | <bl>vo</bl><br>vo | <bl>vco</bl><br>vco | |
-| <bl>filt}</bl><br>Filter |  | <bl>flt</bl><br>flt | <bl>flt}</bl><br>flt} |
-| <bl>voltage-3troll$ filt}</bl><br>Voltage-Controlled Filter | <bl>vf</bl><br>vf | <bl>vcf</bl><br>vcf |  |
-| <bl>voltage-3troll$ amplifi}</bl><br>Voltage-Controlled Amplifier | <bl>va</bl><br>va | <bl>vca</bl><br>vca |  |
 | <bl>l{ frequ5cy oscillator</bl><br>Low Frequency Oscillator | <bl>lf</bl><br>lf | <bl>lfo</bl><br>lfo |  |
 | <bl>s9e wave</bl><br>Sine Wave | <bl>sn</bl><br>sn | <bl>s9e</bl><br>sine |  |
 | <bl>triangle wave</bl><br>Triangle Wave | <bl>tr</bl><br>tr | <bl>tri</bl><br>tri |  |
@@ -116,11 +114,13 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 | <bl>5velope g5}ator</bl><br>Envelope Generator | <bl>eg</bl><br>eg | <bl>env</bl><br>env |  |
 | <bl>sample & hold</bl><br>Sample and Hold | <bl>sh</bl><br>sh | <bl>sah</bl><br>sah | |
 | <bl>syn*ronize</bl><br>Synchronize | <bl>sy</bl><br>sy | <bl>syn</bl><br>syn | <bl>sync</bl><br>sync |
+| <bl>voltage-3troll$ amplifi}</bl><br>Voltage-Controlled Amplifier | <bl>va</bl><br>va | <bl>vca</bl><br>vca |  |
 | <bl>5velope foll{}</bl><br>Envelope Follower | <bl>ef</bl><br>ef | <bl>efl</bl><br>efl |<bl>enfl</bl><br>enfl |
 | <bl>r+ modulator</bl><br>Ring Modulator | <bl>rm</bl><br>rm | <bl>r+m</bl><br>ringm |<bl>r+md</bl><br>ringmd |
 | <bl>mix}</bl><br>Mixer | <bl>mx</bl><br>mx | <bl>mxr</bl><br>mxr |<bl>mix}</bl><br>mixer |
 | <bl>frequ5cy</bl><br>Frequency | <bl>fr</bl><br>fr | <bl>frq</bl><br>frq |<bl>freq</bl><br>freq |
-| <bl>filt}</bl><br>Filter | <bl>fi</bl><br>fi | <bl>fil</bl><br>fil |<bl>fltr</bl><br>fltr |
+| <bl>filt}</bl><br>Filter |  | <bl>flt</bl><br>flt | <bl>flt}</bl><br>flt} |
+| <bl>voltage-3troll$ filt}</bl><br>Voltage-Controlled Filter | <bl>vf</bl><br>vf | <bl>vcf</bl><br>vcf |  |
 | <bl>l{ pass filt}</bl><br>Low Pass Filter | <bl>lp</bl><br>lp | <bl>lpf</bl><br>lpf | |
 | <bl>hi< pass filt}</bl><br>High Pass Filter | <bl>hp</bl><br>hp | <bl>hpf</bl><br>hpf | |
 | <bl>b& pass filt}</bl><br>Band Pass Filter | <bl>bp</bl><br>bp | <bl>bpf</bl><br>bpf | |
