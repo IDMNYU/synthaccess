@@ -20,17 +20,17 @@ Featuring the work of:
 - [Jason Wallach](https://www.linkedin.com/in/jason-wallach-1340a612a/)
 - [Moira Zhang](https://moirazhang.com/)
 
-Projects:
-- **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
-- **[tactileSynthGuides](./tactileSynthGuides/)** : a design guide and library of swell-form printable tactile guides for synthesizers.
-- **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
-- **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
-
 With support from our friends at:
 
 <a href="http://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" width="30%" alt="Sequential"></a><br />
 <a href="http://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" width="30%" alt="Oberheim"></a><br />
 <a href="http://novation" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" width="30%" alt="Novation"></a><br />
+
+Projects:
+- **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
+- **[tactileSynthGuides](./tactileSynthGuides/)** : a design guide and library of swell-form printable tactile guides for synthesizers.
+- **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
+- **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
 
 ---
 
