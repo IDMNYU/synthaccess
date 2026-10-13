@@ -98,6 +98,8 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 | Label | 2 | 3 | 4 |
 | ----- | ----- | ----- | ----- |
 | <bl>p{}</bl><br>Power | <bl>pr</bl><br>pr | <bl>pwr</bl><br>pwr | <bl>powr</bl><br>powr |
+| <bl>sett+s</bl><br>Settings | <bl>/+</bl><br>/+ | <bl>/+s</bl><br>/+s |  |
+| <bl>ma/}</bl><br>Master |  | <bl>m/r</bl><br>m/r | <bl>ma/}</bl><br>ma/} |
 | <bl>h1dph"os</bl><br>Headphones | <bl>ph</bl><br>ph |  | <bl>phns</bl><br>phns |
 | <bl>voltage-3troll$ oscillator</bl><br>Voltage-Controlled Oscillator | <bl>vo</bl><br>vo | <bl>vco</bl><br>vco | |
 | <bl>voltage-3troll$ filt}</bl><br>Voltage-Controlled Filter | <bl>vf</bl><br>vf | <bl>vcf</bl><br>vcf |  |
