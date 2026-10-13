@@ -100,6 +100,9 @@ As mentioned above, for more high density interfaces, a great solution is to cre
 | <bl>p{}</bl><br>Power | <bl>pr</bl><br>pr | <bl>pwr</bl><br>pwr | <bl>powr</bl><br>powr |
 | <bl>sett+s</bl><br>Settings | <bl>/+</bl><br>/+ | <bl>/+s</bl><br>/+s |  |
 | <bl>ma/}</bl><br>Master |  | <bl>m/r</bl><br>m/r | <bl>ma/}</bl><br>ma/} |
+| <bl>memory</bl><br>Memory |  | <bl>mem</bl><br>mem | <bl>memr</bl><br>memr |
+| <bl>volume</bl><br>Volume |  | <bl>vol</bl><br>vol |  |
+| <bl>manual</bl><br>Manual |  | <bl>man</bl><br>man | <bl>manl</bl><br>manl |
 | <bl>h1dph"os</bl><br>Headphones | <bl>ph</bl><br>ph |  | <bl>phns</bl><br>phns |
 | <bl>oscillator</bl><br>Oscillator | | <bl>osc</bl><br>osc | |
 | <bl>voltage-3troll$ oscillator</bl><br>Voltage-Controlled Oscillator | <bl>vo</bl><br>vo | <bl>vco</bl><br>vco | |
