@@ -22,11 +22,11 @@ Featuring the work of:
 
 With support from our friends at:
 
-<a href="https://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" height=200 alt="Sequential"></a> <bl>sequ5tial</bl><br />
-<a href="https://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" height=200 alt="Oberheim"></a> <bl>ob}heim</bl><br />
-<a href="https://us.novationmusic.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" height=200 alt="Novation"></a> <bl>nova;n</bl><br />
-<a href="https://cycling74.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/c74.png" height=200 alt="Cycling'74"></a> <bl>cycl+'#gd</bl><br />
-<a href="https://ableton.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/ableton.png" height=200 alt="Ableton"></a> <bl>ableton</bl><br />
+<a href="https://sequential.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/sequential.png" height=50 alt="Sequential"></a> <bl>sequ5tial</bl><br />
+<a href="https://oberheim.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/oberheim.png" height=50 alt="Oberheim"></a> <bl>ob}heim</bl><br />
+<a href="https://us.novationmusic.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/novation.png" height=50 alt="Novation"></a> <bl>nova;n</bl><br />
+<a href="https://cycling74.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/c74.png" height=50 alt="Cycling'74"></a> <bl>cycl+'#gd</bl><br />
+<a href="https://ableton.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/ableton.png" height=50 alt="Ableton"></a> <bl>ableton</bl><br />
 
 Projects:
 - **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
