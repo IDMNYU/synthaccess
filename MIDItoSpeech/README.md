@@ -67,7 +67,7 @@ The JSON root element is a **device**, which has the following hierarchy of prop
          - **enumsplit** : read labels from an enumerating array using split points.
          - **ascii** : interpret parameter data as an ASCII array.
          - **patchsimple** : read labels from a list of patch names based on the **global** value bound to that parameter; assumes **names** points to a 1-dimensional array of strings.
-        - **patchhex** : like **patchsimple**, but interprets the patch string according to the factory / user hexadecimal system used in Oberheim synthesizers. 
+        - **patchhex** : like **patchsimple**, but interprets the patch value according to the factory / user hexadecimal system used in Oberheim synthesizers. 
          - **patchcustom** : read labels from a list of patch names based on a custom global value as the index; assumes **names** points to a 1-dimensional array of strings.
          - **patchbank** : read labels from a 2-dimensional (bank, preset) list of patch names; assumes **names** points to a 2-dimensional array of strings.
          - **patchmultibank** : read labels from a 3-dimensional (single/multi, bank, preset) list of patch names; assumes **names** points to a 3-dimensional array of strings.
