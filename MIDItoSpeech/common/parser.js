@@ -5,7 +5,7 @@
 function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
-    let a, b, s, cl, l, o, v, g, i, j, k, nlist, p, r;
+    let a, b, s, cl, l, o, so, si, sj, sk, v, g, i, j, k, nlist, p, r;
     let dospeak = 1; // default to speaking
     let mval = 127; // assume 7-bit
     let hval = 64; // 7-bit half value
@@ -215,12 +215,35 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
             case "patchsimple": // read strings against an index
                 nlist = _plist[_param].names;
                 p = thestuff.device[nlist];
-                speakstring+=" " + _val.toString();
-                o = thestuff.device.globals[_plist[_param].global].offset;
+                if(typeof(thestuff.device.globals[_plist[_param].global].speechoffset)!='undefined') so = thestuff.device.globals[_plist[_param].global].speechoffset;
+                console.log("val: " + _val);
+                console.log("speech offset: " + so);
+                speakstring+=" " + (_val+so).toString();
+                if(typeof(thestuff.device.globals[_plist[_param].global].offset)!='undefined') o = thestuff.device.globals[_plist[_param].global].offset;
                 _val+=o; // add offset for indexing
                 if(_val in p)
                 {
                     if(verbose==2) speakstring+= ". " + p[_val];
+                }
+                break;
+            case "patchhex": // read strings against an index (Oberheim hex mode); only factory presets speak
+                nlist = _plist[_param].names;
+                p = thestuff.device[nlist];
+                if(typeof(thestuff.device.globals[_plist[_param].global].speechoffset)!='undefined') so = thestuff.device.globals[_plist[_param].global].speechoffset;
+                let facuser = _val>=1600; // factory or user?
+                let idxpatch = (_val%100)%16;
+                let idxbank = Math.floor(_val/100);  
+                let tidx = (idxbank<<4) + idxpatch;
+                _val=_val%1600;
+                speakstring+=" " + (facuser==true ? "factory" : "user");
+                let tval = _val+so; // string to hexify
+                let tbank = (Math.floor(tval/100)).toString(16);
+                if(tbank=="10") tbank="g"; // craziness
+                let tpatch = (tval%100).toString().padStart(2, '0');
+                speakstring+=" " + tbank + " " + tpatch;
+                if(tidx in p)
+                {
+                    if(verbose==2) speakstring+= ". " + p[tidx];
                 }
                 break;
             case "patchcustom": // read strings against an (custom) index
@@ -228,9 +251,10 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 i = g[_plist[_param].idx[0]].value;
                 nlist = _plist[_param].names;
                 p = thestuff.device[nlist];
-                speakstring+=" " + i.toString();
+                if(typeof(g[_plist[_param].idx[0]].speechoffset)!='undefined') si = g[_plist[_param].idx[0]].speechoffset;
+                speakstring+=" " + (i+si).toString();
                 // do offsets:
-                o = g[_plist[_param].idx[0]].offset;
+                if(typeof(g[_plist[_param].idx[0]].offset)!='undefined') o = g[_plist[_param].idx[0]].offset;
                 i+=o;
                 if(i in p)
                 {
@@ -239,15 +263,17 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 break;
             case "patchbank": // read strings against a bank/patch 2d index
                 g = thestuff.device.globals;
+                if(typeof(g[_plist[_param].idx[0]].speechoffset)!='undefined') si = g[_plist[_param].idx[0]].speechoffset;
+                if(typeof(g[_plist[_param].idx[1]].speechoffset)!='undefined') sj = g[_plist[_param].idx[1]].speechoffset;
                 i = g[_plist[_param].idx[0]].value;
                 j = g[_plist[_param].idx[1]].value;
                 nlist = _plist[_param].names;
                 p = thestuff.device[nlist];
-                speakstring+=" " + i.toString() + " " + j.toString();
+                speakstring+=" " + (i+si).toString() + " " + (j+sj).toString();
                 // do offsets:
-                o = g[_plist[_param].idx[0]].offset;
+                if(typeof(g[_plist[_param].idx[0]].offset)!='undefined') o = g[_plist[_param].idx[0]].offset;
                 i+=o;
-                o = g[_plist[_param].idx[1]].offset;
+                if(typeof(g[_plist[_param].idx[1]].offset)!='undefined') o = g[_plist[_param].idx[1]].offset;
                 j+=o;
                 if(i in p)
                 {
@@ -259,18 +285,21 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 break;
             case "patchmultibank": // read strings against a multi/bank/patch 3d index
                 g = thestuff.device.globals;
+                if(typeof(g[_plist[_param].idx[0]].speechoffset)!='undefined') si = g[_plist[_param].idx[0]].speechoffset;
+                if(typeof(g[_plist[_param].idx[1]].speechoffset)!='undefined') sj = g[_plist[_param].idx[1]].speechoffset;
+                if(typeof(g[_plist[_param].idx[2]].speechoffset)!='undefined') sk = g[_plist[_param].idx[2]].speechoffset;
                 i = g[_plist[_param].idx[0]].value;
                 j = g[_plist[_param].idx[1]].value;
                 k = g[_plist[_param].idx[2]].value;
                 nlist = _plist[_param].names;
                 p = thestuff.device[nlist];
-                speakstring+=" " + i.toString() + " " + j.toString() + " " + k.toString();
+                speakstring+=" " + (i+si).toString() + " " + (j+sj).toString() + " " + (k+sk).toString();
                 // do offsets:
-                o = g[_plist[_param].idx[0]].offset;
+                if(typeof(g[_plist[_param].idx[0]].offset)!='undefined') o = g[_plist[_param].idx[0]].offset;
                 i+=o;
-                o = g[_plist[_param].idx[1]].offset;
+                if(typeof(g[_plist[_param].idx[1]].offset)!='undefined') o = g[_plist[_param].idx[1]].offset;
                 j+=o;
-                o = g[_plist[_param].idx[2]].offset;
+                if(typeof(g[_plist[_param].idx[2]].offset)!='undefined') o = g[_plist[_param].idx[2]].offset;
                 k+=o;
                 if(i in p)
                 {

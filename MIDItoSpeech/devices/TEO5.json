@@ -2,19 +2,20 @@
   "device": {
     "name": "TEO-5",
     "manufacturer": "Oberheim",
-    "version": 0.2,
-	
+    "version": 0.3,
     "globals": {
       "pgm": {
         "value": 0,
-        "offset": 100
+        "speechoffset": 101
       }
     },	
     "program_change": {
       "0": {
-        "label": "program",
-        "data": "global1",
-		"global" : "pgm"
+        "label": "patch",
+        "global": "pgm",
+        "globalmode": "global1",
+        "data": "patchhex",
+        "names": "patchlist"
       }
     },
     "CC": {
@@ -27,10 +28,12 @@
         "data": "value"
       },
       "32": {
-          "label": "bank",
-          "data": "global100",
+          "label": "patch",
+          "data": "patchhex",
+          "names": "patchlist",
           "global": "pgm",
-		  "silent" : "yes"
+          "globalmode": "global100",
+		      "silent" : "yes"
       }
     },
     "NRPN": {
@@ -3089,6 +3092,137 @@
         "label": "sequencer record",
         "data": "offon"
       }
-    }
+    },
+        "patchlist": [
+
+  "It's An Oberheim", "Hero Brass", "OB-X Pad", "PressurePluck", "Tommy",
+  "Saka  Keys", "Glitterati", "2001 Choir", "Belladonna", "Stargazer",
+  "TeoEspressivo", "Reed Between", "Shimmer String", "Snap Bass", "Smokey Organ", "Sync Growl",
+
+  "Rock Cliche", "Waterfall Cavern", "Zizzle Touch", "Fragile Stability", "Zuma's Brass",
+  "Burnished", "Organic", "Perforator Lead", "Eagerly", "Proud Nerd",
+  "Landing Pad", "TEO Pluck", "GOAT  MW", "Dark Side", "Balorean", "Abduction",
+
+  "Bowin'", "Glacial", "Eastern Bells", "Baumann's Seq", "Pulse Ping",
+  "LeadReed", "Bounce Back", "BuzzFlow", "Super Collider", "Plektrum",
+  "Rosewood Perc", "Solid Square", "Dirty Keys", "Bandpass Arp", "Life Clock", "Mouth Pad",
+
+  "Tomita Bells", "Harmonic Dream", "ElectroBody  Bass", "Clavinator", "OB-X  Glide  Pad",
+  "Bouncy Min9", "Malletizer", "PadGPT", "Coronet", "Teo Keys",
+  "Unisynx Five", "Etherial HPSCHD", "Seagulls Arp", "Strummer", "SynthpopString", "Alien Modular Foo",
+
+  "Latenight 4am", "Black & Blue", "Haus Bazz", "BronzeGongs", "Calm The CPU",
+  "Expo2k Chord", "Nuwave Shift  MW", "Quintuple Mono", "Noisy Afterall", "Weeping Wah",
+  "Industry Beat", "Flutey Keypad", "Bite Force", "Plogku", "Star Crystals", "Cinematique",
+
+  "FlyLike a TEO", "Space Hiccups", "Acid  Basser", "Babypluck", "High Wire",
+  "M12 Brazz", "Bluey Arp", "Paleocene Pad", "Wet & Wild  Bass", "Pins & Needles",
+  "AluminumGroup", "FM Perks", "Jumbler", "Sans Seraphim", "Nickel Clavicord", "Jets5",
+
+  "Frantasia", "Infinite  Power", "Space Pollen", "Solar Memories", "Anno D2",
+  "Stimdrink Lead", "Digital Age", "StateShifter", "Pearl Pipes", "Carillon",
+  "Solo String", "Santur", "Send Signals Up", "Magic Arp", "Rising Pulse (MW)", "Triangles",
+
+  "Lil  Lips", "Vibey Thing", "FlootyToot", "Trampled Bass", "Wanderer",
+  "Processional", "Dusty Flangarp", "Cat Piss Oxide", "Chatty Bells", "Lead Alive",
+  "Afterglow", "Trancendance", "Modular?", "HarpsiTines", "Lead LEAD", "Cushion Pad",
+
+  "OB-8 SoftSweep", "Life's Been Gd", "Introvert", "Intervalics", "Phat Boi",
+  "OB-Xa Brass PWM", "Zippy Syncy", "Dreamtime Breath", "Gamelan", "Textures",
+  "S&H Bass", "Razorlight", "Put Everything in it", "Overruled Lead", "Riser Reaper", "Up Stroke Down",
+
+  "Major Talk", "GX Dreams", "Buzzy Blob Bass", "TEOcaster", "Harp Runner",
+  "Lush Squares", "Tank The Co. (PW)", "Pipeline Pluck", "Throaty 303", "Hollowspit",
+  "Sunset Rays", "Kaytra Vibe", "Pads 90 Eighteen", "NemoClavier", "Harpies", "Millennium Mambo",
+
+  "Springboard", "GradualExpansion", "Super Notch", "Tin Tines", "OB-X  S & H",
+  "Ring Laboratory", "Bizarreau", "Buster Organ", "Magical Bells", "Sweep Mocean",
+  "PluckyWaaWhls", "Zeetar", "Just Too Rude", "Exoberance", "Fields Pad", "OnlyStonesRemain",
+
+  "The Grind", "Warm Pad", "Obee Time", "Paddy Gates", "Super Harmonik",
+  "Tine Tune Time", "MixedNsemble", "Plucked Repeater", "Gzyoww", "Hard Band Bass",
+  "Familiar Sync", "Velimba", "StudentArtFilm", "Steppy Arpy", "Death Ray", "Fabric Soft",
+
+  "Vaguely Prog?", "Tour de Bass", "Shamisen-Like", "Sparklage", "Pulsaar",
+  "Tine To Shine", "Synth Gtr Lead", "Buzzard Brass", "Orchestron", "Noisy Bass",
+  "Res-y Pad", "Ghosts of Ireland", "Picky Lead", "Silence Structures", "Odd Overtone", "Electromechanik",
+
+  "Aggro 808", "Snares", "Toms", "SnapS+Claps", "BrightCymbals",
+  "SEM  Swirl", "Fizzy Lead", "Kitchen Sync", "Xylophone", "Bass Front",
+  "Machinery", "Vintage Wows", "Digibubblz", "Fairy Magic", "Lofi Pad", "Comp Splitoon",
+
+  "Teo~Pad", "XTeoC", "Sterile Piano", "Sub0Bass", "HAL 8086",
+  "Undercurrent Pad", "Octaves Arp", "Rhythmix", "Pip Squeak", "Steel Jers",
+  "Velo Octaves", "A Fifth of TEO", "Klavinot", "Jacob'sLadder", "Bossy Bass", "Sad Tangerine",
+
+  "Triangle Lead", "Party  Starter", "Morse Pad", "Secret Treasure", "x4RP-PR4x",
+  "Prime  Organ", "Bass Kalimba", "Double Vision", "Mettle Pd", "Foreshore",
+  "2049", "Pot Lids", "Astral Dominator", "Harpsorgan", "Handperc", "Spiral flow",
+
+  "It's An Oberheim", "Hero Brass", "OB-X Pad", "PressurePluck", "Tommy",
+  "Saka  Keys", "Glitterati", "2001 Choir", "Belladonna", "Stargazer",
+  "TeoEspressivo", "Reed Between", "Shimmer String", "Snap Bass", "Smokey Organ", "Sync Growl",
+
+  "Rock Cliche", "Waterfall Cavern", "Zizzle Touch", "Fragile Stability", "Zuma's Brass",
+  "Burnished", "Organic", "Perforator Lead", "Eagerly", "Proud Nerd",
+  "Landing Pad", "TEO Pluck", "GOAT  MW", "Dark Side", "Balorean", "Abduction",
+
+  "Bowin'", "Glacial", "Eastern Bells", "Baumann's Seq", "Pulse Ping",
+  "LeadReed", "Bounce Back", "BuzzFlow", "Super Collider", "Plektrum",
+  "Rosewood Perc", "Solid Square", "Dirty Keys", "Bandpass Arp", "Life Clock", "Mouth Pad",
+
+  "Tomita Bells", "Harmonic Dream", "ElectroBody  Bass", "Clavinator", "OB-X  Glide  Pad",
+  "Bouncy Min9", "Malletizer", "PadGPT", "Coronet", "Teo Keys",
+  "Unisynx Five", "Etherial HPSCHD", "Seagulls Arp", "Strummer", "SynthpopString", "Alien Modular Foo",
+
+  "Latenight 4am", "Black & Blue", "Haus Bazz", "BronzeGongs", "Calm The CPU",
+  "Expo2k Chord", "Nuwave Shift  MW", "Quintuple Mono", "Noisy Afterall", "Weeping Wah",
+  "Industry Beat", "Flutey Keypad", "Bite Force", "Plogku", "Star Crystals", "Cinematique",
+
+  "FlyLike a TEO", "Space Hiccups", "Acid  Basser", "Babypluck", "High Wire",
+  "M12 Brazz", "Bluey Arp", "Paleocene Pad", "Wet & Wild  Bass", "Pins & Needles",
+  "AluminumGroup", "FM Perks", "Jumbler", "Sans Seraphim", "Nickel Clavicord", "Jets5",
+
+  "Frantasia", "Infinite  Power", "Space Pollen", "Solar Memories", "Anno D2",
+  "Stimdrink Lead", "Digital Age", "StateShifter", "Pearl Pipes", "Carillon",
+  "Solo String", "Santur", "Send Signals Up", "Magic Arp", "Rising Pulse (MW)", "Triangles",
+
+  "Lil  Lips", "Vibey Thing", "FlootyToot", "Trampled Bass", "Wanderer",
+  "Processional", "Dusty Flangarp", "Cat Piss Oxide", "Chatty Bells", "Lead Alive",
+  "Afterglow", "Trancendance", "Modular?", "HarpsiTines", "Lead LEAD", "Cushion Pad",
+
+  "OB-8 SoftSweep", "Life's Been Gd", "Introvert", "Intervalics", "Phat Boi",
+  "OB-Xa Brass PWM", "Zippy Syncy", "Dreamtime Breath", "Gamelan", "Textures",
+  "S&H Bass", "Razorlight", "Put Everything in it", "Overruled Lead", "Riser Reaper", "Up Stroke Down",
+
+  "Major Talk", "GX Dreams", "Buzzy Blob Bass", "TEOcaster", "Harp Runner",
+  "Lush Squares", "Tank The Co. (PW)", "Pipeline Pluck", "Throaty 303", "Hollowspit",
+  "Sunset Rays", "Kaytra Vibe", "Pads 90 Eighteen", "NemoClavier", "Harpies", "Millennium Mambo",
+
+  "Springboard", "GradualExpansion", "Super Notch", "Tin Tines", "OB-X  S & H",
+  "Ring Laboratory", "Bizarreau", "Buster Organ", "Magical Bells", "Sweep Mocean",
+  "PluckyWaaWhls", "Zeetar", "Just Too Rude", "Exoberance", "Fields Pad", "OnlyStonesRemain",
+
+  "The Grind", "Warm Pad", "Obee Time", "Paddy Gates", "Super Harmonik",
+  "Tine Tune Time", "MixedNsemble", "Plucked Repeater", "Gzyoww", "Hard Band Bass",
+  "Familiar Sync", "Velimba", "StudentArtFilm", "Steppy Arpy", "Death Ray", "Fabric Soft",
+
+  "Vaguely Prog?", "Tour de Bass", "Shamisen-Like", "Sparklage", "Pulsaar",
+  "Tine To Shine", "Synth Gtr Lead", "Buzzard Brass", "Orchestron", "Noisy Bass",
+  "Res-y Pad", "Ghosts of Ireland", "Picky Lead", "Silence Structures", "Odd Overtone", "Electromechanik",
+
+  "Aggro 808", "Snares", "Toms", "SnapS+Claps", "BrightCymbals",
+  "SEM  Swirl", "Fizzy Lead", "Kitchen Sync", "Xylophone", "Bass Front",
+  "Machinery", "Vintage Wows", "Digibubblz", "Fairy Magic", "Lofi Pad", "Comp Splitoon",
+
+  "Teo~Pad", "XTeoC", "Sterile Piano", "Sub0Bass", "HAL 8086",
+  "Undercurrent Pad", "Octaves Arp", "Rhythmix", "Pip Squeak", "Steel Jers",
+  "Velo Octaves", "A Fifth of TEO", "Klavinot", "Jacob'sLadder", "Bossy Bass", "Sad Tangerine",
+
+  "Triangle Lead", "Party  Starter", "Morse Pad", "Secret Treasure", "x4RP-PR4x",
+  "Prime  Organ", "Bass Kalimba", "Double Vision", "Mettle Pd", "Foreshore",
+  "2049", "Pot Lids", "Astral Dominator", "Harpsorgan", "Handperc", "Spiral flow"
+]
+
   }
 }
