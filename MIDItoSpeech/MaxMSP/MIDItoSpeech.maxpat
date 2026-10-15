@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 622.0, 160.0, 919.0, 702.0 ],
+        "rect": [ 115.0, 124.0, 919.0, 702.0 ],
         "boxes": [
             {
                 "box": {
@@ -483,7 +483,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-51",
-                    "items": [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
+                    "items": [ "AU DLS Synth 1", ",", "Summit", ",", "from Max 1", ",", "from Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -1555,7 +1555,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 256.0, 174.0, 245.0, 20.0 ],
-                    "text": "Patch name yes  "
+                    "text": "file selected. Peak_Summit"
                 }
             },
             {
@@ -3688,7 +3688,7 @@
                     "bgfillcolor_type": "color",
                     "fontsize": 24.0,
                     "id": "obj-31",
-                    "items": [ "AstroLab.json", ",", "BassStation II.json", ",", "DeckardsDream.json", ",", "Fourm.json", ",", "ISENIN.json", ",", "Peak_Summit.json", ",", "Prophet6.json", ",", "ProphetRev2.json", ",", "SequentialHypothetical.json", ",", "Summit.json", ",", "Take 5.json", ",", "TEO5.json", ",", "testing.json" ],
+                    "items": [ "AstroLab.json", ",", "BassStation II.json", ",", "DeckardsDream.json", ",", "Fourm.json", ",", "ISENIN.json", ",", "Peak_Summit.json", ",", "Prophet6.json", ",", "ProphetRev2.json", ",", "SequentialHypothetical.json", ",", "Take 5.json", ",", "TEO5.json", ",", "testing.json" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -3777,7 +3777,7 @@
                     "fontname": "Arial",
                     "fontsize": 24.0,
                     "id": "obj-2",
-                    "items": [ "to Max 1", ",", "to Max 2" ],
+                    "items": [ "Summit", ",", "to Max 1", ",", "to Max 2" ],
                     "labelclick": 1,
                     "maxclass": "umenu",
                     "numinlets": 1,
@@ -3811,13 +3811,12 @@
                 "box": {
                     "fontsize": 24.0,
                     "id": "obj-60",
-                    "linecount": 2,
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 639.0, 349.5, 182.0, 62.0 ],
-                    "text": "SequentialHypothetical"
+                    "patching_rect": [ 536.5, 349.5, 284.5, 35.0 ],
+                    "text": "Peak_Summit"
                 }
             },
             {
