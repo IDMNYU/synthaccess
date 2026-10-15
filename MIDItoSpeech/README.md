@@ -18,6 +18,7 @@ Files:
 [Live Web Version](https://idmnyu.github.io/synthaccess/MIDItoSpeech/WebMIDI/index.html)
 
 [Max/MSP Executable (Mac)](https://drive.google.com/file/d/1HuW1gaNvlLbDQLGx_AmApwBpyzbMe49y/view?usp=drive_link)
+
 [Max/MSP Executable (Windows)](https://drive.google.com/file/d/1cCU1UKv1zBpLAr7Jj5KC_KB8shFI5e3V/view?usp=drive_link)
 
 **MIDItoSpeech** is a set of software and tools to "speak" the affordances on a synthesizer using a computer. Our model relies on MIDI transmission of parameters as controls are touched on the synth. This software is designed as both a [Max patch](https://cycling74.com/) / Max4Live device as well as a website using the Web MIDI API. In both cases, there is a common codebase for parsing the messages as well as a community-driven repository of JSON files (the 'devices' folder) for models of synthesizers that describe their NRPN / CC values with labels, enumerators, etc. 
