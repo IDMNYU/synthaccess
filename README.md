@@ -14,6 +14,7 @@ Featuring the work of:
 - [Stefanie Koseff](https://www.stefaniekoseff.com/), Faculty Lead, Tactile Synth Guides
 - [Tommy Martinez](https://thomasjohnmartinez.com/)
 - [Madeline Mau](https://www.linkedin.com/in/madeline-mau-b01b9739b/)
+- [Aiste Merfeldaite](linkedin.com/in/aiste-merfeldaite-56652020b/)
 - [Willie Payne](https://williepayne.com/)
 - [Lauren Race](https://laurenrace.com/)
 - [Izabella Rodrigues](https://www.izabellarodrigues.com/)
