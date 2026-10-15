@@ -5,7 +5,7 @@
 function parseSpeak(_plist, _param, _val) // create and generate a speech string based on MIDI input
 {
     let speakstring = "";
-    let a, b, s, cl, l, o, so, si, sj, sk, v, g, i, j, k, nlist, p, r;
+    let a, b, s, cl, l, o=0, so=0, si=0, sj=0, sk=0, v, g, i=0, j=0, k=0, nlist, p, r;
     let dospeak = 1; // default to speaking
     let mval = 127; // assume 7-bit
     let hval = 64; // 7-bit half value
