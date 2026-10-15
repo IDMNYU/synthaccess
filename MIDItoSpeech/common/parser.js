@@ -226,19 +226,19 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                     if(verbose==2) speakstring+= ". " + p[_val];
                 }
                 break;
-            case "patchhex": // read strings against an index (Oberheim hex mode); only factory presets speak
+            case "patchhex": // read strings against an index (Oberheim hex mode)
                 nlist = _plist[_param].names;
                 p = thestuff.device[nlist];
                 if(typeof(thestuff.device.globals[_plist[_param].global].speechoffset)!='undefined') so = thestuff.device.globals[_plist[_param].global].speechoffset;
                 let facuser = _val>=1600; // factory or user?
                 let idxpatch = (_val%100)%16;
                 let idxbank = Math.floor(_val/100);  
-                let tidx = (idxbank<<4) + idxpatch;
+                let tidx = (idxbank<<4) + idxpatch; // this is the actual numeric patch index for the array
                 _val=_val%1600;
                 speakstring+=" " + (facuser==true ? "factory" : "user");
                 let tval = _val+so; // string to hexify
                 let tbank = (Math.floor(tval/100)).toString(16);
-                if(tbank=="10") tbank="g"; // craziness
+                if(tbank=="10") tbank="g"; // 1-G instead of 0-F hex craziness
                 let tpatch = (tval%100).toString().padStart(2, '0');
                 speakstring+=" " + tbank + " " + tpatch;
                 if(tidx in p)
