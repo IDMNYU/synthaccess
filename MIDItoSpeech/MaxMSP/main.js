@@ -14,6 +14,8 @@ var chan = 1; // MIDI channel
 var pmode = 0; // use "packet" mode (Max [thresh]) vs. individual messages
 var verbose = 1; // verbosity: 0 = minimum, 1 = normal, 2 = maximum
 var sysexbuf = [];
+var theprefex = ""; // prefix for speaking device
+var doprefix = 0; // use a prefix?
 
 function fread(_s) // read a JSON file
 {
@@ -123,6 +125,7 @@ function channel(_c) // change active MIDI channel
 
 function saySomething(_s) // shim for transmission to speech synthesizer
 {
+    if(doprefix==1) _s = theprefix + " " + _s;
     outlet(0, _s); // send to synthesizer
 }
 
@@ -134,4 +137,14 @@ function sendMidi(_b) // shim for MIDI transmission
 function pauseReceiver() // shim for blanking Midi input temporarily
 {
     outlet(2, "bang"); // turn off MIDI receiver
+}
+
+function prefix(_v) // set a prefix string
+{
+    theprefix = _v;
+}
+
+function useprefix(_v) // turn on and off prefix
+{
+    doprefix = _v;
 }
