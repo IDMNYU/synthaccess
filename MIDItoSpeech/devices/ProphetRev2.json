@@ -3,7 +3,7 @@
     "name": "Prophet Rev 2",
     "manufacturer": "Sequential",
     "language": "en-US",
-    "version": 1,
+    "version": 1.1,
     "globals": {
       "pgm": {
         "value": 0,
@@ -31,19 +31,23 @@
     "NRPN": {
       "0": {
         "label": "layer A oscillator 1 frequency",
-        "data": "value"
+        "data": "noteC5"
       },
       "2048": {
         "label": "layer B oscillator 1 frequency",
-        "data": "value"
+        "data": "noteC5"
       },
       "1": {
         "label": "layer A oscillator 1 fine frequency",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 101, -50, 51]
       },
       "2049": {
         "label": "layer B oscillator 1 fine frequency",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 101, -50, 51]
       },
       "2": {
         "label": "layer A oscillator 1 Shape",
@@ -73,29 +77,33 @@
       },
       "5": {
         "label": "layer A oscillator 2 frequency",
-        "data": "value"
+        "data": "noteC5"
       },
       "2053": {
         "label": "layer B oscillator 2 frequency",
-        "data": "value"
+        "data": "noteC5"
       },
       "6": {
         "label": "layer A oscillator 2 fine frequency",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 101, -50, 51]
       },
       "2054": {
         "label": "layer B oscillator 2 fine frequency",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 101, -50, 51]
       },
       "7": {
         "label": "layer A oscillator 2 shape",
         "data": "enum",
-        "enum": ["sawtooth", "sawtooth plus triangle", "triangle", "pulse"]
+        "enum": ["off", "sawtooth", "sawtooth plus triangle", "triangle", "pulse"]
       },
       "2055": {
         "label": "layer B oscillator 2 shape",
         "data": "enum",
-        "enum": ["sawtooth", "sawtooth plus triangle", "triangle", "pulse"]
+        "enum": ["off", "sawtooth", "sawtooth plus triangle", "triangle", "pulse"]
       },
       "8": {
         "label": "layer A oscillator 2 glide",
@@ -188,20 +196,24 @@
       "19": {
         "label": "layer A filter mode",
         "data": "enum",
-        "enum": ["2 pole", "2 pole"]
+        "enum": ["2 pole", "4 pole"]
       },
       "2067": {
         "label": "layer B filter mode",
         "data": "enum",
-        "enum": ["2 pole", "2 pole"]
+        "enum": ["2 pole", "4 pole"]
       },
       "20": {
         "label": "layer A filter envelope amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2068": {
         "label": "layer B filter envelope amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "21": {
         "label": "layer A filter envelope velocity",
@@ -577,11 +589,15 @@
       },
       "66": {
         "label": "layer A mod 1 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2114": {
         "label": "layer B mod 1 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "67": {
         "label": "layer A mod 1 destination",
@@ -605,11 +621,15 @@
       },
       "69": {
         "label": "layer A mod 2 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2117": {
         "label": "layer B mod 2 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "70": {
         "label": "layer A mod 2 destination",
@@ -633,11 +653,15 @@
       },
       "72": {
         "label": "layer A mod 3 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2120": {
         "label": "layer B mod 3 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "73": {
         "label": "layer A mod 3 destination",
@@ -661,11 +685,15 @@
       },
       "75": {
         "label": "layer A mod 4 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2123": {
         "label": "layer B mod 4 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "76": {
         "label": "layer A mod 4 destination",
@@ -689,11 +717,15 @@
       },
       "78": {
         "label": "layer A mod 5 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2126": {
         "label": "layer B mod 5 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "79": {
         "label": "layer A mod 5 destination",
@@ -717,11 +749,15 @@
       },
       "81": {
         "label": "layer A mod 6 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2129": {
         "label": "layer B mod 6 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "82": {
         "label": "layer A mod 6 destination",
@@ -745,11 +781,15 @@
       },
       "84": {
         "label": "layer A mod 7 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2132": {
         "label": "layer B mod 7 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "85": {
         "label": "layer A mod 7 destination",
@@ -773,11 +813,15 @@
       },
       "87": {
         "label": "layer A mod 8 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128] 
       },
       "2135": {
         "label": "layer B mod 8 amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "88": {
         "label": "layer A mod 8 destination",
@@ -905,11 +949,15 @@
       },
       "116": {
         "label": "layer A mod wheel amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2164": {
         "label": "layer B mod wheel amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "117": {
         "label": "layer A mod wheel destination",
@@ -923,11 +971,15 @@
       },
       "118": {
         "label": "layer A pressure amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2166": {
         "label": "layer B pressure amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "119": {
         "label": "layer A pressure destination",
@@ -941,11 +993,15 @@
       },
       "120": {
         "label": "layer A breath amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2168": {
         "label": "layer B breath amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "121": {
         "label": "layer A breath destination",
@@ -959,11 +1015,15 @@
       },
       "122": {
         "label": "layer A velocity amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2170": {
         "label": "layer B velocity amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "123": {
         "label": "layer A velocity destination",
@@ -977,11 +1037,15 @@
       },
       "124": {
         "label": "layer A foot controller amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "2172": {
         "label": "layer B foot controller amount",
-        "data": "value"
+        "data": "intmap",
+        "hires": "true",
+        "map": [0, 255, -127, 128]
       },
       "125": {
         "label": "layer A foot controller destination",
@@ -1102,28 +1166,82 @@
         "data": "offon"
       },
       "173": {
-        "label": "layer A arpeggiator mode",
-        "data": "value"
+        "label": "layer A arpedgiator mode",
+        "data": "enum",
+        "enum": [
+          "up",
+          "down",
+          "up and down",
+          "random",
+          "assign"
+        ]      
       },
       "2221": {
-        "label": "layer B arpeggiator mode",
-        "data": "value"
+        "label": "layer B arpedgiator mode",
+        "data": "enum",
+        "enum": [
+          "up",
+          "down",
+          "up and down",
+          "random",
+          "assign"
+        ]      
       },
       "174": {
-        "label": "layer A arpeggiator range",
-        "data": "value"
+        "label": "layer A arpedgiator range",
+        "data": "enum",
+        "enum": [
+          "1 octave",
+          "2 octaves",
+          "3 octaves"
+        ]      
       },
       "2222": {
-        "label": "layer B arpeggiator range",
-        "data": "value"
+        "label": "layer B arpedgiator range",
+        "data": "enum",
+        "enum": [
+          "1 octave",
+          "2 octaves",
+          "3 octaves"
+        ]
       },
       "175": {
         "label": "layer A clock divide",
-        "data": "value"
+        "data": "enum",
+        "enum": [
+          "half",
+          "quarter",
+          "eighth",
+          "eighth half",
+          "eighth swing",
+          "eighth triplet",
+          "sixteenth",
+          "sixteenth half",
+          "sixteenth swing",
+          "sixteenth triplet",
+          "thirty-second",
+          "thirty-second triplet",
+          "sixty-fourth triplet"
+        ]
       },
       "2223": {
         "label": "layer B clock divide",
-        "data": "value"
+        "data": "enum",
+        "enum": [
+          "half",
+          "quarter",
+          "eighth",
+          "eighth half",
+          "eighth swing",
+          "eighth triplet",
+          "sixteenth",
+          "sixteenth half",
+          "sixteenth swing",
+          "sixteenth triplet",
+          "thirty-second",
+          "thirty-second triplet",
+          "sixty-fourth triplet"
+        ]      
       },
       "177": {
         "label": "layer A arpeggiator repeats",
@@ -1264,7 +1382,6 @@
       "oscillator 1 frequency", 
       "oscillator 2 frequency", 
       "oscillator all frequency", 
-      "oscillator 1 level", 
       "oscillator mix", 
       "noise level", 
       "sub oscillator level", 
