@@ -4,6 +4,7 @@
 
 Links to some other folks doing important work in music technology and access:
 
+- [BLIND ENVY](https://www.youtube.com/watch?v=o2Ow_qP7kjI) - Calvin Van Zytveld and Lemon Guo
 - Nicholas Spinelli - [Low Vision Music](https://www.lowvisionmusic.info/)
 - Chi Kim and Rocco Fiorentino - [Flo Tools](https://flotools.org/Flo%20Tools/)
 - [Braille Forward](https://www.brailleforward.org/) - Mountain Lakes Public Library Makerspace, New Jersey
