@@ -2,7 +2,7 @@
 
 #### links
 
-Links to folks
+Links to folks also doing important work in music technology and access:
 
 - Nicholas Spinelli - [Low Vision Music](https://www.lowvisionmusic.info/)
 - Chi Kim and Rocco Fiorentino - [Flo Tools](https://flotools.org/Flo%20Tools/)
