@@ -34,6 +34,9 @@ Projects:
 - **[tactileSynthGuides](./tactileSynthGuides/)** : a design guide and library of swell-form printable tactile guides for synthesizers.
 - **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
 - **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
+- **[hapticDriver](./hapticDriver/)** : a schematic for converting modular synth voltages into haptic signals.
+
+[Watch our Webinar Video](https://www.youtube.com/watch?v=p082Tz-p6PA)
 
 ---
 
