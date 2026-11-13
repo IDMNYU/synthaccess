@@ -29,14 +29,14 @@ With support from our friends at:
 <a href="https://cycling74.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/c74.png" height=25 alt="Cycling'74"></a> <bl>cycl+'#gd</bl><br />
 <a href="https://ableton.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/ableton.png" height=25 alt="Ableton"></a> <bl>ableton</bl><br />
 
+[![Watch our Webinar Video](./webinar.png)](https://www.youtube.com/watch?v=p082Tz-p6PA)
+
 Projects:
 - **[MIDItoSpeech](./MIDItoSpeech/)** : a speech synthesizer to vocalize parameters from a music technology device (synthesizer, effects processor, etc.) that transmits its state via MIDI.
 - **[tactileSynthGuides](./tactileSynthGuides/)** : a design guide and library of swell-form printable tactile guides for synthesizers.
 - **[brailleOverlays](./brailleOverlays/)** : guidelines for adding braille labels and overlays to physical synthesizers.
 - **[tactileModular](./tactileModular/)** : a set of design resources for tactile affordances for modular synthesizers.
 - **[hapticDriver](./hapticDriver/)** : a schematic for converting modular synth voltages into haptic signals.
-
-[Watch our Webinar Video](https://www.youtube.com/watch?v=p082Tz-p6PA)
 
 ---
 
