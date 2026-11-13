@@ -9,7 +9,7 @@ New York University
 
 Files:
 - README.md - this file
-- LICENSE - MIT license
+- LICENSE.md - MIT license
 - hapticdriver.pdf - PDF schematic for the driver design
 - hapticDriver - folder of KiCad source files
 
