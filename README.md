@@ -29,8 +29,8 @@ With support from our friends at:
 <a href="https://cycling74.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/c74.png" height=25 alt="Cycling'74"></a> <bl>cycl+'#gd</bl><br />
 <a href="https://ableton.com" target="_new"><img src="https://raw.githubusercontent.com/IDMNYU/synthaccess/refs/heads/main/_layouts/_logos/ableton.png" height=25 alt="Ableton"></a> <bl>ableton</bl><br />
 
-<a href="https://www.youtube.com/watch?v=p082Tz-p6PA">
-  <img src="./webinar.png" target="_new" alt="Watch our Webinar Video!" width="50%">
+<a href="https://www.youtube.com/watch?v=p082Tz-p6PA" target="_new">
+  <img src="./webinar.png" alt="Watch our Webinar Video!" width="50%">
 </a>
 
 Projects:
