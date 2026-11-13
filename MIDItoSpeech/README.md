@@ -9,7 +9,7 @@ New York University
 
 Files:
 - README.md - this file
-- LICENSE - MIT license
+- LICENSE.md - MIT license
 - MaxMSP - source for the Max patcher version
 - WebMIDI - source for the web version
 - common - folder containing common JavaScript code for all versions
