@@ -10,7 +10,7 @@ New York University
 Files:
 - README.md - this file
 - LICENSE.md - MIT license
-- [hapticdriver.pdf] - PDF schematic for the driver design
+- [hapticdriver.pdf](http://raw.githubusercontent.com/IDMNYU/synthaccess/main/hapticDriver/hapticdriver.pdf) - PDF schematic for the driver design
 - hapticDriver - folder of KiCad source files
 
 The **hapticDriver** is a circuit schematic to translate a standard modular synthesizer voltage into something that can activate a pair low-cost [ERM motors](https://www.precisionmicrodrives.com/eccentric-rotating-mass-vibration-motors-erms), allowing a Blind / Low Vision user to "feel" a synthesizer signal such as an envelope, low frequency oscillator, trigger, and so forth. The circuit is DC coupled and uses standard Eurorack (+12V/-12V) power railes. It divides the positive and negative sides of the input signal into a pair of motors wired as the tip and ring on a 3.5mm TRS jack, and has an attenuator knob to control signal strength.
