@@ -1,6 +1,6 @@
 # links
 
-#### linkes
+#### links
 
 Links to folks
 
