@@ -18,9 +18,17 @@ Files:
 - [Roland 100_Model 104](./guides/Roland100_104.pdf) - tactile guide for the Roland 100 Series Model 104
 - [Roland V-Stage](./guides/RolandV-Stage.pdf) - tactile guide for the Roland V-Stage
 - [Serge 73-75](./guides/Serge7375.pdf) - tactile guide for the Serge Modular 73-75 Panels
-- elements - folder of EPS and SVG tactile elements for standard synthesizer affordances
-- elements/serge - folder of EPS and SVG tactile elements for Serge synthesizers (matched with [tactileModular](../tactileModular))
+- elements - folder of EPS, SVG, and PNG tactile elements for standard synthesizer affordances
+- elements/serge - folder of EPS, SVG, and PNG tactile elements for Serge synthesizers (matched with [tactileModular](../tactileModular))
 
 **tactileSynthGuides** consist of a collection of tactile guides and standards for synthesizers. These are currently designed to be printed using swell-form or UV printing as little booklets, with the goal of allowing a B/LV user to "feel" the synthesizer interface as a spatial map on a page while working with the physical hardware. 
 
 We provide a standard vocabulary of tactile symbols in the Style Guide and the elements folder - for example, different crosshatch patterns to give different feels for inputs and outputs on modular systems. These are especially useful for legacy (non-MIDI-aware) synthesizers that have a densely packed physical interface; conceptually, tactile guides are one of the only ways to do accessibility with things like Eurorack-format modular equipment where the affordance space is too small to accommodate braille.
+
+### Style Guide Symbols
+
+| Affordance  | Symbol |
+| ------------- | ------------- |
+| 3-way switch  | ![3-way switch](./elements/png/3%20pos%20switch.png)  |
+| Content Cell  | Content Cell  |
+
