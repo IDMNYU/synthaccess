@@ -29,6 +29,6 @@ We provide a standard vocabulary of tactile symbols in the Style Guide and the e
 
 | Affordance  | Symbol |
 | ------------- | ------------- |
-| 3-way switch  | ![3-way switch]('./elements/png/3 pos switch.png')  |
+| 3-way switch  | ![3-way switch](./elements/png/3%20pos%20switch.png)  |
 | Content Cell  | Content Cell  |
 
