@@ -23,12 +23,32 @@ Files:
 
 **tactileSynthGuides** consist of a collection of tactile guides and standards for synthesizers. These are currently designed to be printed using swell-form or UV printing as little booklets, with the goal of allowing a B/LV user to "feel" the synthesizer interface as a spatial map on a page while working with the physical hardware. 
 
-We provide a standard vocabulary of tactile symbols in the Style Guide and the elements folder - for example, different crosshatch patterns to give different feels for inputs and outputs on modular systems. These are especially useful for legacy (non-MIDI-aware) synthesizers that have a densely packed physical interface; conceptually, tactile guides are one of the only ways to do accessibility with things like Eurorack-format modular equipment where the affordance space is too small to accommodate braille.
+We provide a standard vocabulary of tactile symbols in the Style Guide and the elements folder - for example, different crosshatch patterns to give different feels for inputs and outputs on modular systems. These are especially useful for legacy (non-MIDI-aware) synthesizers that have a densely packed physical interface; conceptually, tactile guides are one of the only ways to do accessibility with things like Eurorack-format modular equipment where the affordance space is too small to accommodate braille. In addition, we offer suggested tactile shapes for visual labels that commonly appear on synthesizers (ADSR curves, sine waves, etc.); these can be integrated into a guide in addition to braille for fast recognition.
 
-### Style Guide Symbols
+### Style Guide Tactile Symbols
 
-| Affordance  | Symbol |
+| Affordance  | Tactile Symbol |
 | ------------- | ------------- |
-| 3-way switch  | ![3-way switch](./elements/png/3%20pos%20switch.png)  |
-| Content Cell  | Content Cell  |
+| Input Jack | ![Input Jack](./elements/png/input.png) |
+| Output Jack | ![Output Jack](./elements/png/output.png) |
+| Bidirectional Jack | ![bidirectional jack](./elements/png/bidirectional_jack.png) |
+| Knob | ![Knob](./elements/png/knob.png) |
+| Horizontal Slider | ![Horizontal Slider](./elements/png/horizontal_slider.png) |
+| Vertical Slider | ![Vertical Slider](./elements/png/vertical_slider.png) |
+| Round Button | ![Round Button](./elements/png/button.png) |
+| Square Button | ![Square Button](./elements/png/square_button.png) |
+| 2-way Switch | ![2-way Switch](./elements/png/switch.png) |
+| 3-way Switch  | ![3-way Switch](./elements/png/3_pos_switch.png)  |
+| Power Control | ![Power Control](./elements/png/power_button.png) |
+
+| Visual Label  | Tactile Symbol |
+| ------------- | ------------- |
+| ADSR symbol | ![ADSR](./elements/png/ADSR.png) |
+| Falling Saw | ![Falling Saw](./elements/png/falling_saw.png) |
+| Pulse | ![Pulse](./elements/png/PLS.png) |
+| Rising Saw | ![Rising Saw](./elements/png/rising_saw.png) |
+| Sawtooth | ![Sawtooth](./elements/png/sawtooth.png) |
+| Sine | ![Sine](./elements/png/sine.png) |
+| Square | ![Square](./elements/png/square.png) |
+| Triangle | ![Triangle](./elements/png/triangle.png) |
 
