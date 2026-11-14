@@ -25,7 +25,7 @@ Files:
 
 We provide a standard vocabulary of tactile symbols in the Style Guide and the elements folder - for example, different crosshatch patterns to give different feels for inputs and outputs on modular systems. These are especially useful for legacy (non-MIDI-aware) synthesizers that have a densely packed physical interface; conceptually, tactile guides are one of the only ways to do accessibility with things like Eurorack-format modular equipment where the affordance space is too small to accommodate braille. In addition, we offer suggested tactile shapes for visual labels that commonly appear on synthesizers (ADSR curves, sine waves, etc.); these can be integrated into a guide in addition to braille for fast recognition.
 
-### Style Guide Tactile Symbols
+### Style Guide Tactile Symbols (Legacy and Eurorack)
 
 | Affordance  | Tactile Symbol |
 | ------------- | ------------- |
