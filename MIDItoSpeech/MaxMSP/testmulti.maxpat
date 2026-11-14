@@ -4,18 +4,18 @@
         "appversion": {
             "major": 9,
             "minor": 2,
-            "revision": 1,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 1121.0, 178.0, 499.0, 510.0 ],
+        "rect": [ 488.0, 193.0, 832.0, 580.0 ],
         "boxes": [
             {
                 "box": {
                     "comment": "",
                     "id": "obj-27",
-                    "index": 0,
+                    "index": 1,
                     "maxclass": "outlet",
                     "numinlets": 1,
                     "numoutlets": 0,
@@ -27,7 +27,7 @@
                 "box": {
                     "comment": "",
                     "id": "obj-24",
-                    "index": 0,
+                    "index": 1,
                     "maxclass": "inlet",
                     "numinlets": 0,
                     "numoutlets": 1,
@@ -44,7 +44,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 14.0, 203.0, 29.5, 22.0 ],
-                    "text": "cb"
+                    "text": "fb"
                 }
             },
             {
@@ -54,8 +54,8 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 14.0, 163.0, 63.0, 22.0 ],
-                    "text": "closebang"
+                    "patching_rect": [ 14.0, 163.0, 56.0, 22.0 ],
+                    "text": "freebang"
                 }
             },
             {
@@ -139,7 +139,7 @@
                     },
                     "text": "v8",
                     "textfile": {
-                        "text": "// multi midi testing\n// rld, 10.26\n\nvar ins = [];\nvar outs = [];\n\nvar numins = 0;\nvar numouts = 0;\nvar theins = [];\nvar theouts = [];\n\nvar xi = 100;\nvar yi = 400;\n\nvar pinput = this.patcher.getnamed(\"thebigin\");\nvar poutput = this.patcher.getnamed(\"thebigout\");\n\nfunction oclear()\n{\n    outs = [];\n}\n\nfunction iclear()\n{\n    ins = [];\n}\n\nfunction olist(_v)\n{\n    outs.push(_v);\n}\n\nfunction ilist(_v)\n{\n    ins.push(_v);\n}\n\nfunction buildit()\n{\n    // out with the old\n    if(numins)\n    {\n        for(let i = 0;i<numins;i++)\n        {\n            this.patcher.remove(theins[i]);\n        }\n    }\n    // in with the news\n    numins = ins.length;\n    for(let j = 0;j<numins;j++)\n    {\n        theins[j] = this.patcher.newdefault(xi+(j*110), yi, \"minput\");\n        this.patcher.connect(this.box, 0, theins[j], 0);\n        outlet(0, ins[j]);\n        this.patcher.disconnect(this.box, 0, theins[j], 0);\n        this.patcher.connect(theins[j], 0, poutput, 0, );\n    }\n    \n    // out with the old\n    if(numouts)\n    {\n        for(let i = 0;i<numouts;i++)\n        {\n            this.patcher.remove(theouts[i]);\n        }\n    }\n    // in with the news\n    numouts = outs.length;\n    for(let j = 0;j<numouts;j++)\n    {\n        theouts[j] = this.patcher.newdefault(xi+(j*110), yi-50, \"moutput\");\n        this.patcher.connect(this.box, 0, theouts[j], 0);\n        outlet(0, outs[j]);\n        this.patcher.disconnect(this.box, 0, theouts[j], 0);\n        this.patcher.connect(pinput, 0, theouts[j], 0);\n    }\n    \n}\n\nfunction cb()\n{\n    for(let k = 0;k<numins;k++)\n    {\n        this.patcher.remove(theins[k]);\n    }\n    for(let k = 0;k<numouts;k++)\n    {\n        this.patcher.remove(theouts[k]);\n    }\n}",
+                        "text": "// multi midi testing\n// rld, 10.26\n\nvar ins = [];\nvar outs = [];\n\nvar numins = 0;\nvar numouts = 0;\nvar theins = []; // MIDI input subpatchers\nvar theouts = []; // MIDI output subpatchers\nvar thebs = []; // MIDItoSpeech config bpatcher things in the parent\n\nvar xi = 100;\nvar yi = 400;\n\nvar pinput = this.patcher.getnamed(\"thebigin\");\nvar poutput = this.patcher.getnamed(\"thebigout\");\n\nvar parent = this.patcher.parentpatcher; // the parent patcher?\n\nfunction oclear()\n{\n    outs = [];\n}\n\nfunction iclear()\n{\n    ins = [];\n    thebs = [];\n}\n\nfunction olist(_v)\n{\n    outs.push(_v);\n}\n\nfunction ilist(_v)\n{\n    ins.push(_v);\n}\n\nfunction buildit()\n{\n    // out with the old\n    if(numins)\n    {\n        for(let i = 0;i<numins;i++)\n        {\n            this.patcher.remove(theins[i]);\n        }\n    }\n    // in with the news\n    numins = ins.length;\n    for(let j = 0;j<numins;j++)\n    {\n        theins[j] = this.patcher.newdefault(xi+(j*110), yi, \"minput\");\n        this.patcher.connect(this.box, 0, theins[j], 0);\n        outlet(0, ins[j]);\n        this.patcher.disconnect(this.box, 0, theins[j], 0);\n        this.patcher.connect(theins[j], 0, poutput, 0, );\n        thebs[j] = parent.newdefault(0, 0, \"bpatcher\");\n        thebs[j].setattr(\"name\", \"bconfig\");\n        thebs[j].rect = [500, 400 + (j*30), 1520, 430 + (j*30)];\n        thebs[j].varname = \"config\"+j;\n    }\n    \n    // out with the old\n    if(numouts)\n    {\n        for(let i = 0;i<numouts;i++)\n        {\n            this.patcher.remove(theouts[i]);\n        }\n    }\n    // in with the news\n    numouts = outs.length;\n    for(let j = 0;j<numouts;j++)\n    {\n        theouts[j] = this.patcher.newdefault(xi+(j*110), yi-50, \"moutput\");\n        this.patcher.connect(this.box, 0, theouts[j], 0);\n        outlet(0, outs[j]);\n        this.patcher.disconnect(this.box, 0, theouts[j], 0);\n        this.patcher.connect(pinput, 0, theouts[j], 0);\n    }\n    \n}\n\nfunction fb() // it's [freebang], not [closebang]\n{\n    for(let k = 0;k<numins;k++)\n    {\n        this.patcher.remove(theins[k]);\n        this.patcher.remove(thebs[k]);\n    }\n    for(let k = 0;k<numouts;k++)\n    {\n        this.patcher.remove(theouts[k]);\n    }\n}",
                         "filename": "none",
                         "flags": 0,
                         "embed": 1,
@@ -234,58 +234,6 @@
                     "patching_rect": [ 170.0, 163.0, 50.0, 22.0 ],
                     "text": "midiinfo"
                 }
-            },
-            {
-                "box": {
-                    "id": "obj-2",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 100.0, 400.0, 100.0, 22.0 ],
-                    "text": "minput"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-3",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 210.0, 400.0, 100.0, 22.0 ],
-                    "text": "minput"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-4",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 100.0, 350.0, 100.0, 22.0 ],
-                    "text": "moutput"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-5",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 210.0, 350.0, 100.0, 22.0 ],
-                    "text": "moutput"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-6",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 320.0, 350.0, 100.0, 22.0 ],
-                    "text": "moutput"
-                }
             }
         ],
         "lines": [
@@ -348,12 +296,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-27", 0 ],
-                    "source": [ "obj-2", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-19", 0 ],
                     "source": [ "obj-20", 0 ]
                 }
@@ -384,27 +326,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-4", 0 ],
-                    "order": 2,
-                    "source": [ "obj-24", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-5", 0 ],
-                    "order": 1,
-                    "source": [ "obj-24", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-6", 0 ],
-                    "order": 0,
-                    "source": [ "obj-24", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-16", 0 ],
                     "source": [ "obj-25", 0 ]
                 }
@@ -413,12 +334,6 @@
                 "patchline": {
                     "destination": [ "obj-16", 0 ],
                     "source": [ "obj-26", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-27", 0 ],
-                    "source": [ "obj-3", 0 ]
                 }
             },
             {
@@ -445,7 +360,6 @@
                     "source": [ "obj-8", 0 ]
                 }
             }
-        ],
-        "autosave": 0
+        ]
     }
 }

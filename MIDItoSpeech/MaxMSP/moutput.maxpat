@@ -4,7 +4,7 @@
         "appversion": {
             "major": 9,
             "minor": 2,
-            "revision": 1,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
@@ -106,7 +106,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-11", 0 ],
-                    "source": [ "obj-8", 2 ]
+                    "source": [ "obj-8", 5 ]
                 }
             },
             {
