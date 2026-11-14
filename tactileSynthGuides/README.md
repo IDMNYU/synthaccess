@@ -52,3 +52,22 @@ We provide a standard vocabulary of tactile symbols in the Style Guide and the e
 | Square | ![Square](./elements/png/square.png) |
 | Triangle | ![Triangle](./elements/png/triangle.png) |
 
+### Style Guide Tactile Symbols (Serge Modular)
+
+| Affordance  | Tactile Symbol |
+| ------------- | ------------- |
+| AC Input Jack (Black / Brown) | ![AC Input Jack](./elements/png/serge_AC_input.png) |
+| AC Output Jack (Black / Brown) | ![AC Output Jack](./elements/png/serge_AC_output.png) |
+| DC Input Jack (Blue / White) | ![DC Input Jack](./elements/png/serge_DC_input.png) |
+| DC Output Jack (Blue / White) | ![DC Output Jack](./elements/png/serge_DC_output.png) |
+| Pulse Input Jack (Red) | ![Pulse Input Jack](./elements/png/serge_pulse_input.png) |
+| Pulse Output Jac (Red) | ![Pulse Output Jack](./elements/png/serge_pulse_output.png) |
+| Misc Input Jack (Various) | ![Misc Input Jack](./elements/png/serge_misc_input.png) |
+| Misc Output Jack (Various) | ![Misc Output Jack](./elements/png/serge_misc_output.png) |
+| TRS Input Jack | ![TRS Input Jack](./elements/png/serge_trs_input.png) |
+| TRS Output Jack | ![TRS Output Jack](./elements/png/serge_trs_output.png) |
+| Basic Knob | ![Basic Knob](./elements/png/serge_knob_basic.png) |
+| Offset Knob | ![Offset Knob](./elements/png/serge_knob_offset.png) |
+| Scale Knob (Attenuverter) | ![Scale Knob](./elements/png/serge_knob_scale.png) |
+| Button | ![Button](./elements/png/serge_button.png) |
+
