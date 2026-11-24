@@ -132,6 +132,11 @@ function parseSpeak(_plist, _param, _val) // create and generate a speech string
                 s = vmap(_val, _plist[_param].map, cl)
                 speakstring+=" " + dotrunc(s, dres, trunc);
                 break;
+            case "floatmapexp": // 5-point scale the parameter (sim. to Max [scale]), 5th number is exponential scaling, output float
+                if(typeof(_plist[_param].clamp)!=='undefined') cl = _plist[_param].clamp; else cl = false;
+                s = vmap(_val, _plist[_param].map, cl)
+                speakstring+=" " + dotrunc(s, dres, trunc);
+                break;
             case "offon": // 0="off", 1="on"
                 speakstring+=". " + (_val==0?"off":"on");
                 break;
@@ -455,24 +460,20 @@ function mtopct(_i) // MIDI CC value as percent
     return(outstr);
 }
 
-function vmap(_i, _m, _cl) // arbitrary value mapping
+function vmap(_i, _m, _cl) // arbitrary value mapping; range = [inmin, inmax, outmin, outmax, curve]
 {
-    let v, a, b, c, d, inmin, inmax;
-    let themap;
-    // is the map an array? if so, find the range with the right value
+    let v, a, b, c, d, cu, inmin, inmax;
+    let r;
     if(!Array.isArray(_m[0])) // single range
     {
-        a = _m[0];
-        b = _m[1];
-        c = _m[2];
-        d = _m[3];
-        inmin = a;
-        inmax = b;
+        r = _m;
+        inmin = r[0];
+        inmax = r[1];
     }
-    else { // iterate through arrays to find first in range; if no match, use first range; also update clamp ranges
+    else { // find first range containing _i; default to first range; track overall clamp bounds
         let match = 0;
-        inmin = 100000; // start high for the min
-        inmax = -100000; // start low for the max
+        inmin = 100000;
+        inmax = -100000;
         for(let i = 0;i<_m.length;i++)
         {
             let v1 = _m[i][0];
@@ -481,21 +482,22 @@ function vmap(_i, _m, _cl) // arbitrary value mapping
             if(inmax<v2) inmax=v2;
             if(_i>=v1&&_i<=v2) match = i;
         }
-        a = _m[match][0];
-        b = _m[match][1];
-        c = _m[match][2];
-        d = _m[match][3];
+        r = _m[match];
     }
+    a = r[0];
+    b = r[1];
+    c = r[2];
+    d = r[3];
+    cu = (r.length>4) ? r[4] : 1.0; // 1 linear, <1 log, >1 exp
     if(_cl=='true') // clamp
     {
         if(_i<inmin) _i=inmin;
         if(_i>inmax) _i=inmax;
     }
-    let t1 = (_i-a)/(b-a);
-    let t2 = d-c;
-    if(c<d) v = t1*t2+c;
-    else v = (1.0-t1)*t2+d;
-    return(v);    
+    let t = (_i-a)/(b-a);
+    if(cu>0 && Math.abs(cu-1.0)>1e-6) t = (Math.pow(cu, t)-1.0)/(cu-1.0);
+    v = c + t*(d-c); // works for ascending or descending output
+    return(v);
 }
 
 function dotrunc(number, digits, truncflag) {

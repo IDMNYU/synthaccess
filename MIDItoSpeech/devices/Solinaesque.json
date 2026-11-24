@@ -1,0 +1,279 @@
+{
+  "device": {
+    "name": "Solinaesque",
+    "manufacturer": "R. Luke DuBois (custom firmware for the M-VAVE FM-1)",
+    "language": "en-US",
+    "version": 1,
+    "program_change": {
+      "0": {
+        "label": "preset",
+        "data": "enum",
+        "enum": "presets"
+      }
+    },
+    "CC": {
+      "12": {
+        "label": "16 foot",
+        "data": "percent"
+      },
+      "13": {
+        "label": "8 foot",
+        "data": "percent"
+      },
+      "14": {
+        "label": "4 foot",
+        "data": "percent"
+      },
+      "15": {
+        "label": "oscillator shape",
+        "data": "enumsplit",
+        "split": [0, 1, 64, 86],
+        "enum": ["saw", "saw plus square", "square", "pulse"]
+      },
+      "76": {
+        "label": "L F O rate",
+        "data": "value"
+      },
+      "77": {
+        "label": "vibrato",
+        "data": "percent"
+      },
+      "78": {
+        "label": "pulse width modulation",
+        "data": "percent"
+      },
+      "79": {
+        "label": "L F O delay",
+        "data": "intmap",
+        "map": [0, 127, 0, 5000],
+        "clamp": "true",
+        "suffix": "milliseconds"
+      },
+      "29": {
+        "label": "ensemble type",
+        "data": "enumsplit",
+        "split": [0, 16, 48, 80, 112],
+        "enum": ["off", "1", "2", "3", "flanger"]
+      },
+      "30": {
+        "label": "trigger mode",
+        "data": "enumsplit",
+        "split": [0, 64],
+        "enum": ["retrigger", "legato"]
+      },
+      "31": {
+        "label": "tune",
+        "data": "intmap",
+        "map": [0, 127, -100, 100],
+        "clamp": "true",
+        "suffix": "cents"
+      },
+      "7": {
+        "label": "volume",
+        "data": "percent"
+      },
+      "102": {
+        "label": "arpeggiator mode",
+        "data": "enumsplit",
+        "split": [0, 16, 48, 80, 112],
+        "enum": ["up", "down", "up down", "random", "as played"]
+      },
+      "103": {
+        "label": "arpeggiator rate",
+        "data": "enumsplit",
+        "split": [0, 13, 39, 64, 89, 115],
+        "enum": ["quarter notes", "eighth notes", "eighth note triplets", "sixteenth notes", "sixteenth note triplets", "thirty second notes"]
+      },
+      "104": {
+        "label": "arpeggiator octaves",
+        "data": "enumsplit",
+        "split": [0, 22, 64, 106],
+        "enum": ["1 octave", "2 octaves", "3 octaves", "4 octaves"]
+      },
+      "105": {
+        "label": "arpeggiator gate",
+        "data": "intmap",
+        "map": [0, 127, 10, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "106": {
+        "label": "tempo",
+        "data": "intmap",
+        "map": [0, 127, 40, 240],
+        "clamp": "true",
+        "suffix": "beats per minute"
+      },
+      "107": {
+        "label": "arpeggiator",
+        "data": "offon"
+      },
+      "108": {
+        "label": "hold",
+        "data": "offon"
+      },
+      "110": {
+        "label": "octave shift",
+        "data": "enumsplit",
+        "split": [0, 26, 52, 77, 103],
+        "enum": ["minus 2", "minus 1", "0", "plus 1", "plus 2"]
+      },
+      "111": {
+        "label": "velocity mode",
+        "data": "enumsplit",
+        "split": [0, 22, 64, 106],
+        "enum": ["off", "level", "filter", "both"]
+      },
+      "112": {
+        "label": "aftertouch mode",
+        "data": "enumsplit",
+        "split": [0, 22, 64, 106],
+        "enum": ["off", "vibrato", "cutoff", "both"]
+      },
+      "113": {
+        "label": "aftertouch depth",
+        "data": "percent"
+      },
+      "114": {
+        "label": "delay mode",
+        "data": "enumsplit",
+        "split": [0, 64],
+        "enum": ["stereo", "ping pong"]
+      },
+      "115": {
+        "label": "delay sync",
+        "data": "enumsplit",
+        "split": [0, 8, 22, 36, 50, 64, 78, 92, 106, 120],
+        "enum": ["free", "half notes", "dotted quarter notes", "quarter notes", "quarter note triplets", "dotted eighth notes", "eighth notes", "eighth note triplets", "dotted sixteenth notes", "sixteenth notes"]
+      }
+    },
+    "NRPN": {
+      "74": {
+        "label": "filter cutoff",
+        "hires": "true",
+        "data": "floatmapexp",
+        "map": [0, 16383, 20, 16000, 800],
+        "suffix": "hertz"
+      },
+      "71": {
+        "label": "filter resonance",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "20": {
+        "label": "filter envelope amount",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, -100, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "21": {
+        "label": "filter key tracking",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "73": {
+        "label": "attack",
+        "hires": "true",
+        "data": "value"
+      },
+      "75": {
+        "label": "decay",
+        "hires": "true",
+        "data": "value"
+      },
+      "70": {
+        "label": "sustain",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "72": {
+        "label": "release",
+        "hires": "true",
+        "data": "value"
+      },
+      "93": {
+        "label": "ensemble depth",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "22": {
+        "label": "ensemble rate",
+        "hires": "true",
+        "data": "value"
+      },
+      "23": {
+        "label": "flanger amount",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "24": {
+        "label": "flanger rate",
+        "hires": "true",
+        "data": "value"
+      },
+      "25": {
+        "label": "delay time",
+        "hires": "true",
+        "data": "value"
+      },
+      "26": {
+        "label": "delay feedback",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 95],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "27": {
+        "label": "delay mix",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "28": {
+        "label": "delay tone",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "91": {
+        "label": "reverb",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      },
+      "116": {
+        "label": "reverb size",
+        "hires": "true",
+        "data": "intmap",
+        "map": [0, 16383, 0, 100],
+        "clamp": "true",
+        "suffix": "percent"
+      }
+    },
+    "presets": ["factory 1, classic", "factory 2, cello", "factory 3, violins", "factory 4, full ensemble", "factory 5, dark pad", "factory 6, bright", "factory 7, swell", "factory 8, space", "factory 9, brass", "factory 10, organ", "factory 11, hollow", "factory 12, glass", "factory 13, basses", "factory 14, pluck", "factory 15, vox", "factory 16, echoes", "user 1", "user 2", "user 3", "user 4", "user 5", "user 6", "user 7", "user 8", "user 9", "user 10", "user 11", "user 12", "user 13", "user 14", "user 15", "user 16", "user 17", "user 18", "user 19", "user 20", "user 21", "user 22", "user 23", "user 24", "user 25", "user 26", "user 27", "user 28", "user 29", "user 30", "user 31", "user 32"]
+  }
+}
