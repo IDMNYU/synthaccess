@@ -61,6 +61,7 @@ The JSON root element is a **device**, which has the following hierarchy of prop
          - **percent** : map the value to an integer percentage (0 to 100).
          - **intrange**, **floatrange** : map the value to an integer or floating-point value specified by **range**.
          - **intmap**, **floatmap** : map the value to an integer or floating-point value specified by a 4-value **map**.
+         - **floatmapexp** : map the value to a floating-point value specified by a 5-value **map** (5th value is the exponent).
          - **offon**, **onoff** : read "off" if the *value* is 0 and "on" if it's anything else, or vice versa.
          - **onetwo64** : read "one" or "two" if the *value* is below or above 64, respectively.
          - **note**, **noteC4**, **noteC5** : read the value as a MIDI pitch (60 = C3, C4, or C5).
@@ -84,8 +85,8 @@ The JSON root element is a **device**, which has the following hierarchy of prop
       - **range** : array for **intrange** and **floatrange** data modes.
          - index 0 is the minimum output value; 1 is the maximum output value; 2 is the minimum output value; 3 is the maximum output value.
          - **range** can be an array of ranges for more complex scaling, e.g. [[0, 63, -100, 0],[64, 127, 0, 6]] will scale the first half of a MIDI controller range to between -100 and 0, and the second half between 0 and 6.
-      - **map** : array for **intmap** and **floatmap** data modes.
-         - the array should have four numbers, specifying the low (index 0) and high (index 1) input values, and the low (index 2) and high (index 3) output values; index 3 can be lower than index 2, allowing for inversion.
+      - **map** : array for **intmap**, **floatmap**, and **floatmapexp** data modes.
+         - the array specify the low (index 0) and high (index 1) input values, and the low (index 2) and high (index 3) output values; index 3 can be lower than index 2, allowing for inversion; for **floatmapexp**, index 4 specifies the curvature (<1.0 is logarithmic; >1.0 is exponential).
       - **enharmonic** : for **note**, **noteC4**, and **noteC5**, defines whether enharmonic pitch classes are read as "sharp" (default) or "flat".
       - **clamp** : boolean ("true" / "false") value for **intmap** and **floatmap** data to specify whether the mapping will be constrained within the output range(s) defined by the **range**; by default ("false"), data outside the bounds of the **range** setings will be extrapolated.
       - **enum** : array of labels for **enum** and **enumsplit** data.
